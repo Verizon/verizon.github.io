@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/*! VZRF 2.20.0 */
+/* line 4, ../../scss/widgets/top-bar.scss */
+.w_top-bar {
+  height: 2.8125rem;
+  max-height: 2.8125rem;
+  padding: 0 0.9375rem;
+  position: relative;
+  background-color: #cd040b;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 550;
+  border-bottom: 1px solid #990308;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+/* line 19, ../../scss/widgets/top-bar.scss */
+.w_top-bar .drop-list_list.active {
+  top: 100%;
+}
+
+/* line 23, ../../scss/widgets/top-bar.scss */
+.no-top-fixed .w_top-bar,
+.w_top-bar.m_not-fixed {
+  position: relative;
+}
+
+/* line 28, ../../scss/widgets/top-bar.scss */
+.top-bar_charms {
+  color: #fff;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  line-height: 2.8125rem;
+}
+/* line 35, ../../scss/widgets/top-bar.scss */
+.top-bar_charms [class*="icon-"]:before {
+  color: #fff;
+}
+/* line 38, ../../scss/widgets/top-bar.scss */
+.top-bar_charms [class*="icon-"]:before:hover {
+  color: #f9f9f9;
+}
+/* line 43, ../../scss/widgets/top-bar.scss */
+.top-bar_charms.m_left {
+  position: absolute;
+  left: 0;
+}
+/* line 48, ../../scss/widgets/top-bar.scss */
+.top-bar_charms.m_right {
+  position: absolute;
+  right: 0;
+}
+/* line 52, ../../scss/widgets/top-bar.scss */
+.top-bar_charms.m_right .top-bar_charm {
+  float: right;
+}
+
+/* line 58, ../../scss/widgets/top-bar.scss */
+.top-bar_charm,
+a.top-bar_charm {
+  vertical-align: top;
+  font-size: 1.25rem;
+  height: 2.8125rem;
+  padding: 0 0.9375rem;
+  float: left;
+  position: relative;
+}
+
+/* line 67, ../../scss/widgets/top-bar.scss */
+.top-bar_charm.active,
+.active > .top-bar_charm,
+a.top-bar_charm.active,
+.active > a.top-bar_charm {
+  background-color: #990308;
+}
+
+/* line 73, ../../scss/widgets/top-bar.scss */
+.top-bar_charm:before,
+a.top-bar_charm:before {
+  line-height: 1;
+  top: .1em;
+}
+
+/* line 79, ../../scss/widgets/top-bar.scss */
+.top-bar_img {
+  padding: 0 0.9375rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  max-height: 2.8125rem;
+}
+
+/* line 86, ../../scss/widgets/top-bar.scss */
+.top-bar_title {
+  display: inline-block;
+  font-size: 1.25rem;
+  line-height: 2.8125rem;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 auto;
+  max-width: 75%;
+}

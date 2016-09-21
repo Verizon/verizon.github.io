@@ -1,0 +1,223 @@
+@charset "UTF-8";
+/* line 1, ../../scss/components/loader-namespaced.scss */
+.vzrf {
+  /*! VZRF 2.20.0 */
+}
+/* line 7, ../../scss/components/loader.scss */
+.vzrf .loader {
+  position: relative;
+  margin: 0 48px;
+}
+/* line 11, ../../scss/components/loader.scss */
+.vzrf .loader, .vzrf .loader::before, .vzrf .loader::after {
+  display: block;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  background-color: #cccccc;
+  -webkit-animation: loadingFade 2s infinite;
+  -moz-animation: loadingFade 2s infinite;
+  -ms-animation: loadingFade 2s infinite;
+  -o-animation: loadingFade 2s infinite;
+  animation: loadingFade 2s infinite;
+}
+/* line 20, ../../scss/components/loader.scss */
+.vzrf .loader.fun, .vzrf .loader.fun::before, .vzrf .loader.fun::after {
+  -webkit-animation: loadingFun 4s infinite;
+  -moz-animation: loadingFun 4s infinite;
+  -ms-animation: loadingFun 4s infinite;
+  -o-animation: loadingFun 4s infinite;
+  animation: loadingFun 4s infinite;
+}
+/* line 24, ../../scss/components/loader.scss */
+.vzrf .loader::before {
+  content: '';
+  position: absolute;
+  left: -48px;
+  top: 0;
+}
+/* line 31, ../../scss/components/loader.scss */
+.vzrf .loader::after {
+  content: '';
+  position: absolute;
+  left: auto;
+  right: -48px;
+  top: 0;
+}
+/* line 40, ../../scss/components/loader.scss */
+.vzrf .loader::before {
+  animation-delay: 0s;
+  animation-delay: 0s;
+  animation-delay: 0s;
+}
+/* line 41, ../../scss/components/loader.scss */
+.vzrf .loader.fun::before {
+  animation-delay: 0s;
+  animation-delay: 0s;
+  animation-delay: 0s;
+}
+/* line 43, ../../scss/components/loader.scss */
+.vzrf .loader {
+  animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+/* line 44, ../../scss/components/loader.scss */
+.vzrf .loader.fun {
+  animation-delay: 0.6s;
+  animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+/* line 46, ../../scss/components/loader.scss */
+.vzrf .loader::after {
+  animation-delay: 0.6s;
+  animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+/* line 47, ../../scss/components/loader.scss */
+.vzrf .loader.fun::after {
+  animation-delay: 1.2s;
+  animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+@keyframes loadingFade {
+  0%, 100% {
+    background-color: #cccccc;
+  }
+  50% {
+    background-color: #333;
+  }
+}
+@-moz-keyframes loadingFade {
+  0%, 100% {
+    background-color: #cccccc;
+  }
+  50% {
+    background-color: #333;
+  }
+}
+@-webkit-keyframes loadingFade {
+  0%, 100% {
+    background-color: #cccccc;
+  }
+  50% {
+    background-color: #333;
+  }
+}
+@-o-keyframes loadingFade {
+  0%, 100% {
+    background-color: #cccccc;
+  }
+  50% {
+    background-color: #333;
+  }
+}
+@-ms-keyframes loadingFade {
+  0%, 100% {
+    background-color: #cccccc;
+  }
+  50% {
+    background-color: #333;
+  }
+}
+@keyframes loadingFun {
+  0%, 100% {
+    background-color: #cccccc;
+  }
+  20% {
+    background-color: #82ceac;
+  }
+  40% {
+    background-color: #abe0f9;
+  }
+  60% {
+    background-color: #f9b295;
+  }
+  80% {
+    background-color: #fbd362;
+  }
+}
+@-moz-keyframes loadingFun {
+  0%, 100% {
+    background-color: #cccccc;
+  }
+  20% {
+    background-color: #82ceac;
+  }
+  40% {
+    background-color: #abe0f9;
+  }
+  60% {
+    background-color: #f9b295;
+  }
+  80% {
+    background-color: #fbd362;
+  }
+}
+@-webkit-keyframes loadingFun {
+  0%, 100% {
+    background-color: #cccccc;
+  }
+  20% {
+    background-color: #82ceac;
+  }
+  40% {
+    background-color: #abe0f9;
+  }
+  60% {
+    background-color: #f9b295;
+  }
+  80% {
+    background-color: #fbd362;
+  }
+}
+@-o-keyframes loadingFun {
+  0%, 100% {
+    background-color: #cccccc;
+  }
+  20% {
+    background-color: #82ceac;
+  }
+  40% {
+    background-color: #abe0f9;
+  }
+  60% {
+    background-color: #f9b295;
+  }
+  80% {
+    background-color: #fbd362;
+  }
+}
+@-ms-keyframes loadingFun {
+  0%, 100% {
+    background-color: #cccccc;
+  }
+  20% {
+    background-color: #82ceac;
+  }
+  40% {
+    background-color: #abe0f9;
+  }
+  60% {
+    background-color: #f9b295;
+  }
+  80% {
+    background-color: #fbd362;
+  }
+}
+/* line 64, ../../scss/components/loader.scss */
+.vzrf .gif-loader .loader {
+  width: 8.375rem;
+  margin: 0;
+  background-color: transparent;
+  background-image: url("data:image/gif;base64,R0lGODlhhgAmANU7ALe0t9vZ2/Hw8f39/drZ2vn5+b+8v727vb+9v7aztu/u7+Xj5crIymNhY7CvsODf4A8ND4WEhbu8u3RzdGBfYHp8evPz89vb26+ur3Nxc/v6+42LjeDg4HBvcMXFxaampiMiI4SDhAsJC/j4+CcmJ8jHyCkoKezs7E9NT9DP0M7PzoiJiLy7vImKifv7++Xl5Z2fneDh4IWHhfX19Xh6eJiXmMbHxnR2dAQCBFxaXLSxtP///wAAAAAAAAAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh/wtYTVAgRGF0YVhNUDw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDplOWJkMGNlZi1mMGQzLTgyNDgtOGNiMi1hOWM5ZDkzMTAxODEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6REZFMEVFOTk4OTVEMTFFNTkyMDhGQUU0RkJCQTVFQ0UiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6REZFMEVFOTg4OTVEMTFFNTkyMDhGQUU0RkJCQTVFQ0UiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRl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");
+  -webkit-animation: none;
+  -moz-animation: none;
+  -ms-animation: none;
+  -o-animation: none;
+  animation: none;
+}
+/* line 72, ../../scss/components/loader.scss */
+.vzrf .gif-loader .loader::before, .vzrf .gif-loader .loader::after {
+  display: none;
+}

@@ -1,0 +1,856 @@
+@charset "UTF-8";
+/* line 1, ../../scss/components/flex-grid-namespaced.scss */
+.vzrf {
+  /*! VZRF 2.20.0 */
+}
+/* line 69, ../../scss/components/flex-grid.scss */
+.vzrf [class*="flex-grid-"] {
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  -moz-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: stretch;
+  -moz-align-items: stretch;
+  -ms-align-items: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -moz-align-content: stretch;
+  -ms-align-content: stretch;
+  align-content: stretch;
+}
+/* line 32, ../../scss/components/flex-grid.scss */
+.vzrf [class*="flex-grid-"] > li {
+  -webkit-flex-grow: 1;
+  -moz-flex-grow: 1;
+  -ms-flex-grow: 1;
+  flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  -moz-flex-shrink: 1;
+  -ms-flex-shrink: 1;
+  flex-shrink: 1;
+  -webkit-flex-basis: auto;
+  -moz-flex-basis: auto;
+  -ms-flex-basis: auto;
+  flex-basis: auto;
+  padding: 0.75rem;
+  margin: 0;
+  list-style: none;
+}
+/* line 73, ../../scss/components/flex-grid.scss */
+.vzrf [class*="flex-grid-"][class*="justify-"] > li {
+  -webkit-flex-grow: 0;
+  -moz-flex-grow: 0;
+  -ms-flex-grow: 0;
+  flex-grow: 0;
+}
+/* line 77, ../../scss/components/flex-grid.scss */
+.vzrf [class*="flex-grid-"].justify-left {
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+}
+/* line 81, ../../scss/components/flex-grid.scss */
+.vzrf [class*="flex-grid-"].justify-right {
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+}
+/* line 85, ../../scss/components/flex-grid.scss */
+.vzrf [class*="flex-grid-"].justify-center {
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+/* line 89, ../../scss/components/flex-grid.scss */
+.vzrf [class*="flex-grid-"].justify-around {
+  -webkit-justify-content: space-around;
+  -moz-justify-content: space-around;
+  -ms-justify-content: space-around;
+  justify-content: space-around;
+}
+/* line 93, ../../scss/components/flex-grid.scss */
+.vzrf [class*="flex-grid-"].justify-between {
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+}
+/* line 98, ../../scss/components/flex-grid.scss */
+.vzrf [class*="flex-grid-"] > [class*="vert-"] {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+/* line 103, ../../scss/components/flex-grid.scss */
+.vzrf [class*="flex-grid-"] > .vert-middle {
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+/* line 107, ../../scss/components/flex-grid.scss */
+.vzrf [class*="flex-grid-"] > .vert-top {
+  -webkit-justify-content: flex-start;
+  -moz-justify-content: flex-start;
+  -ms-justify-content: flex-start;
+  justify-content: flex-start;
+}
+/* line 111, ../../scss/components/flex-grid.scss */
+.vzrf [class*="flex-grid-"] > .vert-bottom {
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  -ms-justify-content: flex-end;
+  justify-content: flex-end;
+}
+@media only screen {
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .tiny-flex-grid-1 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .tiny-flex-grid-2 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 50%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .tiny-flex-grid-3 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 33.33333%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .tiny-flex-grid-4 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 25%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .tiny-flex-grid-5 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 20%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .tiny-flex-grid-6 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 16.66667%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .tiny-flex-grid-7 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 14.28571%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .tiny-flex-grid-8 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 12.5%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .tiny-flex-grid-9 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 11.11111%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .tiny-flex-grid-10 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 10%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .tiny-flex-grid-11 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 9.09091%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .tiny-flex-grid-12 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 8.33333%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+}
+@media only screen and (min-width: 30.0625rem) {
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .small-flex-grid-1 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .small-flex-grid-2 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 50%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .small-flex-grid-3 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 33.33333%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .small-flex-grid-4 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 25%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .small-flex-grid-5 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 20%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .small-flex-grid-6 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 16.66667%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .small-flex-grid-7 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 14.28571%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .small-flex-grid-8 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 12.5%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .small-flex-grid-9 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 11.11111%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .small-flex-grid-10 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 10%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .small-flex-grid-11 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 9.09091%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .small-flex-grid-12 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 8.33333%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .medium-flex-grid-1 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .medium-flex-grid-2 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 50%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .medium-flex-grid-3 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 33.33333%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .medium-flex-grid-4 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 25%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .medium-flex-grid-5 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 20%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .medium-flex-grid-6 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 16.66667%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .medium-flex-grid-7 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 14.28571%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .medium-flex-grid-8 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 12.5%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .medium-flex-grid-9 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 11.11111%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .medium-flex-grid-10 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 10%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .medium-flex-grid-11 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 9.09091%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .medium-flex-grid-12 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 8.33333%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+}
+@media only screen and (min-width: 60.625rem) {
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .large-flex-grid-1 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 100%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .large-flex-grid-2 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 50%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .large-flex-grid-3 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 33.33333%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .large-flex-grid-4 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 25%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .large-flex-grid-5 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 20%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .large-flex-grid-6 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 16.66667%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .large-flex-grid-7 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 14.28571%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .large-flex-grid-8 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 12.5%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .large-flex-grid-9 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 11.11111%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .large-flex-grid-10 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 10%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .large-flex-grid-11 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 9.09091%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+  /* line 43, ../../scss/components/flex-grid.scss */
+  .vzrf .large-flex-grid-12 > li {
+    -webkit-flex-grow: 1;
+    -moz-flex-grow: 1;
+    -ms-flex-grow: 1;
+    flex-grow: 1;
+    -webkit-flex-shrink: 1;
+    -moz-flex-shrink: 1;
+    -ms-flex-shrink: 1;
+    flex-shrink: 1;
+    width: 8.33333%;
+    padding: 0.75rem;
+    margin: 0;
+    list-style: none;
+  }
+}

@@ -1,0 +1,326 @@
+@charset "UTF-8";
+/*! VZRF 2.20.0 */
+/* line 2, ../../scss/components/forms-select-mixins.scss */
+select,
+input.faux-select,
+.faux-select {
+  position: relative;
+  background-color: #f6f6f6;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAFoCAMAAACWia6pAAAAPFBMVEUAAADJICjJICjJICjJICjJICjJICjJICjJICjJICjJICjJICjJICjJICjJICjJICjJICjJICjJICjJICi04fbQAAAAE3RSTlMAEgjA0ohossl4+Jf15eSPfEmzzgqcggAAAORJREFUeNrt2jluw0AQRcGmKGohtbrvf1drKMADm4ATzwAOqsJOHjr/AQAAAH/wvF6m2Jou12c0c8vM++Z6z8xbNDPny/Tzj3yZo5kl18q2kUu0c8ziEdUji+Mu2tm9K+evw7k2ulRq42NttKyMWRyiOGQxro0ulZ6NWqmNHoZTFksWpyFWnSqdGrWyz7d9j0at9GzUSsdGrYzzOAQAAAAAAAAAKwscCxwLHAscCxwLHAscAAAAAAAAgH/AAscCxwLHAmfLAscCBwAAAAAAAAALHAscC5xvLHAscCxwLHAAAADgV5+YryrxWZhj0gAAAABJRU5ErkJggg=="), url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NTdBNkM1M0ExNDA0MTFFNDgzNDJFMDQ0OTk0M0FDRkEiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NTdBNkM1M0IxNDA0MTFFNDgzNDJFMDQ0OTk0M0FDRkEiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo1N0E2QzUzODE0MDQxMUU0ODM0MkUwNDQ5OTQzQUNGQSIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo1N0E2QzUzOTE0MDQxMUU0ODM0MkUwNDQ5OTQzQUNGQSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PvAkY8IAAADCSURBVHjalFHbEYIwEEzSAX7qHy2EErQELQFL0BYoQUqAErAEKEH+9DclxD1m45yZ0dGdWUL2jr0H1mR4bKoSx43X4/o+tjruzHeEXHBwLMBtEuA4q/isK4Pe4lHjfqFbA0oLIyitrcCalHsjH3R42ZvfECzLnSgkpxwt2+tttqECxwB6NfQOc02ftpSSFzdQDDqueoFV7nqWAzip/yEGFSoFx2Svkq8I9FzvmVrJ+d769+Cgy1MX7bVFG2M0/+ApwACwAEOCRXhngwAAAABJRU5ErkJggg==");
+  background-repeat: no-repeat, no-repeat;
+  background-position: 100% 0.125rem, -0.75rem 0.9375rem;
+  background-size: 2.8125rem, 0.375rem;
+  background-color: #fff;
+  font-family: inherit;
+  border: 0.0625rem solid #cccccc;
+  box-shadow: none;
+  color: #a2a2a2;
+  display: block;
+  font-size: 0.75rem;
+  margin: 0 0 1.5rem 0;
+  padding: 0.5rem 0.625rem;
+  height: 2.6875rem;
+  width: 100%;
+  border-radius: 0;
+  outline: none !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-right: 2.5rem;
+  border-radius: 0;
+  font-weight: bold;
+  -moz-transition: background-position-x 0.2s, padding 0.2s;
+  -o-transition: background-position-x 0.2s, padding 0.2s;
+  -webkit-transition: background-position-x 0.2s, padding 0.2s;
+  transition: background-position-x 0.2s, padding 0.2s;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
+/* line 817, ../../scss/base/_global.scss */
+select::-webkit-outer-spin-button, select::-webkit-inner-spin-button,
+.faux-select::-webkit-outer-spin-button,
+.faux-select::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* line 827, ../../scss/base/_global.scss */
+select:focus,
+.faux-select:focus {
+  background-color: #fff;
+  border-color: #4b4b4b;
+  outline: none !important;
+  color: #333;
+}
+/* line 833, ../../scss/base/_global.scss */
+select.value,
+.value.faux-select {
+  background-color: #fff;
+  border-color: #cccccc;
+  color: #333;
+}
+/* line 840, ../../scss/base/_global.scss */
+select::-ms-reveal, select::-ms-clear,
+.faux-select::-ms-reveal,
+.faux-select::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+/* line 848, ../../scss/base/_global.scss */
+select input[type="search"],
+.faux-select input[type="search"] {
+  -webkit-appearance: textfield;
+}
+/* line 852, ../../scss/base/_global.scss */
+select input[type="search"]::-webkit-search-decoration,
+select input[type="search"]::-webkit-search-cancel-button,
+select input[type="search"]::-webkit-search-results-button,
+select input[type="search"]::-webkit-search-results-decoration,
+.faux-select input[type="search"]::-webkit-search-decoration,
+.faux-select input[type="search"]::-webkit-search-cancel-button,
+.faux-select input[type="search"]::-webkit-search-results-button,
+.faux-select input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+/* line 859, ../../scss/base/_global.scss */
+Basic focus styles
+select:focus:not([readonly]), select.value:focus:not([readonly]),
+Basic focus styles .faux-select:focus:not([readonly]),
+.value.faux-select:focus:not([readonly]) {
+  background-color: #fff;
+  border-color: #4b4b4b;
+  outline: none !important;
+  color: #333;
+}
+/* line 869, ../../scss/base/_global.scss */
+select[disabled],
+[disabled].faux-select {
+  opacity: 0.7;
+  cursor: default;
+  cursor: not-allowed;
+  background-color: #f6f6f6;
+}
+/* line 876, ../../scss/base/_global.scss */
+select[readonly],
+[readonly].faux-select {
+  cursor: default;
+}
+/* line 24, ../../scss/components/forms-select-mixins.scss */
+select:focus,
+.faux-select:focus {
+  border-color: #4b4b4b;
+  color: #333;
+}
+/* line 30, ../../scss/components/forms-select-mixins.scss */
+select.required, select[required],
+.required.faux-select,
+[required].faux-select {
+  background-repeat: no-repeat, no-repeat;
+  background-position: 100% 0.125rem, 0.4375rem 0.9375rem;
+  padding-left: 1rem;
+}
+/* line 36, ../../scss/components/forms-select-mixins.scss */
+select.required.value, select.required.no-required-mark, select[required].value, select[required].no-required-mark,
+.required.value.faux-select,
+.required.no-required-mark.faux-select,
+[required].value.faux-select,
+[required].no-required-mark.faux-select {
+  background-position: 100% 0.125rem, -0.75rem 0.9375rem;
+  padding-left: 0.625rem;
+}
+/* line 43, ../../scss/components/forms-select-mixins.scss */
+select.value,
+.value.faux-select {
+  background-color: #fff;
+  background-position: 100% 0.125rem, -0.75rem 0.9375rem;
+}
+/* line 47, ../../scss/components/forms-select-mixins.scss */
+select.value[required], select.value.required, select.value.no-required-mark,
+.value[required].faux-select,
+.value.required.faux-select,
+.value.no-required-mark.faux-select {
+  background-position: 100% 0.125rem, -0.75rem 0.9375rem;
+}
+/* line 54, ../../scss/components/forms-select-mixins.scss */
+select.radius,
+.radius.faux-select {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 62, ../../scss/components/forms-select-mixins.scss */
+select::-ms-expand,
+.faux-select::-ms-expand {
+  display: none !important;
+}
+/* line 66, ../../scss/components/forms-select-mixins.scss */
+select option,
+.faux-select option {
+  font-size: 0.875rem;
+}
+/* line 70, ../../scss/components/forms-select-mixins.scss */
+select option[disabled],
+.faux-select option[disabled] {
+  color: #959595;
+}
+/* line 74, ../../scss/components/forms-select-mixins.scss */
+.old-ie select,
+.old-ie .faux-select {
+  background-image: none;
+  padding-right: 0.5rem;
+}
+
+/* line 79, ../../scss/components/forms-select-mixins.scss */
+select:focus::-ms-value {
+  background-color: transparent;
+  color: #333;
+}
+
+/* line 94, ../../scss/components/forms-select-mixins.scss */
+select[data-fancy-open] {
+  box-shadow: 0.1875rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.25);
+}
+
+/* line 97, ../../scss/components/forms-select-mixins.scss */
+select[data-fancy-open="flow-up"] {
+  box-shadow: 0.1875rem -0.1875rem 0.75rem rgba(0, 0, 0, 0.25);
+}
+
+/* line 102, ../../scss/components/forms-select-mixins.scss */
+.w_fancy-options {
+  opacity: 1;
+  position: fixed;
+  height: 0;
+  z-index: 1000;
+  -moz-transition: top 0s;
+  -o-transition: top 0s;
+  -webkit-transition: top 0s;
+  transition: top 0s;
+}
+
+/* line 113, ../../scss/components/forms-select-mixins.scss */
+.fancy-options_list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  background: #fff;
+  border-top: none;
+  box-shadow: 0.1875rem 0.1875rem 0.75rem rgba(0, 0, 0, 0.25);
+  max-height: 24.75rem;
+}
+
+/* line 124, ../../scss/components/forms-select-mixins.scss */
+.m_flow-up .fancy-options_list {
+  box-shadow: 0.1875rem -0.1875rem 0.75rem rgba(0, 0, 0, 0.25);
+  border-bottom: none;
+  border-top: 0.0625rem solid #cccccc;
+}
+
+/* line 130, ../../scss/components/forms-select-mixins.scss */
+.fancy-options_item {
+  padding: 0.75rem 1.875rem 0.75rem 1.875rem;
+  font-size: 0.75rem;
+  margin: 0;
+  display: inline-block;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+  width: 100%;
+  text-decoration: none;
+  padding-right: 0.375rem;
+  background-color: #fff;
+  border-bottom: 0.0625rem solid #e4e5e3;
+  border-left: 0.0625rem solid #cccccc;
+  border-right: 0.0625rem solid #cccccc;
+}
+/* line 941, ../../scss/base/_global.scss */
+.fancy-options_item:hover {
+  color: #333;
+  background-color: #f6f6f6;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* line 138, ../../scss/components/forms-select-mixins.scss */
+.fancy-options_item:hover {
+  color: inherit;
+  background-color: inherit;
+  text-decoration: inherit;
+}
+/* line 144, ../../scss/components/forms-select-mixins.scss */
+.fancy-options_item:focus {
+  color: #333;
+  background-color: #f6f6f6;
+  text-decoration: none;
+  outline: none;
+}
+/* line 151, ../../scss/components/forms-select-mixins.scss */
+.fancy-options_item:first-child {
+  border-top: none;
+}
+/* line 154, ../../scss/components/forms-select-mixins.scss */
+.fancy-options_item:last-child {
+  border-bottom-color: #cccccc;
+}
+/* line 158, ../../scss/components/forms-select-mixins.scss */
+.m_flow-up .fancy-options_item:first-child {
+  border-top-color: #cccccc;
+}
+/* line 161, ../../scss/components/forms-select-mixins.scss */
+.m_flow-up .fancy-options_item:last-child {
+  border-bottom: none;
+  border-top-color: #cccccc;
+}
+/* line 166, ../../scss/components/forms-select-mixins.scss */
+.fancy-options_item.selected, .fancy-options_item.active {
+  text-decoration: none;
+  -webkit-transform: rotate(0deg);
+}
+/* line 299, ../../scss/base/_global.scss */
+.fancy-options_item.selected:hover, .fancy-options_item.active:hover {
+  text-decoration: none;
+}
+/* line 303, ../../scss/base/_global.scss */
+.fancy-options_item.selected::before, .fancy-options_item.active::before {
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'VZIcons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: inherit;
+  color: currentColor;
+  font-size: 1.5rem;
+  display: inline;
+  position: relative;
+}
+/* line 952, ../../scss/base/_global.scss */
+.fancy-options_item.selected::before, .fancy-options_item.active::before {
+  content: '\e65e';
+  position: absolute;
+  font-size: 0.75rem;
+  left: 0.625rem;
+  top: 50%;
+  margin-top: -0.5625rem;
+  color: #cd040b;
+}
+/* line 171, ../../scss/components/forms-select-mixins.scss */
+.fancy-options_item.disabled, .fancy-options_item[disabled] {
+  color: rgba(51, 51, 51, 0.5);
+  opacity: 1;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+/* line 178, ../../scss/components/forms-select-mixins.scss */
+.fancy-options_item.disabled::before, .fancy-options_item[disabled]::before {
+  content: '';
+}

@@ -1,0 +1,980 @@
+@charset "UTF-8";
+/*! VZRF 2.20.0 */
+@media only screen {
+  /* line 8, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-left {
+    float: left !important;
+  }
+
+  /* line 9, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-right {
+    float: right !important;
+  }
+
+  /* line 10, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-clear {
+    clear: both !important;
+  }
+
+  /* line 11, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-clear-left {
+    clear: left !important;
+  }
+
+  /* line 12, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-clear-right {
+    clear: right !important;
+  }
+
+  /* line 13, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-clear-none {
+    clear: none !important;
+  }
+
+  /* line 14, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-float-reset {
+    float: none !important;
+  }
+
+  /* line 15, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-float-none {
+    float: none !important;
+  }
+
+  /* line 16, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-text-left {
+    text-align: left !important;
+  }
+
+  /* line 17, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-text-right {
+    text-align: right !important;
+  }
+
+  /* line 18, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-text-center {
+    text-align: center !important;
+  }
+
+  /* line 19, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-text-justify {
+    text-align: justify !important;
+  }
+
+  /* line 20, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-hide {
+    display: none;
+  }
+
+  /* line 21, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-show {
+    display: inherit;
+  }
+
+  /* line 22, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-center {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* line 26, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-uncenter {
+    margin-left: 0 !important;
+    margin-right: 0;
+  }
+
+  /* line 30, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-border-all {
+    border-top-width: 1px !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 1px !important;
+    border-style: solid;
+    border-color: #cccccc;
+  }
+
+  /* line 37, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-border-none {
+    border: none !important;
+  }
+
+  /* line 38, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-border-top {
+    border-top-width: 1px !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-top-style: solid;
+    border-top-color: #cccccc;
+  }
+
+  /* line 45, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-border-right {
+    border-top-width: 0 !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-right-style: solid;
+    border-right-color: #cccccc;
+  }
+
+  /* line 52, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-border-bottom {
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0 !important;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+  }
+
+  /* line 59, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-border-left {
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 1px !important;
+    border-left-style: solid;
+    border-left-color: #cccccc;
+  }
+
+  /* line 66, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-border-horiz {
+    border-top-width: 1px !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0 !important;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #cccccc;
+    border-bottom-color: #cccccc;
+  }
+
+  /* line 75, ../../scss/components/helpers-display-responsive.scss */
+  .tiny-border-vert {
+    border-top-width: 0 !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 1px !important;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-color: #cccccc;
+    border-right-color: #cccccc;
+  }
+}
+@media only screen and (min-width: 30.0625rem) {
+  /* line 8, ../../scss/components/helpers-display-responsive.scss */
+  .small-left {
+    float: left !important;
+  }
+
+  /* line 9, ../../scss/components/helpers-display-responsive.scss */
+  .small-right {
+    float: right !important;
+  }
+
+  /* line 10, ../../scss/components/helpers-display-responsive.scss */
+  .small-clear {
+    clear: both !important;
+  }
+
+  /* line 11, ../../scss/components/helpers-display-responsive.scss */
+  .small-clear-left {
+    clear: left !important;
+  }
+
+  /* line 12, ../../scss/components/helpers-display-responsive.scss */
+  .small-clear-right {
+    clear: right !important;
+  }
+
+  /* line 13, ../../scss/components/helpers-display-responsive.scss */
+  .small-clear-none {
+    clear: none !important;
+  }
+
+  /* line 14, ../../scss/components/helpers-display-responsive.scss */
+  .small-float-reset {
+    float: none !important;
+  }
+
+  /* line 15, ../../scss/components/helpers-display-responsive.scss */
+  .small-float-none {
+    float: none !important;
+  }
+
+  /* line 16, ../../scss/components/helpers-display-responsive.scss */
+  .small-text-left {
+    text-align: left !important;
+  }
+
+  /* line 17, ../../scss/components/helpers-display-responsive.scss */
+  .small-text-right {
+    text-align: right !important;
+  }
+
+  /* line 18, ../../scss/components/helpers-display-responsive.scss */
+  .small-text-center {
+    text-align: center !important;
+  }
+
+  /* line 19, ../../scss/components/helpers-display-responsive.scss */
+  .small-text-justify {
+    text-align: justify !important;
+  }
+
+  /* line 20, ../../scss/components/helpers-display-responsive.scss */
+  .small-hide {
+    display: none;
+  }
+
+  /* line 21, ../../scss/components/helpers-display-responsive.scss */
+  .small-show {
+    display: inherit;
+  }
+
+  /* line 22, ../../scss/components/helpers-display-responsive.scss */
+  .small-center {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* line 26, ../../scss/components/helpers-display-responsive.scss */
+  .small-uncenter {
+    margin-left: 0 !important;
+    margin-right: 0;
+  }
+
+  /* line 30, ../../scss/components/helpers-display-responsive.scss */
+  .small-border-all {
+    border-top-width: 1px !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 1px !important;
+    border-style: solid;
+    border-color: #cccccc;
+  }
+
+  /* line 37, ../../scss/components/helpers-display-responsive.scss */
+  .small-border-none {
+    border: none !important;
+  }
+
+  /* line 38, ../../scss/components/helpers-display-responsive.scss */
+  .small-border-top {
+    border-top-width: 1px !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-top-style: solid;
+    border-top-color: #cccccc;
+  }
+
+  /* line 45, ../../scss/components/helpers-display-responsive.scss */
+  .small-border-right {
+    border-top-width: 0 !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-right-style: solid;
+    border-right-color: #cccccc;
+  }
+
+  /* line 52, ../../scss/components/helpers-display-responsive.scss */
+  .small-border-bottom {
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0 !important;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+  }
+
+  /* line 59, ../../scss/components/helpers-display-responsive.scss */
+  .small-border-left {
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 1px !important;
+    border-left-style: solid;
+    border-left-color: #cccccc;
+  }
+
+  /* line 66, ../../scss/components/helpers-display-responsive.scss */
+  .small-border-horiz {
+    border-top-width: 1px !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0 !important;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #cccccc;
+    border-bottom-color: #cccccc;
+  }
+
+  /* line 75, ../../scss/components/helpers-display-responsive.scss */
+  .small-border-vert {
+    border-top-width: 0 !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 1px !important;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-color: #cccccc;
+    border-right-color: #cccccc;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  /* line 8, ../../scss/components/helpers-display-responsive.scss */
+  .medium-left {
+    float: left !important;
+  }
+
+  /* line 9, ../../scss/components/helpers-display-responsive.scss */
+  .medium-right {
+    float: right !important;
+  }
+
+  /* line 10, ../../scss/components/helpers-display-responsive.scss */
+  .medium-clear {
+    clear: both !important;
+  }
+
+  /* line 11, ../../scss/components/helpers-display-responsive.scss */
+  .medium-clear-left {
+    clear: left !important;
+  }
+
+  /* line 12, ../../scss/components/helpers-display-responsive.scss */
+  .medium-clear-right {
+    clear: right !important;
+  }
+
+  /* line 13, ../../scss/components/helpers-display-responsive.scss */
+  .medium-clear-none {
+    clear: none !important;
+  }
+
+  /* line 14, ../../scss/components/helpers-display-responsive.scss */
+  .medium-float-reset {
+    float: none !important;
+  }
+
+  /* line 15, ../../scss/components/helpers-display-responsive.scss */
+  .medium-float-none {
+    float: none !important;
+  }
+
+  /* line 16, ../../scss/components/helpers-display-responsive.scss */
+  .medium-text-left {
+    text-align: left !important;
+  }
+
+  /* line 17, ../../scss/components/helpers-display-responsive.scss */
+  .medium-text-right {
+    text-align: right !important;
+  }
+
+  /* line 18, ../../scss/components/helpers-display-responsive.scss */
+  .medium-text-center {
+    text-align: center !important;
+  }
+
+  /* line 19, ../../scss/components/helpers-display-responsive.scss */
+  .medium-text-justify {
+    text-align: justify !important;
+  }
+
+  /* line 20, ../../scss/components/helpers-display-responsive.scss */
+  .medium-hide {
+    display: none;
+  }
+
+  /* line 21, ../../scss/components/helpers-display-responsive.scss */
+  .medium-show {
+    display: inherit;
+  }
+
+  /* line 22, ../../scss/components/helpers-display-responsive.scss */
+  .medium-center {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* line 26, ../../scss/components/helpers-display-responsive.scss */
+  .medium-uncenter {
+    margin-left: 0 !important;
+    margin-right: 0;
+  }
+
+  /* line 30, ../../scss/components/helpers-display-responsive.scss */
+  .medium-border-all {
+    border-top-width: 1px !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 1px !important;
+    border-style: solid;
+    border-color: #cccccc;
+  }
+
+  /* line 37, ../../scss/components/helpers-display-responsive.scss */
+  .medium-border-none {
+    border: none !important;
+  }
+
+  /* line 38, ../../scss/components/helpers-display-responsive.scss */
+  .medium-border-top {
+    border-top-width: 1px !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-top-style: solid;
+    border-top-color: #cccccc;
+  }
+
+  /* line 45, ../../scss/components/helpers-display-responsive.scss */
+  .medium-border-right {
+    border-top-width: 0 !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-right-style: solid;
+    border-right-color: #cccccc;
+  }
+
+  /* line 52, ../../scss/components/helpers-display-responsive.scss */
+  .medium-border-bottom {
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0 !important;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+  }
+
+  /* line 59, ../../scss/components/helpers-display-responsive.scss */
+  .medium-border-left {
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 1px !important;
+    border-left-style: solid;
+    border-left-color: #cccccc;
+  }
+
+  /* line 66, ../../scss/components/helpers-display-responsive.scss */
+  .medium-border-horiz {
+    border-top-width: 1px !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0 !important;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #cccccc;
+    border-bottom-color: #cccccc;
+  }
+
+  /* line 75, ../../scss/components/helpers-display-responsive.scss */
+  .medium-border-vert {
+    border-top-width: 0 !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 1px !important;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-color: #cccccc;
+    border-right-color: #cccccc;
+  }
+}
+@media only screen and (min-width: 60.625rem) {
+  /* line 8, ../../scss/components/helpers-display-responsive.scss */
+  .large-left {
+    float: left !important;
+  }
+
+  /* line 9, ../../scss/components/helpers-display-responsive.scss */
+  .large-right {
+    float: right !important;
+  }
+
+  /* line 10, ../../scss/components/helpers-display-responsive.scss */
+  .large-clear {
+    clear: both !important;
+  }
+
+  /* line 11, ../../scss/components/helpers-display-responsive.scss */
+  .large-clear-left {
+    clear: left !important;
+  }
+
+  /* line 12, ../../scss/components/helpers-display-responsive.scss */
+  .large-clear-right {
+    clear: right !important;
+  }
+
+  /* line 13, ../../scss/components/helpers-display-responsive.scss */
+  .large-clear-none {
+    clear: none !important;
+  }
+
+  /* line 14, ../../scss/components/helpers-display-responsive.scss */
+  .large-float-reset {
+    float: none !important;
+  }
+
+  /* line 15, ../../scss/components/helpers-display-responsive.scss */
+  .large-float-none {
+    float: none !important;
+  }
+
+  /* line 16, ../../scss/components/helpers-display-responsive.scss */
+  .large-text-left {
+    text-align: left !important;
+  }
+
+  /* line 17, ../../scss/components/helpers-display-responsive.scss */
+  .large-text-right {
+    text-align: right !important;
+  }
+
+  /* line 18, ../../scss/components/helpers-display-responsive.scss */
+  .large-text-center {
+    text-align: center !important;
+  }
+
+  /* line 19, ../../scss/components/helpers-display-responsive.scss */
+  .large-text-justify {
+    text-align: justify !important;
+  }
+
+  /* line 20, ../../scss/components/helpers-display-responsive.scss */
+  .large-hide {
+    display: none;
+  }
+
+  /* line 21, ../../scss/components/helpers-display-responsive.scss */
+  .large-show {
+    display: inherit;
+  }
+
+  /* line 22, ../../scss/components/helpers-display-responsive.scss */
+  .large-center {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* line 26, ../../scss/components/helpers-display-responsive.scss */
+  .large-uncenter {
+    margin-left: 0 !important;
+    margin-right: 0;
+  }
+
+  /* line 30, ../../scss/components/helpers-display-responsive.scss */
+  .large-border-all {
+    border-top-width: 1px !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 1px !important;
+    border-style: solid;
+    border-color: #cccccc;
+  }
+
+  /* line 37, ../../scss/components/helpers-display-responsive.scss */
+  .large-border-none {
+    border: none !important;
+  }
+
+  /* line 38, ../../scss/components/helpers-display-responsive.scss */
+  .large-border-top {
+    border-top-width: 1px !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-top-style: solid;
+    border-top-color: #cccccc;
+  }
+
+  /* line 45, ../../scss/components/helpers-display-responsive.scss */
+  .large-border-right {
+    border-top-width: 0 !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-right-style: solid;
+    border-right-color: #cccccc;
+  }
+
+  /* line 52, ../../scss/components/helpers-display-responsive.scss */
+  .large-border-bottom {
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0 !important;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+  }
+
+  /* line 59, ../../scss/components/helpers-display-responsive.scss */
+  .large-border-left {
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 1px !important;
+    border-left-style: solid;
+    border-left-color: #cccccc;
+  }
+
+  /* line 66, ../../scss/components/helpers-display-responsive.scss */
+  .large-border-horiz {
+    border-top-width: 1px !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0 !important;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #cccccc;
+    border-bottom-color: #cccccc;
+  }
+
+  /* line 75, ../../scss/components/helpers-display-responsive.scss */
+  .large-border-vert {
+    border-top-width: 0 !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 1px !important;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-color: #cccccc;
+    border-right-color: #cccccc;
+  }
+}
+@media only screen and (min-width: 80.0625rem) {
+  /* line 8, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-left {
+    float: left !important;
+  }
+
+  /* line 9, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-right {
+    float: right !important;
+  }
+
+  /* line 10, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-clear {
+    clear: both !important;
+  }
+
+  /* line 11, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-clear-left {
+    clear: left !important;
+  }
+
+  /* line 12, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-clear-right {
+    clear: right !important;
+  }
+
+  /* line 13, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-clear-none {
+    clear: none !important;
+  }
+
+  /* line 14, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-float-reset {
+    float: none !important;
+  }
+
+  /* line 15, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-float-none {
+    float: none !important;
+  }
+
+  /* line 16, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-text-left {
+    text-align: left !important;
+  }
+
+  /* line 17, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-text-right {
+    text-align: right !important;
+  }
+
+  /* line 18, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-text-center {
+    text-align: center !important;
+  }
+
+  /* line 19, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-text-justify {
+    text-align: justify !important;
+  }
+
+  /* line 20, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-hide {
+    display: none;
+  }
+
+  /* line 21, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-show {
+    display: inherit;
+  }
+
+  /* line 22, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-center {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* line 26, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-uncenter {
+    margin-left: 0 !important;
+    margin-right: 0;
+  }
+
+  /* line 30, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-border-all {
+    border-top-width: 1px !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 1px !important;
+    border-style: solid;
+    border-color: #cccccc;
+  }
+
+  /* line 37, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-border-none {
+    border: none !important;
+  }
+
+  /* line 38, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-border-top {
+    border-top-width: 1px !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-top-style: solid;
+    border-top-color: #cccccc;
+  }
+
+  /* line 45, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-border-right {
+    border-top-width: 0 !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-right-style: solid;
+    border-right-color: #cccccc;
+  }
+
+  /* line 52, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-border-bottom {
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0 !important;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+  }
+
+  /* line 59, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-border-left {
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 1px !important;
+    border-left-style: solid;
+    border-left-color: #cccccc;
+  }
+
+  /* line 66, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-border-horiz {
+    border-top-width: 1px !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0 !important;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #cccccc;
+    border-bottom-color: #cccccc;
+  }
+
+  /* line 75, ../../scss/components/helpers-display-responsive.scss */
+  .xlarge-border-vert {
+    border-top-width: 0 !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 1px !important;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-color: #cccccc;
+    border-right-color: #cccccc;
+  }
+}
+@media only screen and (min-width: 120.0625rem) {
+  /* line 8, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-left {
+    float: left !important;
+  }
+
+  /* line 9, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-right {
+    float: right !important;
+  }
+
+  /* line 10, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-clear {
+    clear: both !important;
+  }
+
+  /* line 11, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-clear-left {
+    clear: left !important;
+  }
+
+  /* line 12, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-clear-right {
+    clear: right !important;
+  }
+
+  /* line 13, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-clear-none {
+    clear: none !important;
+  }
+
+  /* line 14, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-float-reset {
+    float: none !important;
+  }
+
+  /* line 15, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-float-none {
+    float: none !important;
+  }
+
+  /* line 16, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-text-left {
+    text-align: left !important;
+  }
+
+  /* line 17, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-text-right {
+    text-align: right !important;
+  }
+
+  /* line 18, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-text-center {
+    text-align: center !important;
+  }
+
+  /* line 19, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-text-justify {
+    text-align: justify !important;
+  }
+
+  /* line 20, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-hide {
+    display: none;
+  }
+
+  /* line 21, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-show {
+    display: inherit;
+  }
+
+  /* line 22, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-center {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
+  /* line 26, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-uncenter {
+    margin-left: 0 !important;
+    margin-right: 0;
+  }
+
+  /* line 30, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-border-all {
+    border-top-width: 1px !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 1px !important;
+    border-style: solid;
+    border-color: #cccccc;
+  }
+
+  /* line 37, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-border-none {
+    border: none !important;
+  }
+
+  /* line 38, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-border-top {
+    border-top-width: 1px !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-top-style: solid;
+    border-top-color: #cccccc;
+  }
+
+  /* line 45, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-border-right {
+    border-top-width: 0 !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-right-style: solid;
+    border-right-color: #cccccc;
+  }
+
+  /* line 52, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-border-bottom {
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0 !important;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+  }
+
+  /* line 59, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-border-left {
+    border-top-width: 0 !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 1px !important;
+    border-left-style: solid;
+    border-left-color: #cccccc;
+  }
+
+  /* line 66, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-border-horiz {
+    border-top-width: 1px !important;
+    border-right-width: 0 !important;
+    border-bottom-width: 1px !important;
+    border-left-width: 0 !important;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: #cccccc;
+    border-bottom-color: #cccccc;
+  }
+
+  /* line 75, ../../scss/components/helpers-display-responsive.scss */
+  .xxlarge-border-vert {
+    border-top-width: 0 !important;
+    border-right-width: 1px !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 1px !important;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-left-color: #cccccc;
+    border-right-color: #cccccc;
+  }
+}

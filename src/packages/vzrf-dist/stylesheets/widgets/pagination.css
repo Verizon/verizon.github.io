@@ -1,0 +1,158 @@
+@charset "UTF-8";
+/*! VZRF 2.20.0 */
+/* line 972, ../../scss/base/_global.scss */
+.pagination_item.m_first > a::before {
+  content: "\e901";
+}
+
+/* line 972, ../../scss/base/_global.scss */
+.pagination_item.m_last > a::before {
+  content: "\e900";
+}
+
+/* line 972, ../../scss/base/_global.scss */
+.pagination_item.m_next > a::before {
+  content: "\e631";
+}
+
+/* line 972, ../../scss/base/_global.scss */
+.pagination_item.m_prev > a::before {
+  content: "\e625";
+}
+
+/* line 4, ../../scss/widgets/pagination.scss */
+.w_pagination {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin: 1.5rem 0;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* line 11, ../../scss/widgets/pagination.scss */
+.pagination_item {
+  display: inline-block;
+  text-align: center;
+  padding: 0 0;
+  width: 2.625rem;
+  max-width: 2.625rem;
+  line-height: 1.4375rem;
+  /* anchors nested inside .m_[element] */
+}
+/* line 21, ../../scss/widgets/pagination.scss */
+.pagination_item.hide {
+  display: none;
+}
+/* line 25, ../../scss/widgets/pagination.scss */
+.pagination_item:first-child {
+  padding-left: 0;
+  margin-left: 0;
+}
+/* line 30, ../../scss/widgets/pagination.scss */
+.pagination_item:last-child {
+  padding-right: 0;
+  margin-left: 0;
+}
+/* line 35, ../../scss/widgets/pagination.scss */
+.pagination_item > a {
+  color: #4b4b4b;
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  min-width: 1.5rem;
+  margin: 0 auto;
+}
+/* line 43, ../../scss/widgets/pagination.scss */
+.pagination_item > a:hover {
+  color: #000;
+}
+/* line 48, ../../scss/widgets/pagination.scss */
+.pagination_item[disabled] > a {
+  opacity: 0.5;
+  color: #4b4b4b;
+  cursor: not-allowed;
+}
+/* line 53, ../../scss/widgets/pagination.scss */
+.pagination_item[disabled] > a:before {
+  color: #4b4b4b !important;
+}
+/* line 58, ../../scss/widgets/pagination.scss */
+.pagination_item.active > a {
+  background: #cd040b;
+  border-radius: 6.1875rem;
+  color: #fff;
+  padding: 0 0.1875rem 0.0625rem;
+  cursor: default;
+}
+/* line 67, ../../scss/widgets/pagination.scss */
+.pagination_item.m_ellipsis {
+  width: 2.625rem;
+}
+/* line 71, ../../scss/widgets/pagination.scss */
+.pagination_item.m_ellipsis::before {
+  content: '\2026';
+}
+/* line 77, ../../scss/widgets/pagination.scss */
+.pagination_item.m_first {
+  border-right: 0.0625rem solid #cccccc;
+  margin-right: 0.25rem;
+}
+/* line 81, ../../scss/widgets/pagination.scss */
+.pagination_item.m_last {
+  border-left: 0.0625rem solid #cccccc;
+  margin-left: 0.25rem;
+}
+/* line 85, ../../scss/widgets/pagination.scss */
+.pagination_item.m_prev, .pagination_item.m_next {
+  width: auto;
+}
+/* line 91, ../../scss/widgets/pagination.scss */
+.pagination_item.m_first > a, .pagination_item.m_last > a, .pagination_item.m_prev > a, .pagination_item.m_next > a {
+  text-decoration: none;
+  -webkit-transform: rotate(0deg);
+  vertical-align: middle;
+  display: inline-block;
+  line-height: 1;
+  margin-bottom: -0.625rem;
+  position: relative;
+  top: -0.3125rem;
+}
+/* line 299, ../../scss/base/_global.scss */
+.pagination_item.m_first > a:hover, .pagination_item.m_last > a:hover, .pagination_item.m_prev > a:hover, .pagination_item.m_next > a:hover {
+  text-decoration: none;
+}
+/* line 303, ../../scss/base/_global.scss */
+.pagination_item.m_first > a::before, .pagination_item.m_last > a::before, .pagination_item.m_prev > a::before, .pagination_item.m_next > a::before {
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'VZIcons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: inherit;
+  color: currentColor;
+  font-size: 1.5rem;
+  display: inline;
+  position: relative;
+}
+/* line 102, ../../scss/widgets/pagination.scss */
+.pagination_item.m_first > a::before, .pagination_item.m_last > a::before, .pagination_item.m_prev > a::before, .pagination_item.m_next > a::before {
+  color: #cd040b;
+  line-height: 1;
+}
+/* line 107, ../../scss/widgets/pagination.scss */
+.pagination_item.m_first > a:hover::before, .pagination_item.m_last > a:hover::before, .pagination_item.m_prev > a:hover::before, .pagination_item.m_next > a:hover::before {
+  color: #a80309;
+}
+/* line 113, ../../scss/widgets/pagination.scss */
+.pagination_item.m_first > a::before, .pagination_item.m_last > a::before {
+  font-size: 1.25rem;
+}
+/* line 126, ../../scss/widgets/pagination.scss */
+.pagination_item.m_prev > a::before, .pagination_item.m_next > a::before {
+  font-size: 0.875rem;
+}

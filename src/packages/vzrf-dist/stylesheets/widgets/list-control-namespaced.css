@@ -1,0 +1,298 @@
+@charset "UTF-8";
+/* line 1, ../../scss/widgets/list-control-namespaced.scss */
+.vzrf {
+  /*! VZRF 2.20.0 */
+}
+/* line 28, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+}
+@media only screen and (min-width: 48rem) {
+  /* line 36, ../../scss/widgets/list-control.scss */
+  .vzrf .main > .w_list-control.m_flex-gutters > li,
+  .vzrf .main > .w_list-control > li.m_flex-gutters {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+}
+/* line 44, ../../scss/widgets/list-control.scss */
+.vzrf .row .w_list-control.m_flex-gutters > li,
+.vzrf .row .w_list-control > li.m_flex-gutters {
+  margin-left: -1.125rem;
+  margin-right: -1.125rem;
+}
+@media only screen and (min-width: 48rem) {
+  /* line 44, ../../scss/widgets/list-control.scss */
+  .vzrf .row .w_list-control.m_flex-gutters > li,
+  .vzrf .row .w_list-control > li.m_flex-gutters {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    margin-left: -3.75rem;
+    margin-right: -3.75rem;
+  }
+}
+/* line 59, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li {
+  /*@mixin clearfix*/
+  *zoom: 1;
+  position: relative;
+  min-height: 3.75rem;
+  padding: 0.75rem 1.125rem 0.8125rem;
+  background-color: #fff;
+  border-bottom: 1px solid #cccccc;
+  font-size: 0.875rem;
+}
+/* line 491, ../../scss/base/_global.scss */
+.vzrf .w_list-control > li:after {
+  content: " ";
+  display: table;
+}
+/* line 492, ../../scss/base/_global.scss */
+.vzrf .w_list-control > li:after {
+  clear: both;
+}
+/* line 69, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li:first-child, .vzrf .w_list-control > li.m_header:first-child {
+  border-top: 1px solid #cccccc !important;
+}
+/* line 74, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li .m_next,
+.vzrf .w_list-control > li .m_link {
+  margin-top: -0.75rem;
+  margin-bottom: -0.8125rem;
+  margin-left: -1.125rem;
+  margin-right: -1.125rem;
+  padding: 0.75rem 1.125rem 0.8125rem;
+  min-height: 3.625rem;
+  /*@mixin clearfix*/
+  *zoom: 1;
+  display: block;
+  cursor: pointer;
+}
+/* line 491, ../../scss/base/_global.scss */
+.vzrf .w_list-control > li .m_next:after,
+.vzrf .w_list-control > li .m_link:after {
+  content: " ";
+  display: table;
+}
+/* line 492, ../../scss/base/_global.scss */
+.vzrf .w_list-control > li .m_next:after,
+.vzrf .w_list-control > li .m_link:after {
+  clear: both;
+}
+/* line 20, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li .m_next.m_condensed, .vzrf .w_list-control > li .m_next .m_condensed, .vzrf .w_list-control > li .m_next.m_condensed.m_single, .vzrf .w_list-control > li .m_next .m_condensed.m_single,
+.vzrf .w_list-control > li .m_link.m_condensed,
+.vzrf .w_list-control > li .m_link .m_condensed,
+.vzrf .w_list-control > li .m_link.m_condensed.m_single,
+.vzrf .w_list-control > li .m_link .m_condensed.m_single {
+  line-height: inherit;
+}
+/* line 79, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li .m_next, .vzrf .w_list-control > li .m_next:hover,
+.vzrf .w_list-control > li .m_link,
+.vzrf .w_list-control > li .m_link:hover {
+  color: #333;
+}
+/* line 84, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li .m_next:active,
+.vzrf .w_list-control > li .m_link:active {
+  background-color: #f9f9f9;
+}
+/* line 88, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li .m_next:hover:before,
+.vzrf .w_list-control > li .m_link:hover:before {
+  color: #4b4b4b;
+}
+/* line 93, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li .m_next {
+  padding-right: 3rem;
+  text-decoration: none;
+  -webkit-transform: rotate(0deg);
+}
+/* line 299, ../../scss/base/_global.scss */
+.vzrf .w_list-control > li .m_next:hover {
+  text-decoration: none;
+}
+/* line 303, ../../scss/base/_global.scss */
+.vzrf .w_list-control > li .m_next::before {
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'VZIcons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: inherit;
+  color: currentColor;
+  font-size: 1.5rem;
+  display: inline;
+  position: relative;
+}
+/* line 98, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li .m_next::before {
+  content: '\e631';
+  position: absolute;
+  font-size: 1.125rem;
+  height: 1.125rem;
+  width: 1.125rem;
+  right: 1.125rem;
+  top: 50%;
+  margin-top: -0.5625rem;
+  display: block;
+  line-height: 1;
+  text-align: center;
+  color: #cd040b;
+  transition: color 0.3s, right 0.3s;
+  transition: color 0.3s, right 0.3s;
+  transition: color 0.3s, right 0.3s;
+  transition: color 0.3s, right 0.3s;
+}
+/* line 117, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li .m_next:hover::before {
+  color: #a80309;
+  right: 0.375rem;
+}
+/* line 122, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li .m_next:active::before {
+  color: #990308;
+}
+/* line 129, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li:not(.m_accordion-details) p:last-child,
+.vzrf .w_list-control > li:not(.m_accordion-details) ul:last-child,
+.vzrf .w_list-control > li:not(.m_accordion-details) ol:last-child {
+  margin-bottom: 0;
+}
+/* line 140, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.m_single {
+  line-height: 2.375rem;
+}
+/* line 144, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.m_single > * {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 2.375rem;
+}
+/* line 150, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.m_single > a {
+  margin-top: -0.75rem;
+  margin-bottom: -0.8125rem;
+  margin-left: -1.125rem;
+  margin-right: -1.125rem;
+  padding: 0.75rem 1.125rem 0.8125rem;
+  min-height: 3.625rem;
+  /*@mixin clearfix*/
+  *zoom: 1;
+  padding-right: 3.4375rem;
+}
+/* line 491, ../../scss/base/_global.scss */
+.vzrf .w_list-control > li.m_single > a:after {
+  content: " ";
+  display: table;
+}
+/* line 492, ../../scss/base/_global.scss */
+.vzrf .w_list-control > li.m_single > a:after {
+  clear: both;
+}
+/* line 20, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.m_single > a.m_condensed, .vzrf .w_list-control > li.m_single > a .m_condensed, .vzrf .w_list-control > li.m_single > a.m_condensed.m_single, .vzrf .w_list-control > li.m_single > a .m_condensed.m_single {
+  line-height: inherit;
+}
+/* line 155, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.m_single > [type=checkbox] + label,
+.vzrf .w_list-control > li.m_single > [type=radio] + label {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+/* line 161, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.m_single > [type=checkbox] + label::before,
+.vzrf .w_list-control > li.m_single > [type=radio] + label::before {
+  top: 0.5625rem;
+}
+/* line 169, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.m_single .row[class*="vert-"] {
+  max-height: 2.0625rem;
+}
+/* line 174, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.m_header, .vzrf .w_list-control > li.m_header:active {
+  font-family: BrandFont, Arial, sans-serif;
+  line-height: 1.25rem;
+  min-height: 1.25rem;
+  margin: 0;
+  border-top: none;
+  color: #4b4b4b;
+  background-color: #f6f6f6;
+}
+/* line 186, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.m_header > h1, .vzrf .w_list-control > li.m_header > h2, .vzrf .w_list-control > li.m_header > h3, .vzrf .w_list-control > li.m_header > h4, .vzrf .w_list-control > li.m_header > h5, .vzrf .w_list-control > li.m_header > h6 {
+  margin: 0;
+}
+/* line 195, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.disabled:active {
+  background-color: #fff;
+}
+/* line 199, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.checked, .vzrf .w_list-control > li.checked.unread {
+  background-color: #f6f6f6;
+}
+/* line 203, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.checked, .vzrf .w_list-control > li.checked:active, .vzrf .w_list-control > li.checked.unread, .vzrf .w_list-control > li.checked.unread:active {
+  background-color: #f6f6f6;
+}
+/* line 208, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.unread {
+  background-color: #e4e5e3;
+}
+/* line 211, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.unread:active {
+  background-color: #d7d9d6;
+}
+/* line 214, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.unread.unread.disabled:active {
+  background-color: #e4e5e3;
+}
+/* line 219, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.playback {
+  background-color: #333;
+  color: #fff;
+}
+/* line 225, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.disabled {
+  opacity: 0.5;
+  position: relative;
+  position: relative;
+  z-index: 0;
+}
+/* line 231, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.disabled:before {
+  content: ' ';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  cursor: not-allowed;
+}
+/* line 244, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control > li.no-bg-effect:active {
+  background-color: #fff;
+}
+/* line 249, ../../scss/widgets/list-control.scss */
+.vzrf .w_list-control.m_condensed > li,
+.vzrf .w_list-control.m_condensed > li.m_single,
+.vzrf .w_list-control.m_condensed > li .m_next,
+.vzrf .w_list-control.m_condensed > li .m_link,
+.vzrf .w_list-control > li.m_condensed,
+.vzrf .w_list-control > li.m_condensed.m_single,
+.vzrf .w_list-control > li.m_condensed .m_next,
+.vzrf .w_list-control > li.m_condensed .m_link {
+  line-height: inherit;
+  min-height: 0;
+}

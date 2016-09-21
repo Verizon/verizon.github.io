@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* line 1, ../../scss/components/grid-vert-align-namespaced.scss */
+.vzrf {
+  /*! VZRF 2.20.0 */
+}
+/* line 54, ../../scss/components/grid-vert-align.scss */
+.vzrf .row.vert-middle,
+.vzrf .row.tiny-vert-middle {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+/* line 14, ../../scss/components/grid-vert-align.scss */
+.vzrf .row.vert-middle > .columns,
+.vzrf .row.vert-middle > .column,
+.vzrf .row.tiny-vert-middle > .columns,
+.vzrf .row.tiny-vert-middle > .column {
+  float: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 20, ../../scss/components/grid-vert-align.scss */
+.vzrf .row.vert-middle > .columns img,
+.vzrf .row.vert-middle > .column img,
+.vzrf .row.tiny-vert-middle > .columns img,
+.vzrf .row.tiny-vert-middle > .column img {
+  max-width: 100%;
+}
+/* line 59, ../../scss/components/grid-vert-align.scss */
+.vzrf .row.vert-bottom,
+.vzrf .row.tiny-vert-bottom {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+/* line 31, ../../scss/components/grid-vert-align.scss */
+.vzrf .row.vert-bottom > .columns,
+.vzrf .row.vert-bottom > .column,
+.vzrf .row.tiny-vert-bottom > .columns,
+.vzrf .row.tiny-vert-bottom > .column {
+  float: none;
+  display: table-cell;
+  vertical-align: bottom;
+}
+/* line 37, ../../scss/components/grid-vert-align.scss */
+.vzrf .row.vert-bottom > .columns img,
+.vzrf .row.vert-bottom > .column img,
+.vzrf .row.tiny-vert-bottom > .columns img,
+.vzrf .row.tiny-vert-bottom > .column img {
+  max-width: 100%;
+}
+@media only screen and (min-width: 30.0625rem) {
+  /* line 65, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.small-vert-middle {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  /* line 14, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.small-vert-middle > .columns,
+  .vzrf .row.small-vert-middle > .column {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  /* line 20, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.small-vert-middle > .columns img,
+  .vzrf .row.small-vert-middle > .column img {
+    max-width: 100%;
+  }
+  /* line 69, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.small-vert-bottom {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  /* line 31, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.small-vert-bottom > .columns,
+  .vzrf .row.small-vert-bottom > .column {
+    float: none;
+    display: table-cell;
+    vertical-align: bottom;
+  }
+  /* line 37, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.small-vert-bottom > .columns img,
+  .vzrf .row.small-vert-bottom > .column img {
+    max-width: 100%;
+  }
+  /* line 73, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.small-vert-reset {
+    display: block;
+  }
+  /* line 46, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.small-vert-reset > .columns,
+  .vzrf .row.small-vert-reset > .column {
+    float: left;
+    display: block;
+    vertical-align: baseline;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  /* line 79, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.medium-vert-middle {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  /* line 14, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.medium-vert-middle > .columns,
+  .vzrf .row.medium-vert-middle > .column {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  /* line 20, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.medium-vert-middle > .columns img,
+  .vzrf .row.medium-vert-middle > .column img {
+    max-width: 100%;
+  }
+  /* line 83, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.medium-vert-bottom {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  /* line 31, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.medium-vert-bottom > .columns,
+  .vzrf .row.medium-vert-bottom > .column {
+    float: none;
+    display: table-cell;
+    vertical-align: bottom;
+  }
+  /* line 37, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.medium-vert-bottom > .columns img,
+  .vzrf .row.medium-vert-bottom > .column img {
+    max-width: 100%;
+  }
+  /* line 87, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.medium-vert-reset {
+    display: block;
+  }
+  /* line 46, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.medium-vert-reset > .columns,
+  .vzrf .row.medium-vert-reset > .column {
+    float: left;
+    display: block;
+    vertical-align: baseline;
+  }
+}
+@media only screen and (min-width: 60.625rem) {
+  /* line 93, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.large-vert-middle {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  /* line 14, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.large-vert-middle > .columns,
+  .vzrf .row.large-vert-middle > .column {
+    float: none;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  /* line 20, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.large-vert-middle > .columns img,
+  .vzrf .row.large-vert-middle > .column img {
+    max-width: 100%;
+  }
+  /* line 97, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.large-vert-bottom {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+  }
+  /* line 31, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.large-vert-bottom > .columns,
+  .vzrf .row.large-vert-bottom > .column {
+    float: none;
+    display: table-cell;
+    vertical-align: bottom;
+  }
+  /* line 37, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.large-vert-bottom > .columns img,
+  .vzrf .row.large-vert-bottom > .column img {
+    max-width: 100%;
+  }
+  /* line 101, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.large-vert-reset {
+    display: block;
+  }
+  /* line 46, ../../scss/components/grid-vert-align.scss */
+  .vzrf .row.large-vert-reset > .columns,
+  .vzrf .row.large-vert-reset > .column {
+    float: left;
+    display: block;
+    vertical-align: baseline;
+  }
+}

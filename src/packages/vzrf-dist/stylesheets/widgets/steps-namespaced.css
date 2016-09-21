@@ -1,0 +1,233 @@
+@charset "UTF-8";
+/*! VZRF 2.20.0 */
+/*! VZRF 2.20.0 */
+/* line 5, ../../scss/widgets/steps-namespaced.scss */
+.w_steps.vzrf {
+  background-color: #f6f6f6;
+  height: 4.5rem;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+}
+/* line 23, ../../scss/widgets/steps-mixins.scss */
+.w_steps.vzrf.m_slim {
+  height: 3rem;
+}
+
+/* line 29, ../../scss/widgets/steps-mixins.scss */
+.vzrf .steps_step:first-of-type {
+  counter-reset: step;
+}
+/* line 33, ../../scss/widgets/steps-mixins.scss */
+.vzrf .steps_step {
+  float: left;
+  display: block;
+  position: relative;
+  height: 4.5rem;
+  line-height: 1rem;
+  color: #cccccc;
+  white-space: nowrap;
+  border-bottom: solid 0.125rem #cccccc;
+  padding-top: 1.75rem;
+  padding-right: 0.9375rem;
+  padding-left: 0.5rem;
+}
+@media only screen and (min-width: 30.0625rem) {
+  /* line 33, ../../scss/widgets/steps-mixins.scss */
+  .vzrf .steps_step {
+    padding-left: 0.75rem;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  /* line 33, ../../scss/widgets/steps-mixins.scss */
+  .vzrf .steps_step {
+    padding-left: 1.125rem;
+  }
+}
+@media only screen and (min-width: 60.625rem) {
+  /* line 33, ../../scss/widgets/steps-mixins.scss */
+  .vzrf .steps_step {
+    padding-left: 1.5rem;
+  }
+}
+/* line 56, ../../scss/widgets/steps-mixins.scss */
+.vzrf .steps_step::before, .vzrf .steps_step::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: -0.125rem;
+  width: 1.6875rem;
+  background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%227%20125%2054%204%22%20style%3D%22enable-background%3Anew%207%20125%2054%204%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3A%23CCCCCC%3B%7D%0A%09.st1%7Bfill%3A%23FFFFFF%3Bstroke%3A%23CD040B%3Bstroke-width%3A4%3Bstroke-linejoin%3Abevel%3Bstroke-miterlimit%3A10%3B%7D%0A%3C%2Fstyle%3E%0A%3Cg%3E%0A%09%3Cpolygon%20class%3D%22st0%22%20points%3D%2261.2%2C129%2011.2%2C129%2013.9%2C125%2061.2%2C125%20%09%22%2F%3E%0A%09%3Cpath%20class%3D%22st1%22%20d%3D%22M64.6%2C126.8%22%2F%3E%0A%09%3Cpath%20class%3D%22st1%22%20d%3D%22M6%2C126.8%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A"), url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2054%20144%22%20style%3D%22enable-background%3Anew%200%200%2054%20144%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3A%23F6F6F6%3B%7D%0A%09.st1%7Bfill%3A%23CCCCCC%3B%7D%0A%09.st2%7Bfill%3A%23F6F6F6%3Bstroke%3A%23CCCCCC%3Bstroke-width%3A4%3Bstroke-linecap%3Asquare%3Bstroke-miterlimit%3A10%3B%7D%0A%09.st3%7Bfill%3A%23FFFFFF%3Bstroke%3A%23CD040B%3Bstroke-width%3A4%3Bstroke-linejoin%3Abevel%3Bstroke-miterlimit%3A10%3B%7D%0A%3C%2Fstyle%3E%0A%3Cg%3E%0A%09%3Cpolyline%20class%3D%22st0%22%20points%3D%2254.2%2C0%2054.2%2C76.5%203.2%2C0%20%09%22%2F%3E%0A%09%3Cpolyline%20class%3D%22st0%22%20points%3D%2254.2%2C144%2054.2%2C69.6%202.5%2C144%20%09%22%2F%3E%0A%09%3Cpolygon%20class%3D%22st1%22%20points%3D%2254.2%2C144%204.4%2C144%205.8%2C140%2054.2%2C140%20%09%22%2F%3E%0A%09%3Cpolyline%20class%3D%22st2%22%20points%3D%22-0.3%2C147%2051.1%2C73.1%20-0.3%2C-2.3%20%09%22%2F%3E%0A%09%3Cpath%20class%3D%22st3%22%20d%3D%22M57.6%2C141.8%22%2F%3E%0A%09%3Cpath%20class%3D%22st3%22%20d%3D%22M-1%2C141.8%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
+  background-repeat: no-repeat, no-repeat;
+  -moz-background-size: 1.6875rem 0.125rem, 1.6875rem 4.5rem;
+  -o-background-size: 1.6875rem 0.125rem, 1.6875rem 4.5rem;
+  -webkit-background-size: 1.6875rem 0.125rem, 1.6875rem 4.5rem;
+  background-size: 1.6875rem 0.125rem, 1.6875rem 4.5rem;
+  background-position: right bottom, right center;
+  z-index: 2;
+}
+/* line 74, ../../scss/widgets/steps-mixins.scss */
+.vzrf .steps_step.active {
+  background-color: #fff;
+  border-bottom: 0.125rem solid #cd040b;
+  color: #cd040b;
+}
+/* line 79, ../../scss/widgets/steps-mixins.scss */
+.vzrf .steps_step.active:before {
+  background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%227%20125%2054%204%22%20style%3D%22enable-background%3Anew%207%20125%2054%204%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3A%23CD040B%3B%7D%0A%09.st1%7Bfill%3A%23F6F6F6%3Bstroke%3A%23CCCCCC%3Bstroke-width%3A4%3Bstroke-linecap%3Asquare%3Bstroke-miterlimit%3A10%3B%7D%0A%09.st2%7Bfill%3A%23FFFFFF%3Bstroke%3A%23CD040B%3Bstroke-width%3A4%3Bstroke-linejoin%3Abevel%3Bstroke-miterlimit%3A10%3B%7D%0A%3C%2Fstyle%3E%0A%3Cpolygon%20class%3D%22st0%22%20points%3D%2261.2%2C129%2011.2%2C129%2014%2C125%2061.2%2C125%20%22%2F%3E%0A%3Cpath%20class%3D%22st1%22%20d%3D%22M6.7%2C132%22%2F%3E%0A%3Cpath%20class%3D%22st2%22%20d%3D%22M64.6%2C126.8%22%2F%3E%0A%3Cpath%20class%3D%22st2%22%20d%3D%22M6%2C126.8%22%2F%3E%0A%3C%2Fsvg%3E"), url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2054%20144%22%20style%3D%22enable-background%3Anew%200%200%2054%20144%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3A%23FFFFFF%3B%7D%0A%09.st1%7Bfill%3A%23CD040B%3B%7D%0A%09.st2%7Bfill%3A%23F6F6F6%3Bstroke%3A%23CCCCCC%3Bstroke-width%3A4%3Bstroke-linecap%3Asquare%3Bstroke-miterlimit%3A10%3B%7D%0A%09.st3%7Bfill%3A%23FFFFFF%3Bstroke%3A%23CD040B%3Bstroke-width%3A4%3Bstroke-linejoin%3Abevel%3Bstroke-miterlimit%3A10%3B%7D%0A%3C%2Fstyle%3E%0A%3Cg%3E%0A%09%3Cpolyline%20class%3D%22st0%22%20points%3D%2254.2%2C0%2054.2%2C76.5%203.2%2C0%20%09%22%2F%3E%0A%09%3Cpolyline%20class%3D%22st0%22%20points%3D%2254.2%2C144%2054.2%2C69.6%202.5%2C144%20%09%22%2F%3E%0A%09%3Cpolygon%20class%3D%22st1%22%20points%3D%2254.2%2C144%204.4%2C144%205.8%2C140%2054.2%2C140%20%09%22%2F%3E%0A%09%3Cpolyline%20class%3D%22st2%22%20points%3D%22-0.3%2C147%2051.1%2C73.1%20-0.3%2C-2.3%20%09%22%2F%3E%0A%09%3Cpath%20class%3D%22st3%22%20d%3D%22M57.6%2C141.8%22%2F%3E%0A%09%3Cpath%20class%3D%22st3%22%20d%3D%22M-1%2C141.8%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A");
+  left: -1.6875rem;
+}
+/* line 86, ../../scss/widgets/steps-mixins.scss */
+.vzrf .steps_step.active:after {
+  content: '';
+  position: absolute;
+  background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%227%20125%2054%204%22%20style%3D%22enable-background%3Anew%207%20125%2054%204%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3A%23CCCCCC%3B%7D%0A%09.st1%7Bfill%3A%23FFFFFF%3Bstroke%3A%23CD040B%3Bstroke-width%3A4%3Bstroke-linejoin%3Abevel%3Bstroke-miterlimit%3A10%3B%7D%0A%3C%2Fstyle%3E%0A%3Cg%3E%0A%09%3Cpolygon%20class%3D%22st0%22%20points%3D%2261.2%2C129%2011.2%2C129%2013.9%2C125%2061.2%2C125%20%09%22%2F%3E%0A%09%3Cpath%20class%3D%22st1%22%20d%3D%22M64.6%2C126.8%22%2F%3E%0A%09%3Cpath%20class%3D%22st1%22%20d%3D%22M6%2C126.8%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E%0A"), url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%0A%09%20viewBox%3D%220%200%2054%20144%22%20style%3D%22enable-background%3Anew%200%200%2054%20144%3B%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cstyle%20type%3D%22text%2Fcss%22%3E%0A%09.st0%7Bfill%3A%23F6F6F6%3B%7D%0A%09.st1%7Bfill%3A%23CCCCCC%3B%7D%0A%09.st2%7Bfill%3A%23FFFFFF%3Bstroke%3A%23CD040B%3Bstroke-width%3A4%3Bstroke-linecap%3Asquare%3Bstroke-miterlimit%3A10%3B%7D%0A%09.st3%7Bfill%3A%23FFFFFF%3Bstroke%3A%23CD040B%3Bstroke-width%3A4%3Bstroke-linejoin%3Abevel%3Bstroke-miterlimit%3A10%3B%7D%0A%3C%2Fstyle%3E%0A%3Cg%3E%0A%09%3Cpolyline%20class%3D%22st0%22%20points%3D%2254.2%2C0%2054.2%2C76.5%203.2%2C0%20%09%22%2F%3E%0A%09%3Cpolyline%20class%3D%22st0%22%20points%3D%2254.2%2C144%2054.2%2C69.6%202.5%2C144%20%09%22%2F%3E%0A%09%3Cpolygon%20class%3D%22st1%22%20points%3D%2254.2%2C144%204.4%2C144%205.8%2C140%2054.2%2C140%20%09%22%2F%3E%0A%09%3Cpolyline%20class%3D%22st2%22%20points%3D%222.7%2C144%2051.1%2C73.1%202.7%2C0.7%20%09%22%2F%3E%0A%09%3Cpath%20class%3D%22st3%22%20d%3D%22M57.6%2C141.8%22%2F%3E%0A%09%3Cpath%20class%3D%22st3%22%20d%3D%22M-1%2C141.8%22%2F%3E%0A%3C%2Fg%3E%0A%3C%2Fsvg%3E");
+  z-index: 3;
+}
+/* line 96, ../../scss/widgets/steps-mixins.scss */
+.vzrf .steps_step > a {
+  display: inline-block;
+  width: 100%;
+  color: #959595;
+}
+/* line 102, ../../scss/widgets/steps-mixins.scss */
+.vzrf .steps_step.active > a {
+  color: #cd040b;
+}
+/* line 106, ../../scss/widgets/steps-mixins.scss */
+.vzrf .m_slim .steps_step {
+  height: 3rem;
+  padding-top: 1rem;
+}
+/* line 110, ../../scss/widgets/steps-mixins.scss */
+.vzrf .m_slim .steps_step::before, .vzrf .m_slim .steps_step::after {
+  background-size: 1.6875rem 0.125rem, 1.6875rem 4.5rem;
+  width: 1.125rem;
+  background-position: -1px bottom, right center;
+}
+/* line 117, ../../scss/widgets/steps-mixins.scss */
+.vzrf .m_slim .steps_step.active::before {
+  left: -1.125rem;
+}
+/* line 122, ../../scss/widgets/steps-mixins.scss */
+.vzrf .steps_step.active ~ .steps_step {
+  color: #333;
+}
+/* line 125, ../../scss/widgets/steps-mixins.scss */
+.vzrf .steps_step.active ~ .steps_step > a {
+  color: #333;
+}
+/* line 130, ../../scss/widgets/steps-mixins.scss */
+.vzrf .steps_number,
+.vzrf .steps_name {
+  position: relative;
+  display: inline-block;
+  float: left;
+  font-size: 0.875rem;
+  font-weight: bold;
+  z-index: 4;
+}
+/* line 141, ../../scss/widgets/steps-mixins.scss */
+.vzrf .steps_number {
+  padding-right: 0.5rem;
+}
+/* line 144, ../../scss/widgets/steps-mixins.scss */
+.vzrf .steps_number:before {
+  counter-increment: step;
+  content: counter(step) ".";
+}
+/* line 149, ../../scss/widgets/steps-mixins.scss */
+.vzrf .m_abbr .steps_step:not(.active) .steps_number {
+  display: block;
+  float: none;
+  text-align: center;
+  opacity: 1;
+  padding-right: 0;
+  margin-left: -0.875rem;
+}
+/* line 155, ../../scss/widgets/steps-mixins.scss */
+.vzrf .m_abbr .steps_step:not(.active) .steps_number:before {
+  counter-increment: step;
+  content: counter(step);
+}
+@media only screen and (min-width: 30.0625rem) {
+  /* line 149, ../../scss/widgets/steps-mixins.scss */
+  .vzrf .m_abbr .steps_step:not(.active) .steps_number {
+    margin-left: -1.25rem;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  /* line 149, ../../scss/widgets/steps-mixins.scss */
+  .vzrf .m_abbr .steps_step:not(.active) .steps_number {
+    padding-left: -1.625rem;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  /* line 149, ../../scss/widgets/steps-mixins.scss */
+  .vzrf .m_abbr .steps_step:not(.active) .steps_number {
+    padding-left: -1.75rem;
+  }
+}
+/* line 172, ../../scss/widgets/steps-mixins.scss */
+.vzrf .m_hide-numbers .steps_number {
+  display: none;
+}
+/* line 176, ../../scss/widgets/steps-mixins.scss */
+.vzrf .m_abbr.m_hide-numbers .steps_number {
+  display: block;
+  width: auto;
+  height: auto;
+}
+/* line 183, ../../scss/widgets/steps-mixins.scss */
+.vzrf .m_abbr.m_hide-numbers .steps_step.active .steps_number {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+/* line 190, ../../scss/widgets/steps-mixins.scss */
+.vzrf .steps_name {
+  white-space: nowrap;
+  float: none;
+}
+/* line 194, ../../scss/widgets/steps-mixins.scss */
+.vzrf .m_two-lines .steps_name {
+  top: -0.4375rem;
+}
+/* line 198, ../../scss/widgets/steps-mixins.scss */
+.vzrf .m_slim .m_two-lines .steps_name {
+  top: -0.5625rem;
+}
+/* line 202, ../../scss/widgets/steps-mixins.scss */
+.vzrf .w_steps.m_abbr .steps_name {
+  display: none;
+}
+/* line 206, ../../scss/widgets/steps-mixins.scss */
+.vzrf .w_steps[class*="abbr"] > .active .steps_name {
+  display: inline-block;
+}
+@media only screen and (max-width: 30rem) {
+  /* line 211, ../../scss/widgets/steps-mixins.scss */
+  .vzrf .w_steps.m_tiny-abbr .steps_name {
+    display: none;
+  }
+}
+@media only screen and (max-width: 47.9375rem) {
+  /* line 216, ../../scss/widgets/steps-mixins.scss */
+  .vzrf .w_steps.m_small-abbr .steps_name {
+    display: none;
+  }
+}
+@media only screen and (max-width: 60.5625rem) {
+  /* line 221, ../../scss/widgets/steps-mixins.scss */
+  .vzrf .w_steps.m_medium-abbr .steps_name {
+    display: none;
+  }
+}
+@media only screen and (max-width: 80rem) {
+  /* line 226, ../../scss/widgets/steps-mixins.scss */
+  .vzrf .w_steps.m_large-abbr .steps_name {
+    display: none;
+  }
+}

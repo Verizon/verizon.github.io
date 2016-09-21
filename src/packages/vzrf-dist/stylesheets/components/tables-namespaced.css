@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/* line 1, ../../scss/components/tables-namespaced.scss */
+.vzrf {
+  /*! VZRF 2.20.0 */
+}
+/* line 57, ../../scss/components/tables.scss */
+.vzrf table {
+  background: #fff;
+  margin-bottom: 1.5rem;
+  border: solid 1px #cccccc;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  color: #000;
+}
+/* line 66, ../../scss/components/tables.scss */
+.vzrf table.table-grid {
+  table-layout: fixed;
+}
+/* line 70, ../../scss/components/tables.scss */
+.vzrf table thead,
+.vzrf table tfoot {
+  background: #f6f6f6;
+}
+/* line 75, ../../scss/components/tables.scss */
+.vzrf table thead tr th,
+.vzrf table thead tr td,
+.vzrf table tfoot tr th,
+.vzrf table tfoot tr td {
+  padding: 1.5rem 1.125rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #000;
+}
+/* line 86, ../../scss/components/tables.scss */
+.vzrf table tr th,
+.vzrf table tr td {
+  padding: 1.125rem;
+  font-size: inherit;
+  vertical-align: top;
+  border: 1px solid #cccccc;
+}
+/* line 96, ../../scss/components/tables.scss */
+.vzrf table tr th img,
+.vzrf table tr td img {
+  max-width: 100%;
+}
+/* line 104, ../../scss/components/tables.scss */
+.vzrf table.alt-rows tr:nth-of-type(even) {
+  background: #f6f6f6;
+}
+/* line 107, ../../scss/components/tables.scss */
+.vzrf table thead tr th,
+.vzrf table tfoot tr th,
+.vzrf table tbody tr td,
+.vzrf table tr td,
+.vzrf table tfoot tr td {
+  display: table-cell;
+  line-height: 1.5;
+}
+/* line 114, ../../scss/components/tables.scss */
+.vzrf table.marketing {
+  background: #fff;
+  margin-bottom: 1.5rem;
+  border: none 0 #f6f6f6;
+  width: 100%;
+  color: #000;
+}
+/* line 121, ../../scss/components/tables.scss */
+.vzrf table.marketing.table-grid {
+  table-layout: fixed;
+}
+/* line 125, ../../scss/components/tables.scss */
+.vzrf table.marketing thead,
+.vzrf table.marketing tfoot {
+  background: #fff;
+}
+/* line 129, ../../scss/components/tables.scss */
+.vzrf table.marketing thead th,
+.vzrf table.marketing tfoot th {
+  color: #000;
+  vertical-align: bottom;
+}
+/* line 135, ../../scss/components/tables.scss */
+.vzrf table.marketing thead tr th,
+.vzrf table.marketing thead tr td,
+.vzrf table.marketing tfoot tr th,
+.vzrf table.marketing tfoot tr td {
+  padding: 1.125rem;
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #000;
+  text-align: left;
+  border-bottom: #e4e5e3 0.0625rem solid;
+  padding: 1.125rem;
+  border-left: 1.125rem solid #fff;
+  border-right: 1.125rem solid #fff;
+  vertical-align: bottom;
+}
+/* line 148, ../../scss/components/tables.scss */
+.vzrf table.marketing thead tr th:first-child,
+.vzrf table.marketing thead tr td:first-child,
+.vzrf table.marketing tfoot tr th:first-child,
+.vzrf table.marketing tfoot tr td:first-child {
+  border-left: none;
+}
+/* line 151, ../../scss/components/tables.scss */
+.vzrf table.marketing thead tr th:last-child,
+.vzrf table.marketing thead tr td:last-child,
+.vzrf table.marketing tfoot tr th:last-child,
+.vzrf table.marketing tfoot tr td:last-child {
+  border-right: none;
+}
+/* line 159, ../../scss/components/tables.scss */
+.vzrf table.marketing tr th,
+.vzrf table.marketing tr td {
+  padding: 1.125rem;
+  font-size: inherit;
+  color: #000;
+  border: none;
+  border-left: 1.125rem solid #fff;
+  border-right: 1.125rem solid #fff;
+}
+/* line 168, ../../scss/components/tables.scss */
+.vzrf table.marketing tr th:first-child,
+.vzrf table.marketing tr td:first-child {
+  border-left: none;
+}
+/* line 171, ../../scss/components/tables.scss */
+.vzrf table.marketing tr th:last-child,
+.vzrf table.marketing tr td:last-child {
+  border-right: none;
+}
+/* line 179, ../../scss/components/tables.scss */
+.vzrf table.marketing tr:nth-of-type(even) td, .vzrf table.marketing tr:nth-of-type(even) th {
+  background: #f6f6f6;
+}
+/* line 186, ../../scss/components/tables.scss */
+.vzrf table.marketing thead tr th,
+.vzrf table.marketing tfoot tr th,
+.vzrf table.marketing tbody tr td,
+.vzrf table.marketing tr td,
+.vzrf table.marketing tfoot tr td {
+  display: table-cell;
+  line-height: 1.5;
+}

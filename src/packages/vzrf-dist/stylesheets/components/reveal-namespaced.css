@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* line 1, ../../scss/components/reveal-namespaced.scss */
+.vzrf {
+  /*! VZRF 2.20.0 */
+}
+/* line 5, ../../scss/components/reveal.scss */
+.vzrf [data-reveal-content] {
+  opacity: 1;
+  transition: opacity 0.5s, padding-top 0.3s, padding-bottom 0.3s, margin-top 0.3s, margin-bottom 0.3s, border-bottom-width 0.3s, border-top-width 0.3s;
+  transition: opacity 0.5s, padding-top 0.3s, padding-bottom 0.3s, margin-top 0.3s, margin-bottom 0.3s, border-bottom-width 0.3s, border-top-width 0.3s;
+  transition: opacity 0.5s, padding-top 0.3s, padding-bottom 0.3s, margin-top 0.3s, margin-bottom 0.3s, border-bottom-width 0.3s, border-top-width 0.3s;
+  transition: opacity 0.5s, padding-top 0.3s, padding-bottom 0.3s, margin-top 0.3s, margin-bottom 0.3s, border-bottom-width 0.3s, border-top-width 0.3s;
+}
+/* line 19, ../../scss/components/reveal.scss */
+.vzrf [data-reveal-content].hide {
+  opacity: 0 !important;
+  display: block;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  border-top-width: 0 !important;
+  border-bottom-width: 0 !important;
+  overflow: hidden !important;
+}

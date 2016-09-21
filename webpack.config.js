@@ -17,20 +17,30 @@ module.exports = {
   },
   plugins: [
     // $importantNote uncomment before pushing.  Comment during local development for faster webpack build times
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false,
-      },
-      mangle: false,
-      output: {
-        comments: false,
-      },
-    }),
+    // new webpack.optimize.UglifyJsPlugin({
+    //   compress: {
+    //     warnings: false,
+    //   },
+    //   mangle: false,
+    //   output: {
+    //     comments: false,
+    //   },
+    // }),
     new CopyWebpackPlugin([
       { from: 'src/css', to: 'css' },
       { from: 'src/img', to: 'img' },
-      { from: 'src/packages', to: 'packages' },
+      { from: 'src/packages', to: 'packages'},
       { from: 'src/index.html', to: 'index.html' },
     ]),
   ]
 }
+
+// webpack({}, function(err, stats){
+//   if(err){
+//     throw new gutil.PluginError('webpack:build', err);
+//   }
+//   gutil.log('[webpack:build]', stats.toString({
+//     chunks: false,
+//     colors: true
+//   }));
+// });

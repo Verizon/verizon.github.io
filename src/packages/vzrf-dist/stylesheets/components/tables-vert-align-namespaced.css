@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* line 1, ../../scss/components/tables-vert-align-namespaced.scss */
+.vzrf {
+  /*! VZRF 2.20.0 */
+}
+/* line 8, ../../scss/components/tables-vert-align.scss */
+.vzrf table thead.vert-top,
+.vzrf table tfoot.vert-top {
+  vertical-align: top;
+}
+/* line 9, ../../scss/components/tables-vert-align.scss */
+.vzrf table thead.vert-middle,
+.vzrf table tfoot.vert-middle {
+  vertical-align: middle;
+}
+/* line 10, ../../scss/components/tables-vert-align.scss */
+.vzrf table thead.vert-bottom,
+.vzrf table tfoot.vert-bottom {
+  vertical-align: bottom;
+}
+/* line 13, ../../scss/components/tables-vert-align.scss */
+.vzrf table tbody.vert-top tr {
+  vertical-align: top;
+}
+/* line 14, ../../scss/components/tables-vert-align.scss */
+.vzrf table tbody.vert-middle tr {
+  vertical-align: middle;
+}
+/* line 15, ../../scss/components/tables-vert-align.scss */
+.vzrf table tbody.vert-bottom tr {
+  vertical-align: bottom;
+}
+/* line 19, ../../scss/components/tables-vert-align.scss */
+.vzrf table tr.vert-top th, .vzrf table tr.vert-top td {
+  vertical-align: top;
+}
+/* line 21, ../../scss/components/tables-vert-align.scss */
+.vzrf table tr.vert-top th.vert-middle, .vzrf table tr.vert-top td.vert-middle {
+  vertical-align: middle;
+}
+/* line 22, ../../scss/components/tables-vert-align.scss */
+.vzrf table tr.vert-top th.vert-bottom, .vzrf table tr.vert-top td.vert-bottom {
+  vertical-align: bottom;
+}
+/* line 26, ../../scss/components/tables-vert-align.scss */
+.vzrf table tr.vert-middle th, .vzrf table tr.vert-middle td {
+  vertical-align: middle;
+}
+/* line 28, ../../scss/components/tables-vert-align.scss */
+.vzrf table tr.vert-middle th.vert-top, .vzrf table tr.vert-middle td.vert-top {
+  vertical-align: top;
+}
+/* line 29, ../../scss/components/tables-vert-align.scss */
+.vzrf table tr.vert-middle th.vert-bottom, .vzrf table tr.vert-middle td.vert-bottom {
+  vertical-align: bottom;
+}
+/* line 33, ../../scss/components/tables-vert-align.scss */
+.vzrf table tr.vert-bottom th, .vzrf table tr.vert-bottom td {
+  vertical-align: bottom;
+}
+/* line 35, ../../scss/components/tables-vert-align.scss */
+.vzrf table tr.vert-bottom th.vert-top, .vzrf table tr.vert-bottom td.vert-top {
+  vertical-align: top;
+}
+/* line 36, ../../scss/components/tables-vert-align.scss */
+.vzrf table tr.vert-bottom th.vert-middle, .vzrf table tr.vert-bottom td.vert-middle {
+  vertical-align: middle;
+}
+/* line 42, ../../scss/components/tables-vert-align.scss */
+.vzrf table.vert-top thead, .vzrf table.vert-top tbody, .vzrf table.vert-top tfoot {
+  vertical-align: top;
+}
+/* line 46, ../../scss/components/tables-vert-align.scss */
+.vzrf table.vert-middle thead, .vzrf table.vert-middle tbody, .vzrf table.vert-middle tfoot {
+  vertical-align: middle;
+}
+/* line 50, ../../scss/components/tables-vert-align.scss */
+.vzrf table.vert-bottom thead, .vzrf table.vert-bottom tbody, .vzrf table.vert-bottom tfoot {
+  vertical-align: bottom;
+}

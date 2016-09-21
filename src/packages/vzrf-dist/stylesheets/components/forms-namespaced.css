@@ -1,0 +1,318 @@
+@charset "UTF-8";
+/* line 1, ../../scss/components/forms-namespaced.scss */
+.vzrf {
+  /*! VZRF 2.20.0 */
+  /* Standard Forms */
+  /* Label Styles */
+  /* We use this to get basic styling on all basic form elements */
+  /* Adjust margin for form elements below */
+}
+/* line 8, ../../scss/components/forms.scss */
+.vzrf .form-align {
+  padding-top: 0.38281rem;
+  display: inline-block;
+}
+/* line 14, ../../scss/components/forms.scss */
+.vzrf form {
+  margin: 0 0 0.75rem;
+}
+/* line 20, ../../scss/components/forms.scss */
+.vzrf label {
+  font-size: 0.875rem;
+  color: #333;
+  cursor: pointer;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.1875rem;
+  line-height: 1.5;
+  /* Styles for required inputs */
+}
+/* line 22, ../../scss/components/forms.scss */
+.vzrf label.right {
+  float: none;
+  text-align: right;
+}
+/* line 23, ../../scss/components/forms.scss */
+.vzrf label.inline {
+  display: inline-block;
+  margin: 0 0 0.75rem 0;
+  padding: 0.375rem 0;
+}
+/* line 25, ../../scss/components/forms.scss */
+.vzrf label small {
+  text-transform: capitalize;
+  color: #525252;
+}
+/* line 45, ../../scss/components/forms.scss */
+.vzrf input,
+.vzrf textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  font-weight: bold;
+  background-color: #fff;
+  font-family: inherit;
+  border: 0.0625rem solid #cccccc;
+  box-shadow: none;
+  color: #a2a2a2;
+  display: block;
+  font-size: 0.75rem;
+  margin: 0 0 1.5rem 0;
+  padding: 0.5rem 0.625rem;
+  height: 2.6875rem;
+  width: 100%;
+  border-radius: 0;
+  outline: none !important;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 817, ../../scss/base/_global.scss */
+.vzrf input::-webkit-outer-spin-button, .vzrf input::-webkit-inner-spin-button,
+.vzrf textarea::-webkit-outer-spin-button,
+.vzrf textarea::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* line 827, ../../scss/base/_global.scss */
+.vzrf input:focus,
+.vzrf textarea:focus {
+  background-color: #fff;
+  border-color: #4b4b4b;
+  outline: none !important;
+  color: #333;
+}
+/* line 833, ../../scss/base/_global.scss */
+.vzrf input.value,
+.vzrf textarea.value {
+  background-color: #fff;
+  border-color: #cccccc;
+  color: #333;
+}
+/* line 840, ../../scss/base/_global.scss */
+.vzrf input::-ms-reveal, .vzrf input::-ms-clear,
+.vzrf textarea::-ms-reveal,
+.vzrf textarea::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+/* line 848, ../../scss/base/_global.scss */
+.vzrf input input[type="search"],
+.vzrf textarea input[type="search"] {
+  -webkit-appearance: textfield;
+}
+/* line 852, ../../scss/base/_global.scss */
+.vzrf input input[type="search"]::-webkit-search-decoration,
+.vzrf input input[type="search"]::-webkit-search-cancel-button,
+.vzrf input input[type="search"]::-webkit-search-results-button,
+.vzrf input input[type="search"]::-webkit-search-results-decoration,
+.vzrf textarea input[type="search"]::-webkit-search-decoration,
+.vzrf textarea input[type="search"]::-webkit-search-cancel-button,
+.vzrf textarea input[type="search"]::-webkit-search-results-button,
+.vzrf textarea input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+/* line 859, ../../scss/base/_global.scss */
+Basic focus styles
+.vzrf input:focus:not([readonly]), .vzrf input.value:focus:not([readonly]), Basic focus styles
+.vzrf textarea:focus:not([readonly]),
+.vzrf textarea.value:focus:not([readonly]) {
+  background-color: #fff;
+  border-color: #4b4b4b;
+  outline: none !important;
+  color: #333;
+}
+/* line 869, ../../scss/base/_global.scss */
+.vzrf input[disabled],
+.vzrf textarea[disabled] {
+  opacity: 0.7;
+  cursor: default;
+  cursor: not-allowed;
+  background-color: #f6f6f6;
+}
+/* line 876, ../../scss/base/_global.scss */
+.vzrf input[readonly],
+.vzrf textarea[readonly] {
+  cursor: default;
+}
+/* line 57, ../../scss/components/forms.scss */
+.vzrf textarea {
+  height: auto;
+}
+/* line 62, ../../scss/components/forms.scss */
+.vzrf textarea.two-lines {
+  height: 3.75em;
+}
+/* line 65, ../../scss/components/forms.scss */
+.vzrf textarea.three-lines {
+  height: 4.75em;
+}
+/* line 68, ../../scss/components/forms.scss */
+.vzrf textarea.four-lines {
+  height: 5.75em;
+}
+/* line 71, ../../scss/components/forms.scss */
+.vzrf textarea.five-lines {
+  height: 6.85em;
+}
+/* line 74, ../../scss/components/forms.scss */
+.vzrf textarea.ten-lines {
+  height: 12.75em;
+}
+/* line 79, ../../scss/components/forms.scss */
+.vzrf input[type="submit"] {
+  -webkit-appearance: none;
+}
+/* line 84, ../../scss/components/forms.scss */
+.vzrf input[type="file"],
+.vzrf input[type="checkbox"],
+.vzrf input[type="radio"],
+.vzrf select {
+  margin: 0 0 0.75rem 0;
+}
+/* line 94, ../../scss/components/forms.scss */
+.vzrf .switch-wrap {
+  position: relative;
+  display: inline-block;
+}
+/* line 98, ../../scss/components/forms.scss */
+.vzrf .switch-wrap input[type="checkbox"] {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  visibility: visible;
+  opacity: 0;
+  cursor: pointer;
+}
+/* line 114, ../../scss/components/forms.scss */
+.vzrf input[type="file"] {
+  width: 100%;
+}
+/* line 120, ../../scss/components/forms.scss */
+.vzrf input:not([type=radio]).marketing,
+.vzrf input:not([type=checkbox]).marketing,
+.vzrf select.marketing {
+  border-width: 0 0 0.0625rem 0 !important;
+}
+/* line 128, ../../scss/components/forms.scss */
+.vzrf fieldset {
+  border: solid 1px #f6f6f6;
+  padding: 1.25rem;
+  margin: 1.125rem 0;
+}
+/* line 134, ../../scss/components/forms.scss */
+.vzrf fieldset legend {
+  font-weight: bold;
+  background-color: #fff;
+  padding: 0 0.1875rem;
+  margin: 0;
+  margin-left: -0.1875rem;
+}
+/* line 146, ../../scss/components/forms.scss */
+.vzrf .field-group {
+  display: table;
+  width: 100%;
+  margin: 0 0 1.5rem 0;
+}
+/* line 151, ../../scss/components/forms.scss */
+.vzrf .field-group input,
+.vzrf .field-group select {
+  display: table-cell;
+  width: 100%;
+  margin: 0;
+}
+/* line 158, ../../scss/components/forms.scss */
+.vzrf .field-group .field-addon {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 0.625rem;
+  width: 1%;
+  white-space: nowrap;
+}
+/* line 172, ../../scss/components/forms.scss */
+.vzrf .field-icon {
+  float: right;
+  width: 0;
+  height: 0;
+  position: relative;
+  z-index: 5;
+  text-decoration: none;
+  -webkit-transform: rotate(0deg);
+}
+/* line 299, ../../scss/base/_global.scss */
+.vzrf .field-icon:hover {
+  text-decoration: none;
+}
+/* line 303, ../../scss/base/_global.scss */
+.vzrf .field-icon::before {
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'VZIcons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: inherit;
+  color: currentColor;
+  font-size: 1.5rem;
+  display: inline;
+  position: relative;
+}
+/* line 179, ../../scss/components/forms.scss */
+.vzrf .field-icon::before {
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+  left: auto;
+  color: inherit;
+  line-height: 1;
+  transition: all 0.2s;
+  transition: all 0.2s;
+  transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 190, ../../scss/components/forms.scss */
+.vzrf .field-icon.select-box::before {
+  right: 2.5rem;
+}
+/* line 195, ../../scss/components/forms.scss */
+.vzrf .field-icon.left::before {
+  right: auto;
+  left: 0.625rem;
+}
+/* line 200, ../../scss/components/forms.scss */
+.vzrf .field-icon.error:not(.left)::before {
+  left: auto;
+  right: 2.8125rem;
+}
+/* line 207, ../../scss/components/forms.scss */
+.vzrf .field-icon + input,
+.vzrf .field-icon + select,
+.vzrf .field-icon + textarea {
+  padding-right: 2.5rem;
+  transition: all 0.2s;
+  transition: all 0.2s;
+  transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 215, ../../scss/components/forms.scss */
+.vzrf .field-icon + input.error:not(.no-error-icon),
+.vzrf .field-icon + select.error:not(.no-error-icon),
+.vzrf .field-icon + textarea.error:not(.no-error-icon) {
+  padding-right: 4.6875rem;
+}
+/* line 221, ../../scss/components/forms.scss */
+.vzrf .field-icon.select-box:not(.left) + select {
+  padding-right: 4.375rem;
+}
+/* line 227, ../../scss/components/forms.scss */
+.vzrf .field-icon.left + input, .vzrf .field-icon.left + select, .vzrf .field-icon.left + textarea {
+  padding-right: 0.375rem;
+  padding-left: 2.5rem;
+}

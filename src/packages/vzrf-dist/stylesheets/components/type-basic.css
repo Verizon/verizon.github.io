@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/*! VZRF 2.20.0 */
+/* Typography resets */
+/* line 9, ../../scss/components/type-basic.scss */
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+/* Default Link Styles */
+/* line 32, ../../scss/components/type-basic.scss */
+a {
+  color: #0066BB;
+  text-decoration: none;
+  line-height: inherit;
+}
+/* line 37, ../../scss/components/type-basic.scss */
+a:hover {
+  color: #00478e;
+}
+/* line 38, ../../scss/components/type-basic.scss */
+a:focus {
+  color: #333333;
+}
+/* line 40, ../../scss/components/type-basic.scss */
+a img {
+  border: none;
+}
+
+/* line 42, ../../scss/components/type-basic.scss */
+p a,
+a.underline {
+  text-decoration: underline;
+}
+
+/* Default paragraph styles */
+/* line 49, ../../scss/components/type-basic.scss */
+p, .p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  text-rendering: optimizeLegibility;
+}
+/* line 57, ../../scss/components/type-basic.scss */
+p aside, .p aside {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+/* line 64, ../../scss/components/type-basic.scss */
+.body-font {
+  font-family: BrandFont, Arial, sans-serif;
+}
+
+/* line 68, ../../scss/components/type-basic.scss */
+.bold {
+  font-weight: bold;
+}
+
+/* line 72, ../../scss/components/type-basic.scss */
+.italic {
+  font-style: italic;
+}
+
+/* line 76, ../../scss/components/type-basic.scss */
+.normal-weight {
+  font-weight: normal !important;
+}
+
+/* line 80, ../../scss/components/type-basic.scss */
+.normal-style {
+  font-style: normal !important;
+}
+
+/* line 84, ../../scss/components/type-basic.scss */
+.no-wrap {
+  white-space: nowrap;
+}
+
+/* line 85, ../../scss/components/type-basic.scss */
+.allow-wrap, .break-word {
+  word-wrap: break-word;
+}
+
+/* line 87, ../../scss/components/type-basic.scss */
+.caps, .uppercase {
+  text-transform: uppercase;
+}
+
+/* line 88, ../../scss/components/type-basic.scss */
+.lowercase {
+  text-transform: lowercase;
+}
+
+/* line 89, ../../scss/components/type-basic.scss */
+.defaultcase, .mixedcase, .default-case, .mixed-case {
+  text-transform: none;
+}
+
+/* line 90, ../../scss/components/type-basic.scss */
+.capitalize, .title-case {
+  text-transform: capitalize;
+}
+
+/* line 92, ../../scss/components/type-basic.scss */
+.ellipsis {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* Helpful Typography Defaults */
+/* line 99, ../../scss/components/type-basic.scss */
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+/* line 105, ../../scss/components/type-basic.scss */
+strong,
+b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+/* line 111, ../../scss/components/type-basic.scss */
+small {
+  font-size: 87.5%;
+  line-height: inherit;
+}
+
+/* line 116, ../../scss/components/type-basic.scss */
+code {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-weight: normal;
+  color: #000;
+}
+
+/* line 122, ../../scss/components/type-basic.scss */
+kbd {
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-weight: bold;
+  color: #000;
+  letter-spacing: -0.04375rem;
+}

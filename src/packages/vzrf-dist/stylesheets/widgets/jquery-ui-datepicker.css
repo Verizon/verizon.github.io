@@ -1,0 +1,694 @@
+@charset "UTF-8";
+/*! VZRF 2.20.0 */
+/*! jQuery UI - v1.10.4 - 2014-11-17 | http://jqueryui.com | Includes: jquery.ui.core.css, jquery.ui.datepicker.css | Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
+/* Layout helpers
+----------------------------------*/
+/* line 8, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-helper-hidden {
+  display: none;
+}
+
+/* line 11, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-helper-hidden-accessible {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 21, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-helper-reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  line-height: 1.3;
+  text-decoration: none;
+  font-size: 100%;
+  list-style: none;
+}
+
+/* line 31, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+  content: "";
+  display: table;
+  border-collapse: collapse;
+}
+
+/* line 37, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-helper-clearfix:after {
+  clear: both;
+}
+
+/* line 40, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-helper-clearfix {
+  min-height: 0;
+  /* support: IE7 */
+}
+
+/* line 43, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-helper-zfix {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  opacity: 0;
+  filter: Alpha(Opacity=0);
+}
+
+/* line 53, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-front {
+  z-index: 100;
+}
+
+/* Interaction Cues
+----------------------------------*/
+/* line 60, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-state-disabled {
+  cursor: default !important;
+}
+
+/* Icons
+----------------------------------*/
+/* states and images */
+/* line 69, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-icon {
+  display: block;
+  text-indent: -99999px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+/* Misc visuals
+----------------------------------*/
+/* Overlays */
+/* line 81, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-widget-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 700 !important;
+}
+
+/* line 89, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker {
+  min-width: 18.75rem;
+  padding: .2em .2em 0;
+  display: none;
+}
+
+/* line 94, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-header {
+  border: none;
+  background: transparent;
+  color: inherit;
+}
+
+/* line 101, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next {
+  position: absolute;
+  top: 3px !important;
+  height: 2.0625rem;
+  display: block;
+  padding: 0 0.625rem;
+  line-height: 1.0625rem;
+  text-decoration: none;
+  -webkit-transform: rotate(0deg);
+}
+/* line 299, ../../scss/base/_global.scss */
+.ui-datepicker .ui-datepicker-prev:hover,
+.ui-datepicker .ui-datepicker-next:hover {
+  text-decoration: none;
+}
+/* line 303, ../../scss/base/_global.scss */
+.ui-datepicker .ui-datepicker-prev::before,
+.ui-datepicker .ui-datepicker-next::before {
+  /* Better Font Rendering */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'VZIcons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: inherit;
+  color: currentColor;
+  font-size: 1.5rem;
+  display: inline;
+  position: relative;
+}
+/* line 111, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-prev .ui-icon,
+.ui-datepicker .ui-datepicker-next .ui-icon {
+  display: none;
+}
+
+/* line 115, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-prev-hover.ui-state-hover,
+.ui-datepicker .ui-datepicker-next-hover.ui-state-hover {
+  background: #a2a2a2 !important;
+}
+
+/* line 119, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-prev {
+  left: 3px !important;
+  border: none !important;
+  border-right: 1px solid #fff !important;
+  border-radius: 4px 0 0 4px;
+}
+/* line 125, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-prev:before {
+  content: '\e625';
+  color: #fff;
+  line-height: 1;
+  font-size: 0.75rem;
+  top: 0.5625rem;
+}
+/* line 135, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-prev.ui-state-disabled {
+  display: none;
+}
+
+/* line 139, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-next {
+  right: 3px !important;
+  border: none !important;
+  border-left: 1px solid #fff !important;
+  border-radius: 0 4px 4px 0;
+}
+/* line 144, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-next:before {
+  content: '\e631';
+  color: #fff;
+  line-height: 1;
+  font-size: 0.75rem;
+  top: 0.5625rem;
+}
+/* line 153, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-next.ui-state-disabled {
+  display: none;
+}
+
+/* line 160, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-prev-hover:before,
+.ui-datepicker .ui-datepicker-prev-hover.ui-state-hover:before {
+  content: '\e625';
+  color: #f9f9f9 !important;
+}
+
+/* line 168, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-next-hover:before,
+.ui-datepicker .ui-datepicker-next-hover.ui-state-hover:before {
+  content: '\e631';
+  color: #f9f9f9 !important;
+}
+
+/* line 175, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-title {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  line-height: 2.0625rem;
+  text-align: center;
+  color: #fff;
+  background-color: #959595;
+  border-radius: 4px;
+}
+
+/* line 185, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-title select {
+  font-size: 1em;
+  margin: 1px 0;
+}
+
+/* line 189, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker select.ui-datepicker-month,
+.ui-datepicker select.ui-datepicker-year {
+  width: 49%;
+}
+
+/* line 193, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker table {
+  width: 100%;
+  font-size: 1em;
+  border-collapse: collapse;
+  margin: 0 0 .4em;
+  border: none !important;
+}
+
+/* line 200, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker th {
+  padding: .7em .3em;
+  text-align: center;
+  font-weight: bold;
+  border: 0;
+  font-family: BrandFont, Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+  width: 14.28571428571429%;
+  font-size: 1rem;
+}
+
+/* line 211, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker td {
+  border: 0.0625rem solid #e4e5e3;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+/* line 216, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker td span,
+.ui-datepicker td a {
+  display: block;
+  padding: 20% .2em;
+  text-align: right;
+  text-decoration: none;
+  /*margin:rem-calc(-1 -1 -1 -1);
+  border-color:transparent;*/
+}
+
+/* line 225, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-buttonpane {
+  background-image: none;
+  margin: .7em 0 0 0;
+  padding: 0 .2em;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+/* line 233, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-buttonpane button {
+  float: right;
+  margin: .5em .2em .4em;
+  cursor: pointer;
+  padding: .2em .6em .3em .6em;
+  width: auto;
+  overflow: visible;
+}
+
+/* line 241, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+  float: left;
+}
+
+/* with multiple calendars */
+/* line 246, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker.ui-datepicker-multi {
+  width: auto;
+}
+
+/* line 249, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker-multi .ui-datepicker-group {
+  float: left;
+}
+
+/* line 252, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker-multi .ui-datepicker-group table {
+  width: 95%;
+  margin: 0 auto .4em;
+}
+
+/* line 256, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker-multi-2 .ui-datepicker-group {
+  width: 50%;
+}
+
+/* line 259, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker-multi-3 .ui-datepicker-group {
+  width: 33.3%;
+}
+
+/* line 262, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker-multi-4 .ui-datepicker-group {
+  width: 25%;
+}
+
+/* line 265, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+  border-left-width: 0;
+}
+
+/* line 269, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+  clear: left;
+}
+
+/* line 272, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker-row-break {
+  clear: both;
+  width: 100%;
+  font-size: 0;
+}
+
+/* RTL support */
+/* line 279, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker-rtl {
+  direction: rtl;
+}
+
+/* line 298, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker-rtl .ui-datepicker-buttonpane {
+  clear: right;
+}
+
+/* line 301, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker-rtl .ui-datepicker-buttonpane button {
+  float: left;
+}
+
+/* line 304, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker-rtl .ui-datepicker-buttonpane button.ui-datepicker-current,
+.ui-datepicker-rtl .ui-datepicker-group {
+  float: right;
+}
+
+/* line 308, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker-rtl .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-rtl .ui-datepicker-group-middle .ui-datepicker-header {
+  border-right-width: 0;
+  border-left-width: 1px;
+}
+
+/* Component containers
+----------------------------------*/
+/* line 316, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-widget {
+  font-size: 1em;
+  position: relative;
+}
+/* line 321, ../../scss/widgets/jquery-ui-datepicker.scss */
+.w_modal .ui-widget {
+  z-index: 800 !important;
+}
+
+/* line 325, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-widget .ui-widget {
+  font-size: 1em;
+}
+
+/* line 328, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-widget input,
+.ui-widget select,
+.ui-widget textarea,
+.ui-widget button {
+  font-size: 1em;
+}
+
+/* line 335, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-widget-content {
+  border: 1px solid #ecedee;
+  background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAABkAQAAAADcH0/XAAAAAmJLR0QAAd2KE6QAAAAJcEhZcwAAAEgAAABIAEbJaz4AAAASSURBVCjPY/gPAgyj5ChJVRIAypHyHLPbLnsAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTQtMDMtMDVUMjA6NDk6MTUtMDg6MDDfCu9eAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE0LTAzLTA1VDIwOjQ5OjE1LTA4OjAwrldX4gAAAABJRU5ErkJggg==") 50% 50% repeat-x;
+  color: #333;
+}
+/* line 341, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-widget-content.ui-datepicker-inline {
+  border: 0;
+}
+
+/* line 345, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-widget-content a {
+  color: #333;
+}
+
+/* line 348, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-widget-header {
+  border: 1px solid #aaaaaa;
+  background: #ecedee url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAABkAQMAAADOquA5AAAAA1BMVEXs7e6r4FbAAAAACXBIWXMAAABIAAAASABGyWs+AAAAD0lEQVQoz2NgGAWjgPoAAAJYAAF1NoZ3AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE0LTAzLTA2VDA1OjMwOjA2LTA4OjAwIu8IWAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNC0wMy0wNlQwNTozMDowNi0wODowMFOysOQAAAAASUVORK5CYII=") 50% 50% repeat-x;
+  color: #222222;
+  font-weight: bold;
+}
+
+/* line 355, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-widget-header a {
+  color: #222222;
+}
+
+/* Interaction states
+----------------------------------*/
+/* line 361, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+  border: 1px solid #d3d3d3;
+  background: #ecedee url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAABkAQMAAADOquA5AAAAA1BMVEXs7e6r4FbAAAAACXBIWXMAAABIAAAASABGyWs+AAAAD0lEQVQoz2NgGAWjgPoAAAJYAAF1NoZ3AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE0LTAzLTA2VDA1OjI5OjM4LTA4OjAwwcSA7AAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNC0wMy0wNlQwNToyOTozOC0wODowMLCZOFAAAAAASUVORK5CYII=") 50% 50% repeat-x;
+  font-weight: normal;
+  color: #333;
+}
+
+/* line 370, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-state-default,
+.ui-datepicker .ui-widget-content .ui-state-default,
+.ui-datepicker .ui-widget-header .ui-state-default {
+  background: #fff;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1rem;
+  border-color: transparent;
+}
+
+/* line 382, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-state-default a,
+.ui-state-default a:link,
+.ui-state-default a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 388, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+  border: 0.0625rem solid #ecedee;
+  background: #e1e3e4 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAABkAQMAAADOquA5AAAAA1BMVEXh4+TdbgEDAAAACXBIWXMAAABIAAAASABGyWs+AAAAD0lEQVQoz2NgGAWjgPoAAAJYAAF1NoZ3AAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE0LTAzLTA2VDA1OjMzOjE1LTA4OjAwNJqpWAAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNC0wMy0wNlQwNTozMzoxNS0wODowMEXHEeQAAAAASUVORK5CYII=") 50% 50% repeat-x;
+  font-weight: bold;
+  color: #333;
+}
+
+/* line 399, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-state-hover,
+.ui-datepicker .ui-widget-content .ui-state-hover,
+.ui-datepicker .ui-widget-header .ui-state-hover,
+.ui-datepicker .ui-state-focus,
+.ui-datepicker .ui-widget-content .ui-state-focus,
+.ui-datepicker .ui-widget-header .ui-state-focus {
+  background: #abe0f9;
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  border-color: #4cbdf2;
+}
+
+/* line 413, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+/* line 424, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active,
+.ui-state-highlight.ui-state-active,
+.ui-widget-content .ui-state-highlight.ui-state-active,
+.ui-widget-header .ui-state-highlight.ui-state-active,
+.ui-widget-content .ui-state-highlight.ui-state-active.ui-state-hover,
+.ui-widget-header .ui-state-highlight.ui-state-active.ui-state-hover {
+  border: 1px solid #0f98d8;
+  background: #8ad4f7;
+  color: #000;
+}
+
+/* line 436, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Interaction Cues
+----------------------------------*/
+/* line 445, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+  border: 1px solid #f6f6f6;
+  background: #f6f6f6;
+  color: #333;
+}
+
+/* line 453, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-state-highlight,
+.ui-datepicker .ui-widget-content .ui-state-highlight,
+.ui-datepicker .ui-widget-header .ui-state-highlight {
+  background: #fff;
+  color: #000;
+  border-color: #000;
+}
+
+/* line 461, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-state-highlight.ui-state-hover,
+.ui-datepicker .ui-widget-content .ui-state-highlight.ui-state-hover,
+.ui-datepicker .ui-widget-header .ui-state-highlight.ui-state-hover {
+  background: #abe0f9;
+  border-color: #000;
+  color: #000;
+}
+
+/* line 469, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-state-highlight a,
+.ui-widget-content .ui-state-highlight a,
+.ui-widget-header .ui-state-highlight a {
+  color: #333;
+}
+
+/* line 475, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-state-error,
+.ui-widget-content .ui-state-error,
+.ui-widget-header .ui-state-error {
+  border: 1px solid #ed1c24;
+  background: #fff url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAABkAQAAAADcH0/XAAAAAmJLR0QAAd2KE6QAAAAJcEhZcwAAAEgAAABIAEbJaz4AAAASSURBVCjPY/gPAgyj5ChJVRIAypHyHLPbLnsAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTQtMDMtMDZUMDU6MzU6MjctMDg6MDAglM/VAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE0LTAzLTA2VDA1OjM1OjI3LTA4OjAwUcl3aQAAAABJRU5ErkJggg==") 50% 50% repeat-x;
+  color: #ed1c24;
+}
+
+/* line 483, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-state-error a,
+.ui-widget-content .ui-state-error a,
+.ui-widget-header .ui-state-error a {
+  color: #ed1c24;
+}
+
+/* line 488, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-state-error-text,
+.ui-widget-content .ui-state-error-text,
+.ui-widget-header .ui-state-error-text {
+  color: #ed1c24;
+}
+
+/* line 493, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-priority-primary,
+.ui-widget-content .ui-priority-primary,
+.ui-widget-header .ui-priority-primary {
+  font-weight: bold;
+}
+
+/* line 498, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-priority-secondary,
+.ui-widget-content .ui-priority-secondary,
+.ui-widget-header .ui-priority-secondary {
+  opacity: .7;
+  filter: Alpha(Opacity=70);
+  font-weight: bold;
+}
+
+/* line 505, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-state-disabled,
+.ui-widget-content .ui-state-disabled,
+.ui-widget-header .ui-state-disabled {
+  opacity: .35;
+  background-image: none;
+}
+/* line 512, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-state-disabled, .ui-datepicker
+.ui-widget-content .ui-state-disabled, .ui-datepicker
+.ui-widget-header .ui-state-disabled {
+  opacity: 1;
+}
+/* line 515, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-datepicker .ui-state-disabled .ui-state-default, .ui-datepicker
+.ui-widget-content .ui-state-disabled .ui-state-default, .ui-datepicker
+.ui-widget-header .ui-state-disabled .ui-state-default {
+  background: #f6f6f6;
+  color: #959595;
+  border-color: #f6f6f6;
+}
+
+/* line 522, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-state-disabled .ui-icon {
+  filter: Alpha(Opacity=35);
+  /* For IE8 - See #6059 */
+}
+
+/* Misc visuals
+----------------------------------*/
+/* Corner radius */
+/* line 532, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+  border-top-left-radius: 0;
+}
+
+/* line 538, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+  border-top-right-radius: 0;
+}
+
+/* line 544, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+  border-bottom-left-radius: 0;
+}
+
+/* line 550, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+  border-bottom-right-radius: 0;
+}
+
+/* Overlays */
+/* line 558, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-widget-overlay {
+  background: #000000 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAABkAQAAAADcH0/XAAAAAmJLR0QAAd2KE6QAAAAJcEhZcwAAAEgAAABIAEbJaz4AAAAPSURBVCjPY2AYBaOA+gAAAlgAAXU2hncAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTQtMDMtMDVUMjI6MTk6MDUtMDg6MDACq/bJAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE0LTAzLTA1VDIyOjE5OjA1LTA4OjAwc/ZOdQAAAABJRU5ErkJggg==") 50% 50% repeat-x;
+  opacity: .3;
+  filter: Alpha(Opacity=30);
+}
+
+/* line 564, ../../scss/widgets/jquery-ui-datepicker.scss */
+.ui-widget-shadow {
+  margin: 0 0 0 0;
+  padding: 0;
+  background: #000000 url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAABkAQAAAADcH0/XAAAAAmJLR0QAAd2KE6QAAAAJcEhZcwAAAEgAAABIAEbJaz4AAAAPSURBVCjPY2AYBaOA+gAAAlgAAXU2hncAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTQtMDMtMDZUMDI6MDk6MjgtMDg6MDAocT/rAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE0LTAzLTA2VDAyOjA5OjI4LTA4OjAwWSyHVwAAAABJRU5ErkJggg==") 50% 50% repeat-x;
+  opacity: .3;
+  filter: Alpha(Opacity=30);
+  border-radius: 0;
+}
+
+@media only screen and (max-width: 30rem) {
+  /* line 576, ../../scss/widgets/jquery-ui-datepicker.scss */
+  .main > .row .hasDatepicker > .ui-datepicker-inline {
+    margin-left: -1.125rem;
+    margin-right: -1.125rem;
+  }
+}

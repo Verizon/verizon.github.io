@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/*! VZRF 2.20.0 */
+/* line 4, ../../scss/components/fixed-bottom.scss */
+[data-fixed-bottom] {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+/* line 13, ../../scss/components/fixed-bottom.scss */
+#BottomSpacer {
+  width: 100%;
+  float: left;
+  clear: both;
+}

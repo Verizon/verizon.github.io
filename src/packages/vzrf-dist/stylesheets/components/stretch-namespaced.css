@@ -1,0 +1,311 @@
+@charset "UTF-8";
+/* line 1, ../../scss/components/stretch-namespaced.scss */
+.vzrf {
+  /*! VZRF 2.20.0 */
+}
+/* line 11, ../../scss/components/stretch.scss */
+.vzrf .stretch,
+.vzrf .w_steps, .vzrf .w_carousel.stretch > .carousel_item {
+  margin-left: -1.125rem;
+  margin-right: -1.125rem;
+}
+/* line 16, ../../scss/components/stretch.scss */
+.vzrf .stretch.padded,
+.vzrf .w_steps.padded, .vzrf .w_carousel.stretch > .carousel_item.padded {
+  padding-left: 1.125rem;
+  padding-right: 1.125rem;
+}
+@media only screen {
+  /* line 53, ../../scss/components/stretch.scss */
+  .vzrf .main .tiny-stretch,
+  .vzrf .main .w_carousel.tinystretch > .carousel_item,
+  .vzrf .tiny-wide .tiny-stretch,
+  .vzrf .tiny-wide .w_carousel.tinystretch > .carousel_item {
+    margin-left: -1.125rem;
+    margin-right: -1.125rem;
+  }
+  /* line 28, ../../scss/components/stretch.scss */
+  .vzrf .main .tiny-stretch.padded,
+  .vzrf .main .w_carousel.tinystretch > .carousel_item.padded,
+  .vzrf .tiny-wide .tiny-stretch.padded,
+  .vzrf .tiny-wide .w_carousel.tinystretch > .carousel_item.padded {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+  /* line 60, ../../scss/components/stretch.scss */
+  .vzrf .tiny-narrow .tiny-stretch,
+  .vzrf .tiny-narrow .w_carousel.tiny-stretch > .carousel_item {
+    margin-left: -3.75rem;
+    margin-right: -3.75rem;
+  }
+  /* line 38, ../../scss/components/stretch.scss */
+  .vzrf .tiny-narrow .tiny-stretch.padded,
+  .vzrf .tiny-narrow .w_carousel.tiny-stretch > .carousel_item.padded {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+}
+@media only screen and (min-width: 30.0625rem) {
+  /* line 70, ../../scss/components/stretch.scss */
+  .vzrf .main .tiny-stretch,
+  .vzrf .main .small-stretch,
+  .vzrf .main .w_carousel.tiny-stretch > .carousel_item,
+  .vzrf .main .w_carousel.small-stretch > .carousel_item,
+  .vzrf .small-wide .tiny-stretch,
+  .vzrf .small-wide .small-stretch,
+  .vzrf .small-wide .w_carousel.tiny-stretch > .carousel_item,
+  .vzrf .small-wide .w_carousel.small-stretch > .carousel_item {
+    margin-left: -1.125rem;
+    margin-right: -1.125rem;
+  }
+  /* line 28, ../../scss/components/stretch.scss */
+  .vzrf .main .tiny-stretch.padded,
+  .vzrf .main .small-stretch.padded,
+  .vzrf .main .w_carousel.tiny-stretch > .carousel_item.padded,
+  .vzrf .main .w_carousel.small-stretch > .carousel_item.padded,
+  .vzrf .small-wide .tiny-stretch.padded,
+  .vzrf .small-wide .small-stretch.padded,
+  .vzrf .small-wide .w_carousel.tiny-stretch > .carousel_item.padded,
+  .vzrf .small-wide .w_carousel.small-stretch > .carousel_item.padded {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+  /* line 77, ../../scss/components/stretch.scss */
+  .vzrf .main .small-stretch-off,
+  .vzrf .main .small-stretch-off.stretch,
+  .vzrf .main .small-stretch-off.tiny-stretch,
+  .vzrf .small-wide .small-stretch-off,
+  .vzrf .small-wide .small-stretch-off.stretch,
+  .vzrf .small-wide .small-stretch-off.tiny-stretch {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 85, ../../scss/components/stretch.scss */
+  .vzrf .small-narrow .tiny-stretch,
+  .vzrf .small-narrow .small-stretch,
+  .vzrf .small-narrow .w_carousel.tiny-stretch > .carousel_item,
+  .vzrf .small-narrow .w_carousel.small-stretch > .carousel_item {
+    margin-left: -3.75rem;
+    margin-right: -3.75rem;
+  }
+  /* line 38, ../../scss/components/stretch.scss */
+  .vzrf .small-narrow .tiny-stretch.padded,
+  .vzrf .small-narrow .small-stretch.padded,
+  .vzrf .small-narrow .w_carousel.tiny-stretch > .carousel_item.padded,
+  .vzrf .small-narrow .w_carousel.small-stretch > .carousel_item.padded {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  /* line 92, ../../scss/components/stretch.scss */
+  .vzrf .small-narrow .small-stretch-off,
+  .vzrf .small-narrow .small-stretch-off.stretch,
+  .vzrf .small-narrow .small-stretch-off.tiny-stretch {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 48rem) {
+  /* line 104, ../../scss/components/stretch.scss */
+  .vzrf .medium-wide .tiny-stretch,
+  .vzrf .medium-wide .small-stretch,
+  .vzrf .medium-wide .medium-stretch,
+  .vzrf .medium-wide .medium-stretch.small-stretch-off,
+  .vzrf .medium-wide .w_carousel.tiny-stretch > .carousel_item,
+  .vzrf .medium-wide .w_carousel.small-stretch > .carousel_item,
+  .vzrf .medium-wide .w_carousel.medium-stretch > .carousel_item,
+  .vzrf .medium-wide .w_carousel.medium-stretch.medium-stretch-off > .carousel_item {
+    margin-left: -1.125rem;
+    margin-right: -1.125rem;
+  }
+  /* line 28, ../../scss/components/stretch.scss */
+  .vzrf .medium-wide .tiny-stretch.padded,
+  .vzrf .medium-wide .small-stretch.padded,
+  .vzrf .medium-wide .medium-stretch.padded,
+  .vzrf .medium-wide .medium-stretch.small-stretch-off.padded,
+  .vzrf .medium-wide .w_carousel.tiny-stretch > .carousel_item.padded,
+  .vzrf .medium-wide .w_carousel.small-stretch > .carousel_item.padded,
+  .vzrf .medium-wide .w_carousel.medium-stretch > .carousel_item.padded,
+  .vzrf .medium-wide .w_carousel.medium-stretch.medium-stretch-off > .carousel_item.padded {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+  /* line 115, ../../scss/components/stretch.scss */
+  .vzrf .medium-wide .medium-stretch-off,
+  .vzrf .medium-wide .medium-stretch-off.stretch,
+  .vzrf .medium-wide .medium-stretch-off.tiny-stretch,
+  .vzrf .medium-wide .medium-stretch-off.small-stretch {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 125, ../../scss/components/stretch.scss */
+  .vzrf .main .tiny-stretch,
+  .vzrf .main .small-stretch,
+  .vzrf .main .medium-stretch,
+  .vzrf .main .medium-stretch.small-stretch-off,
+  .vzrf .main .w_carousel.tiny-stretch > .carousel_item,
+  .vzrf .main .w_carousel.small-stretch > .carousel_item,
+  .vzrf .main .w_carousel.medium-stretch > .carousel_item,
+  .vzrf .main .w_carousel.medium-stretch.small-stretch-off > .carousel_item,
+  .vzrf .medium-narrow .tiny-stretch,
+  .vzrf .medium-narrow .small-stretch,
+  .vzrf .medium-narrow .medium-stretch,
+  .vzrf .medium-narrow .medium-stretch.small-stretch-off,
+  .vzrf .medium-narrow .w_carousel.tiny-stretch > .carousel_item,
+  .vzrf .medium-narrow .w_carousel.small-stretch > .carousel_item,
+  .vzrf .medium-narrow .w_carousel.medium-stretch > .carousel_item,
+  .vzrf .medium-narrow .w_carousel.medium-stretch.small-stretch-off > .carousel_item {
+    margin-left: -3.75rem;
+    margin-right: -3.75rem;
+  }
+  /* line 38, ../../scss/components/stretch.scss */
+  .vzrf .main .tiny-stretch.padded,
+  .vzrf .main .small-stretch.padded,
+  .vzrf .main .medium-stretch.padded,
+  .vzrf .main .medium-stretch.small-stretch-off.padded,
+  .vzrf .main .w_carousel.tiny-stretch > .carousel_item.padded,
+  .vzrf .main .w_carousel.small-stretch > .carousel_item.padded,
+  .vzrf .main .w_carousel.medium-stretch > .carousel_item.padded,
+  .vzrf .main .w_carousel.medium-stretch.small-stretch-off > .carousel_item.padded,
+  .vzrf .medium-narrow .tiny-stretch.padded,
+  .vzrf .medium-narrow .small-stretch.padded,
+  .vzrf .medium-narrow .medium-stretch.padded,
+  .vzrf .medium-narrow .medium-stretch.small-stretch-off.padded,
+  .vzrf .medium-narrow .w_carousel.tiny-stretch > .carousel_item.padded,
+  .vzrf .medium-narrow .w_carousel.small-stretch > .carousel_item.padded,
+  .vzrf .medium-narrow .w_carousel.medium-stretch > .carousel_item.padded,
+  .vzrf .medium-narrow .w_carousel.medium-stretch.small-stretch-off > .carousel_item.padded {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  /* line 136, ../../scss/components/stretch.scss */
+  .vzrf .main .medium-stretch-off,
+  .vzrf .main .medium-stretch-off.stretch,
+  .vzrf .main .medium-stretch-off.tiny-stretch,
+  .vzrf .main .medium-stretch-off.small-stretch,
+  .vzrf .medium-narrow .medium-stretch-off,
+  .vzrf .medium-narrow .medium-stretch-off.stretch,
+  .vzrf .medium-narrow .medium-stretch-off.tiny-stretch,
+  .vzrf .medium-narrow .medium-stretch-off.small-stretch {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media only screen and (min-width: 60.625rem) {
+  /* line 147, ../../scss/components/stretch.scss */
+  .vzrf .large-wide .tiny-stretch,
+  .vzrf .large-wide .small-stretch,
+  .vzrf .large-wide .medium-stretch,
+  .vzrf .large-wide .medium-stretch.small-stretch-off,
+  .vzrf .large-wide .large-stretch,
+  .vzrf .large-wide .large-stretch.small-stretch-off,
+  .vzrf .large-wide .large-stretch.medium-stretch-off,
+  .vzrf .large-wide .w_carousel.tiny-stretch > .carousel_item,
+  .vzrf .large-wide .w_carousel.small-stretch > .carousel_item,
+  .vzrf .large-wide .w_carousel.medium-stretch > .carousel_item,
+  .vzrf .large-wide .w_carousel.large-stretch > .carousel_item,
+  .vzrf .large-wide .w_carousel.large-stretch.small-stretch-off > .carousel_item,
+  .vzrf .large-wide .w_carousel.large-stretch.medium-stretch-off > .carousel_item {
+    margin-left: -1.125rem;
+    margin-right: -1.125rem;
+  }
+  /* line 28, ../../scss/components/stretch.scss */
+  .vzrf .large-wide .tiny-stretch.padded,
+  .vzrf .large-wide .small-stretch.padded,
+  .vzrf .large-wide .medium-stretch.padded,
+  .vzrf .large-wide .medium-stretch.small-stretch-off.padded,
+  .vzrf .large-wide .large-stretch.padded,
+  .vzrf .large-wide .large-stretch.small-stretch-off.padded,
+  .vzrf .large-wide .large-stretch.medium-stretch-off.padded,
+  .vzrf .large-wide .w_carousel.tiny-stretch > .carousel_item.padded,
+  .vzrf .large-wide .w_carousel.small-stretch > .carousel_item.padded,
+  .vzrf .large-wide .w_carousel.medium-stretch > .carousel_item.padded,
+  .vzrf .large-wide .w_carousel.large-stretch > .carousel_item.padded,
+  .vzrf .large-wide .w_carousel.large-stretch.small-stretch-off > .carousel_item.padded,
+  .vzrf .large-wide .w_carousel.large-stretch.medium-stretch-off > .carousel_item.padded {
+    padding-left: 1.125rem;
+    padding-right: 1.125rem;
+  }
+  /* line 163, ../../scss/components/stretch.scss */
+  .vzrf .large-wide .large-stretch-off,
+  .vzrf .large-wide .large-stretch-off.stretch,
+  .vzrf .large-wide .large-stretch-off.tiny-stretch,
+  .vzrf .large-wide .large-stretch-off.small-stretch,
+  .vzrf .large-wide .large-stretch-off.medium-stretch {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  /* line 174, ../../scss/components/stretch.scss */
+  .vzrf .main .tiny-stretch,
+  .vzrf .main .small-stretch,
+  .vzrf .main .medium-stretch,
+  .vzrf .main .medium-stretch.small-stretch-off,
+  .vzrf .main .large-stretch,
+  .vzrf .main .large-stretch.small-stretch-off,
+  .vzrf .main .large-stretch.medium-stretch-off,
+  .vzrf .main .w_carousel.tiny-stretch > .carousel_item,
+  .vzrf .main .w_carousel.small-stretch > .carousel_item,
+  .vzrf .main .w_carousel.medium-stretch > .carousel_item,
+  .vzrf .main .w_carousel.large-stretch > .carousel_item,
+  .vzrf .main .w_carousel.large-stretch.small-stretch-off > .carousel_item,
+  .vzrf .main .w_carousel.large-stretch.medium-stretch-off > .carousel_item,
+  .vzrf .large-narrow .tiny-stretch,
+  .vzrf .large-narrow .small-stretch,
+  .vzrf .large-narrow .medium-stretch,
+  .vzrf .large-narrow .medium-stretch.small-stretch-off,
+  .vzrf .large-narrow .large-stretch,
+  .vzrf .large-narrow .large-stretch.small-stretch-off,
+  .vzrf .large-narrow .large-stretch.medium-stretch-off,
+  .vzrf .large-narrow .w_carousel.tiny-stretch > .carousel_item,
+  .vzrf .large-narrow .w_carousel.small-stretch > .carousel_item,
+  .vzrf .large-narrow .w_carousel.medium-stretch > .carousel_item,
+  .vzrf .large-narrow .w_carousel.large-stretch > .carousel_item,
+  .vzrf .large-narrow .w_carousel.large-stretch.small-stretch-off > .carousel_item,
+  .vzrf .large-narrow .w_carousel.large-stretch.medium-stretch-off > .carousel_item {
+    margin-left: -3.75rem;
+    margin-right: -3.75rem;
+  }
+  /* line 38, ../../scss/components/stretch.scss */
+  .vzrf .main .tiny-stretch.padded,
+  .vzrf .main .small-stretch.padded,
+  .vzrf .main .medium-stretch.padded,
+  .vzrf .main .medium-stretch.small-stretch-off.padded,
+  .vzrf .main .large-stretch.padded,
+  .vzrf .main .large-stretch.small-stretch-off.padded,
+  .vzrf .main .large-stretch.medium-stretch-off.padded,
+  .vzrf .main .w_carousel.tiny-stretch > .carousel_item.padded,
+  .vzrf .main .w_carousel.small-stretch > .carousel_item.padded,
+  .vzrf .main .w_carousel.medium-stretch > .carousel_item.padded,
+  .vzrf .main .w_carousel.large-stretch > .carousel_item.padded,
+  .vzrf .main .w_carousel.large-stretch.small-stretch-off > .carousel_item.padded,
+  .vzrf .main .w_carousel.large-stretch.medium-stretch-off > .carousel_item.padded,
+  .vzrf .large-narrow .tiny-stretch.padded,
+  .vzrf .large-narrow .small-stretch.padded,
+  .vzrf .large-narrow .medium-stretch.padded,
+  .vzrf .large-narrow .medium-stretch.small-stretch-off.padded,
+  .vzrf .large-narrow .large-stretch.padded,
+  .vzrf .large-narrow .large-stretch.small-stretch-off.padded,
+  .vzrf .large-narrow .large-stretch.medium-stretch-off.padded,
+  .vzrf .large-narrow .w_carousel.tiny-stretch > .carousel_item.padded,
+  .vzrf .large-narrow .w_carousel.small-stretch > .carousel_item.padded,
+  .vzrf .large-narrow .w_carousel.medium-stretch > .carousel_item.padded,
+  .vzrf .large-narrow .w_carousel.large-stretch > .carousel_item.padded,
+  .vzrf .large-narrow .w_carousel.large-stretch.small-stretch-off > .carousel_item.padded,
+  .vzrf .large-narrow .w_carousel.large-stretch.medium-stretch-off > .carousel_item.padded {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }
+  /* line 190, ../../scss/components/stretch.scss */
+  .vzrf .main .large-stretch-off,
+  .vzrf .main .large-stretch-off.stretch,
+  .vzrf .main .large-stretch-off.tiny-stretch,
+  .vzrf .main .large-stretch-off.small-stretch,
+  .vzrf .main .large-stretch-off.medium-stretch,
+  .vzrf .large-narrow .large-stretch-off,
+  .vzrf .large-narrow .large-stretch-off.stretch,
+  .vzrf .large-narrow .large-stretch-off.tiny-stretch,
+  .vzrf .large-narrow .large-stretch-off.small-stretch,
+  .vzrf .large-narrow .large-stretch-off.medium-stretch {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

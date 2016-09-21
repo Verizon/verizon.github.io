@@ -1,0 +1,105 @@
+@charset "UTF-8";
+/*! VZRF 2.20.0 */
+/* line 4, ../../scss/components/type-other.scss */
+hr {
+  border: solid #bbb;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 1.5rem 0 2.9375rem;
+  height: 0;
+}
+
+/* line 12, ../../scss/components/type-other.scss */
+hr.gradient {
+  padding-bottom: 1.25rem;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U0ZTVlMyIvPjxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #e4e5e3), color-stop(80%, rgba(255, 255, 255, 0)));
+  background: -moz-linear-gradient(#e4e5e3 0%, rgba(255, 255, 255, 0) 80%);
+  background: -webkit-linear-gradient(#e4e5e3 0%, rgba(255, 255, 255, 0) 80%);
+  background: linear-gradient(#e4e5e3 0%, rgba(255, 255, 255, 0) 80%);
+  border: none;
+}
+
+/* line 20, ../../scss/components/type-other.scss */
+hr.gradient-dark {
+  padding-bottom: 1.25rem;
+  background: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIzMWYyMCIvPjxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjMjMxZjIwIiBzdG9wLW9wYWNpdHk9IjAuMCIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #231f20), color-stop(80%, rgba(35, 31, 32, 0)));
+  background: -moz-linear-gradient(#231f20 0%, rgba(35, 31, 32, 0) 80%);
+  background: -webkit-linear-gradient(#231f20 0%, rgba(35, 31, 32, 0) 80%);
+  background: linear-gradient(#231f20 0%, rgba(35, 31, 32, 0) 80%);
+  border: none;
+}
+
+/* Abbreviations */
+/* line 29, ../../scss/components/type-other.scss */
+abbr,
+acronym {
+  text-transform: uppercase;
+  font-size: 90%;
+  color: #333;
+  border-bottom: 1px dotted #ddd;
+  cursor: help;
+}
+
+/* line 37, ../../scss/components/type-other.scss */
+abbr {
+  text-transform: none;
+}
+
+/* Blockquotes */
+/* line 42, ../../scss/components/type-other.scss */
+blockquote {
+  margin: 0 0 1.5rem;
+  padding: 0.75rem 1.3125rem 0 1.125rem;
+  border-left: 1px solid #ddd;
+}
+/* line 47, ../../scss/components/type-other.scss */
+blockquote cite {
+  display: block;
+  font-size: 0.875rem;
+  color: #959595;
+}
+/* line 51, ../../scss/components/type-other.scss */
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+
+/* line 56, ../../scss/components/type-other.scss */
+blockquote,
+blockquote p {
+  line-height: 1.5;
+  color: #4b4b4b;
+}
+
+/* Microformats */
+/* line 63, ../../scss/components/type-other.scss */
+.vcard {
+  display: inline-block;
+  margin: 0 0 1.3125rem 0;
+  border: 1px solid #ddd;
+  padding: 0.375rem 0.75rem;
+}
+/* line 69, ../../scss/components/type-other.scss */
+.vcard li {
+  margin: 0;
+  display: block;
+}
+/* line 73, ../../scss/components/type-other.scss */
+.vcard .fn {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+
+/* line 80, ../../scss/components/type-other.scss */
+.vevent .summary {
+  font-weight: bold;
+}
+/* line 82, ../../scss/components/type-other.scss */
+.vevent abbr {
+  cursor: default;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  padding: 0 0.0625rem;
+}

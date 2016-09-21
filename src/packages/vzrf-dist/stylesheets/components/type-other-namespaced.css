@@ -1,0 +1,100 @@
+@charset "UTF-8";
+/* line 1, ../../scss/components/type-other-namespaced.scss */
+.vzrf {
+  /*! VZRF 2.20.0 */
+  /* Abbreviations */
+  /* Blockquotes */
+  /* Microformats */
+}
+/* line 4, ../../scss/components/type-other.scss */
+.vzrf hr {
+  border: solid #bbb;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 1.5rem 0 2.9375rem;
+  height: 0;
+}
+/* line 12, ../../scss/components/type-other.scss */
+.vzrf hr.gradient {
+  padding-bottom: 1.25rem;
+  background: linear-gradient(#e4e5e3 0%, rgba(255, 255, 255, 0) 80%);
+  background: linear-gradient(#e4e5e3 0%, rgba(255, 255, 255, 0) 80%);
+  background: linear-gradient(#e4e5e3 0%, rgba(255, 255, 255, 0) 80%);
+  background: linear-gradient(#e4e5e3 0%, rgba(255, 255, 255, 0) 80%);
+  background: linear-gradient(#e4e5e3 0%, rgba(255, 255, 255, 0) 80%);
+  border: none;
+}
+/* line 20, ../../scss/components/type-other.scss */
+.vzrf hr.gradient-dark {
+  padding-bottom: 1.25rem;
+  background: linear-gradient(#231f20 0%, rgba(35, 31, 32, 0) 80%);
+  background: linear-gradient(#231f20 0%, rgba(35, 31, 32, 0) 80%);
+  background: linear-gradient(#231f20 0%, rgba(35, 31, 32, 0) 80%);
+  background: linear-gradient(#231f20 0%, rgba(35, 31, 32, 0) 80%);
+  background: linear-gradient(#231f20 0%, rgba(35, 31, 32, 0) 80%);
+  border: none;
+}
+/* line 29, ../../scss/components/type-other.scss */
+.vzrf abbr,
+.vzrf acronym {
+  text-transform: uppercase;
+  font-size: 90%;
+  color: #333;
+  border-bottom: 1px dotted #ddd;
+  cursor: help;
+}
+/* line 37, ../../scss/components/type-other.scss */
+.vzrf abbr {
+  text-transform: none;
+}
+/* line 42, ../../scss/components/type-other.scss */
+.vzrf blockquote {
+  margin: 0 0 1.5rem;
+  padding: 0.75rem 1.3125rem 0 1.125rem;
+  border-left: 1px solid #ddd;
+}
+/* line 47, ../../scss/components/type-other.scss */
+.vzrf blockquote cite {
+  display: block;
+  font-size: 0.875rem;
+  color: #959595;
+}
+/* line 51, ../../scss/components/type-other.scss */
+.vzrf blockquote cite:before {
+  content: "\2014 \0020";
+}
+/* line 56, ../../scss/components/type-other.scss */
+.vzrf blockquote,
+.vzrf blockquote p {
+  line-height: 1.5;
+  color: #4b4b4b;
+}
+/* line 63, ../../scss/components/type-other.scss */
+.vzrf .vcard {
+  display: inline-block;
+  margin: 0 0 1.3125rem 0;
+  border: 1px solid #ddd;
+  padding: 0.375rem 0.75rem;
+}
+/* line 69, ../../scss/components/type-other.scss */
+.vzrf .vcard li {
+  margin: 0;
+  display: block;
+}
+/* line 73, ../../scss/components/type-other.scss */
+.vzrf .vcard .fn {
+  font-weight: bold;
+  font-size: 0.875rem;
+}
+/* line 80, ../../scss/components/type-other.scss */
+.vzrf .vevent .summary {
+  font-weight: bold;
+}
+/* line 82, ../../scss/components/type-other.scss */
+.vzrf .vevent abbr {
+  cursor: default;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  padding: 0 0.0625rem;
+}

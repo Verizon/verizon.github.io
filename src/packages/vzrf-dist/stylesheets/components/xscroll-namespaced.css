@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/* line 1, ../../scss/components/xscroll-namespaced.scss */
+.vzrf {
+  /*! VZRF 2.20.0 */
+}
+/* line 4, ../../scss/components/xscroll.scss */
+.vzrf [data-xscroll] {
+  white-space: nowrap;
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  cursor: ew-resize;
+  -webkit-overflow-scrolling: touch;
+  -webkit-transform: translatez(0);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: none;
+  -ms-touch-action: pan-y;
+}
+/* line 20, ../../scss/components/xscroll.scss */
+.vzrf [data-xscroll]::-webkit-scrollbar {
+  border-radius: 5px;
+  height: 7px;
+  background: transparent;
+}
+/* line 26, ../../scss/components/xscroll.scss */
+.vzrf [data-xscroll]::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: none;
+}
+/* line 31, ../../scss/components/xscroll.scss */
+.vzrf [data-xscroll]::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #cccccc;
+}

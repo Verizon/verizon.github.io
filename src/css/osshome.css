@@ -1,0 +1,108 @@
+
+
+
+
+
+/*BRANDING-COLORS*/
+.brand-1{
+  color: #CD040B;
+}
+.brand-1:hover{
+  color: #A80309;
+}
+.brand-1.active{
+  color: #990308;
+}
+.brand-2{
+  color: #82CEAC;
+}
+.brand-2.active{
+  color: #5DC094;
+}
+.brand-2-pale{
+  color: #E9F8E9;
+}
+.brand-2-pale.active{
+  color: #C2ECC2;
+}
+.brand-3{
+  color: #ABE0F9;
+}
+.brand-3.active{
+  color: #8AD4F7;
+}
+.brand-3-pale{
+  color: #E8F6FE;
+}
+.brand-3-pale.active{
+  color: #C6E9FD;
+}
+.brand-4{
+  color: #F9B295;
+}
+.brand-4.active{
+  color: #F79973;
+}
+.brand-4-pale{
+  color: #FEF0E8;
+}
+.brand-4-pale.active{
+  color: #FDDAC6;
+}
+.brand-5{
+  color: #FBD362;
+}
+.brand-5.active{
+  color: #FAC93F;
+}
+.brand-5-pale{
+  color: #FEFFE4;
+}
+.brand-5-pale.active{
+  color: #FDFFC0;
+}
+.hyperlink{
+  color: #0066BB;
+}
+.hyperlink:hover{
+  color: #00478E;
+}
+.hyperlink.active{
+  color: #333333;
+}
+.info{
+  color: #0066BB;
+}
+.info-pale{
+  color: #BED8F1;
+}
+.success{
+  color: #0c7810;
+}
+.success-pale{
+  color: #D5EAD3;
+}
+.warning{
+  color: #F8D362
+}
+.warning-pale{
+  color: #FFE8A6;
+}
+.alert{
+  color: #A80309;
+}
+.alert-pale{
+  color: #FFCFD0;
+}
+.grey-5{
+  color: #E4E5E3;
+}
+.grey-5.active{
+  color: #D7D9D6;
+}
+.grey-6{
+  color: #F6F6F6;
+}
+.grey-6.active{
+  color: #F0F0F0;
+}
