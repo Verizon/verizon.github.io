@@ -1,8 +1,88 @@
+.navbar-item{
+  display: inline-block;
+  margin: 5px;
+  vertical-align: middle;
+}
+body{
+  height: 200vh;
+}
+.navbar-item-text{
+  font-size: 20pt;
+  font-weight: 300;
+  vertical-align: middle;
+}
+.navbar-item-text.activatable{
+  border-top: 2px solid white;
+  font-size: 15px;
+}
+.activatable:hover{
+  border-top: 2px solid #CD040B;
+}
+.content-head{
+  height: 80vh;
+  background-color: #FEF0E8
+}
+.navigation{
+  vertical-align: middle;
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*UNIVERSAL*/
+.right{
+  margin-right: 0px;
+}
+.left{
+  margin-left: 0px;
+}
+.top{
+  margin-top: 0px;
+}
+.bottom{
+  margin-bottom: 0px;
+}
+.center{
+  margin: 0 auto;
+}
 /*BRANDING-COLORS*/
 .brand-1{
   color: #CD040B;
@@ -105,4 +185,7 @@
 }
 .grey-6.active{
   color: #F0F0F0;
+}
+.grey{
+  color: #4b4b4b;
 }
