@@ -4,7 +4,7 @@ var expand = require("expand");
 var CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: "./src/osshome.js",
+  entry: "./src/index.js",
   output: {
     path: "./target",
     filename: "js/osshome.js"
@@ -13,7 +13,10 @@ module.exports = {
     loaders: [
       {test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "url-loader?limit=10000&mimetype=application/font-woff"},
       {test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, loader: "file-loader"},
-      // {test : /\.jsx?/, include : APP_DIR, loader : 'babel'}
+      {test: /\.jsx?/, include : path.resolve('./src'), loader : 'babel'},
+      {test: /\.css$/, loader: "style-loader!css-loader"},
+      {test: /\.png$/, loader: "url-loader?limit=100000" },
+      {test: /\.jpg$/, loader: "file-loader"},
     ]
   },
   plugins: [
