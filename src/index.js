@@ -8,7 +8,7 @@ global.jQuery = jquery;
 import OpenSourceNavbar from './js/open_source_navbar.js';
 import MainNavbar from './js/main_navbar.js';
 import HeaderContent from './js/header_content.js';
-
+import OpenSourceContent from './js/open_source_content.js';
 
 var App = React.createClass({
   render: function(){
@@ -17,6 +17,7 @@ var App = React.createClass({
         <MainNavbar />
         <HeaderContent />
         <OpenSourceNavbar />
+        <OpenSourceContent />
       </div>
     );
   }

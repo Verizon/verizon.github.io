@@ -14,16 +14,47 @@ body{
 .navbar-item-text.activatable{
   border-top: 2px solid white;
   font-size: 15px;
+  margin-right: 5px;
 }
 .activatable:hover{
   border-top: 2px solid #CD040B;
 }
 .content-head{
-  height: 500px;
+  height: 350px;
   background-color: #FEF0E8
 }
 .navigation{
   vertical-align: middle;
+}
+.panel.repo-unit{
+  max-width: 350px;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+  border: none;
+  display: inline-block;
+}
+.panel-heading.repo-unit{
+  background-color: white!important;
+  border: none!important;
+  overflow-y: scroll;
+}
+.panel-body.repo-unit{
+  background-color: white;
+  border: none;
+  overflow-y: scroll;
+}
+.panel-footer.repo-unit{
+  background-color: white;
+  border: none;
+  overflow-y: scroll;
+}
+.open-source-content{
+  padding: 5px;
+  background-color: #FFE8A6;
+}
+.open-source-navbar-content{
+  text-align: right;
 }
 
 
@@ -68,6 +99,9 @@ body{
 
 
 /*UNIVERSAL*/
+.inline{
+  display: inline-block;
+}
 .right{
   margin-right: 0px;
 }

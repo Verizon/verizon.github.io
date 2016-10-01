@@ -4,7 +4,8 @@
   "description": "Verizon's open source home page",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/webpack -d"
   },
   "repository": {
     "type": "git",
