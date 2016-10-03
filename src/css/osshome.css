@@ -52,6 +52,7 @@ body{
 .open-source-content{
   padding: 5px;
   background-color: #FFE8A6;
+  min-height: 50px;
 }
 .open-source-navbar-content{
   text-align: right;
