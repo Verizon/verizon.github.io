@@ -20,19 +20,21 @@ body{
   border-top: 2px solid #CD040B;
 }
 .content-head{
-  height: 350px;
+  height: 250px;
   background-color: #FEF0E8
 }
 .navigation{
   vertical-align: middle;
 }
 .panel.repo-unit{
-  max-width: 350px;
+  width: 280px;
   padding: 10px;
   margin: 10px;
   background-color: white;
   border: none;
   display: inline-block;
+  height: 250px;
+  vertical-align: top;
 }
 .panel-heading.repo-unit{
   background-color: white!important;
@@ -43,6 +45,7 @@ body{
   background-color: white;
   border: none;
   overflow-y: scroll;
+  padding: 5px;
 }
 .panel-footer.repo-unit{
   background-color: white;
@@ -53,11 +56,24 @@ body{
   padding: 5px;
   background-color: #FFE8A6;
   min-height: 50px;
+  text-align: center;
 }
 .open-source-navbar-content{
   text-align: right;
 }
-
+.repo-description{
+  height: 80px;
+  overflow-y: scroll;
+}
+.repo-name{
+  margin-top: 5px;
+}
+p.zeromargin{
+  margin-bottom: 0px;
+}
+.limit-width{
+  max-width: 1200px;
+}
 
 
 

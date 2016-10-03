@@ -5,7 +5,7 @@ var MainNavbar = React.createClass({
     return (
       <div>
         <nav>
-          <div className="container-fluid navigation main-navbar-content">
+          <div className="container-fluid navigation main-navbar-content center limit-width">
             <div className="navbar-item"><p className="navbar-item-text">VERIZON</p></div>
             <div className="navbar-item right"><p className="navbar-item-text activatable">Open Source</p></div>
             <div className="navbar-item right"><p className="navbar-item-text activatable">Talks</p></div>

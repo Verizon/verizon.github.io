@@ -35,14 +35,16 @@ call.onload = function(){
     divs.push(
       <div key={i} className="panel panel-default repo-unit">
         <div className="panel-heading repo-unit">
-          <a href={e.homepage}>
-            <h2>{e.name}</h2>
-          </a>
+          <h3 className="repo-name">{e.name}</h3>
+          <p className="zeromargin">Updated at {e.updated_at}</p>
+          <p className="zeromargin">Language: {e.language}</p>
         </div>
         <div className="panel-body repo-unit">
-          <p>{e.description}</p>
-        </div>
-        <div className="panel-footer repo-unit">
+          <p className="zeromargin" className="repo-description">{e.description}</p>
+          <a href={e.homepage}>
+            <button>View</button>
+            <button>Clone</button>
+          </a>
         </div>
       </div>
     );
@@ -51,7 +53,7 @@ call.onload = function(){
   var RepoElement = React.createClass({
     render: function(){
       return (
-        <div className="content">
+        <div className="content center limit-width">
           {divs}
         </div>
       );
