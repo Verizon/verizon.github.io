@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom'
 import {render} from 'react-dom';
 import jquery from 'jquery';
 import bootstrap from './packages/bootstrap.min.css';
+import Moment from 'moment';
+global.moment = Moment;
 global.jQuery = jquery;
 import OpenSourceNavbar from './js/open_source_navbar.js';
 import MainNavbar from './js/main_navbar.js';
@@ -32,24 +34,25 @@ call.onload = function(){
   repos = JSON.parse(call.responseText);
   console.log(repos);
   repos.forEach(function(e, i){
+    var date = e.updated_at.slice(0, 10);
     divs.push(
       <div key={i} className="panel panel-default repo-unit">
         <div className="panel-heading repo-unit">
           <h3 className="repo-name">{e.name}</h3>
-          <p className="zeromargin">Updated at {e.updated_at}</p>
-          <p className="zeromargin">Language: {e.language}</p>
         </div>
         <div className="panel-body repo-unit">
-          <p className="zeromargin" className="repo-description">{e.description}</p>
-          <a href={e.homepage}>
-            <button>View</button>
-            <button>Clone</button>
-          </a>
+          <p className="zeromargin text-left">Last Updated: {date}</p>
+          <p className="text-left">Language: {e.language}</p>
+          <p className="zeromargin text-left" className="repo-description">{e.description}</p>
         </div>
+        <a href={e.homepage}>
+          <div className="panel-footer repo-unit">
+            <button className="custom-1">View</button>
+          </div>
+        </a>
       </div>
     );
   });
-  console.log(divs);
   var RepoElement = React.createClass({
     render: function(){
       return (

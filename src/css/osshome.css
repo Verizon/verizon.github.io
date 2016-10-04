@@ -21,40 +21,37 @@ body{
 }
 .content-head{
   height: 250px;
-  background-color: #FEF0E8
+  background-color: #CCCCCC;
 }
 .navigation{
   vertical-align: middle;
 }
 .panel.repo-unit{
   width: 280px;
-  padding: 10px;
   margin: 10px;
-  background-color: white;
-  border: none;
+  background-color: #F6F6F6;
   display: inline-block;
-  height: 250px;
+  height: 278px;
   vertical-align: top;
 }
 .panel-heading.repo-unit{
-  background-color: white!important;
+  background-color: #F6F6F6!important;
   border: none!important;
   overflow-y: scroll;
 }
 .panel-body.repo-unit{
-  background-color: white;
+  background-color: #F6F6F6;
   border: none;
   overflow-y: scroll;
-  padding: 5px;
+  padding: 15px;
 }
 .panel-footer.repo-unit{
-  background-color: white;
+  background-color: #F6F6F6;
   border: none;
   overflow-y: scroll;
 }
 .open-source-content{
   padding: 5px;
-  background-color: #FFE8A6;
   min-height: 50px;
   text-align: center;
 }
@@ -67,6 +64,7 @@ body{
 }
 .repo-name{
   margin-top: 5px;
+  color: #CD040B
 }
 p.zeromargin{
   margin-bottom: 0px;
@@ -74,33 +72,14 @@ p.zeromargin{
 .limit-width{
   max-width: 1200px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.custom-1{
+  border: none;
+  color: black;
+  background-color: transparent;
+}
+.navbar-logo{
+  height: 50px;
+}
 
 
 
@@ -116,6 +95,9 @@ p.zeromargin{
 
 
 /*UNIVERSAL*/
+.text-left{
+  text-align: left;
+}
 .inline{
   display: inline-block;
 }
