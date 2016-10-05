@@ -61,6 +61,7 @@ body{
 .repo-description{
   height: 80px;
   overflow-y: scroll;
+  text-align: left;
 }
 .repo-name{
   margin-top: 5px;
@@ -74,14 +75,26 @@ p.zeromargin{
 }
 .custom-1{
   border: none;
-  color: black;
+  color: white;
   background-color: transparent;
 }
 .navbar-logo{
   height: 50px;
 }
-
-
+.repo-language{
+  color: #CD040B;
+}
+.navbar-item{
+  margin-top: 0px;
+}
+.repo-button-container{
+  text-align: center;
+  margin: 0 auto;
+  vertical-align: middle;
+  width: 60%;
+  background-color: #CD040B;
+  border-radius: 4px;
+}
 
 
 

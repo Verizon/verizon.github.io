@@ -34,7 +34,7 @@ call.onload = function(){
   repos = JSON.parse(call.responseText);
   console.log(repos);
   repos.forEach(function(e, i){
-    var date = e.updated_at.slice(0, 10);
+    var date = e.updated_at.slice(5, 7) + "-" + e.updated_at.slice(8, 10) + "-" + e.updated_at.slice(0, 4) + ",  " + e.updated_at.slice(11, 16);
     divs.push(
       <div key={i} className="panel panel-default repo-unit">
         <div className="panel-heading repo-unit">
@@ -42,12 +42,14 @@ call.onload = function(){
         </div>
         <div className="panel-body repo-unit">
           <p className="zeromargin text-left">Last Updated: {date}</p>
-          <p className="text-left">Language: {e.language}</p>
+          <p className="text-left repo-language">Language: {e.language}</p>
           <p className="zeromargin text-left" className="repo-description">{e.description}</p>
         </div>
         <a href={e.homepage}>
           <div className="panel-footer repo-unit">
-            <button className="custom-1">View</button>
+            <div className="repo-button-container">
+              <button className="custom-1">View</button>
+            </div>
           </div>
         </a>
       </div>
