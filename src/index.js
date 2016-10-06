@@ -34,6 +34,12 @@ call.onload = function(){
   repos = JSON.parse(call.responseText);
   console.log(repos);
   repos.forEach(function(e, i){
+    e.sortProperty = moment(e.updated_at, "x");
+  });
+  repos.sort(function(a, b){
+    return b.sortProperty - a.sortProperty;
+  });
+  repos.forEach(function(e, i){
     var date = e.updated_at.slice(5, 7) + "-" + e.updated_at.slice(8, 10) + "-" + e.updated_at.slice(0, 4) + ",  " + e.updated_at.slice(11, 16);
     divs.push(
       <div key={i} className="panel panel-default repo-unit">
@@ -45,13 +51,13 @@ call.onload = function(){
           <p className="text-left repo-language">Language: {e.language}</p>
           <p className="zeromargin text-left" className="repo-description">{e.description}</p>
         </div>
-        <a href={e.homepage}>
-          <div className="panel-footer repo-unit">
+        <div className="panel-footer repo-unit">
+          <a href={e.homepage}>
             <div className="repo-button-container">
               <button className="custom-1">View</button>
             </div>
-          </div>
-        </a>
+          </a>
+        </div>
       </div>
     );
   });

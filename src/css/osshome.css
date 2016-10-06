@@ -95,6 +95,10 @@ p.zeromargin{
   background-color: #CD040B;
   border-radius: 4px;
 }
+.repo-button-container:hover{
+  background-color: #A80309;
+  cursor: pointer;
+}
 
 
 
