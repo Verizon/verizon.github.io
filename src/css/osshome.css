@@ -43,7 +43,7 @@ body{
   background-color: #F6F6F6;
   border: none;
   overflow-y: scroll;
-  padding: 15px;
+  padding: 15px 30px 15px;
 }
 .panel-footer.repo-unit{
   background-color: #F6F6F6;
@@ -57,14 +57,17 @@ body{
 }
 .open-source-navbar-content{
   text-align: right;
+  height: 40px;
 }
 .repo-description{
   height: 80px;
   overflow-y: scroll;
   text-align: left;
+  margin-bottom: 0px;
 }
 .repo-name{
   margin-top: 5px;
+  margin-bottom: 0px;
   color: #CD040B
 }
 p.zeromargin{
@@ -94,6 +97,7 @@ p.zeromargin{
   width: 60%;
   background-color: #CD040B;
   border-radius: 4px;
+  margin-bottom: 15px;
 }
 .repo-button-container:hover{
   background-color: #A80309;
@@ -120,6 +124,8 @@ p.zeromargin{
 }
 .right{
   margin-right: 0px;
+  position: absolute;
+  right: 0;
 }
 .left{
   margin-left: 0px;

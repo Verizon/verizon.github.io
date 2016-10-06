@@ -33,6 +33,7 @@
     "react-bootstrap": "^0.30.3",
     "react-datetime": "^2.6.0",
     "react-dom": "^15.3.2",
+    "react-filter": "0.0.7",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2"

@@ -11,20 +11,35 @@ import MainNavbar from './js/main_navbar.js';
 import HeaderContent from './js/header_content.js';
 import OpenSourceContent from './js/open_source_content.js';
 
+
 var App = React.createClass({
   render: function(){
     return (
       <div>
-        <MainNavbar />
-        <HeaderContent />
-        <OpenSourceNavbar />
-        <OpenSourceContent />
+        <div id="main-head">
+          <MainNavbar />
+        </div>
+        <div id="main-content">
+          <HeaderContent />
+          <OpenSourceNavbar />
+          <OpenSourceContent />
+        </div>
       </div>
     );
   }
 });
 
 ReactDOM.render(<App />, document.getElementById('content'));
+
+var Blog = React.createClass({
+  render: function(){
+    return (
+      <div>
+
+      </div>
+    );
+  }
+});
 
 var call = new XMLHttpRequest();
 var repos;
