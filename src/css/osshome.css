@@ -31,7 +31,7 @@ body{
   margin: 10px;
   background-color: #F6F6F6;
   display: inline-block;
-  height: 278px;
+  min-height: 278px;
   vertical-align: top;
 }
 .panel-heading.repo-unit{
@@ -103,7 +103,30 @@ p.zeromargin{
   background-color: #A80309;
   cursor: pointer;
 }
-
+.repo-avatar{
+  max-width: 90%;
+  max-height: 115px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.talk-unit{
+  border-radius: 4px;
+  border: 1px solid #DDDDDD;
+  background-color: #F6F6F6;
+  width: 99%;
+  margin: 0 auto;
+  height: 250px;
+  vertical-align: middle;
+}
+.talk-button{
+  background-color: #CD040B;
+  height: auto;
+  width: auto;
+}
+.talk-button>p{
+  color: white;
+  cursor: pointer;
+}
 
 
 
