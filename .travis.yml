@@ -1,0 +1,20 @@
+language: node_js
+
+node_js:
+  - 5.11
+
+install:
+  - npm rebuild
+  - sudo apt-get update && sudo apt-get install -y libfontconfig
+
+script:
+  - npm install
+  - webpack
+
+notifications:
+  email:
+    recipients:
+      - alice.wu@one.verizon.com
+      - timothy.m.perrett@one.verizon.com
+    on_success: change
+    on_failure: always
