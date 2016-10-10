@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/webpack -d"
+    "build": "./node_modules/.bin/webpack -d --watch"
   },
   "repository": {
     "type": "git",
@@ -34,6 +34,7 @@
     "react-datetime": "^2.6.0",
     "react-dom": "^15.3.2",
     "react-filter": "0.0.7",
+    "react-router": "^2.8.1",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2"
