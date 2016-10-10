@@ -8,7 +8,7 @@ var HeaderContent = React.createClass({
     var pattern = new Trianglify({
       width: window.screen.width | header.outerWidth(),
       height: header.outerHeight()*1.2,
-      cell_size: 40,
+      cell_size: 50,
       seed: Math.random(),
       x_colors: 'Reds'
     }).png()
@@ -18,7 +18,7 @@ var HeaderContent = React.createClass({
   render: function(){
     return (
       <div id="content-head" className="content-head">
-        <h1>Verizon Open Source Engineering</h1>
+        <h1>Hello.</h1>
       </div>
     );
   }

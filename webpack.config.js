@@ -39,8 +39,7 @@ module.exports = {
       { from: 'img', to: 'img' },
       { from: 'packages', to: 'packages'},
       { from: 'index.html', to: 'index.html' },
-    ]),
-    new webpack.NewWatchingPlugin()
+    ])
   ]
 }
 
