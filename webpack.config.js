@@ -35,10 +35,10 @@ module.exports = {
     //   },
     // }),
     new CopyWebpackPlugin([
-      { from: 'src/css', to: 'css' },
-      { from: 'src/img', to: 'img' },
-      { from: 'src/packages', to: 'packages'},
-      { from: 'src/index.html', to: 'index.html' },
+      { from: 'css', to: 'css' },
+      { from: 'img', to: 'img' },
+      { from: 'packages', to: 'packages'},
+      { from: 'index.html', to: 'index.html' },
     ]),
     new webpack.NewWatchingPlugin()
   ]
