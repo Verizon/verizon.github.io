@@ -154,12 +154,10 @@ p.zeromargin{
   display: inline-block;
 }
 .right{
-  margin-right: 0px;
-  position: absolute;
-  right: 0;
+  float: right;
 }
 .left{
-  margin-left: 0px;
+  float: left;
 }
 .top{
   margin-top: 0px;

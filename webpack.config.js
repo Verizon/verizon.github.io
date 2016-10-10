@@ -4,10 +4,14 @@ var expand = require("expand");
 var CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  entry: "./src/index.js",
+  context: path.join(__dirname, 'src'),
+  entry: "./index.js",
   output: {
     path: "./target",
     filename: "js/osshome.js"
+  },
+  watchOptions: {
+    poll: true
   },
   module: {
     loaders: [
@@ -36,6 +40,7 @@ module.exports = {
       { from: 'src/packages', to: 'packages'},
       { from: 'src/index.html', to: 'index.html' },
     ]),
+    new webpack.NewWatchingPlugin()
   ]
 }
 
