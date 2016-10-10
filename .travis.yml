@@ -9,7 +9,7 @@ install:
 
 script:
   - npm install
-  - webpack
+  - npm run build
 
 notifications:
   email:

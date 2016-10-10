@@ -1,8 +1,8 @@
-verizon.github.io
+# verizon.github.io
 
 [![Build Status](https://travis.oncue.verizon.net/oss/verizon.github.io.svg?token=Lp2ZVD96vfT8T599xRfV)](https://travis.oncue.verizon.net/oss/verizon.github.io)
 
-Verizon open source homepage
+Home of Verizon open-source development. This site contains information about our various open source projects, technical talks that have been done by Verizon staff and our public engineering blog.
 
 ### Local Development
 
