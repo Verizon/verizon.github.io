@@ -20,15 +20,29 @@ body{
   border-top: 2px solid #CD040B;
 }
 .content-head{
-  height: 500px;
-  background-color: #CCCCCC;
+  height: 300px;
+  /*background-color: #CCCCCC;*/
+  text-align: center;
+  background:
+    radial-gradient(black 15%, transparent 16%) 0 0,
+    radial-gradient(black 15%, transparent 16%) 8px 8px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
 }
 .content-head h1 {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  padding-top: 200px;
+  font-family: 'NeueHaasGroteskTextBold', sans-serif;
+  padding-top: 100px;
   font-size: 60px;
-  font-weight: 300;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.content-head p {
+  font-size: 18px;
+}
+.content-head * {
+  color: #8C8C8C;
 }
 .navigation{
   vertical-align: middle;
