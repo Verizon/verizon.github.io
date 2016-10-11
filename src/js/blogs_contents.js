@@ -3,7 +3,6 @@ var ReactDOM = require('react-dom');
 var Moment = require('moment');
 var blogLibrary = [{"title": "Lorem ipsum hodor", "date": "6 days ago", "author": "lorem ipsum", "content": "Lorem ipsum hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor"}, {"title": "Lorem ipsum hodor", "date": "7 days ago", "author": "lorem ipsum", "content": "Lorem ipsum hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor"}, {"title": "Lorem ipsum hodor", "date": "8 days ago", "author": "lorem ipsum", "content": "Lorem ipsum hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor"}];
 
-
 function RenderBlogs(){
   var BlogElement = React.createClass({
     render: function(){
@@ -13,7 +12,7 @@ function RenderBlogs(){
           <div key={i} className="content center limit-width-more blog-unit">
             <h2 className="brand-1">{e.title}</h2>
             <p>By: {e.author}, {e.date}</p>
-            <p>{e.content}</p>
+            <p>{e.content}</p> 
           </div>
         );
       });
