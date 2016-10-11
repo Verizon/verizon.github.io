@@ -6,22 +6,16 @@ Home of Verizon open-source development. This site contains information about ou
 
 ### Local Development
 
-In order to build this project, follow these steps:
+This project makes use of [Hugo](https://gohugo.io/) for site generation. In order to build this project, follow these steps:
 
 ```
-$ npm install
-$ npm run build
+$ hugo -b http://127.0.0.1:4000
 ```
 
-In order to serve the site locally, you need to ensure you have installed the following:
+In order to run a local development server, simply execute the shell script that is supplied with this project:
 
 ```
-$ npm install -g serve
+$ ./bin/local-server
 ```
 
-Then serving the site is as easy as:
-
-```
-$ cd target
-$ serve
-```
+This will automatically reload the site if any files change.

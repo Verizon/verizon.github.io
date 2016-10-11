@@ -1,0 +1,45 @@
+<html lang="en">
+
+{{ partial "_head.html" . }}
+
+<body>
+  <div id="content">
+
+    {{ partial "_nav.html" . }}
+
+    <div id="main-content" class="container-fluid dark-background">
+      <div class="content center limit-width">
+        {{ .Content }}
+      </div>
+
+      <!-- talks -->
+      {{ range $.Site.Data.talks }}
+      <div class="content center limit-width talk-unit">
+        <div class="col-md-1 col-xs-1 talk-buttons">
+          <a href={{ .video }}>
+            <div class="talk-button video">
+              <p class="talk-video-view">video</p>
+            </div>
+          </a>
+          <a href={{ .slides }}>
+            <div class="talk-button slides">
+              <p class="talk-slide-view">slides</p>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-3 col-xs-3">
+          <img class="talk-thumbnail" src="" alt="Not available" />
+        </div>
+        <div class="col-md-8 col-xs-8">
+          <div class="talk-title">
+            <h2>{{ .name }}</h2>
+            <h4>{{ .authorName }}</h4>
+          </div>
+        </div>
+      </div>
+      {{ end }}
+      <!-- e/o talks -->
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<div id="main-head">
+  <div>
+    <div class="container-fluid navigation main-navbar-content center limit-width">
+      <div class="left inline">
+        <div class="navbar-item">
+          <a href="/">
+            <img src="/img/vz_150_rgb_p.png" alt="not available" class="navbar-logo" />
+          </a>
+        </div>
+      </div>
+
+      <div class="right inline">
+        <div class="navbar-item">
+          <a class="navbar-item-text activatable" href="/">Open Source</a>
+        </div>
+
+        {{ $currentNode := . }}
+        {{ range .Site.Menus.main }}
+        <div class="navbar-item">
+          <a class="navbar-item-text activatable" href="{{.URL}}">{{ .Name }}</a>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
