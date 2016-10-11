@@ -1,7 +1,7 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
 var Moment = require('moment');
-var blogLibrary = [{"title": "Lorem ipsum hodor", "author": "lorem ipsum", "content": "Lorem ipsum hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor"}, {"title": "Lorem ipsum hodor", "author": "lorem ipsum", "content": "Lorem ipsum hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor"}, {"title": "Lorem ipsum hodor", "author": "lorem ipsum", "content": "Lorem ipsum hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor"}];
+var blogLibrary = [{"title": "Lorem ipsum hodor", "date": "6 days ago", "author": "lorem ipsum", "content": "Lorem ipsum hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor"}, {"title": "Lorem ipsum hodor", "date": "7 days ago", "author": "lorem ipsum", "content": "Lorem ipsum hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor"}, {"title": "Lorem ipsum hodor", "date": "8 days ago", "author": "lorem ipsum", "content": "Lorem ipsum hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor hodor"}];
 
 
 function RenderBlogs(){
@@ -14,7 +14,7 @@ function RenderBlogs(){
             <div className="panel panel-default">
               <div className="panel-heading">
                 <h2 className="brand-1">{e.title}</h2>
-                <p>By: {e.author}</p>
+                <p>By: {e.author}, {e.date}</p>
               </div>
               <div className="panel-body">
                 <p>{e.content}</p>
