@@ -3,17 +3,20 @@
     "name": "Large-scale Infrastructure Automation at Verizon",
     "authorName": "Timothy Perrett, Hashiconf 2016",
     "video": "https://www.youtube.com/watch?list=PL81sUbsFNc5bDS1lH0HPJFyBnAP8Iv4t0&params=OAFIAVgL&v=RzmpW5a1zEI&mode=NORMAL&app=desktop",
-    "slides": "http://www.slideshare.net/timperrett/largescale-infrastructure-automation-at-verizon-65797198"
+    "slides": "http://www.slideshare.net/timperrett/largescale-infrastructure-automation-at-verizon-65797198",
+    "thumbnail": "/img/LSIA.png"
   },
   {
     "name": "Enterprise Algebras",
     "authorName": "Timothy Perrett, Scala World 2016",
-    "slides": "http://www.slideshare.net/timperrett/enterprise-algebras-scala-world-2016"
+    "slides": "http://www.slideshare.net/timperrett/enterprise-algebras-scala-world-2016",
+    "thumbnail": "/img/LSIA.png"
   },
   {
     "name": "Scaling Verizon IPTV Recommendations with Scala and Spark",
     "authorName": "Diana Hu and Russ Horten, RecSysLSRS 2016",
-    "slides": "https://speakerdeck.com/sdianahu/scaling-verizon-iptv-recommendations-with-scala-and-spark"
+    "slides": "https://speakerdeck.com/sdianahu/scaling-verizon-iptv-recommendations-with-scala-and-spark",
+    "thumbnail": "/img/LSIA.png"
   },
   {
     "name": "Time Series Effects for TV Recommendations",
