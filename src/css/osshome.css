@@ -2,6 +2,7 @@
   display: inline-block;
   margin: 5px;
   vertical-align: middle;
+  cursor: pointer;
 }
 body{
   height: 200vh;
