@@ -39,8 +39,8 @@ var HeaderContent = React.createClass({
         <div className="row">
           <div className="col-md-12">
             <p>
-              <a href="https://github.com/verizon" className="linky"><span className="octicon octicon-mark-github"></span> github</a>
-              <a href="#" className="linky"><span className="octicon octicon-broadcast"></span> share</a>
+              <a target="_blank" href="https://github.com/verizon" className="linky"><span className="octicon octicon-mark-github"></span> github</a>
+              <a target="_blank" href="https://twitter.com/verizon" className="linky"><span className="octicon octicon-broadcast"></span> twitter</a>
               <a href="mailto:code@verizon.com" className="linky"><span className="octicon octicon-mail"></span> contact</a>
             </p>
           </div>
