@@ -20,20 +20,20 @@ body{
   border-top: 2px solid #CD040B;
 }
 .content-head{
-  height: 300px;
+  height: 50%;
   /*background-color: #CCCCCC;*/
   text-align: center;
-  background:
+/*  background:
     radial-gradient(black 15%, transparent 16%) 0 0,
     radial-gradient(black 15%, transparent 16%) 8px 8px,
     radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
     radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
     background-color:#282828;
-    background-size:16px 16px;
+    background-size:16px 16px;*/
 }
 .content-head h1 {
   font-family: 'NeueHaasGroteskTextBold', sans-serif;
-  padding-top: 100px;
+  padding-top: 20%;
   font-size: 60px;
   font-weight: 700;
   text-transform: uppercase;
@@ -42,7 +42,33 @@ body{
   font-size: 18px;
 }
 .content-head * {
-  color: #8C8C8C;
+  color: #98999B;
+}
+.content-head .arrow-down {
+  position: absolute;
+  left: 50%;
+  bottom: 50px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
+  display: block;
+  height: 5rem;
+  width: 5rem;
+  background: #fff;
+  border-radius: 50%;
+  transition: all .2s ease;
+  margin-left: -1.5rem;
+  opacity: .7;
+  font-size: 35px;
+  padding-top: 10px;
+  padding-left: 14px;
+}
+.content-head .arrow-down:hover {
+  transform: scale(1.06);
+  opacity: 1;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,.4);
+  text-decoration: none;
+}
+.content-head .arrow-down:active, .content-head .arrow-down:visited {
+  text-decoration: none;
 }
 .navigation{
   vertical-align: middle;
