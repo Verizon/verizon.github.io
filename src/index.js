@@ -59,6 +59,16 @@ var library = {
   "remotely": "./img/remotely.png",
   "quiver": "./img/quiver.png"
 }
+var talksThumbnailLibrary = {
+  "Large-scale Infrastructure Automation at Verizon": "./img/LSIA.png",
+  "Enterprise Algebras": "./img/enterprise.png",
+  "Scaling Verizon IPTV Recommendations with Scala and Spark": "./img/SVIPTVR.png",
+  "Video Slides Time Series Effects for TV Recommendations": "./img/TSEFTVR.png",
+  "Roll Your Own Shapeless": "./img/RYOS.png",
+  "Index Your State For Safer Functional APIs": "./img/Lambdaconf.png",
+  "Constraints Liberate, Liberties Constrain": "./img/constraints.png",
+  "Video Slides Building a Reasonable Expression DSL with Kleisli": "./img/ScalaBTB.png"
+}
 var call = new XMLHttpRequest();
 var repos;
 var divs = [];
@@ -148,9 +158,9 @@ call.onload = function(){
       return (
         <div>
           {divs}
+          {talkDivs}
         </div>
       );
-      // {talkDivs}
     }
   });
   ReactDOM.render(<RepoElement />, document.getElementById("open-source-content"));
@@ -158,17 +168,5 @@ call.onload = function(){
 
 
 document.addEventListener("DOMContentLoaded", function(event){
-  switch(location.pathname){
-    case "/":
-      call.send();
-      break;
-    case "/talks":
-      console.log(library);
-      break;
-    case "/blog":
-      console.log("blog");
-      break;
-    default:
-      location.pathname = "/";
-  }
+  call.send();
 });
