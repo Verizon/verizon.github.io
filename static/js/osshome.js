@@ -14,6 +14,7 @@ $(function(){
   }).png()
 
   header.css('background-image', 'url('+pattern+')');
+  header.css('background-repeat', 'no-repeat');
 
   var icons = {
     "sbt-blockade": "/img/blockade.png",

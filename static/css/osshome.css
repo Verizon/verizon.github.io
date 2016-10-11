@@ -125,7 +125,6 @@ body {
 .repo-name{
   margin-top: 5px;
   margin-bottom: 0px;
-  color: #CD040B;
   text-transform: lowercase;
 }
 p.zeromargin{
@@ -133,6 +132,9 @@ p.zeromargin{
 }
 .limit-width{
   max-width: 1200px;
+}
+.limit-width-more{
+  max-width: 900px;
 }
 .custom-1{
   border: none;
@@ -196,8 +198,6 @@ p.zeromargin{
   color: white;
   cursor: pointer;
 }
-.main-navbar-content{
-}
 .talk-thumbnail{
   margin-top: 20px;
   width: 100%;
@@ -210,8 +210,13 @@ p.zeromargin{
 .hidden{
   display: none;
 }
-
-
+.blog-unit{
+  margin-top: 38px!important;
+  border-top: 1px solid #E4E5E3
+}
+.blog-unit>.panel>.panel-heading{
+  background-color: #F6F6F6
+}
 
 
 
@@ -246,9 +251,9 @@ p.zeromargin{
 .brand-1{
   color: #CD040B;
 }
-.brand-1:hover{
+/*.brand-1:hover{
   color: #A80309;
-}
+}*/
 .brand-1.active{
   color: #990308;
 }
