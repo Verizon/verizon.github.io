@@ -11,6 +11,7 @@ import MainNavbar from './js/main_navbar.js';
 import HeaderContent from './js/header_content.js';
 import RenderRepos from './js/open_source_content.js';
 import RenderTalks from './js/talks_contents.js';
+import RenderBlogs from './js/talks_contents.js';
 
 const App = React.createClass({
   render: function(){
@@ -35,4 +36,5 @@ ReactDOM.render(<App />, document.getElementById('content'));
 document.addEventListener("DOMContentLoaded", function(event){
   RenderRepos();
   RenderTalks();
+  RenderBlogs();
 });

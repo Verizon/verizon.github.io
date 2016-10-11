@@ -7,7 +7,6 @@ var ReactDOM = require('react-dom');
 
 
 function RenderTalks(){
-  console.log("rendered");
   var TalkElement = React.createClass({
     render: function(){
       var talkDivs = [];
