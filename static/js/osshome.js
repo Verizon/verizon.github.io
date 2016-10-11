@@ -1,5 +1,77 @@
 $(function(){
+  // support nice scrolling
   $('#hero-chevron').click(function(){
     $(window).scrollTo($('#projects'), 1000);
+  });
+
+  var header = $('#content-head')
+  var pattern = new Trianglify({
+    width: window.screen.width | header.outerWidth(),
+    height: header.outerHeight()*1.1,
+    cell_size: 40,
+    seed: Math.random(),
+    x_colors: 'Spectral'
+  }).png()
+
+  header.css('background-image', 'url('+pattern+')');
+
+  var icons = {
+    "sbt-blockade": "/img/blockade.png",
+    "delorean": "/img/delorean.png",
+    "knobs": "/img/knobs.png",
+    "journal": "/img/journal.png",
+    "remotely": "/img/remotely.png",
+    "quiver": "/img/quiver.png"
+  }
+
+  // fetch the data from github
+  $.get('https://api.github.com/orgs/verizon/repos', function(repos){
+    var divs = '';
+
+    repos.forEach(function(e, i){
+      e.sortProperty = moment.utc(e.pushed_at).format("x");
+    });
+
+    repos.sort(function(a, b){
+      return b.sortProperty - a.sortProperty;
+    });
+
+    repos.forEach(function(e, i){
+      var icon = '';
+      var date = moment.utc(e.pushed_at).fromNow();
+      if(!icons[e.name]){
+        icon = '/img/github.png';
+      } else {
+        icon = icons[e.name];
+      }
+
+      divs +=
+        '<div class="panel panel-default repo-unit">'+
+          '<div class="panel-heading repo-unit">'+
+            '<img class="repo-avatar" src="'+icon+'" alt="Not available" />'+
+            '<h3 class="repo-name">'+e.name+'</h3>'+
+          '</div>' +
+          '<div class="panel-body repo-unit">'+
+            '<p class="zeromargin text-left">last updated '+date+'</p>'+
+            '<p class="text-left repo-language">built with '+e.language+'</p>'+
+            '<p class="repo-description">'+e.description+'</p>'+
+          '</div>' +
+          '<div class="panel-footer repo-unit">' +
+            '<a href="'+encodeURI(e.homepage || e.html_url)+'" target="_blank">' +
+              '<div class="repo-button-container">' +
+                '<button class="custom-1">view</button>' +
+              '</div>' +
+            '</a>' +
+          '</div>' +
+        '</div>'
+    });
+
+    console.log(divs)
+
+    repos.sort(function(a, b){
+      return b.sortProperty - a.sortProperty;
+    });
+
+    $('#projects').html(divs);
   });
 });
