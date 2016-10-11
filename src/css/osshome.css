@@ -115,7 +115,6 @@ body{
 .repo-name{
   margin-top: 5px;
   margin-bottom: 0px;
-  color: #CD040B;
   text-transform: lowercase;
 }
 p.zeromargin{
@@ -184,8 +183,6 @@ p.zeromargin{
   color: white;
   cursor: pointer;
 }
-.main-navbar-content{
-}
 .talk-thumbnail{
   margin-top: 20px;
   width: 100%;
@@ -198,8 +195,12 @@ p.zeromargin{
 .hidden{
   display: none;
 }
-
-
+.blog-unit{
+  margin-top: 30px!important;
+}
+.blog-unit>.panel>.panel-heading{
+  background-color: #F6F6F6
+}
 
 
 

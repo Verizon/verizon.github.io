@@ -30,7 +30,7 @@ function RenderTalks(){
             </div>
             <div className="col-md-8 col-xs-8">
               <div className="talk-title">
-                <h2>{e.name}</h2>
+                <h2 className="brand-1">{e.name}</h2>
                 <h4>{e.authorName}</h4>
               </div>
             </div>
