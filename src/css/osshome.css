@@ -5,8 +5,9 @@
 }
 body{
   height: 200vh;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-.navbar-item-text{
+.navbar-item-text {
   font-size: 20pt;
   font-weight: 300;
   vertical-align: middle;
@@ -21,29 +22,29 @@ body{
   border-top: 2px solid #CD040B;
 }
 .content-head{
-  height: 50%;
-  /*background-color: #CCCCCC;*/
+  /*margin-top: -20px;*/
+  height: 47%;
   text-align: center;
-/*  background:
-    radial-gradient(black 15%, transparent 16%) 0 0,
-    radial-gradient(black 15%, transparent 16%) 8px 8px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-    radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-    background-color:#282828;
-    background-size:16px 16px;*/
 }
 .content-head h1 {
-  font-family: 'NeueHaasGroteskTextBold', sans-serif;
-  padding-top: 20%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-top: 18%;
   font-size: 60px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
+}
+.content-head .subheading {
+  padding: 1.2em;
 }
 .content-head p {
   font-size: 18px;
+  font-weight: 300;
 }
 .content-head * {
-  color: #98999B;
+  color: #4d4d4d;
+}
+.content-head .linky {
+  padding-right: 1em;
 }
 .content-head .arrow-down {
   position: absolute;
@@ -98,14 +99,11 @@ body{
   border: none;
   overflow-y: scroll;
 }
-.open-source-content{
+.open-source-content {
   padding: 5px;
   min-height: 50px;
   text-align: center;
-}
-.open-source-navbar-content{
-  text-align: right;
-  height: 40px;
+  padding-top: 2.2em;
 }
 .repo-description{
   height: 80px;

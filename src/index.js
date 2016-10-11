@@ -7,7 +7,6 @@ import Moment from 'moment';
 import { Router, Route, Link } from 'react-router';
 global.moment = Moment;
 global.jQuery = jquery;
-import OpenSourceNavbar from './js/open_source_navbar.js';
 import MainNavbar from './js/main_navbar.js';
 import HeaderContent from './js/header_content.js';
 import OpenSourceContent from './js/open_source_content.js';
@@ -23,7 +22,6 @@ const App = React.createClass({
         </div>
         <div id="main-content">
           <HeaderContent />
-          <OpenSourceNavbar />
           <OpenSourceContent />
         </div>
       </div>
@@ -73,7 +71,7 @@ call.onload = function(){
     return b.sortProperty - a.sortProperty;
   });
   repos.forEach(function(e, i){
-    var date = e.pushed_at.slice(5, 7) + "-" + e.pushed_at.slice(8, 10) + "-" + e.pushed_at.slice(0, 4) + ",  " + e.pushed_at.slice(11, 16);
+    var date = moment.utc(e.pushed_at).fromNow();
 
     if(!library[e.name]){
       divs.push(
