@@ -1,0 +1,12 @@
+#!/bin/bash
+
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+if [ -f `which bundle` ]; then
+  hugo server -w -b http://127.0.0.1 -p 4000
+else
+  echo "**********************************************************"
+  echo "You must install hugo. Please run the following command:"
+  echo "Visit https://gethugo.io for information"
+  echo "**********************************************************"
+fi
