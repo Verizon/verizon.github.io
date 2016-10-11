@@ -16,6 +16,7 @@ var HeaderContent = React.createClass({
     }).png()
 
     header.css('background-image', 'url('+pattern+')');
+    header.css('background-repeat', 'no-repeat');
   },
   scrollToProjects: function() {
     scroller.scrollTo('open-source-content', {

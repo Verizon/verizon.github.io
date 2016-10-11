@@ -10,16 +10,10 @@ function RenderBlogs(){
       var blogDivs = [];
       blogLibrary.forEach(function(e, i){
         blogDivs.push(
-          <div key={i} className="content center limit-width blog-unit">
-            <div className="panel panel-default">
-              <div className="panel-heading">
-                <h2 className="brand-1">{e.title}</h2>
-                <p>By: {e.author}, {e.date}</p>
-              </div>
-              <div className="panel-body">
-                <p>{e.content}</p>
-              </div>
-            </div>
+          <div key={i} className="content center limit-width-more blog-unit">
+            <h2 className="brand-1">{e.title}</h2>
+            <p>By: {e.author}, {e.date}</p>
+            <p>{e.content}</p>
           </div>
         );
       });
