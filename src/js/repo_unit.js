@@ -1,6 +1,5 @@
 var React = require('react');
 
-
 var RepoUnit = React.createClass({
   render: function(){
     return (

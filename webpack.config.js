@@ -7,7 +7,7 @@ module.exports = {
   context: path.join(__dirname, 'src'),
   entry: "./index.js",
   output: {
-    path: "./target",
+    path: "./static",
     filename: "js/osshome.js"
   },
   watchOptions: {
@@ -37,18 +37,8 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: 'css', to: 'css' },
       { from: 'img', to: 'img' },
-      { from: 'packages', to: 'packages'},
-      { from: 'index.html', to: 'index.html' },
+      { from: 'packages', to: 'packages'} //,
+      // { from: 'index.html', to: '../layouts/index.html' },
     ])
   ]
 }
-
-// webpack({}, function(err, stats){
-//   if(err){
-//     throw new gutil.PluginError('webpack:build', err);
-//   }
-//   gutil.log('[webpack:build]', stats.toString({
-//     chunks: false,
-//     colors: true
-//   }));
-// });
