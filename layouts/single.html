@@ -1,0 +1,26 @@
+<html lang="en">
+
+{{ partial "_head.html" . }}
+
+<body>
+  <div id="content">
+
+    {{ partial "_nav.html" . }}
+
+    <div id="main-content">
+
+      {{ partial "_hero.html" . }}
+
+      <!-- oss content -->
+      <div class="open-source-content" id="open-source-content">
+
+       {{ .Content }}
+
+      </div>
+      <!-- e/o oss content -->
+
+    </div>
+
+</script>
+</body>
+</html>
