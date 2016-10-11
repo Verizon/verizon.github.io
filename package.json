@@ -36,6 +36,7 @@
     "react-dom": "^15.3.2",
     "react-filter": "0.0.7",
     "react-router": "^2.8.1",
+    "react-scroll": "^1.4.0",
     "style-loader": "^0.13.1",
     "trianglify": "^0.4.0",
     "url-loader": "^0.5.7",

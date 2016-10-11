@@ -1,6 +1,8 @@
 var React = require('react');
 var $ = require ('jquery');
 var Trianglify = require('Trianglify');
+var Scroll = require('react-scroll');
+var scroller = Scroll.scroller;
 
 var HeaderContent = React.createClass({
   componentDidMount: function(){
@@ -14,6 +16,13 @@ var HeaderContent = React.createClass({
     }).png()
 
     header.css('background-image', 'url('+pattern+')');
+  },
+  scrollToProjects: function() {
+    scroller.scrollTo('open-source-content', {
+      duration: 1500,
+      delay: 100,
+      smooth: true,
+    })
   },
   render: function(){
     return (
@@ -36,7 +45,9 @@ var HeaderContent = React.createClass({
             </p>
           </div>
         </div>
-        <a className="arrow-down octicon octicon-chevron-down" href="#open-source-content"></a>
+        <a className="arrow-down octicon octicon-chevron-down"
+           href="#"
+           onClick={this.scrollToProjects}></a>
       </div>
     );
   }
