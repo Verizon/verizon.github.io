@@ -68,8 +68,8 @@ function RenderRepos(){
     var RepoElement = React.createClass({
       render: function(){
         return (
-          <div>
-          {divs}
+          <div className="limit-width">
+            {divs}
           </div>
         )
       }
