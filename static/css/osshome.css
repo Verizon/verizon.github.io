@@ -1,25 +1,30 @@
-.navbar-item{
+body {
+  height: 200vh;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.navbar-item, .navbar-item a {
   display: inline-block;
   margin: 5px;
   vertical-align: middle;
 }
-body{
-  height: 200vh;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+.navbar-item a {
+  margin-top: 0;
 }
-.navbar-item-text {
+.navbar-item-text, .navbar-item-text:link {
+  color: #333;
   font-size: 20pt;
   font-weight: 300;
   vertical-align: middle;
   padding-top: 15px;
 }
-.navbar-item-text.activatable{
+.navbar-item-text.activatable, .navbar-item-text .activatable:link {
   border-top: 2px solid white;
   font-size: 15px;
   margin-right: 5px;
 }
-.activatable:hover{
+.activatable:hover {
   border-top: 2px solid #CD040B;
+  text-decoration: none;
 }
 .content-head{
   /*margin-top: -20px;*/
