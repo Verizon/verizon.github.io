@@ -102,7 +102,7 @@ call.onload = function(){
       );
     }
   });
-  ReactDOM.render(<RepoElement />, document.getElementById("open-source-content"));
+  ReactDOM.render(<RepoElement />, document.getElementById("projects"));
 };
 
 call.send();

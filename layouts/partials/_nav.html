@@ -11,16 +11,15 @@
 
           <div class="right inline">
             <div class="navbar-item">
-              <a class="navbar-item-text activatable" href="index.html">Open Source</a>
+              <a class="navbar-item-text activatable" href="/">Open Source</a>
             </div>
 
+            {{ $currentNode := . }}
+            {{ range .Site.Menus.main }}
             <div class="navbar-item">
-              <a class="navbar-item-text activatable" href="talks.html">Talks</a>
+              <a class="navbar-item-text activatable" href="{{.URL}}">{{ .Name }}</a>
             </div>
-
-            <div class="navbar-item">
-              <a class="navbar-item-text activatable" href="blog.html">Blog</a>
-            </div>
+            {{ end }}
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import RepoUnit from './repo_unit.js';
 var OpenSourceContent = React.createClass({
   render: function(){
     return (
-      <div className="open-source-content" id="open-source-content">
+      <div className="projects" id="projects">
       </div>
     );
   }
