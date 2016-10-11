@@ -148,9 +148,9 @@ call.onload = function(){
       return (
         <div>
           {divs}
-          {talkDivs}
         </div>
       );
+      // {talkDivs}
     }
   });
   ReactDOM.render(<RepoElement />, document.getElementById("open-source-content"));
