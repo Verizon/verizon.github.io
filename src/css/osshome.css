@@ -10,6 +10,7 @@ body{
   font-size: 20pt;
   font-weight: 300;
   vertical-align: middle;
+  padding-top: 15px;
 }
 .navbar-item-text.activatable{
   border-top: 2px solid white;
@@ -115,8 +116,13 @@ p.zeromargin{
   background-color: #F6F6F6;
   width: 99%;
   margin: 0 auto;
+  margin-top: 30px;
   height: 250px;
   vertical-align: middle;
+}
+.talk-unit>div{
+  vertical-align: middle;
+  text-align: center;
 }
 .talk-button{
   background-color: #CD040B;
@@ -126,6 +132,8 @@ p.zeromargin{
 .talk-button>p{
   color: white;
   cursor: pointer;
+}
+.main-navbar-content{
 }
 
 
