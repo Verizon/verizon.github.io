@@ -6,6 +6,7 @@ body {
   display: inline-block;
   margin: 5px;
   vertical-align: middle;
+  cursor: pointer;
 }
 .navbar-item a {
   margin-top: 0;
@@ -168,8 +169,8 @@ p.zeromargin{
   background-color: #F6F6F6;
   width: 99%;
   margin: 0 auto;
-  margin-top: 30px;
-  height: 250px;
+  margin-top: 30px!important;
+  height: 200px;
   vertical-align: middle;
 }
 .talk-unit>div{
@@ -180,6 +181,10 @@ p.zeromargin{
   background-color: #CD040B;
   height: auto;
   width: auto;
+  margin-top: 20px;
+}
+.talk-buttons{
+  margin-top: 52px;
 }
 .talk-button>p{
   color: white;
@@ -187,7 +192,18 @@ p.zeromargin{
 }
 .main-navbar-content{
 }
-
+.talk-thumbnail{
+  margin-top: 20px;
+  width: 100%;
+  height: 160px;
+}
+.veritcal-center{
+  align-items: center;
+  display: flex;
+}
+.hidden{
+  display: none;
+}
 
 
 
