@@ -3,13 +3,8 @@ language: node_js
 node_js:
   - 5.11
 
-install:
-  - npm rebuild
-  - sudo apt-get update && sudo apt-get install -y libfontconfig
-
 script:
-  - npm install
-  - npm run ci
+  - hugo -b http://127.0.0.1:4000
 
 notifications:
   email:
