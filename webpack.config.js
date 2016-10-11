@@ -5,7 +5,7 @@ var CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   context: path.join(__dirname, 'src'),
-  entry: "./index.js",
+  entry: "./osshome.js",
   output: {
     path: "./target",
     filename: "js/osshome.js"
