@@ -13,7 +13,6 @@ function RenderRepos(){
   call.open("GET", "https://api.github.com/orgs/verizon/repos",true);
   call.onload = function(){
     repos = JSON.parse(call.responseText);
-    console.log(repos);
     repos.forEach(function(e, i){
       e.sortProperty = moment.utc(e.pushed_at).format("x");
     });
@@ -27,7 +26,7 @@ function RenderRepos(){
           <div key={i} className="panel panel-default repo-unit">
             <div className="panel-heading repo-unit">
               <img className="repo-avatar" src="./img/github.png" alt="Not available" />
-              <h3 className="repo-name">{e.name}</h3>
+              <h3 className="repo-name brand-1">{e.name}</h3>
             </div>
             <div className="panel-body repo-unit">
               <p className="zeromargin text-left">Last Updated: {date}</p>
@@ -48,7 +47,7 @@ function RenderRepos(){
           <div key={i} className="panel panel-default repo-unit">
             <div className="panel-heading repo-unit">
               <img className="repo-avatar" src={library[e.name]} alt="Not available" />
-              <h3 className="repo-name">{e.name}</h3>
+              <h3 className="repo-name brand-1">{e.name}</h3>
             </div>
             <div className="panel-body repo-unit">
               <p className="zeromargin text-left">Last Updated: {date}</p>
@@ -69,8 +68,8 @@ function RenderRepos(){
     var RepoElement = React.createClass({
       render: function(){
         return (
-          <div>
-          {divs}
+          <div className="limit-width center">
+            {divs}
           </div>
         )
       }
