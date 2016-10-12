@@ -17,12 +17,12 @@ $(function(){
   header.css('background-repeat', 'no-repeat');
 
   var icons = {
-    "sbt-blockade": "/img/blockade.png",
-    "delorean": "/img/delorean.png",
-    "knobs": "/img/knobs.png",
-    "journal": "/img/journal.png",
-    "remotely": "/img/remotely.png",
-    "quiver": "/img/quiver.png"
+    "sbt-blockade": "/img/icons/blockade.png",
+    "delorean": "/img/icons/delorean.png",
+    "knobs": "/img/icons/knobs.png",
+    "journal": "/img/icons/journal.png",
+    "remotely": "/img/icons/remotely.png",
+    "quiver": "/img/icons/quiver.png"
   }
 
   // fetch the data from github
@@ -41,7 +41,7 @@ $(function(){
       var icon = '';
       var date = moment.utc(e.pushed_at).fromNow();
       if(!icons[e.name]){
-        icon = '/img/github.png';
+        icon = '/img/icons/github.png';
       } else {
         icon = icons[e.name];
       }
@@ -66,8 +66,6 @@ $(function(){
           '</div>' +
         '</div>'
     });
-
-    console.log(divs)
 
     repos.sort(function(a, b){
       return b.sortProperty - a.sortProperty;
