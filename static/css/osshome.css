@@ -1,5 +1,4 @@
 body {
-  height: 200vh;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .navbar-item, .navbar-item a {
@@ -135,6 +134,11 @@ p.zeromargin{
 }
 .limit-width{
   max-width: 1200px;
+  margin: 0 auto;
+}
+.limit-width-antipadding{
+  max-width: 1230px;
+  margin: 0 auto;
 }
 .limit-width-more{
   max-width: 900px;
@@ -176,6 +180,8 @@ p.zeromargin{
   margin-top: 15px;
 }
 .talk-unit{
+  max-width: 397px;
+  display: inline-block;
 }
 .talk-unit>div{
   vertical-align: middle;
