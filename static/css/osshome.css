@@ -32,12 +32,12 @@ body {
 }
 .content-head{
   /*margin-top: -20px;*/
-  height: 47%;
+  height: 600px;
   text-align: center;
 }
 .content-head h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding-top: 18%;
+  padding-top: 180px;
   font-size: 60px;
   font-weight: 400;
   text-transform: uppercase;
@@ -58,7 +58,6 @@ body {
 .content-head .arrow-down {
   position: absolute;
   left: 50%;
-  bottom: 50px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
   display: block;
   height: 5rem;
@@ -71,6 +70,9 @@ body {
   font-size: 35px;
   padding-top: 10px;
   padding-left: 14px;
+}
+.social-links{
+  margin-bottom: 20px;
 }
 .content-head .arrow-down:hover {
   transform: scale(1.06);
@@ -207,6 +209,9 @@ p.zeromargin{
 .blog-unit>.panel>.panel-heading{
   background-color: #F6F6F6
 }
+/*.open-source-header-text{
+  padding-top: 200px;
+}*/
 
 
 
