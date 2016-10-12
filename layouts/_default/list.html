@@ -8,11 +8,25 @@
     {{ partial "_nav.html" . }}
 
     <div id="main-content" class="container-fluid">
-      <div class="content center limit-width-more blog-unit">
-        <h2 class="brand-1">Some Title</h2>
-        <p>By: some author, XXXX</p>
-        <p>sd ofnsd onsfdoi nsdiof nosidnf sidof</p>
+
+
+      <div class="limit-width">
+        {{ range $.Site.Data.blogs }}
+        <div class="blog-unit">
+          <div class="blog-heading">
+            <h2 class="blog-title">{{.name}}</h2>
+            <p>{{.authorName}}, {{.date}}</p>
+          </div>
+          <div class="blog-content">
+            <p>{{.content}}</p>
+          </div>
+          <div class="blog-footer">
+          </div>
+        </div>
+        {{ end }}
       </div>
+
+
     </div>
 
   </div>
