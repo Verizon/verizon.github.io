@@ -37,7 +37,7 @@ body {
 }
 .content-head h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding-top: 200px;
+  padding-top: 180px;
   font-size: 60px;
   font-weight: 400;
   text-transform: uppercase;
@@ -70,6 +70,9 @@ body {
   font-size: 35px;
   padding-top: 10px;
   padding-left: 14px;
+}
+.social-links{
+  margin-bottom: 20px;
 }
 .content-head .arrow-down:hover {
   transform: scale(1.06);
