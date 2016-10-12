@@ -150,7 +150,10 @@ p.zeromargin{
 .repo-language{
   color: #CD040B;
 }
-.navbar-item{
+.right .navbar-item {
+  margin-left: 15px;
+}
+.navbar-item {
   margin-top: 0px;
 }
 .repo-button-container{
