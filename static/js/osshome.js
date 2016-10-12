@@ -7,7 +7,7 @@ $(function(){
   var header = $('#content-head')
   var pattern = new Trianglify({
     width: window.screen.width | header.outerWidth(),
-    height: header.outerHeight()*1.1,
+    height: header.outerHeight()*1,
     cell_size: 40,
     seed: Math.random(),
     x_colors: 'Spectral'
