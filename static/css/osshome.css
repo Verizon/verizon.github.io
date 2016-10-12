@@ -1,5 +1,4 @@
 body {
-  height: 200vh;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .navbar-item, .navbar-item a {
@@ -33,12 +32,12 @@ body {
 }
 .content-head{
   /*margin-top: -20px;*/
-  height: 47%;
+  height: 600px;
   text-align: center;
 }
 .content-head h1 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding-top: 18%;
+  padding-top: 200px;
   font-size: 60px;
   font-weight: 400;
   text-transform: uppercase;
@@ -59,7 +58,6 @@ body {
 .content-head .arrow-down {
   position: absolute;
   left: 50%;
-  bottom: 50px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,.3);
   display: block;
   height: 5rem;
@@ -135,6 +133,11 @@ p.zeromargin{
 }
 .limit-width{
   max-width: 1200px;
+  margin: 0 auto;
+}
+.limit-width-antipadding{
+  max-width: 1230px;
+  margin: 0 auto;
 }
 .limit-width-more{
   max-width: 900px;
@@ -176,6 +179,8 @@ p.zeromargin{
   margin-top: 15px;
 }
 .talk-unit{
+  max-width: 397px;
+  display: inline-block;
 }
 .talk-unit>div{
   vertical-align: middle;
@@ -201,6 +206,9 @@ p.zeromargin{
 .blog-unit>.panel>.panel-heading{
   background-color: #F6F6F6
 }
+/*.open-source-header-text{
+  padding-top: 200px;
+}*/
 
 
 
