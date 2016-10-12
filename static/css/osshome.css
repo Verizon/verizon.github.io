@@ -4,9 +4,12 @@ body {
 }
 .navbar-item, .navbar-item a {
   display: inline-block;
-  margin: 5px;
   vertical-align: middle;
   cursor: pointer;
+}
+.main-navbar-content{
+  padding-right: 0px!important;
+  padding-left: 0px!important;
 }
 .navbar-item a {
   margin-top: 0;
