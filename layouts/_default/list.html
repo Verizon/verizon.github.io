@@ -8,11 +8,26 @@
     {{ partial "_nav.html" . }}
 
     <div id="main-content" class="container-fluid">
-      <div class="content center limit-width-more blog-unit">
-        <h2 class="brand-1">Some Title</h2>
-        <p>By: some author, XXXX</p>
-        <p>sd ofnsd onsfdoi nsdiof nosidnf sidof</p>
+
+      <div class="limit-width">
+        {{ range sort .Paginator.Pages }}
+        <div class="blog-unit">
+          <div class="blog-heading">
+            <h2 class="blog-title">{{ .Title }}</h2>
+            <p>{{ .Params.author }}<br />
+               <em>{{ .Date.Format "Mon Jan 2, 2006" }}</em></p>
+          </div>
+          <div class="blog-content">
+            <p>{{ .Summary }}</p>
+          </div>
+          <div class="blog-footer">
+            <a href="{{ .Permalink }}">Read More...</a>
+          </div>
+        </div>
+        {{ end }}
       </div>
+
+
     </div>
 
   </div>

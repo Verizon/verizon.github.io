@@ -144,6 +144,7 @@ p.zeromargin{
 }
 .limit-width-more{
   max-width: 900px;
+  margin: 0 auto;
 }
 .custom-1{
   border: none;
@@ -212,6 +213,9 @@ p.zeromargin{
 /*.open-source-header-text{
   padding-top: 200px;
 }*/
+.blog-title{
+  color: #CD040B;
+}
 
 
 
