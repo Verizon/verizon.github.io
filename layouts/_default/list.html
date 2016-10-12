@@ -9,18 +9,19 @@
 
     <div id="main-content" class="container-fluid">
 
-
       <div class="limit-width">
-        {{ range $.Site.Data.blogs }}
+        {{ range sort .Paginator.Pages }}
         <div class="blog-unit">
           <div class="blog-heading">
-            <h2 class="blog-title">{{.name}}</h2>
-            <p>{{.authorName}}, {{.date}}</p>
+            <h2 class="blog-title">{{ .Title }}</h2>
+            <p>{{ .Params.author }}<br />
+               <em>{{ .Date.Format "Mon Jan 2, 2006" }}</em></p>
           </div>
           <div class="blog-content">
-            <p>{{.content}}</p>
+            <p>{{ .Summary }}</p>
           </div>
           <div class="blog-footer">
+            <a href="{{ .Permalink }}">Read More...</a>
           </div>
         </div>
         {{ end }}
