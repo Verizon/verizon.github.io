@@ -15,7 +15,7 @@
       <!-- talks -->
       <div class="col-md-12">
         {{ range $.Site.Data.talks }}
-        <div class="col-sm-5 col-md-4 col-lg-3">
+        <div class="col-sm-5 col-md-4 col-lg-3 talk-unit">
           <div class="thumbnail">
             <img src={{ .thumbnail }} alt="" width="630" />
             <div class="caption">
@@ -26,9 +26,9 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-sm-6 col-md-6">
-                  {{ with .slides }}<a href={{ . }} role="button" class="btn btn-danger">slides</a>{{ end }}
-                  {{ with .video }}<a href={{ . }} role="button" class="btn btn-danger">video</a>{{ end }}
+                <div class="col-sm-6 col-md-6 talk-button-container">
+                  {{ with .slides }}<a href={{ . }} role="button" class="btn talk-button btn-danger">slides</a>{{ end }}
+                  {{ with .video }}<a href={{ . }} role="button" class="btn talk-button btn-danger">video</a>{{ end }}
                 </div>
                 <div class="col-sm-6 col-md-6">
                   {{ with .tags }}

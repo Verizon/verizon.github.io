@@ -176,33 +176,11 @@ p.zeromargin{
   margin-top: 15px;
 }
 .talk-unit{
-  border-radius: 4px;
-  border: 1px solid #DDDDDD;
-  background-color: #F6F6F6;
-  width: 99%;
-  margin: 0 auto;
-  margin-top: 30px!important;
-  height: 200px;
-  vertical-align: middle;
 }
 .talk-unit>div{
   vertical-align: middle;
   text-align: center;
-    color: #4d4d4d;
-
-}
-.talk-button{
-  background-color: #CD040B;
-  height: auto;
-  width: auto;
-  margin-top: 20px;
-}
-.talk-buttons{
-  margin-top: 52px;
-}
-.talk-button>p{
-  color: white;
-  cursor: pointer;
+  color: #4d4d4d;
 }
 .talk-thumbnail{
   margin-top: 20px;
