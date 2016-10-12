@@ -110,7 +110,7 @@ body {
   overflow-y: scroll;
 }
 .dark-background {
-  background-color: #4d4d4d;
+  background-color: #242424;
   color: #EDEDED;
 }
 .projects {
@@ -150,7 +150,10 @@ p.zeromargin{
 .repo-language{
   color: #CD040B;
 }
-.navbar-item{
+.right .navbar-item {
+  margin-left: 15px;
+}
+.navbar-item {
   margin-top: 0px;
 }
 .repo-button-container{
