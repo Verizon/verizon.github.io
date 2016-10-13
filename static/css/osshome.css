@@ -219,7 +219,9 @@ p.zeromargin{
 .blog-text-tag{
   text-align: left!important;
 }
-
+.absolute{
+  position: absolute;
+}
 
 
 

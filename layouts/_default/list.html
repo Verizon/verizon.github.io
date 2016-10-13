@@ -7,31 +7,45 @@
 
     {{ partial "_nav.html" . }}
 
-    <div id="main-content" class="container-fluid">
+    <div id="main-content" class="limit-width-antipadding">
 
-      <div class="col-md-8 col-xs-6">
+      <div class="blog-container">
         {{ range sort .Paginator.Pages }}
-        <div class="blog-unit">
-          <div class="blog-heading">
-            <h2 class="blog-title">{{ .Title }}</h2>
-            <p>{{ .Params.author }}<br />
-               <em>{{ .Date.Format "Mon Jan 2, 2006" }}</em></p>
+        <div class="blog-text-container col-md-8 col-xs-6" id={{ .Params.location }}>
+          <div class="blog-unit">
+            <div class="blog-heading">
+              <h2 class="blog-title">{{ .Title }}</h2>
+              <p>{{ .Params.author }}
+                <br />
+                <em>{{ .Date.Format "Mon Jan 2, 2006" }}</em>
+              </p>
+            </div>
+            <div class="blog-content">
+              <p>{{ .Summary }}</p>
+            </div>
+            <div class="blog-footer">
+              <a href="{{ .Permalink }}">Read More...</a>
+            </div>
           </div>
-          <div class="blog-content">
-            <p>{{ .Summary }}</p>
-          </div>
-          <div class="blog-footer">
-            <a href="{{ .Permalink }}">Read More...</a>
-          </div>
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <ul>
+            <li class="click" name={{ .Params.location }}> {{ .Title }} </li>
+          </ul>
         </div>
         {{ end }}
       </div>
-      <div class="col-md-4 col-xs-6">
-      </div>
-
     </div>
-
   </div>
   {{ partial "_ga.html" . }}
+  <script>
+    $(".click").click(function(){
+      console.log(this);
+      var divID = "#" + $(this).attr('name');
+      $("html, body").animate({
+        scrollTop: $(divID).offset().top
+      }, 1000);
+    });
+  </script>
 </body>
 </html>
