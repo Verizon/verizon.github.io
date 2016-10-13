@@ -27,8 +27,8 @@
               </div>
               <div class="row">
                 <div class="col-sm-6 col-md-6 talk-button-container">
-                  {{ with .slides }}<a href={{ . }} role="button" class="btn talk-button btn-danger">slides</a>{{ end }}
-                  {{ with .video }}<a href={{ . }} role="button" class="btn talk-button btn-danger">video</a>{{ end }}
+                  {{ with .slides }}<a href={{ . }} target="_blank" role="button" class="btn talk-button btn-danger">slides</a>{{ end }}
+                  {{ with .video }}<a href={{ . }} target="_blank" role="button" class="btn talk-button btn-danger">video</a>{{ end }}
                 </div>
                 <div class="col-sm-6 col-md-6">
                   {{ with .tags }}
@@ -42,20 +42,11 @@
           </div>
         </div>
         {{ end }}
-<!--           <div class="panel panel-default col-md-3">
-            <div class="panel-body">
-              <div class="row">
-                <img src="/img/talks/LSIA.png" alt="" />
-              </div>
-              <div class="row">
-               sdfsdfsd
-              </div>
-            </div>
-          </div> -->
       </div>
       <!-- e/o talks -->
 
     </div>
   </div>
+  {{ partial "_ga.html" . }}
 </body>
 </html>

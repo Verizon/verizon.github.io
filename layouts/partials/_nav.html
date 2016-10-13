@@ -14,12 +14,14 @@
           <a class="navbar-item-text activatable" href="/">Open Source</a>
         </div>
 
-        {{ $currentNode := . }}
-        {{ range .Site.Menus.main }}
         <div class="navbar-item">
-          <a class="navbar-item-text activatable" href="{{.URL}}">{{ .Name }}</a>
+          <a class="navbar-item-text activatable" href="/talks/">Talks</a>
         </div>
-        {{ end }}
+
+        <div class="navbar-item">
+        <!-- <a class="navbar-item-text activatable" href="/blog/">Blog</a -->
+          <a class="navbar-item-text activatable" href="javascript:alert('Comming Soon!');">Blog</a>
+        </div>
       </div>
     </div>
   </div>
