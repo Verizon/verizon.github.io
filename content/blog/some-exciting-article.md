@@ -7,10 +7,6 @@ date   = "2016-03-18"
 
 Bacon ipsum dolor amet rump salami flank tongue. Boudin meatloaf alcatra, andouille kielbasa hamburger kevin pork belly venison. Tenderloin jowl picanha strip steak, hamburger t-bone drumstick. Fatback beef sausage meatball t-bone pastrami. Ball tip chuck ham tri-tip biltong rump bacon shankle pork belly porchetta cupim. Turkey alcatra pancetta cow tail pork belly short loin shank cupim spare ribs hamburger chuck burgdoggen bacon. Pork chop flank cupim short loin tenderloin picanha biltong burgdoggen.
 
-```
-> sdfs sf dfsd
-> sdf sdf 
-```
 
 Swine meatloaf ribeye short ribs. Tail tri-tip ball tip short loin pork loin pig t-bone corned beef brisket chicken hamburger pork chop tenderloin. Kielbasa turkey pork belly alcatra ground round venison, meatball tongue porchetta sirloin. Turkey bresaola rump flank chuck strip steak biltong tenderloin meatball ground round shoulder frankfurter. Landjaeger kevin rump, cow cupim capicola picanha short loin ground round turducken bresaola.
 
