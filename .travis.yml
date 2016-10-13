@@ -1,15 +1,33 @@
-language: node_js
 
-node_js:
-  - 5.11
+branches:
+  only:
+    - master
 
+install:
+  - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz -O /tmp/hugo.tgz
+  - cd /tmp; tar xvf /tmp/hugo.tgz; mv /tmp/hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 /usr/local/bin/hugo
+  - sudo chmod +x /usr/local/bin/hugo
+
+# doing git force push here because gh-pages branch for us is simply
+# a build output and there should never be a reason to merge
 script:
-  - "hugo -b http://127.0.0.1:4000"
+  - "hugo -b http://verizon.github.io -d $TRAVIS_BUILD_DIR/_site"
+  - cd $TRAVIS_BUILD_DIR/_site
+  - git init
+  - git config user.name "travis"
+  - git config user.email "$GIT_EMAIL"
+  - git checkout -b gh-pages
+  - git add .
+  - git commit -m "Deploy $TRAVIS_BUILD_NUMBER to GitHub Pages"
+  - |
+    if [ $TRAVIS_PULL_REQUEST = 'false' ]; then
+      if [ $RELEASE_ON_PUSH = 'true' ]; then
+        git remote add mainline git@${GITHUB_DOMAIN}:$TRAVIS_REPO_SLUG.git
+        git push --force mainline gh-pages
+      fi
+    fi
 
-notifications:
-  email:
-    recipients:
-      - alice.wu@one.verizon.com
-      - timothy.m.perrett@one.verizon.com
-    on_success: change
-    on_failure: always
+env:
+  global:
+    - secure: "tGdgJ0zwn+rJiFh0dfZ2943o9HVmMuIx+lgTeRgR8D4hD5sHicn0Qzjtun0r67Rr1vGcprQPzaQCCaxteyBuceBkHmUyt9vSrzC0H3Z7Zids9DE3zP0jePdq3LMQ3cZVwvnp8Cck0jASpDRkKYTgRc7116Yuwc8Mf+lAimfDSrU="
+    - secure: "emy8E6a0U8itP/jOy4jqxB1qhMbKMKGfMgy7FUuu7XUuHbADnCPekOJ1N7hrzdl/C0up4YxnkOlIwDCt1qorrQKNk5fBMD+3KKMsKpBxjfuYWJH068IWSmEaZehyYXBHIxVNXvmF9G3yoqezzoWimQNIszQceUMdJXQEY3W6pms="
