@@ -11,6 +11,7 @@ install:
 # doing git force push here because gh-pages branch for us is simply
 # a build output and there should never be a reason to merge
 script:
+  - cd $TRAVIS_BUILD_DIR
   - "hugo -b http://verizon.github.io -d $TRAVIS_BUILD_DIR/_site"
   - cd $TRAVIS_BUILD_DIR/_site
   - git init
