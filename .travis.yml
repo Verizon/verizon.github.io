@@ -21,11 +21,11 @@ script:
   - git add .
   - git commit -m "Deploy $TRAVIS_BUILD_NUMBER to GitHub Pages"
   - |
-    if [ $TRAVIS_PULL_REQUEST = 'false' ]; then
-      if [ $RELEASE_ON_PUSH = 'true' ]; then
-        git remote add mainline git@${GITHUB_DOMAIN}:$TRAVIS_REPO_SLUG.git
-        git push --force mainline gh-pages
-      fi
+    if [[ $TRAVIS_PULL_REQUEST = 'false' && $RELEASE_ON_PUSH = 'true' ]]; then
+      git remote add mainline git@${GITHUB_DOMAIN}:$TRAVIS_REPO_SLUG.git
+      git push --force mainline gh-pages
+    else
+      echo 'usually publish to github pages here...'
     fi
 
 env:
