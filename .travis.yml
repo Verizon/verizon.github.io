@@ -12,7 +12,7 @@ install:
 # a build output and there should never be a reason to merge
 script:
   - cd $TRAVIS_BUILD_DIR
-  - "hugo -b http://verizon.github.io -d $TRAVIS_BUILD_DIR/_site"
+  - "hugo -b https://verizon.github.io -d $TRAVIS_BUILD_DIR/_site"
   - cd $TRAVIS_BUILD_DIR/_site
   - git init
   - git config user.name "travis"
