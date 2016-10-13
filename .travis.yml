@@ -1,29 +1,29 @@
 
 branches:
   only:
-    - master
+    - hugo
 
 install:
   - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz -O /tmp/hugo.tgz
   - cd /tmp; tar xvf /tmp/hugo.tgz; sudo mv /tmp/hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 /usr/local/bin/hugo
   - sudo chmod +x /usr/local/bin/hugo
 
-# doing git force push here because gh-pages branch for us is simply
+# doing git force push here because master branch for us is simply
 # a build output and there should never be a reason to merge
 script:
   - cd $TRAVIS_BUILD_DIR
-  - "hugo -b https://verizon.github.io -d $TRAVIS_BUILD_DIR/_site"
+  - "/usr/local/bin/hugo -b https://verizon.github.io -d $TRAVIS_BUILD_DIR/_site"
   - cd $TRAVIS_BUILD_DIR/_site
   - git init
   - git config user.name "travis"
-  - git config user.email "$GIT_EMAIL"
-  - git checkout -b gh-pages
+  - git config user.email "code@verizon.com"
+  - git checkout -b master
   - git add .
   - git commit -m "Deploy $TRAVIS_BUILD_NUMBER to GitHub Pages"
   - |
     if [[ $TRAVIS_PULL_REQUEST = 'false' && $RELEASE_ON_PUSH = 'true' ]]; then
       git remote add public https://${GITHUB_CREDENTIALS}@github.com/Verizon/verizon.github.io.git
-      git push --force public gh-pages
+      git push --quiet --force public master
     else
       echo 'usually publish to github pages here...'
     fi
