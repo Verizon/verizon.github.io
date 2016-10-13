@@ -41,7 +41,7 @@ $(function(){
       var icon = '';
       var date = moment.utc(e.pushed_at).fromNow();
       if(!icons[e.name]){
-        icon = '/img/icons/github.png';
+        icon = '/img/icons/missing.png';
       } else {
         icon = icons[e.name];
       }

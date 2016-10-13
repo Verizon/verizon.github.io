@@ -111,8 +111,8 @@ body {
   overflow-y: scroll;
 }
 .dark-background {
-  background-color: #242424;
-  color: #EDEDED;
+  background-color: #F6F6F6;
+  /*color: #EDEDED;*/
 }
 .projects {
   padding: 5px;
@@ -176,7 +176,7 @@ p.zeromargin{
   background-color: #A80309;
   cursor: pointer;
 }
-.repo-avatar{
+.repo-avatar {
   max-width: 90%;
   max-height: 115px;
   margin-bottom: 15px;

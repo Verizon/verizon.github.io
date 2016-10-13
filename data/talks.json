@@ -30,7 +30,7 @@
   },
   {
     "name": "Roll Your Own Shapeless",
-    "authorName": "Daniel Spiewaka at Scala Days Berlin 2016",
+    "authorName": "Daniel Spiewak at Scala Days Berlin 2016",
     "video": "https://www.youtube.com/watch?v=zKRNMyo3wzg",
     "thumbnail": "/img/talks/RYOS.png",
     "tags": [ "scala", "functional" ]
