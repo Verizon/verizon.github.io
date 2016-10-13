@@ -27,8 +27,8 @@
               </div>
               <div class="row">
                 <div class="col-sm-6 col-md-6 talk-button-container">
-                  {{ with .slides }}<a href={{ . }} role="button" class="btn talk-button btn-danger">slides</a>{{ end }}
-                  {{ with .video }}<a href={{ . }} role="button" class="btn talk-button btn-danger">video</a>{{ end }}
+                  {{ with .slides }}<a href={{ . }} target="_blank" role="button" class="btn talk-button btn-danger">slides</a>{{ end }}
+                  {{ with .video }}<a href={{ . }} target="_blank" role="button" class="btn talk-button btn-danger">video</a>{{ end }}
                 </div>
                 <div class="col-sm-6 col-md-6">
                   {{ with .tags }}
