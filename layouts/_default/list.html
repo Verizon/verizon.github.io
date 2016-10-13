@@ -9,7 +9,7 @@
 
     <div id="main-content" class="container-fluid">
 
-      <div class="limit-width">
+      <div class="col-md-8 col-xs-6">
         {{ range sort .Paginator.Pages }}
         <div class="blog-unit">
           <div class="blog-heading">
@@ -26,7 +26,8 @@
         </div>
         {{ end }}
       </div>
-
+      <div class="col-md-4 col-xs-6">
+      </div>
 
     </div>
 

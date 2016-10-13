@@ -12,7 +12,9 @@
       <!-- oss content -->
       <div class="projects limit-width" id="projects">
 
-       {{ .Content }}
+       <h1 class="blog-title blog-text-tag">{{ .Title }}</h1>
+       <p class="blog-text-tag">{{ .Params.author }}, {{ .Date.Format "Mon Jan 2, 2006" }}</p>
+       <div class="blog-text-tag">{{ .Content }}</div>
 
       </div>
       <!-- e/o oss content -->
