@@ -222,6 +222,31 @@ p.zeromargin{
 .absolute{
   position: absolute;
 }
+.click{
+  cursor: pointer;
+}
+.fixed{
+  position: fixed;
+  top: 10px;
+}
+.blog-nav{
+  margin-top: 50px;
+  overflow-y: scroll;
+  background-color: white
+}
+.blog-nav>li:active{
+  color: #CD040B;
+}
+.blog-container{
+  padding-bottom: 30px;
+}
+#main-content{
+  height: auto;
+  overflow: hidden;
+}
+.background{
+  background-color: #F6F6F6;
+}
 
 
 

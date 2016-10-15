@@ -6,36 +6,36 @@
   <div id="content">
 
     {{ partial "_nav.html" . }}
-
-    <div id="main-content" class="limit-width-antipadding">
-
-      <div class="blog-container col-md-8 col-xs-6">
-        {{ range sort .Paginator.Pages }}
-        <div class="blog-text-container" id={{ .Params.location }}>
-          <div class="blog-unit">
-            <div class="blog-heading">
-              <h2 class="blog-title">{{ .Title }}</h2>
-              <p>{{ .Params.author }}
-                <br />
-                <em>{{ .Date.Format "Mon Jan 2, 2006" }}</em>
-              </p>
-            </div>
-            <div class="blog-content">
-              <p>{{ .Summary }}</p>
-            </div>
-            <div class="blog-footer">
-              <a href="{{ .Permalink }}">Read More...</a>
+    <div class="background">
+      <div id="main-content" class="limit-width-antipadding">
+        <div class="blog-container col-md-8 col-xs-6">
+          {{ range sort .Paginator.Pages }}
+          <div class="blog-text-container" id={{ .Params.location }}>
+            <div class="blog-unit">
+              <div class="blog-heading">
+                <h2 class="blog-title">{{ .Title }}</h2>
+                <p>{{ .Params.author }}
+                  <br />
+                  <em>{{ .Date.Format "Mon Jan 2, 2006" }}</em>
+                </p>
+              </div>
+              <div class="blog-content">
+                <p>{{ .Summary }}</p>
+              </div>
+              <div class="blog-footer">
+                <a href="{{ .Permalink }}">Read More...</a>
+              </div>
             </div>
           </div>
-        </div>
-        {{ end }}
-      </div>
-      <div class="col-md-4 col-xs-6">
-        <ul>
-          {{ range sort .Data.Pages }}
-          <li class="click" name={{ .Params.location }}> {{ .Title }} </li>
           {{ end }}
-        </ul>
+        </div>
+        <div class="col-md-4 col-xs-6">
+          <ul class="fixed blog-nav">
+            {{ range sort .Data.Pages }}
+            <li class="click" name={{ .Params.location }}> {{ .Title }} </li>
+            {{ end }}
+          </ul>
+        </div>
       </div>
     </div>
   </div>
