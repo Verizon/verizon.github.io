@@ -205,7 +205,6 @@ p.zeromargin{
 }
 .blog-unit{
   margin-top: 38px!important;
-  border-top: 1px solid #E4E5E3
 }
 .blog-unit>.panel>.panel-heading{
   background-color: #F6F6F6
@@ -232,7 +231,9 @@ p.zeromargin{
 .blog-nav{
   margin-top: 50px;
   overflow-y: scroll;
-  background-color: white
+  background-color: #E4E5E3;
+  list-style: none;
+  padding: 5px 10px 5px;
 }
 .blog-nav>li:active{
   color: #CD040B;
