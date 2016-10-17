@@ -28,16 +28,20 @@ $(function(){
   // fetch the data from github
   $.get('https://api.github.com/orgs/verizon/repos', function(repos){
     var divs = '';
+    var repoList = [];
 
     repos.forEach(function(e, i){
       e.sortProperty = moment.utc(e.pushed_at).format("x");
+      if(e.language){repoList.push(e)}
     });
 
-    repos.sort(function(a, b){
-      return b.sortProperty - a.sortProperty;
-    });
+    repoList.sort(
+      firstBy(function(a, b){return a.fork - b.fork})
+      .thenBy(function (a, b){return b.sortProperty - a.sortProperty})
+    );
 
-    repos.forEach(function(e, i){
+    console.log(repoList);
+    repoList.forEach(function(e, i){
       var icon = '';
       var date = moment.utc(e.pushed_at).fromNow();
       if(!icons[e.name]){
