@@ -8,7 +8,7 @@
     {{ partial "_nav.html" . }}
     <div class="background">
       <div id="main-content" class="limit-width-antipadding">
-        <div class="blog-container col-md-8 col-xs-6">
+        <div class="blog-container col-md-9 col-xs-9 left-content">
           {{ range sort .Paginator.Pages }}
           <div class="blog-text-container" id={{ .Params.location }}>
             <div class="blog-unit">
@@ -29,13 +29,15 @@
           </div>
           {{ end }}
         </div>
-        <div class="col-md-4 col-xs-6">
-          <ul class="fixed blog-nav">
-            <h5>Blogs</h5>
-            {{ range sort .Data.Pages }}
-            <li class="click" name={{ .Params.location }}> {{ .Title }} </li>
-            {{ end }}
-          </ul>
+        <div class="blog-nav-supercontainer right-content">
+          <div class="blog-nav-container fixed">
+            <ul class="blog-nav">
+              <h5>Blogs</h5>
+              {{ range sort .Data.Pages }}
+              <li class="click" name={{ .Params.location }}> {{ .Title }} </li>
+              {{ end }}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
