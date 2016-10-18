@@ -28,6 +28,7 @@ $(function(){
   // fetch the data from github
   $.get('https://api.github.com/orgs/verizon/repos', function(repos){
     var divs = '';
+    var forkDivs = '';
     var repoList = [];
 
     repos.forEach(function(e, i){
@@ -50,7 +51,7 @@ $(function(){
         icon = icons[e.name];
       }
       if(e.fork){
-      divs +=
+      forkDivs +=
         '<div class="panel panel-default repo-unit">'+
           '<div class="panel-heading repo-unit">'+
             '<h3 class="repo-name">'+e.name+'</h3>'+
@@ -95,6 +96,6 @@ $(function(){
       return b.sortProperty - a.sortProperty;
     });
 
-    $('#projects').html(divs);
+    $('#projects').html(divs + "<br/><h2>Forks</h2>" + forkDivs);
   });
 });
