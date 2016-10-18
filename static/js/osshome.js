@@ -49,11 +49,10 @@ $(function(){
       } else {
         icon = icons[e.name];
       }
-
+      if(e.fork){
       divs +=
         '<div class="panel panel-default repo-unit">'+
           '<div class="panel-heading repo-unit">'+
-            '<img class="repo-avatar" src="'+icon+'" alt="Not available" />'+
             '<h3 class="repo-name">'+e.name+'</h3>'+
           '</div>' +
           '<div class="panel-body repo-unit">'+
@@ -69,6 +68,27 @@ $(function(){
             '</a>' +
           '</div>' +
         '</div>'
+      } else {
+        divs +=
+          '<div class="panel panel-default repo-unit">'+
+            '<div class="panel-heading repo-unit">'+
+              '<img class="repo-avatar" src="'+icon+'" alt="Not available" />'+
+              '<h3 class="repo-name">'+e.name+'</h3>'+
+            '</div>' +
+            '<div class="panel-body repo-unit">'+
+              '<p class="zeromargin text-left">last updated '+date+'</p>'+
+              '<p class="text-left repo-language">built with '+e.language+'</p>'+
+              '<p class="repo-description">'+e.description+'</p>'+
+            '</div>' +
+            '<div class="panel-footer repo-unit">' +
+              '<a href="'+encodeURI(e.homepage || e.html_url)+'" target="_blank">' +
+                '<div class="repo-button-container">' +
+                  '<button class="custom-1">view</button>' +
+                '</div>' +
+              '</a>' +
+            '</div>' +
+          '</div>'
+      }
     });
 
     repos.sort(function(a, b){
