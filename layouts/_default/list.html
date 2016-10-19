@@ -45,7 +45,6 @@
   {{ partial "_ga.html" . }}
   <script>
     $(".click").click(function(){
-      console.log(this);
       var divID = "#" + $(this).attr('name');
       $("html, body").animate({
         scrollTop: $(divID).offset().top

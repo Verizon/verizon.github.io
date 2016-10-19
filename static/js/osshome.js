@@ -41,7 +41,6 @@ $(function(){
       .thenBy(function (a, b){return b.sortProperty - a.sortProperty})
     );
 
-    console.log(repoList);
     repoList.forEach(function(e, i){
       var icon = '';
       var date = moment.utc(e.pushed_at).fromNow();
