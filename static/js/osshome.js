@@ -28,16 +28,20 @@ $(function(){
   // fetch the data from github
   $.get('https://api.github.com/orgs/verizon/repos', function(repos){
     var divs = '';
+    var forkDivs = '';
+    var repoList = [];
 
     repos.forEach(function(e, i){
       e.sortProperty = moment.utc(e.pushed_at).format("x");
+      if(e.language){repoList.push(e)}
     });
 
-    repos.sort(function(a, b){
-      return b.sortProperty - a.sortProperty;
-    });
+    repoList.sort(
+      firstBy(function(a, b){return a.fork - b.fork})
+      .thenBy(function (a, b){return b.sortProperty - a.sortProperty})
+    );
 
-    repos.forEach(function(e, i){
+    repoList.forEach(function(e, i){
       var icon = '';
       var date = moment.utc(e.pushed_at).fromNow();
       if(!icons[e.name]){
@@ -45,11 +49,10 @@ $(function(){
       } else {
         icon = icons[e.name];
       }
-
-      divs +=
+      if(e.fork){
+      forkDivs +=
         '<div class="panel panel-default repo-unit">'+
           '<div class="panel-heading repo-unit">'+
-            '<img class="repo-avatar" src="'+icon+'" alt="Not available" />'+
             '<h3 class="repo-name">'+e.name+'</h3>'+
           '</div>' +
           '<div class="panel-body repo-unit">'+
@@ -65,12 +68,33 @@ $(function(){
             '</a>' +
           '</div>' +
         '</div>'
+      } else {
+        divs +=
+          '<div class="panel panel-default repo-unit">'+
+            '<div class="panel-heading repo-unit">'+
+              '<img class="repo-avatar" src="'+icon+'" alt="Not available" />'+
+              '<h3 class="repo-name">'+e.name+'</h3>'+
+            '</div>' +
+            '<div class="panel-body repo-unit">'+
+              '<p class="zeromargin text-left">last updated '+date+'</p>'+
+              '<p class="text-left repo-language">built with '+e.language+'</p>'+
+              '<p class="repo-description">'+e.description+'</p>'+
+            '</div>' +
+            '<div class="panel-footer repo-unit">' +
+              '<a href="'+encodeURI(e.homepage || e.html_url)+'" target="_blank">' +
+                '<div class="repo-button-container">' +
+                  '<button class="custom-1">view</button>' +
+                '</div>' +
+              '</a>' +
+            '</div>' +
+          '</div>'
+      }
     });
 
     repos.sort(function(a, b){
       return b.sortProperty - a.sortProperty;
     });
 
-    $('#projects').html(divs);
+    $('#projects').html(divs + "<br/><h2>Forks</h2>" + forkDivs);
   });
 });

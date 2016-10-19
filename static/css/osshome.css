@@ -205,7 +205,6 @@ p.zeromargin{
 }
 .blog-unit{
   margin-top: 38px!important;
-  border-top: 1px solid #E4E5E3
 }
 .blog-unit>.panel>.panel-heading{
   background-color: #F6F6F6
@@ -216,9 +215,52 @@ p.zeromargin{
 .blog-title{
   color: #CD040B;
 }
+.blog-text-tag{
+  text-align: left!important;
+}
+.absolute{
+  position: absolute;
+}
+.click{
+  cursor: pointer;
+}
+.right-content{
+  width: 210px;
+}
+.fixed{
+  position: fixed;
+  top: 10px;
+}
+.blog-nav{
+  margin-top: 50px;
+  overflow-y: scroll;
+  background-color: #E4E5E3;
+  list-style: none;
+  width: 195px;
+  padding: 5px 10px 5px;
+  text-align: left;
+}
+.blog-nav>li:active{
+  color: #CD040B;
+}
+.blog-container{
+  padding-bottom: 30px;
+}
+#main-content{
+  height: auto;
+  overflow: hidden;
+}
+.background{
+  background-color: #F6F6F6;
+}
 
-
-
+.left-content{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.right-content{
+  float: right;
+}
 
 
 
@@ -233,6 +275,10 @@ p.zeromargin{
 }
 .right{
   float: right;
+}
+.text-right{
+  text-align: right;
+  position: relative;
 }
 .left{
   float: left;

@@ -6,31 +6,50 @@
   <div id="content">
 
     {{ partial "_nav.html" . }}
-
-    <div id="main-content" class="container-fluid">
-
-      <div class="limit-width">
-        {{ range sort .Paginator.Pages }}
-        <div class="blog-unit">
-          <div class="blog-heading">
-            <h2 class="blog-title">{{ .Title }}</h2>
-            <p>{{ .Params.author }}<br />
-               <em>{{ .Date.Format "Mon Jan 2, 2006" }}</em></p>
+    <div class="background">
+      <div id="main-content" class="limit-width-antipadding">
+        <div class="blog-container col-md-9 col-xs-9 left-content">
+          {{ range sort .Paginator.Pages }}
+          <div class="blog-text-container" id={{ .Params.location }}>
+            <div class="blog-unit">
+              <div class="blog-heading">
+                <h2 class="blog-title">{{ .Title }}</h2>
+                <p>{{ .Params.author }}
+                  <br />
+                  <em>{{ .Date.Format "Mon Jan 2, 2006" }}</em>
+                </p>
+              </div>
+              <div class="blog-content">
+                <p>{{ .Summary }}</p>
+              </div>
+              <div class="blog-footer">
+                <a href="{{ .Permalink }}">Read More...</a>
+              </div>
+            </div>
           </div>
-          <div class="blog-content">
-            <p>{{ .Summary }}</p>
-          </div>
-          <div class="blog-footer">
-            <a href="{{ .Permalink }}">Read More...</a>
+          {{ end }}
+        </div>
+        <div class="blog-nav-supercontainer right-content">
+          <div class="blog-nav-container fixed">
+            <ul class="blog-nav">
+              <h5>Blogs</h5>
+              {{ range sort .Data.Pages }}
+              <li class="click" name={{ .Params.location }}> {{ .Title }} </li>
+              {{ end }}
+            </ul>
           </div>
         </div>
-        {{ end }}
       </div>
-
-
     </div>
-
   </div>
   {{ partial "_ga.html" . }}
+  <script>
+    $(".click").click(function(){
+      var divID = "#" + $(this).attr('name');
+      $("html, body").animate({
+        scrollTop: $(divID).offset().top
+      }, 1000);
+    });
+  </script>
 </body>
 </html>

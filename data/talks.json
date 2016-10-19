@@ -16,14 +16,14 @@
   },
   {
     "name": "Scaling Recommendations with Scala and Spark",
-    "authorName": "Diana Hu and Russ Horten at RecSysLSRS 2016",
+    "authorName": "Diana Hu and Russel Horton at ACM Large Scale Recommender Systems RecSys 2016",
     "slides": "https://speakerdeck.com/sdianahu/scaling-verizon-iptv-recommendations-with-scala-and-spark",
     "thumbnail": "/img/talks/SVIPTVR.png",
     "tags": [ "scala", "data-science" ]
   },
   {
     "name": "Time Series Effects for TV Recommendations",
-    "authorName": "Diana Hu and Russ Horten at RecSysTV 2016",
+    "authorName": "Diana Hu ACM RecSysTv RecSys 2016",
     "slides": "https://speakerdeck.com/sdianahu/recsystv-2016-time-series-effects-for-tv-recommendations",
     "thumbnail": "/img/talks/TSEFTVR.png",
     "tags": [ "scala", "data-science" ]
