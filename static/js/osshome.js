@@ -24,16 +24,16 @@ $(function(){
     "remotely": "/img/icons/remotely.png",
     "quiver": "/img/icons/quiver.png"
   }
+  var exclude = ["verizon.github.io", "remotely-demo"]
 
   // fetch the data from github
   $.get('https://api.github.com/orgs/verizon/repos', function(repos){
     var divs = '';
     var forkDivs = '';
     var repoList = [];
-
     repos.forEach(function(e, i){
       e.sortProperty = moment.utc(e.pushed_at).format("x");
-      if(e.language){repoList.push(e)}
+      if(e.language && exclude.indexOf(e.name) === -1){repoList.push(e)}
     });
 
     repoList.sort(
@@ -89,10 +89,6 @@ $(function(){
             '</div>' +
           '</div>'
       }
-    });
-
-    repos.sort(function(a, b){
-      return b.sortProperty - a.sortProperty;
     });
 
     $('#projects').html(divs + "<br/><h2>Forks</h2>" + forkDivs);
