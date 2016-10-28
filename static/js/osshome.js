@@ -27,8 +27,7 @@ $(function(){
     "memento": "/img/icons/memento.png",
     "nelson": "/img/icons/nelson.png",
     "lighthouse": "/img/icons/lighthouse.png",
-    "helm": "/img/icons/helm.png",
-    "other": "/img/icons/other.png"
+    "helm": "/img/icons/helm.png"
   }
   var exclude = ["verizon.github.io", "remotely-demo"]
 
