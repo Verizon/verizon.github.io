@@ -27,7 +27,8 @@ $(function(){
     "memento": "/img/icons/memento.png",
     "nelson": "/img/icons/nelson.png",
     "lighthouse": "/img/icons/lighthouse.png",
-    "helm": "/img/icons/helm.png"
+    "helm": "/img/icons/helm.png",
+    "ark": "/img/icons/ark.png"
   }
   var exclude = ["verizon.github.io", "remotely-demo"]
 
@@ -36,6 +37,7 @@ $(function(){
     var divs = '';
     var forkDivs = '';
     var repoList = [];
+    console.log(repos);
     repos.forEach(function(e, i){
       e.sortProperty = moment.utc(e.pushed_at).format("x");
       if(e.language && exclude.indexOf(e.name) === -1){repoList.push(e)}
