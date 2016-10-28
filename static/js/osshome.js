@@ -22,7 +22,13 @@ $(function(){
     "knobs": "/img/icons/knobs.png",
     "journal": "/img/icons/journal.png",
     "remotely": "/img/icons/remotely.png",
-    "quiver": "/img/icons/quiver.png"
+    "quiver": "/img/icons/quiver.png",
+    "sbt-rig": "/img/icons/sbt-rig.png",
+    "memento": "/img/icons/memento.png",
+    "nelson": "/img/icons/nelson.png",
+    "lighthouse": "/img/icons/lighthouse.png",
+    "helm": "/img/icons/helm.png",
+    "other": "/img/icons/other.png"
   }
   var exclude = ["verizon.github.io", "remotely-demo"]
 
