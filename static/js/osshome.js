@@ -37,7 +37,6 @@ $(function(){
     var divs = '';
     var forkDivs = '';
     var repoList = [];
-    console.log(repos);
     repos.forEach(function(e, i){
       e.sortProperty = moment.utc(e.pushed_at).format("x");
       if(e.language && exclude.indexOf(e.name) === -1){repoList.push(e)}
