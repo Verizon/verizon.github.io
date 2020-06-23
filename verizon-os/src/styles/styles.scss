@@ -1,0 +1,53 @@
+.container {
+    width: 1640px;
+    min-width: 1640px;
+    margin: 0 auto; 
+    @media (max-width: 1440px) {
+        width: 1280px; 
+        min-width: 1280px; 
+    }
+    @media (max-width: 1280px) {
+        width: 976px; 
+        min-width: 976px; 
+    }
+    @media (max-width: 976px) {
+        width: 768px; 
+        min-width: 768px; 
+    }
+}
+
+header{
+    height: 80px; 
+    width: 100%; 
+    position: absolute; 
+    top: 0px; 
+    z-index: 10; 
+    .inner-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 80px; 
+        .logo{
+            display: flex; 
+            align-items: center;
+            img {
+                height: 75px;
+                width: 150px; 
+            }
+        }
+        .navigation{
+            nav {
+                display: flex;
+                align-items: center;
+                a {
+                    margin: 0 25px; 
+                    // &:last-child{
+                    //     margin-right: 0px; 
+                    //}
+                }
+            }
+
+        }
+    }
+
+}
