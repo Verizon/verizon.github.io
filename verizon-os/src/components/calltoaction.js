@@ -1,19 +1,20 @@
 import React from 'react';
+import { Title, Micro } from '@vds/typography';
 
 const actionList = [
       { 
         "heading": "Use",
-        "url": "www.google.com",
+        "url": "placeholder",
         "text": "our open source code"
       }, 
       {
         "heading": "Contribute",
-        "url": "www.google.com",
+        "url": "placeholder",
         "text": "to our projects"
       },
       {
-        "heading": "Do",
-        "url": "www.google.com",
+        "heading": "Join",
+        "url": "placeholder",
         "text" : "our communities"
       }
 ];
@@ -26,9 +27,11 @@ const CallToAction = () => {
                 <article className="card-center">
                   <div className="card-body">
                     <a href={action.url}>
-                      <h1 className="card-header">{action.heading}</h1>
+                      <Title>{action.heading}</Title>
                     </a>
-                    <p className="card-subtitle">{action.text}</p>
+                    <p className="card-subtitle">
+                      <Micro>{action.text}</Micro>
+                    </p>
                   </div>
                 </article>
               </section>
