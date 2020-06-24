@@ -17,6 +17,7 @@
     "@vds/carousels": "^0.1.1",
     "@vds/grids": "^0.1.1",
     "@vds/typography": "^0.1.1",
+    "flexboxgrid-sass": "^8.0.5",
     "gatsby": "^2.23.3",
     "gatsby-plugin-sass": "^2.3.5",
     "gsap": "^3.3.4",
