@@ -21,23 +21,20 @@ const actionList = [
 
 const CallToAction = () => {
 
-  const actions = actionList.map((action, ind) => {
-    return  <div className="col-xs" key={ind}>
-              <section className="c-card card-container">
-                <article className="card-center">
-                  <div className="card-body">
-                    <a href={action.url}>
-                      <Title>{action.heading}</Title>
-                    </a>
-                    <p className="card-subtitle">
-                      <Micro>{action.text}</Micro>
-                    </p>
-                  </div>
-                </article>
-              </section>
-            </div>        
+  const actions = actionList.map((action) => {
+    return  <section className="card">
+              <article className="card-center">
+                <div className="card-body">
+                  <a href={action.url}>
+                    <Title>{action.heading}</Title>
+                  </a>
+                  <p>
+                    <Micro>{action.text}</Micro>
+                  </p>
+                </div>
+              </article>
+            </section>            
   })
-
   return (
       <div className="row">
         {actions}
