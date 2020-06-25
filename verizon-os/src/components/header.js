@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import React from "react"
 import logo from "../images/vz_150_rgb_p.jpg"
-import { Body } from '@vds/typography';
+import { Title, Body } from '@vds/typography';
 
 const Header = () => (
     <header>
@@ -9,6 +9,9 @@ const Header = () => (
             <div className="inner-header">
                 <div className="logo">
                     <img src={logo} alt="VzLogo"></img>
+                </div>
+                <div className="title">
+                    <Title>Verizon Open Source</Title>
                 </div>
                 <div className="navigation">
                     <nav>

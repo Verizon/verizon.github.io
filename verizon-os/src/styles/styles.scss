@@ -32,7 +32,7 @@ header{
             align-items: center;
             img {
                 height: 75px;
-                width: 150px; 
+                width: 180px; 
             }
         }
         .navigation{
@@ -40,10 +40,7 @@ header{
                 display: flex;
                 align-items: center;
                 a {
-                    margin: 0 25px; 
-                    // &:last-child{
-                    //     margin-right: 0px; 
-                    //}
+                    margin: 0 25px;
                 }
             }
 

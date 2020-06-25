@@ -15,7 +15,7 @@ images=[os1, os2, os3, os4];
 const Container = styled.div`
     display: flex; 
     padding-top: 100px;
-    padding-left: 255px; 
+    padding-left: 235px; 
  `;
 
 export default class Carousel extends Component {
