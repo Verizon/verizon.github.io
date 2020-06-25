@@ -8,10 +8,7 @@ import os2 from "../images/open-source-2.png";
 import os3 from "../images/open-source-3.jpeg";
 import os4 from "../images/open-source-4.png"; 
 
-var images = []; 
-// images = [{image: require("../images/open-source-1.png")}, {image: require("../images/open-source-2.png")}]
-images=[os1, os2, os3, os4]; 
-
+var idx = 0; 
 const Container = styled.div`
     display: flex; 
     padding-top: 100px;
@@ -19,43 +16,47 @@ const Container = styled.div`
  `;
 
 export default class Carousel extends Component {
-  imageIndex = 0; 
   state = {
-    selectedSlide: 1
+    selectedSlide: 1,
+    images: [os1, os2, os3, os4],
+    index: 0
   };
 
-  rotateActiveSlide = slide => {
-    //setTimeout(() => {
-      if (this.imageIndex === 3) {
-        this.imageIndex = 0; 
-        slide = 1; 
+  /* Setting a timer of 5 seconds to auto rotate through each image and updating the states accordingly */
+  componentDidMount () {
+    this.timer = setInterval(() => {
+      if (idx < 3) {
+        this.setState({ index: idx, selectedSlide: idx+1});
+        idx = (idx+1)%(this.state.images.length); 
       }
 
-      else {
-        this.imageIndex++; 
-        slide++; 
-      }
+        else {
+          this.setState({index: 3, selectedSlide: 4})
+          idx = 0;
+          
+        } 
 
-      this.setState(() => (
-      { selectedSlide: slide++ }
-      ));
-   // }, 5000);
-  };
+      }, 5000)
+    }
 
+  componentWillUnmounnt() {
+    clearInterval(this.timer);
+  }
 
+  /*goToSlide sets the state object with the correct active slide when one of the carousel bars is clicked so that bar is highlighted and the right image is rendered */
   goToSlide = slide => {
     this.setState(() => (
-        { selectedSlide: slide }
+        { selectedSlide: slide, index: slide-1}
          ));
-          this.imageIndex=slide-1;
+         idx = slide-1; 
   };
   render() {
     const { selectedSlide } = this.state; 
     return (
         
       <Container>
-        <img src= { images[this.imageIndex] } alt="" style={{ height:'250px', width: '1000px', border: 'solid 1px'}} ></img>
-        <CarouselBars style={{ position: 'relative', top: '100px', right: '550px'}}
+        <img src= { this.state.images[this.state.index] } alt="" style={{ height:'250px', width: '1200px', border: 'solid 1px'}} ></img>
+        <CarouselBars style={{ position: 'relative', top: '100px', right: '665px'}}
           uniqueId="carousel-bars-default-example-id"
           activeSlide={selectedSlide}
           slideCount={4}
