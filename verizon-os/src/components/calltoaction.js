@@ -1,5 +1,5 @@
 import React from 'react';
-import { Title, Micro } from '@vds/typography';
+import { Title, Subtitle } from '@vds/typography';
 
 const actionList = [
       { 
@@ -29,7 +29,7 @@ const CallToAction = () => {
                     <Title>{action.heading}</Title>
                   </a>
                   <p>
-                    <Micro>{action.text}</Micro>
+                    <Subtitle>{action.text}</Subtitle>
                   </p>
                 </div>
               </article>
