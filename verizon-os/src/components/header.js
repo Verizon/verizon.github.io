@@ -11,14 +11,14 @@ const Header = () => (
                     <img src={logo} alt="VzLogo"></img>
                 </div>
                 <div className="title">
-                    <Title>Verizon Open Source</Title>
+                    <Title size="large">Verizon Open Source</Title>
                 </div>
                 <div className="navigation">
                     <nav>
-                        <Link to="/about"><Body>Home</Body></Link>
-                        <Link to="/blog"><Body>Blog</Body></Link>
-                        <Link to="/projects"><Body>Projects</Body></Link>
-                        <Link to="/attributions"><Body>Attributions</Body></Link>
+                        <Link to="/about"><Body size="large">Home</Body></Link>
+                        <Link to="/blog"><Body size="large">Blog</Body></Link>
+                        <Link to="/projects"><Body size="large">Projects</Body></Link>
+                        <Link to="/attributions"><Body size="large">Attributions</Body></Link>
                     </nav>
                 </div>
                 

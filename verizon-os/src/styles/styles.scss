@@ -85,3 +85,38 @@ header{
     margin-left: -0.5rem;
     justify-content: center;
 }
+
+
+footer{
+    background-color: black;
+    height: 140px;
+    position: absolute;  
+    bottom: 0px; 
+    left: 0px; 
+    right: 0px; 
+    .inner-footer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .navigation{
+            nav{
+                padding-top: 35px;
+                display: flex; 
+                align-items: center;
+                a{
+                    color: white; 
+                    margin: 0 25px; 
+                }
+            
+            }
+        }
+        .logos{
+            padding-top: 38px; 
+            padding-right: 15px; 
+
+            img {
+                margin: 0 5px; 
+            }
+    }
+}
+}
