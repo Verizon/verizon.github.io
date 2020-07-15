@@ -24,23 +24,29 @@ export default class Carousel extends Component {
 
   /* Setting a timer of 5 seconds to auto rotate through each image and updating the states accordingly */
   componentDidMount () {
-    this.timer = setInterval(() => {
-      if (idx < 3) {
-        this.setState({ index: idx, selectedSlide: idx+1});
-        idx = (idx+1)%(this.state.images.length); 
-      }
+    var mounted = true; 
+    if (mounted) {
+      this.timer = setInterval(() => {
+      
+        if (idx < 3) {
+          this.setState({ index: idx, selectedSlide: idx+1});
+          idx = (idx+1)%(this.state.images.length); 
+        }
 
-        else {
-          this.setState({index: 3, selectedSlide: 4})
-          idx = 0;
+          else {
+            this.setState({index: 3, selectedSlide: 4})
+            idx = 0;
           
-        } 
+          } 
 
-      }, 5000)
+          mounted = false; 
+        }, 5000)
+      }
     }
 
   componentWillUnmounnt() {
     clearInterval(this.timer);
+    idx = 0; 
   }
 
   /*goToSlide sets the state object with the correct active slide when one of the carousel bars is clicked so that bar is highlighted and the right image is rendered */
@@ -55,7 +61,7 @@ export default class Carousel extends Component {
     return (
         
       <Container>
-        <img src= { this.state.images[this.state.index] } alt="" style={{ height:'250px', width: '1200px', border: 'solid 1px'}} ></img>
+        <img src= { this.state.images[this.state.index] } alt="" style={{ height:'250px', width: '1200px'}} ></img>
         <CarouselBars style={{ position: 'relative', top: '100px', right: '665px'}}
           uniqueId="carousel-bars-default-example-id"
           activeSlide={selectedSlide}

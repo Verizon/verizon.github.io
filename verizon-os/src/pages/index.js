@@ -1,17 +1,20 @@
-import React from "react";
-import Header from "../components/header";
-import CallToAction from "../components/calltoaction";
+import React from 'react';
 import  "../styles/styles.scss";
-import Carousel from "../components/carousel";
-import Footer from "../components/footer"
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import HomePage from '../pages/home';  
+import BlogPage from '../pages/blog'; 
+import Header from '../components/header';
+import Footer from '../components/footer'; 
 
 const IndexPage = () => (
-    <div>
+    <Router>
         <Header/>
-        <Carousel/>
-        <CallToAction/> 
+            <Switch>
+                <Route path="/" exact component={HomePage} />
+                <Route path="/blog" component={BlogPage} />
+            </Switch>
         <Footer/>
-    </div>
+    </Router>
 )
 
 export default IndexPage

@@ -44,6 +44,8 @@ header{
     position: absolute; 
     top: 0px; 
     z-index: 10; 
+    //border-bottom: 2px solid #D52B1E;
+    border-bottom: 2px solid black; 
     .inner-header{
         display: flex;
         align-items: center;
@@ -117,6 +119,45 @@ footer{
             img {
                 margin: 0 5px; 
             }
+        }
     }
 }
+.blogpage{
+    position: absolute;
+    margin-top: 80px;
+    margin-bottom: 140px; 
+    padding-left: 23px; 
+    .blogTitleContainer{
+        align-items: center; 
+        .blogTitle{ 
+            padding-top: 10px; 
+            display: flex; 
+            align-items: center;
+            img{
+                height: 25px;
+                width: 25px;
+                padding-left: 10px;
+            }
+        }
+        .blogTitleText{
+            vertical-align: middle;
+            
+        }
+    }
+    .blog{
+        align-items: center;
+        justify-content: space-between;
+        display: flex; 
+        width: 90%; 
+        //float: left; 
+        img{
+            vertical-align: middle; 
+            height: 120px; 
+            width: 150px; 
+            padding-top: 20px; 
+        }
+        .blogText{
+            padding-left: 20px; 
+        }
+    }
 }
