@@ -24,30 +24,31 @@ export default class Carousel extends Component {
 
   /* Setting a timer of 5 seconds to auto rotate through each image and updating the states accordingly */
   componentDidMount () {
-    var mounted = true; 
-    if (mounted) {
-      this.timer = setInterval(() => {
-      
-        if (idx < 3) {
-          this.setState({ index: idx, selectedSlide: idx+1});
-          idx = (idx+1)%(this.state.images.length); 
-        }
-
-          else {
-            this.setState({index: 3, selectedSlide: 4})
-            idx = 0;
-          
-          } 
-
-          mounted = false; 
-        }, 5000)
-      }
+    idx = 0; 
+    this.startCarousel(); 
+    
     }
 
-  componentWillUnmounnt() {
+  startCarousel() {
+    this.timer = setInterval(() => {
+      if (idx < 3) {
+        this.setState({ index: idx, selectedSlide: idx+1});
+        idx = (idx+1)%(this.state.images.length); 
+      }
+
+        else {
+          this.setState({index: 3, selectedSlide: 4})
+          idx = 0;
+        
+        } 
+      }, 5000)
+  }
+
+  componentWillUnmount() {
     clearInterval(this.timer);
     idx = 0; 
   }
+
 
   /*goToSlide sets the state object with the correct active slide when one of the carousel bars is clicked so that bar is highlighted and the right image is rendered */
   goToSlide = slide => {
@@ -60,9 +61,9 @@ export default class Carousel extends Component {
     const { selectedSlide } = this.state; 
     return (
         
-      <Container>
-        <img src= { this.state.images[this.state.index] } alt="" style={{ height:'250px', width: '1200px'}} ></img>
-        <CarouselBars style={{ position: 'relative', top: '100px', right: '665px'}}
+      <Container style={{display: 'inline-block'}}>
+        <img src= { this.state.images[this.state.index] } alt="" style={{ height:'250px', width: '1200px', left: '45%'}} ></img>
+        <CarouselBars style={{ position: 'relative', left: '45%', width: '10%'}}
           uniqueId="carousel-bars-default-example-id"
           activeSlide={selectedSlide}
           slideCount={4}

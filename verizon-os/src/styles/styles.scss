@@ -91,18 +91,20 @@ header{
 
 footer{
     background-color: black;
-    height: 140px;
+    height: 120px;
     position: absolute;  
     bottom: 0px; 
     left: 0px; 
     right: 0px; 
+    display: flex; 
     .inner-footer{
+        vertical-align: middle;
         display: flex;
         align-items: center;
         justify-content: space-between;
         .navigation{
+            vertical-align: middle;
             nav{
-                padding-top: 35px;
                 display: flex; 
                 align-items: center;
                 a{
@@ -113,11 +115,10 @@ footer{
             }
         }
         .logos{
-            padding-top: 38px; 
-            padding-right: 15px; 
-
-            img {
-                margin: 0 5px; 
+            position: absolute; 
+            right: 30px; 
+            img { 
+                margin: 0 15px; 
             }
         }
     }
