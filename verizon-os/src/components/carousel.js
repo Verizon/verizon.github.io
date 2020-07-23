@@ -62,8 +62,8 @@ export default class Carousel extends Component {
     return (
         
       <Container style={{display: 'inline-block'}}>
-        <img src= { this.state.images[this.state.index] } alt="" style={{ height:'250px', width: '1200px', left: '45%'}} ></img>
-        <CarouselBars style={{ position: 'relative', left: '45%', width: '10%'}}
+        <img src= { this.state.images[this.state.index] } alt="" style={{ height:'175px', width: '800px', position: 'relative', left: '25%'}} ></img>
+        <CarouselBars style={{ position: 'relative', left: '68%', width: '10%'}}
           uniqueId="carousel-bars-default-example-id"
           activeSlide={selectedSlide}
           slideCount={4}

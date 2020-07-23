@@ -59,7 +59,8 @@ header{
             }
         }
         .title {
-            padding-left: 165px; 
+            margin: auto; 
+            padding-left: 200px; 
         }
         .navigation{
             nav {
@@ -158,6 +159,28 @@ footer{
         }
         .blogText{
             padding-left: 20px; 
+        }
+    }
+}
+
+.OspoFrontPage{
+    position: absolute; 
+    top: 60%; 
+    margin: auto; 
+    width: 100%; 
+    text-align: center;
+    .innerOspo{
+        display: flex; 
+        width: 70%;
+        margin: auto; 
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 25px;
+        .Video1{
+            margin: 0 25px; 
+            iframe{
+                border: 2px solid black; 
+            }
         }
     }
 }

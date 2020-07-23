@@ -5,6 +5,7 @@ import HomePage from '../pages/home';
 import BlogPage from '../pages/blog'; 
 import Header from '../components/header';
 import Footer from '../components/footer'; 
+import Ospo from '../components/ospo'; 
 
 const IndexPage = () => (
     <Router>
@@ -13,6 +14,7 @@ const IndexPage = () => (
                 <Route path="/" exact component={HomePage} />
                 <Route path="/blog" component={BlogPage} />
             </Switch>
+        <Ospo/>
         <Footer/>
     </Router>
 )
