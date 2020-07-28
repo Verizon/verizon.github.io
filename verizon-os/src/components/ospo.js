@@ -31,7 +31,7 @@ const Ospo = () => (
             </div>
         </div>
         <div className="featuredProjects">
-            <Title>Testing</Title>
+            <Title>Featured Projects</Title>
         </div>
     </div>
 )
