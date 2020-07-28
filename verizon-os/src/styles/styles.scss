@@ -23,6 +23,7 @@
     width: 1640px;
     min-width: 1640px;
     margin: 0 auto; 
+
     @media (max-width: 1440px) {
         width: 1280px; 
         min-width: 1280px; 
@@ -164,8 +165,7 @@ footer{
 }
 
 .OspoFrontPage{
-    position: absolute; 
-    top: 60%; 
+    position: relative; 
     margin: auto; 
     width: 100%; 
     text-align: center;
@@ -175,7 +175,7 @@ footer{
         margin: auto; 
         align-items: center;
         justify-content: space-between;
-        padding-top: 25px;
+        padding-top: 20px;
         .Video1{
             margin: 0 25px; 
             iframe{
@@ -183,4 +183,18 @@ footer{
             }
         }
     }
+    .featuredProjects{
+        position: absolute;
+        padding-top: 30px;
+        margin: auto; 
+        width: 100%; 
+        text-align: center;
+    }
+}
+
+.scrollContainer{
+    position: relative; 
+     
+    overflow-y: auto;
+    overflow-x: hidden;
 }
