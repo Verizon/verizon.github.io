@@ -1,8 +1,8 @@
 import React from "react"
 import { Body } from '@vds/typography';
 import { Link } from "gatsby"
-import twitterLogo from "../images/social-twitter_auxiliary.png"; 
-import fbLogo from "../images/social-facebook_auxiliary.png"; 
+// import twitterLogo from "../images/social-twitter_auxiliary.png"; 
+// import fbLogo from "../images/social-facebook_auxiliary.png"; 
 
 const Footer = () => (
     <footer>
@@ -14,10 +14,11 @@ const Footer = () => (
                     <Link to="/brands"><Body color="white" size="large">Brands</Body></Link>
                 </nav>
             </div>
-            <div className="logos">
-                <img src={twitterLogo} alt="twitterLogo" style={{height: '60px', weight: '60px'}}></img>
-                <img src={fbLogo} alt="fbLogo" style={{height: '60px', weight: '60px'}}></img>
-            </div>
+            { <div className="logos">
+                <Body color="white" size="small">&#169;	 2020 Verizon</Body>
+                {/* <img src={twitterLogo} alt="twitterLogo" style={{height: '60px', weight: '60px'}}></img>
+                <img src={fbLogo} alt="fbLogo" style={{height: '60px', weight: '60px'}}></img> */}
+            </div> }
         </div>
 
     </footer>

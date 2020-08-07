@@ -16,9 +16,9 @@ const Header = () => (
                 <div className="navigation">
                     <nav>
                         <Link to="/"><Body size="large">Home</Body></Link>
-                        <Link to="/blog"><Body size="large">Blog</Body></Link>
+                        {/* <Link to="/blog"><Body size="large">Blog</Body></Link> */}
                         <Link to="/projects"><Body size="large">Projects</Body></Link>
-                        <Link to="/attributions"><Body size="large">Attributions</Body></Link>
+                        <Link to="https://www.verizon.com/support/residential/internet/equipment/open-source-software"><Body size="large">Attributions</Body></Link>
                     </nav>
                 </div>
                 
