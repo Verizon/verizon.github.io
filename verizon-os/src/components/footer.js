@@ -16,6 +16,9 @@ const Footer = () => (
             </div>
             { <div className="logos">
                 <Body color="white" size="small">&#169;	 2020 Verizon</Body>
+
+                {/* Deprecating Social Media Links Until We Have Something To Link Out To  */}
+                
                 {/* <img src={twitterLogo} alt="twitterLogo" style={{height: '60px', weight: '60px'}}></img>
                 <img src={fbLogo} alt="fbLogo" style={{height: '60px', weight: '60px'}}></img> */}
             </div> }
