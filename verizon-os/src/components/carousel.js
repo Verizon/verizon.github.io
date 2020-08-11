@@ -8,7 +8,7 @@ import os2 from "../images/open-source-2.png";
 import os3 from "../images/open-source-3.jpeg";
 import os4 from "../images/open-source-4.png"; 
 
-var idx = 0; 
+let idx = 0; 
 const Container = styled.div`
     display: flex; 
     padding-top: 100px;
@@ -26,7 +26,6 @@ export default class Carousel extends Component {
   componentDidMount () {
     idx = 0; 
     this.startCarousel(); 
-    
     }
 
   startCarousel() {
@@ -34,14 +33,11 @@ export default class Carousel extends Component {
       if (idx < 3) {
         this.setState({ index: idx, selectedSlide: idx+1});
         idx = (idx+1)%(this.state.images.length); 
-      }
-
-        else {
-          this.setState({index: 3, selectedSlide: 4})
-          idx = 0;
-        
-        } 
-      }, 5000)
+      } else {
+        this.setState({index: 3, selectedSlide: 4})
+        idx = 0;
+      } 
+    }, 5000)
   }
 
   componentWillUnmount() {
@@ -49,21 +45,19 @@ export default class Carousel extends Component {
     idx = 0; 
   }
 
-
   /*goToSlide sets the state object with the correct active slide when one of the carousel bars is clicked so that bar is highlighted and the right image is rendered */
   goToSlide = slide => {
     this.setState(() => (
-        { selectedSlide: slide, index: slide-1}
-         ));
-         idx = slide-1; 
+      { selectedSlide: slide, index: slide-1}
+    ));
+    idx = slide-1; 
   };
   render() {
     const { selectedSlide } = this.state; 
     return (
-        
-      <Container style={{display: 'inline-block'}}>
-        <img src= { this.state.images[this.state.index] } alt="" style={{ height:'175px', width: '800px', position: 'relative', left: '25%'}} ></img>
-        <CarouselBars style={{ position: 'relative', left: '68%', width: '10%'}}
+      <Container style={{display: 'block', paddingBottom: '100px'}}>
+        <img src= { this.state.images[this.state.index] } alt="" style={{ height:'400px', width: '900px', position: 'relative', left: '0%', paddingTop: '50px'}} ></img>
+        <CarouselBars style={{ position: 'relative', left: '31%', width: '13%'}}
           uniqueId="carousel-bars-default-example-id"
           activeSlide={selectedSlide}
           slideCount={4}
