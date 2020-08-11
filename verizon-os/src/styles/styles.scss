@@ -92,12 +92,13 @@ header{
 
 footer{
     background-color: black;
-    height: 120px;
-    position: absolute;  
+    height: 100px;
+    position: fixed;  
     bottom: 0px; 
     left: 0px; 
     right: 0px; 
     display: flex; 
+    justify-content: center;
     .inner-footer{
         vertical-align: middle;
         display: flex;
@@ -112,7 +113,6 @@ footer{
                     color: white; 
                     margin: 0 25px; 
                 }
-            
             }
         }
         .logos{
