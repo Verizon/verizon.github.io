@@ -15,14 +15,14 @@ const Header = () => (
         </div>
         <div className="navigation">
           <nav>
-            <Link to="/" style={{ textDecoration: 'none' }}><Body size="large">Home</Body></Link>
+            <Link to="/" style={{ textDecoration: 'none' }}><Body size="medium">HOME</Body></Link>
 
             {/* Deprecating Blog Tab Until We Have A Blog Ready */}
 
             {/* <Link to="/blog"><Body size="large">Blog</Body></Link> */}
             
-            <Link to="/projects" style={{ textDecoration: 'none' }}><Body size="large">Projects</Body></Link>
-            <Link to="https://www.verizon.com/support/residential/internet/equipment/open-source-software" style={{ textDecoration: 'none' }}><Body size="large">Attributions</Body></Link>
+            <Link to="/projects" style={{ textDecoration: 'none' }}><Body size="medium">PROJECTS</Body></Link>
+            <Link to="https://www.verizon.com/support/residential/internet/equipment/open-source-software" style={{ textDecoration: 'none' }}><Body size="medium">ATTRIBUTIONS</Body></Link>
           </nav>
         </div>
       </div>  

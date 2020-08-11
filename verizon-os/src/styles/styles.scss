@@ -45,7 +45,7 @@ header{
     top: 0px; 
     z-index: 10; 
     //border-bottom: 2px solid #D52B1E;
-    border-bottom: 2px solid black; 
+    border-bottom: 1px solid lightgrey; 
     .inner-header{
         display: flex;
         align-items: center;
@@ -61,7 +61,7 @@ header{
         }
         .title {
             margin: auto; 
-            padding-left: 200px; 
+            padding-left: 100px; 
         }
         .navigation{
             nav {
