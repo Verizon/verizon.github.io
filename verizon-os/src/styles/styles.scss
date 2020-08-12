@@ -1,22 +1,30 @@
-.card{
-    display: inline-block;
-    box-sizing: border-box;
-    width: 15%;
-    max-width: 350px;
-    margin: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-align: left;
-    background: #fff;
-}
-
-.card-body{
-    padding: 20px;
-}
-
-.card-center{
-    margin-top: 1px;
+.callToAction{
+    background-color: #e6e6e6;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto; 
+    width: 100%; 
     text-align: center;
+    margin-bottom: 90px;
+    .innerCallToAction{
+        display: flex; 
+        width: 70%;
+        margin: auto; 
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        .action{
+            margin: 0; 
+            img{
+                width: 250px;
+                height: 250px;
+                border: 1px solid black; 
+                margin-bottom: 10px
+            }
+        }
+    }
 }
 
 .container {
@@ -35,6 +43,32 @@
     @media (max-width: 976px) {
         width: 768px; 
         min-width: 768px; 
+    }
+}
+
+.featuredProjects{
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto; 
+    width: 100%; 
+    text-align: center;
+    .innerFeaturedProjects{
+        display: flex; 
+        width: 70%;
+        margin: auto; 
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        .project{
+            margin: 0; 
+            img{
+                width: 250px;
+                height: 250px;
+                border: 1px solid black; 
+            }
+        }
     }
 }
 
@@ -77,19 +111,6 @@ header{
 
 }
 
-.row {
-    box-sizing: border-box;
-    display: flex;
-    flex: 0 0 auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top:25px;
-    margin-right: -0.5rem;
-    margin-left: -0.5rem;
-    justify-content: center;
-}
-
-
 footer{
     background-color: black;
     height: 100px;
@@ -124,77 +145,74 @@ footer{
         }
     }
 }
-.blogpage{
-    position: absolute;
-    margin-top: 80px;
-    margin-bottom: 140px; 
-    padding-left: 23px; 
-    .blogTitleContainer{
-        align-items: center; 
-        .blogTitle{ 
-            padding-top: 10px; 
-            display: flex; 
-            align-items: center;
-            img{
-                height: 25px;
-                width: 25px;
-                padding-left: 10px;
-            }
-        }
-        .blogTitleText{
-            vertical-align: middle;
-            
-        }
-    }
-    .blog{
-        align-items: center;
-        justify-content: space-between;
-        display: flex; 
-        width: 90%; 
-        //float: left; 
-        img{
-            vertical-align: middle; 
-            height: 120px; 
-            width: 150px; 
-            padding-top: 20px; 
-        }
-        .blogText{
-            padding-left: 20px; 
-        }
-    }
-}
 
 .OspoFrontPage{
     position: relative; 
     margin: auto; 
     width: 100%; 
     text-align: center;
+    background-color: #e6e6e6;
+    padding-top: 50px;
+    padding-bottom: 50px;
     .innerOspo{
         display: flex; 
         width: 70%;
         margin: auto; 
         align-items: center;
         justify-content: space-between;
-        padding-top: 20px;
+        padding-top: 60px;
+        padding-bottom: 30px;
         .Video1{
-            margin: 0 25px; 
+            margin: 0; 
             iframe{
-                border: 2px solid black; 
+                border: 1px solid black; 
             }
         }
-    }
-    .featuredProjects{
-        position: absolute;
-        padding-top: 30px;
-        margin: auto; 
-        width: 100%; 
-        text-align: center;
     }
 }
 
 .scrollContainer{
     position: relative; 
-     
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
 }
+
+// .blogpage{
+//     position: absolute;
+//     margin-top: 80px;
+//     margin-bottom: 140px; 
+//     padding-left: 23px; 
+//     .blogTitleContainer{
+//         align-items: center; 
+//         .blogTitle{ 
+//             padding-top: 10px; 
+//             display: flex; 
+//             align-items: center;
+//             img{
+//                 height: 25px;
+//                 width: 25px;
+//                 padding-left: 10px;
+//             }
+//         }
+//         .blogTitleText{
+//             vertical-align: middle;
+            
+//         }
+//     }
+//     .blog{
+//         align-items: center;
+//         justify-content: space-between;
+//         display: flex; 
+//         width: 90%; 
+//         //float: left; 
+//         img{
+//             vertical-align: middle; 
+//             height: 120px; 
+//             width: 150px; 
+//             padding-top: 20px; 
+//         }
+//         .blogText{
+//             padding-left: 20px; 
+//         }
+//     }
+// }

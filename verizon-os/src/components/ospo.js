@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 import { Title } from '@vds/typography';
 
 const Ospo = () => (
@@ -30,10 +30,7 @@ const Ospo = () => (
                 /> 
             </div>
         </div>
-        <div className="featuredProjects">
-            <Title>Featured Projects</Title>
-        </div>
     </div>
-)
+);
 
-export default Ospo
+export default Ospo;
