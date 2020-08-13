@@ -1,3 +1,11 @@
+.attributionsPage {
+    iframe{
+        height: 816px;
+        width: 100%;
+        margin-top: -137px
+    } 
+}
+
 .callToAction{
     background-color: #e6e6e6;
     position: relative;
@@ -75,10 +83,11 @@
 header{
     height: 80px; 
     width: 100%; 
-    position: absolute; 
+    position: fixed; 
     top: 0px; 
     z-index: 10; 
     border-bottom: 1px solid lightgrey; 
+    background-color: white;
     .inner-header{
         display: flex;
         align-items: center;
@@ -93,7 +102,7 @@ header{
             };
             .opensource-text{
                 margin-left: -18px;
-                margin-top: 19px;;
+                margin-top: 25px;;
             }
         }
         .title {
@@ -173,11 +182,16 @@ footer{
     }
 }
 
+// .projectLayout{
+
+// }
+
 .scrollContainer{
     position: relative; 
     overflow-y: hidden;
     overflow-x: hidden;
 }
+
 
 // .blogpage{
 //     position: absolute;
