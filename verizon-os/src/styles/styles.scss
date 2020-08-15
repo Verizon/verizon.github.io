@@ -177,6 +177,26 @@ footer{
     overflow-x: hidden;
 }
 
+.ospage{
+    .ospoTitle{
+        position: absolute; 
+        top: 13%; 
+        width: 100%; 
+        text-align: center; 
+    }
+    .ospoSubtitle{
+        position: absolute; 
+        top: 23%; 
+        width: 100%; 
+        text-align: center; 
+
+    }
+    .ospoBody{
+        position: absolute; 
+        top: 28%; 
+    }
+}
+
 // .blogpage{
 //     position: absolute;
 //     margin-top: 80px;

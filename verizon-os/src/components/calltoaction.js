@@ -1,6 +1,7 @@
 import React from 'react';
 import { Title, Body } from '@vds/typography';
 import placeholder from '../images/placeholder-image.png';
+import { Link } from "gatsby";
 
 const CallToAction = () => {
   return (
@@ -19,7 +20,7 @@ const CallToAction = () => {
         </div>
         <div className="action">
           <img src={placeholder} alt='placeholder'/>
-          <Title>Join</Title>
+          <Link to='/community'><Title>Join</Title></Link>
           <Body size="large" viewport="desktop" primitive="h2">our communities</Body>
         </div>
       </div>
