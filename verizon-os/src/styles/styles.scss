@@ -1,3 +1,11 @@
+.attributionsPage {
+    iframe{
+        height: 816px;
+        width: 100%;
+        margin-top: -137px
+    } 
+}
+
 .callToAction{
     background-color: #e6e6e6;
     position: relative;
@@ -75,11 +83,11 @@
 header{
     height: 80px; 
     width: 100%; 
-    position: absolute; 
+    position: fixed; 
     top: 0px; 
     z-index: 10; 
-    //border-bottom: 2px solid #D52B1E;
     border-bottom: 1px solid lightgrey; 
+    background-color: white;
     .inner-header{
         display: flex;
         align-items: center;
@@ -91,6 +99,10 @@ header{
             img {
                 height: 75px;
                 width: 180px; 
+            };
+            .opensource-text{
+                margin-left: -18px;
+                margin-top: 25px;;
             }
         }
         .title {
@@ -105,7 +117,6 @@ header{
                     margin: 0 17px;
                 }
             }
-
         }
     }
 
@@ -170,6 +181,10 @@ footer{
         }
     }
 }
+
+// .projectLayout{
+
+// }
 
 .scrollContainer{
     position: relative; 

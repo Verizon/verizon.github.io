@@ -12,4 +12,4 @@ const BlogPage = () => (
     </div>
 )
 
-export default BlogPage
+export default BlogPage;

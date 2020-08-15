@@ -5,19 +5,24 @@ import HomePage from '../pages/home';
 // import BlogPage from '../pages/blog'; 
 import OsPage from '../pages/community';
 import Header from '../components/header';
-import Footer from '../components/footer'; 
+import Footer from '../components/footer';
+import Projects from './projects'; 
+import Attributions from './attributions';
 
 
 const IndexPage = () => (
     <Router>
         <Header/>
             <Switch>
-                <Route path="/" exact component={HomePage} />
+                <Route path="/" component={HomePage}/>
+                <Route path="/home" component={HomePage} />
                 {/* <Route path="/blog" component={BlogPage} /> */}
-                <Route path="/community" exact component={OsPage} />
+                <Route path="/projects" component={Projects} />
+                <Route path="/attributions" component={Attributions}/>
+                <Route path="/community" component={OsPage}/>
             </Switch>
         <Footer/>
     </Router>
 )
 
-export default IndexPage
+export default IndexPage;
