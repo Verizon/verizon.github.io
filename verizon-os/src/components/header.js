@@ -25,6 +25,7 @@ const Header = () => (
             {/* <Link to="/blog"><Body size="large">Blog</Body></Link> */}
             
             <Link to="/projects" style={{ textDecoration: 'none' }}><Body size="medium" bold="true">Projects</Body></Link>
+            <Link to="/community" style={{ textDecoration: 'none' }}><Body size="medium" bold="true">Community</Body></Link>
             <Link to="/attributions" style={{ textDecoration: 'none' }}><Body size="medium" bold="true">Attributions</Body></Link>
           </nav>
         </div>

@@ -6,7 +6,7 @@ import { Link } from "gatsby";
 const CallToAction = () => {
   return (
     <div className="callToAction">
-      <Title>How To Manage Open Source</Title>
+      <Link to='/community'><Title>How To Manage Open Source</Title></Link>
       <div className="innerCallToAction">
         <div className="action">
           <img src={placeholder} alt='placeholder'/>
@@ -20,7 +20,7 @@ const CallToAction = () => {
         </div>
         <div className="action">
           <img src={placeholder} alt='placeholder'/>
-          <Link to='/community'><Title>Join</Title></Link>
+          <Title>Join</Title>
           <Body size="large" viewport="desktop" primitive="h2">our communities</Body>
         </div>
       </div>
