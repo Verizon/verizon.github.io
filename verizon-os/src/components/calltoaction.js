@@ -1,11 +1,12 @@
 import React from 'react';
 import { Title, Body } from '@vds/typography';
 import placeholder from '../images/placeholder-image.png';
+import { Link } from "gatsby";
 
 const CallToAction = () => {
   return (
     <div className="callToAction">
-      <Title>How To Manage Open Source</Title>
+      <Link to='/community'><Title>How To Manage Open Source</Title></Link>
       <div className="innerCallToAction">
         <div className="action">
           <img src={placeholder} alt='placeholder'/>
