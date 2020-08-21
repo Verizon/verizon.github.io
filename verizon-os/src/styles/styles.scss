@@ -148,13 +148,13 @@ footer{
                 }
             }
         }
-        .logos{
-            position: absolute; 
-            right: 30px; 
-            img { 
-                margin: 0 15px; 
-            }
-        }
+        // .logos{
+        //     position: absolute; 
+        //     right: 30px; 
+        //     img { 
+        //         margin: 0 15px; 
+        //     }
+        //}
     }
 }
 
@@ -263,30 +263,31 @@ footer{
         position: relative; 
         height: 82vh;
         width: 100%;
+        opacity: 0.6;
     }
     .slideTitle1{
+        text-align: center; 
         position: absolute;
         top: 20%;
         right: 2%; 
-        z-index: 100;
         width: 40%
     }
     .slideButton1{
         position: absolute; 
         top: 45%; 
-        right: 15%;  
+        right: 17%;  
     }
     .slideTitle2{
+        text-align: center;
         position: absolute;
-        top: 20%;
+        top: 30%;
         left: 15%; 
-        z-index: 100;
         width: 40%
     }
     .slideButton2{
         position: absolute; 
         top: 45%; 
-        left: 30%;
+        left: 29.5%;
     }
 }
 
