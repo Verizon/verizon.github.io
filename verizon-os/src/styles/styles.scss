@@ -35,6 +35,7 @@
     }
 }
 
+
 .container {
     width: 1640px;
     min-width: 1640px;
@@ -182,9 +183,53 @@ footer{
     }
 }
 
-// .projectLayout{
-
-// }
+.projectLayout{
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    padding-bottom: 250px;
+    .projectLayoutHeading{
+        position: relative;
+        text-align: center;
+        margin-top: 150px;
+        padding-bottom: 40px;  
+    }
+    .project-grid { 
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-gap: 20px;
+        align-items: stretch;
+        }
+      .project-grid > article {
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+      }
+      .project-grid > article img {
+        max-width: 100%;
+      }
+      .project-text {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 0 20px 20px;
+        text-align: center;
+        .title {
+            margin-top: 20px;
+            margin-bottom: 10px
+        };
+        .body {
+            margin-top: 25px;
+            height: 100px;
+            text-align: center
+        }
+      }
+      .project-text > button {
+        background: gray;
+        border: 0;
+        color: white;
+        padding: 10px;
+        width: 100%;
+    }   
+}
 
 .scrollContainer{
     position: relative; 
@@ -284,3 +329,4 @@ footer{
 //         }
 //     }
 // }
+

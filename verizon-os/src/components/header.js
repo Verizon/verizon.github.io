@@ -10,7 +10,7 @@ const Header = () => (
         <div className="logo">
             <img src={logo} alt="VzLogo"></img>
             <div className="opensource-text">
-              <Title size="small" color="grey">Open Source</Title>
+              <Title size="small">Open Source</Title>
             </div>
         </div>
         {/* <div className="title">
