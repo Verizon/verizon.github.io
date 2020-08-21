@@ -7,25 +7,25 @@ const Ospo = () => (
         <div className="innerOspo">
             <div className="Video1">
                 <iframe src='https://www.youtube.com/embed/YqvKHBTJ0yQ'
-                    frameborder='0'
+                    frameBorder='0'
                     allow='autoplay; encrypted-media'
-                    allowfullscreen
+                    allowFullScreen
                     title='video'
                 />          
             </div>
             <div className="Video1">
                 <iframe src='https://www.youtube.com/embed/Y1sXSSvnkFo'
-                    frameborder='0'
+                    frameBorder='0'
                     allow='autoplay; encrypted-media'
-                    allowfullscreen
+                    allowFullScreen
                     title='video'
                 /> 
             </div>
             <div className="Video1">
                 <iframe src='https://www.youtube.com/embed/fIAD_s8mtf4'
-                    frameborder='0'
+                    frameBorder='0'
                     allow='autoplay; encrypted-media'
-                    allowfullscreen
+                    allowFullScreen
                     title='video'
                 /> 
             </div>

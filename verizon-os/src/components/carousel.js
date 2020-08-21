@@ -3,10 +3,10 @@ import styled from 'styled-components';
 import "../styles/styles.scss";
 //import { Title, Body, Subtitle } from '@vds/typography';
 import { CarouselBars } from '@vds/carousels';
-import os1 from "../images/open-source-1.png";
-import os2 from "../images/open-source-2.png";
-import os3 from "../images/open-source-3.jpeg";
-import os4 from "../images/open-source-4.png"; 
+import { Slide1 } from '../components/carouselData';
+import { Slide2 } from '../components/carouselData'; 
+import { Slide3 } from '../components/carouselData'; 
+import { Slide4 } from '../components/carouselData'; 
 
 let idx = 0; 
 const Container = styled.div`
@@ -18,7 +18,10 @@ const Container = styled.div`
 export default class Carousel extends Component {
   state = {
     selectedSlide: 1,
-    images: [os1, os2, os3, os4],
+    showHide1: true, 
+    showHide2: false, 
+    showHide3: false, 
+    showHide4: false, 
     index: 0
   };
 
@@ -29,19 +32,21 @@ export default class Carousel extends Component {
     }
 
   startCarousel() {
-    this.timer = setInterval(() => {
-      if (idx < 3) {
-        this.setState({ index: idx, selectedSlide: idx+1});
-        idx = (idx+1)%(this.state.images.length); 
-      } else {
-        this.setState({index: 3, selectedSlide: 4})
-        idx = 0;
-      } 
-    }, 5000)
+    // this.timer = setInterval(() => {
+    //   if (idx < 3) {
+    //     this.setState({ index: idx, selectedSlide: idx+1});
+    //     idx = (idx+1)%(this.state.images.length); 
+    //   } else {
+    //     this.setState({index: 3, selectedSlide: 4})
+    //     idx = 0;
+    //   } 
+    // }, 5000)
+    this.setState({ index: idx, selectedSlide: idx+1});
+
   }
 
   componentWillUnmount() {
-    clearInterval(this.timer);
+    //clearInterval(this.timer);
     idx = 0; 
   }
 
@@ -50,19 +55,63 @@ export default class Carousel extends Component {
     this.setState(() => (
       { selectedSlide: slide, index: slide-1}
     ));
+    this.hideComponent(slide);
     idx = slide-1; 
+    console.log("IDX:    ", idx); 
   };
+
+  hideComponent(slide) {
+    console.log("SLIDE:  ", slide); 
+    switch (slide) {
+      case 1: 
+        this.setState({showHide1: true});
+        this.setState({showHide2: false});
+        this.setState({showHide3: false});
+        this.setState({showHide4: false}); 
+        break; 
+      case 2: 
+        this.setState({showHide1: false});
+        this.setState({showHide2: true});
+        this.setState({showHide3: false});
+        this.setState({showHide4: false}); 
+        break; 
+      case 3: 
+        this.setState({showHide1: false});
+        this.setState({showHide2: false});
+        this.setState({showHide3: true});
+        this.setState({showHide4: false}); 
+        break; 
+      case 4: 
+        this.setState({showHide1: false});
+        this.setState({showHide2: false});
+        this.setState({showHide3: false});
+        this.setState({showHide4: true}); 
+        break; 
+      default: 
+    }
+  }
+
   render() {
-    const { selectedSlide } = this.state; 
+    const { selectedSlide, showHide1, showHide2, showHide3, showHide4 } = this.state; 
+    console.log("State IDX:   ", this.state.index); 
     return (
-      <Container style={{display: 'block', paddingBottom: '100px'}}>
-        <img src= { this.state.images[this.state.index] } alt="" style={{ height:'400px', width: '900px', position: 'relative', left: '0%', paddingTop: '50px'}} ></img>
-        <CarouselBars style={{ position: 'relative', left: '31%', width: '13%'}}
+     
+      <Container style={{display: 'block', paddingBottom: '10px', border: "1px", paddingLeft: '0px', paddingTop: '0px'}}>
+        {/* <img src= { this.state.images[0] } alt="" style={{ position: 'relative', paddingTop: '50px', height:'75vh', width: '100%', margin: '0'}} ></img> */}
+       
+        { showHide1 && <Slide1 /> }
+        { showHide2 && <Slide2 /> }
+        { showHide3 && <Slide3 /> }
+        { showHide4 && <Slide4 /> }
+
+        <CarouselBars style={{ position: 'relative', left: '45%', width: '10%'}}
           uniqueId="carousel-bars-default-example-id"
           activeSlide={selectedSlide}
           slideCount={4}
           goToSlide={this.goToSlide}
         />
+
+        
       </Container>
     );
   }

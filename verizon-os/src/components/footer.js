@@ -9,9 +9,9 @@ const Footer = () => (
     <div className="inner-footer">
       <div className="navigation">
         <nav>
-            <Link to="/support" style={{ textDecoration: 'none' }}><Body color="white" size="medium" bold="true">Support</Body></Link>
-            <Link to="/contacts" style={{ textDecoration: 'none' }}><Body color="white" size="medium" bold="true">Contacts</Body></Link>
-            <Link to="/brands" style={{ textDecoration: 'none' }}><Body color="white" size="medium" bold="true">Brands</Body></Link>
+            <Link to="/support" style={{ textDecoration: 'none' }}><Body color="white" size="medium" bold={true}>Support</Body></Link>
+            <Link to="/contacts" style={{ textDecoration: 'none' }}><Body color="white" size="medium" bold={true}>Contacts</Body></Link>
+            <Link to="/brands" style={{ textDecoration: 'none' }}><Body color="white" size="medium" bold={true}>Brands</Body></Link>
         </nav>
       </div>
       { <div className="logos">

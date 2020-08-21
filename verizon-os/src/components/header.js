@@ -18,15 +18,15 @@ const Header = () => (
         </div> */}
         <div className="navigation">
           <nav>
-            <Link to="/home" style={{ textDecoration: 'none' }}><Body size="medium" bold="true">Home</Body></Link>
+            <Link to="/home" style={{ textDecoration: 'none' }}><Body size="medium" bold={true}>Home</Body></Link>
 
             {/* Deprecating Blog Tab Until We Have A Blog Ready */}
 
             {/* <Link to="/blog"><Body size="large">Blog</Body></Link> */}
             
-            <Link to="/projects" style={{ textDecoration: 'none' }}><Body size="medium" bold="true">Projects</Body></Link>
-            <Link to="/community" style={{ textDecoration: 'none' }}><Body size="medium" bold="true">Community</Body></Link>
-            <Link to="/attributions" style={{ textDecoration: 'none' }}><Body size="medium" bold="true">Attributions</Body></Link>
+            <Link to="/projects" style={{ textDecoration: 'none' }}><Body size="medium" bold={true}>Projects</Body></Link>
+            <Link to="/community" style={{ textDecoration: 'none' }}><Body size="medium" bold={true}>Community</Body></Link>
+            <Link to="/attributions" style={{ textDecoration: 'none' }}><Body size="medium" bold={true}>Attributions</Body></Link>
           </nav>
         </div>
       </div>  
