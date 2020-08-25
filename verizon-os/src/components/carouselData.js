@@ -43,12 +43,12 @@ class Slide3 extends Component {
     render() {
       return (<div className="slideData">
         <img src={ os3 } alt="os3"></img>
-        <div className="slideTitle2">
-            <Title size="large" color="#747676">YANG-validator</Title>
+        <div className="slideTitle3">
+            <Title size="large" color="#747676">YANG Validator</Title>
             <br></br>
             <Body size="large" bold={true} color="#333333">A project to help equipment vendors validate against OpenConfig YANG</Body>
         </div>
-        <div className="slideButton2">
+        <div className="slideButton3">
             <Link to="https://github.com/Verizon/YANG-validator" target="_blank"><Button>Project Details</Button></Link>
         </div>
       </div>);
@@ -59,12 +59,12 @@ class Slide4 extends Component {
     render() {
       return (<div className="slideData">
         <img src={ os4 } alt="os4"></img>
-        <div className="slideTitle2">
-            <Title size="large" color="#333333">YANG-transformer</Title>
+        <div className="slideTitle4">
+            <Title size="large" color="#333333">YANG Transformer</Title>
             <br></br>
             <Body size="large" bold={true} color="#333333">Transformer library for OpenConfig YANG JSON</Body>
         </div>
-        <div className="slideButton2">
+        <div className="slideButton4">
         <Link to="https://github.com/Verizon/YANG-transformer" target="_blank"><Button>Project Details</Button></Link>
         </div>
       </div>);

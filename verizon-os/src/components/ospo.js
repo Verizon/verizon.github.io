@@ -14,7 +14,7 @@ const Ospo = () => (
                 />          
             </div>
             <div className="Video1">
-                <iframe src='https://www.youtube.com/embed/Y1sXSSvnkFo'
+                <iframe src='https://www.youtube.com/embed/1WNAxU7u9cI'
                     frameBorder='0'
                     allow='autoplay; encrypted-media'
                     allowFullScreen
@@ -22,7 +22,7 @@ const Ospo = () => (
                 /> 
             </div>
             <div className="Video1">
-                <iframe src='https://www.youtube.com/embed/fIAD_s8mtf4'
+                <iframe src='https://www.youtube.com/embed/ncuIj9_EL7o'
                     frameBorder='0'
                     allow='autoplay; encrypted-media'
                     allowFullScreen
