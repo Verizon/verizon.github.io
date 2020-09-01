@@ -99,7 +99,7 @@ header{
             align-items: center;
             img {
                 height: 75px;
-                width: 180px; 
+                width: 202px; 
             };
             .opensource-text{
                 margin-left: -18px;
@@ -239,10 +239,31 @@ footer{
 
 .ospage{
     .ospoTitle{
-        position: absolute; 
-        top: 13%; 
-        width: 100%; 
-        text-align: center; 
+        .ospoTitleText{
+            img {
+                padding-right: 150px; 
+                vertical-align: middle;
+                width: 75px; 
+                height: 71px; 
+            }
+            display: flex; 
+            text-align: center; 
+            left: 10.5%; 
+            width: 80%;
+            height: 30px; 
+            justify-content: center;
+            position: relative; 
+            img {
+                padding-left: 150px; 
+                vertical-align: middle;
+                width: 75px; 
+                height: 71px; 
+            }
+        }
+        display: flex; 
+        padding-top: 100px; 
+        align-items: center;
+        
     }
     .ospoSubtitle{
         position: absolute; 
@@ -252,6 +273,8 @@ footer{
 
     }
     .ospoBody{
+        padding-left: 75px; 
+        padding-right: 75px; 
         position: absolute; 
         top: 28%; 
     }

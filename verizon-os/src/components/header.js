@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import React from "react";
-import logo from "../images/vz_150_rgb_p.jpg";
+import logo from "../images/vz_300_rgb_p.jpg";
 import { Title, Body } from '@vds/typography';
 
 const Header = () => (
