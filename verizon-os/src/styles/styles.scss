@@ -248,6 +248,7 @@ footer{
             }
             display: flex; 
             text-align: center; 
+            align-items: center;
             left: 10.5%; 
             width: 80%;
             height: 30px; 
@@ -261,13 +262,13 @@ footer{
             }
         }
         display: flex; 
-        padding-top: 100px; 
+        padding-top: 125px; 
         align-items: center;
         
     }
     .ospoSubtitle{
         position: absolute; 
-        top: 23%; 
+        top: 25%; 
         width: 100%; 
         text-align: center; 
 
@@ -276,7 +277,7 @@ footer{
         padding-left: 75px; 
         padding-right: 75px; 
         position: absolute; 
-        top: 28%; 
+        top: 30%; 
     }
 }
 
