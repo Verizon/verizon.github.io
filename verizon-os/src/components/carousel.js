@@ -57,11 +57,9 @@ export default class Carousel extends Component {
     ));
     this.hideComponent(slide);
     idx = slide-1; 
-    console.log("IDX:    ", idx); 
   };
 
   hideComponent(slide) {
-    console.log("SLIDE:  ", slide); 
     switch (slide) {
       case 1: 
         this.setState({showHide1: true});
