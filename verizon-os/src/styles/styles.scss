@@ -57,7 +57,7 @@
 
 .featuredProjects{
     position: relative;
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 50px;
     margin: auto; 
     width: 100%; 
@@ -66,9 +66,8 @@
         display: flex; 
         width: 70%;
         margin: auto; 
-        align-items: center;
         justify-content: space-between;
-        padding-top: 50px;
+        padding-top: 40px;
         padding-bottom: 30px;
         .project{
             margin: 0; 
@@ -76,6 +75,10 @@
                 width: 250px;
                 height: 250px;
                 padding-bottom: 25px; 
+            }
+            .list{
+                list-style-type: none;
+                padding-right: 37px; 
             }
         }
     }
