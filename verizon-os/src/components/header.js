@@ -26,7 +26,7 @@ const Header = () => (
             
             <Link to="/projects" style={{ textDecoration: 'none' }}><Body size="medium" bold={true}>Projects</Body></Link>
             <Link to="/community" style={{ textDecoration: 'none' }}><Body size="medium" bold={true}>Community</Body></Link>
-            <Link to="/attributions" style={{ textDecoration: 'none' }}><Body size="medium" bold={true}>Attributions</Body></Link>
+            <a href="https://www.verizon.com/support/residential/internet/equipment/open-source-software" style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer"><Body size="medium" bold={true}>Attributions</Body></a>
           </nav>
         </div>
       </div>  
