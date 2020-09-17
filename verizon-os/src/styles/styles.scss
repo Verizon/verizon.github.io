@@ -120,35 +120,33 @@ header{
 footer{
     background-color: black;
     height: 100px;
+    width: 99%; 
     position: fixed;  
     bottom: 0px; 
     left: 0px; 
     right: 0px; 
     display: flex; 
-    justify-content: center;
+    margin: auto; 
     .inner-footer{
-        vertical-align: middle;
         display: flex;
         align-items: center;
         justify-content: space-between;
         .navigation{
-            vertical-align: middle;
             nav{
                 display: flex; 
                 align-items: center;
                 a{
-                    color: white; 
                     margin: 0 25px; 
                 }
             }
         }
-        // .logos{
-        //     position: absolute; 
-        //     right: 30px; 
-        //     img { 
-        //         margin: 0 15px; 
-        //     }
-        //}
+        .logos{
+            position: absolute; 
+            right: 30px; 
+            img { 
+                margin: 0 15px; 
+            }
+        }
     }
 }
 

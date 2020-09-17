@@ -12,9 +12,9 @@ class Slide1 extends Component {
       return (<div className="slideData">
         <img src={ os1 } alt="os1"></img>
         <div className="slideTitle1">
-            <Title size="large" color="#747676"> Welcome to Verizon Open Source. <br></br> We tolerate open source, reluctantly.</Title>
+            <Title size="large" color="#747676"> Welcome to Verizon Open Source. <br></br> We welcome and encourage contributions. </Title>
             <br></br>
-            <Title size="large" color="#747676">But we’re coming around to it.</Title>
+            <Title size="large" color="#747676">Innovate. Collaborate. Learn. </Title>
         </div>
         <div className="slideButton1">
             <Link to="/community"><Button>Learn More</Button></Link>

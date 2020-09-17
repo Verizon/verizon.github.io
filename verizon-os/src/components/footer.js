@@ -9,13 +9,14 @@ const Footer = () => (
     <div className="inner-footer">
       <div className="navigation">
         <nav>
-            <Link to="/support" style={{ textDecoration: 'none' }}><Body size="medium" bold={true}>Support</Body></Link>
-            <Link to="/contacts" style={{ textDecoration: 'none' }}><Body size="medium" bold={true}>Contacts</Body></Link>
-            <Link to="/brands" style={{ textDecoration: 'none' }}><Body size="medium" bold={true}>Brands</Body></Link>
+          <Link to="/projects" style={{ textDecoration: 'none' }}><Body size="medium" bold={true} color="white">Projects</Body></Link>
+          <Link to="/community" style={{ textDecoration: 'none' }}><Body size="medium" bold={true} color="white">Community</Body></Link>
+          <Link to="https://github.com/Verizon" style={{ textDecoration: 'none' }}><Body size="medium" bold={true} color="white">Github</Body></Link>
+
         </nav>
       </div>
       { <div className="logos">
-          <Body size="small">&#169;	 2020 Verizon</Body>
+          <Body size="small" color="white">&#169;	 2020 Verizon</Body>
 
           {/* Deprecating Social Media Links Until We Have Something To Link Out To  */}
           
