@@ -14,10 +14,15 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
+    "@vds/accordions": "^1.1.0",
     "@vds/buttons": "^0.2.0",
     "@vds/carousels": "^0.1.1",
     "@vds/grids": "^0.1.1",
+    "@vds/selects": "^1.2.0",
+    "@vds/tabs": "^1.0.2",
+    "@vds/theme": "^1.0.2",
     "@vds/typography": "^0.1.1",
+    "axios": "^0.20.0",
     "flexboxgrid-sass": "^8.0.5",
     "gatsby": "^2.23.3",
     "gatsby-plugin-sass": "^2.3.5",

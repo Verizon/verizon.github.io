@@ -182,6 +182,25 @@ footer{
     max-width: 1000px;
     margin: auto;
     padding-bottom: 250px;
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .menuForm {
+        display: flex;
+        margin-left: 20px;
+        margin-bottom: 10px;
+        justify-content: center;
+        .menuFormButton {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .projectMenuButtons{
+        display: flex;
+        justify-content: space-between;
+    }
     .projectLayoutHeading{
         position: relative;
         text-align: center;
@@ -222,7 +241,10 @@ footer{
         color: white;
         padding: 10px;
         width: 100%;
-    }   
+    }  
+    .projectTag {
+        margin-top: 20px
+    } 
 }
 
 .scrollContainer{
