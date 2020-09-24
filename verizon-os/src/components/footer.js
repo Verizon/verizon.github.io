@@ -11,7 +11,7 @@ const Footer = () => (
         <nav>
           <Link to="/projects" style={{ textDecoration: 'none' }}><Body size="medium" bold={true} color="white">Projects</Body></Link>
           <Link to="/community" style={{ textDecoration: 'none' }}><Body size="medium" bold={true} color="white">Community</Body></Link>
-          <Link to="https://github.com/Verizon" style={{ textDecoration: 'none' }}><Body size="medium" bold={true} color="white">Github</Body></Link>
+          <Link to="https://github.com/Verizon" target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}><Body size="medium" bold={true} color="white">Github</Body></Link>
 
         </nav>
       </div>

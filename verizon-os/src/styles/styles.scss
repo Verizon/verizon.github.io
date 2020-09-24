@@ -9,19 +9,40 @@
     margin-bottom: 90px;
     .innerCallToAction{
         display: flex; 
-        width: 70%;
+        width: 65%;
         margin: auto; 
         align-items: center;
         justify-content: space-between;
         padding-top: 60px;
         padding-bottom: 30px;
-        .action{
+        .action1{
             margin: 0; 
+            .text1{
+                padding-top: 25px; 
+            }
             img{
-                width: 250px;
-                height: 250px;
-                border: 1px solid black; 
-                margin-bottom: 10px
+                height: 100px; 
+                width: 109px; 
+            }
+        }
+        .action2{
+            margin: 0; 
+            .text2{
+                padding-top: 25px; 
+            }
+            img{
+                height: 100px; 
+                width: 100px; 
+            }
+        }
+        .action3{
+            margin: 0; 
+            .text3{
+                padding-top: 25px; 
+            }
+            img{
+                height: 100px; 
+                width: 141px; 
             }
         }
     }
