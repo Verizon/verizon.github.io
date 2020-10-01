@@ -3,7 +3,7 @@ import { Title } from '@vds/typography';
 
 const Ospo = () => (
     <div className="OspoFrontPage">
-        <Title>Learn About Open Source Project Offices</Title>
+        <Title size="large">Learn About Open Source Project Offices</Title>
         <div className="innerOspo">
             <div className="Video1">
                 <iframe src='https://www.youtube.com/embed/YqvKHBTJ0yQ'
