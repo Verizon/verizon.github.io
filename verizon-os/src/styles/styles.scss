@@ -1,28 +1,30 @@
 .callToAction{
     background-color: #D8DADA;
     position: relative;
-    padding-top: 50px;
-    padding-bottom: 50px;
     margin: auto; 
     width: 100%; 
     text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-bottom: 90px;
+    
     .innerCallToAction{
         display: flex; 
-        width: 65%;
+        width: 70%;
         margin: auto; 
         align-items: center;
         justify-content: space-between;
         padding-top: 60px;
         padding-bottom: 30px;
+
         .action1{
             margin: 0; 
             .text1{
                 padding-top: 25px; 
             }
             img{
-                height: 100px; 
-                width: 109px; 
+                height: 80px; 
+                width: 87px; 
             }
         }
         .action2{
@@ -31,8 +33,8 @@
                 padding-top: 25px; 
             }
             img{
-                height: 100px; 
-                width: 100px; 
+                height: 80px; 
+                width: 80px; 
             }
         }
         .action3{
@@ -41,8 +43,8 @@
                 padding-top: 25px; 
             }
             img{
-                height: 100px; 
-                width: 141px; 
+                height: 80px; 
+                width: 113px; 
             }
         }
     }
@@ -84,15 +86,52 @@
         .project{
             margin: 0; 
             img{
-                width: 250px;
-                height: 250px;
+                width: 95px;
+                height: 80px;
                 padding-bottom: 25px; 
             }
             .list{
                 list-style-type: none;
                 padding-right: 37px; 
+                
+                a{
+                    color: #000000; 
+                }
             }
         }
+        .project2{
+            margin: 0; 
+            img{
+                width: 96px;
+                height: 80px;
+                padding-bottom: 25px; 
+            }
+            .list{
+                list-style-type: none;
+                padding-right: 37px; 
+                
+                a{
+                    color: #000000; 
+                }
+            }
+        }
+        .project3{
+            margin: 0; 
+            img{
+                width: 100px;
+                height: 80px;
+                padding-bottom: 25px; 
+            }
+            .list{
+                list-style-type: none;
+                padding-right: 37px; 
+                
+                a{
+                    color: #000000; 
+                }
+            }
+        }
+        
     }
 }
 
@@ -117,8 +156,8 @@ header{
                 width: 202px; 
             };
             .opensource-text{
-                margin-left: -18px;
-                margin-top: 25px;;
+                margin-left: 515px;
+                margin-top: 10px;
             }
         }
         .title {
@@ -285,7 +324,7 @@ footer{
             text-align: center; 
             align-items: center;
             left: 10.5%; 
-            width: 80%;
+            width: 57%;
             height: 30px; 
             justify-content: center;
             position: relative; 
@@ -322,54 +361,54 @@ footer{
         position: relative; 
         height: 82vh;
         width: 100%;
-        opacity: 0.6;
     }
     .slideTitle1{
         text-align: center; 
         position: absolute;
-        top: 20%;
-        right: 2%; 
+        top: 32%;
+        left: 1%; 
         width: 40%
     }
     .slideButton1{
         position: absolute; 
-        top: 45%; 
-        right: 17%;  
+        top: 55%; 
+        left: 16%;  
     }
     .slideTitle2{
         text-align: center;
         position: absolute;
-        top: 30%;
-        left: 12%; 
+        top: 40%;
+        left: 1%; 
         width: 40%
     }
     .slideButton2{
         position: absolute; 
-        top: 45%; 
-        left: 26.5%;
+        top: 55%; 
+        left: 16%;
     }
     .slideTitle3{
         text-align: center;
         position: absolute;
-        top: 30%;
-        right: 2%; 
+        top: 40%;
+        left: 1%; 
         width: 40%
     }
     .slideButton3{
         position: absolute; 
-        top: 45%; 
-        right: 17%;
+        top: 55%; 
+        left: 16%;
     }
     .slideTitle4{
         text-align: center;
         position: absolute;
-        top: 30%;
+        top: 40%;
+        left: 1%; 
         width: 40%
     }
     .slideButton4{
         position: absolute; 
-        top: 45%; 
-        left: 14.5%;
+        top: 55%; 
+        left: 16%;
     }
 }
 

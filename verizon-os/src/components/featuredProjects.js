@@ -1,39 +1,39 @@
 import React from "react";
-import { Title, Body } from '@vds/typography';
+import { Title, Subtitle, Body } from '@vds/typography';
 import { Link } from "gatsby";
-import fp1 from '../images/laptop-antivirus-auxiliary.png'; 
-import fp2 from '../images/hackers_auxiliary.png'; 
-import fp3 from '../images/digital-content_auxiliary.png'; 
+import fp1 from '../images/laptop-antivirus-blk.png'; 
+import fp2 from '../images/hackers-blk.png'; 
+import fp3 from '../images/digital-content-blk.png'; 
 
 const FeaturedProjects = () => (
 <div className="featuredProjects">
-  <Link to="/projects"><Title>Featured Projects</Title></Link>
+  <Link to="/projects"><Title size="large">Featured Projects</Title></Link>
   <div className="innerFeaturedProjects">
       <div className="project">
           <img src={fp1} alt='fp1'/> 
-          <Title size="small">Caching</Title>    
+          <Title size="medium">Caching</Title>    
           <Body>
           <ul className="list">
-            <li> <a href="https://github.com/Verizon/safecache" target="_blank" rel="noreferrer">Safecache </a></li>
+            <li> <a href="https://github.com/Verizon/safecache" target="_blank" rel="noreferrer"><Subtitle size="small">Safecache</Subtitle> </a></li>
           </ul>
           </Body>
       </div>
-      <div className="project">
+      <div className="project2">
         <img src={fp2} alt='fp2'/> 
-        <Title size="small">YANG</Title> 
+        <Title size="medium">YANG</Title> 
         <Body>
           <ul className="list">
-            <li> <a href="https://github.com/Verizon/YANG-validator" target="_blank" rel="noreferrer">Validator </a></li>
-            <li> <a href="https://github.com/Verizon/YANG-transformer" target="_blank" rel="noreferrer">Transformer </a></li>
+            <li> <a href="https://github.com/Verizon/YANG-validator" target="_blank" rel="noreferrer"><Subtitle size="small">Validator</Subtitle> </a></li>
+            <li> <a href="https://github.com/Verizon/YANG-transformer" target="_blank" rel="noreferrer"><Subtitle size="small">Transformer</Subtitle> </a></li>
           </ul>
         </Body>
       </div>
-      <div className="project">
+      <div className="project3">
           <img src={fp3} alt='fp3'/>
-          <Title size="small">Proxychains</Title> 
+          <Title size="medium">Proxychains</Title> 
           <Body>
             <ul className="list">
-            <li> <a href="https://github.com/Verizon/redshell" target="_blank" rel="noreferrer">Redshell</a></li>
+            <li> <a href="https://github.com/Verizon/redshell" target="_blank" rel="noreferrer"><Subtitle size="small">Redshell</Subtitle></a></li>
             </ul>
           </Body>
       </div>

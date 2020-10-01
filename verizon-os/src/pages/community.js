@@ -13,7 +13,6 @@ const OsPage = () => (
                 <div className="ospoTitleText">
                     <img src={ospo1} alt='ospo1'/>
                     <Title size="large">How We Manage Open Source</Title>
-                    <img src={ospo1} alt='ospo1'/>
                 </div>
             </div>
             <div className="ospoSubtitle">
