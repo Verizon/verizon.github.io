@@ -203,17 +203,17 @@ footer{
     padding-bottom: 250px;
     .button{
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: left;
+        align-items: left;
     }
     .menuForm {
         display: flex;
         margin-left: 20px;
         margin-bottom: 10px;
-        justify-content: center;
+        justify-content: left;
         .menuFormButton {
             display: flex;
-            justify-content: center;
+            justify-content: left;
         }
     }
     .projectMenuButtons{
@@ -243,7 +243,7 @@ footer{
         margin-top: 10px;
         margin-bottom: 10px;
         padding: 0 20px 20px;
-        text-align: center;
+        text-align: left;
         .title {
             margin-top: 20px;
             margin-bottom: 10px
@@ -251,7 +251,7 @@ footer{
         .body {
             margin-top: 25px;
             height: 100px;
-            text-align: center
+            text-align: left
         }
       }
       .project-text > button {

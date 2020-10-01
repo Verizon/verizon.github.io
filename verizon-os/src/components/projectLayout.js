@@ -173,6 +173,8 @@ class ProjectLayout extends React.Component {
       return accum;
     }, [])
     const projects = showProjects.filter(project=> project.archived === true ).map(function (project){
+      const description = project.description.split(' ').filter(element => element.length < 70).join(" ").replace(/\s(?=[^\s]*$)/g, '\u00A0');
+      console.log(project.description)
       const classes = `project-text ${project.name} ${project.language}`;
       const projectTag = `${project.language}`.toLowerCase();
       return (
@@ -182,7 +184,7 @@ class ProjectLayout extends React.Component {
             <Title size="small">{project.name}</Title>
           </div>
           <div className="body">
-            <Body>{project.description}</Body>
+            <Body>{description}</Body>
           </div>
           <div className="button" >
             <a href={project.html_url} target="_blank" rel="noreferrer">
@@ -203,7 +205,7 @@ class ProjectLayout extends React.Component {
       return (
         <div className="projectLayout">
           <div className="projectLayoutHeading">
-            <Title size="large">Verizon's Open Source Projects</Title>
+            <Title size="large">Verizon Open Source Projects</Title>
           </div>
           <div className="projectMenuButtons">
             <Tabs>            
