@@ -155,10 +155,6 @@ header{
                 height: 75px;
                 width: 202px; 
             };
-            .opensource-text{
-                margin-left: 515px;
-                margin-top: 10px;
-            }
         }
         .title {
             margin: auto; 
@@ -240,11 +236,6 @@ footer{
     max-width: 1000px;
     margin: auto;
     padding-bottom: 250px;
-    .button{
-        display: flex;
-        justify-content: left;
-        align-items: left;
-    }
     .menuForm {
         display: flex;
         margin-left: 20px;
@@ -265,6 +256,10 @@ footer{
         margin-top: 150px;
         padding-bottom: 40px;  
     }
+    .project-card-button{
+        display: flex;
+        justify-content: center;
+    }
     .project-grid { 
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -278,30 +273,20 @@ footer{
       .project-grid > article img {
         max-width: 100%;
       }
-      .project-text {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        padding: 0 20px 20px;
+      .project-card-text {
+        padding: 0 20px 10px;
         text-align: left;
-        .title {
+        .project-card-title {
             margin-top: 20px;
-            margin-bottom: 10px
         };
-        .body {
-            margin-top: 25px;
-            height: 100px;
+        .project-card-body {
+            margin-top: 5px;
+            height: 50px;
             text-align: left
         }
       }
-      .project-text > button {
-        background: gray;
-        border: 0;
-        color: white;
-        padding: 10px;
-        width: 100%;
-    }  
-    .projectTag {
-        margin-top: 20px
+    .project-card-tag {
+        padding: 10px
     } 
 }
 
