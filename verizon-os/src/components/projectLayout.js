@@ -16,9 +16,9 @@ class ProjectLayout extends React.Component {
     super();
     this.state = {
       alphabetize: false,
-      alphabetizeLabel: "(a - z)",
+      alphabetizeLabel: '(a - z)',
       sort: false,
-      sortLabel: "(asc)",
+      sortLabel: '(asc)',
       value: '',
       showProjects: [],
       returnedProjects: []
@@ -63,7 +63,7 @@ class ProjectLayout extends React.Component {
       this.alphabetizeAToZ()
       this.setState({
         alphabetize: !this.state.alphabetize,
-        alphabetizeLabel: "(z - a)"
+        alphabetizeLabel: '(z - a)'
       })
       
     }
@@ -71,7 +71,7 @@ class ProjectLayout extends React.Component {
       this.alphabetizeZtoA()
       this.setState({
         alphabetize: !this.state.alphabetize,
-        alphabetizeLabel: "(a - z)"
+        alphabetizeLabel: '(a - z)'
       })
     }
   }
@@ -116,13 +116,13 @@ class ProjectLayout extends React.Component {
       this.sortByDateAscending()
       this.setState({
         sort: !this.state.sort,
-        sortLabel: "(desc)"
+        sortLabel: '(desc)'
       })
     } else {
       this.sortByDateDescending()
       this.setState({
         sort: !this.state.sort,
-        sortLabel: "(asc)"
+        sortLabel: '(asc)'
       })
     }
   }
@@ -172,9 +172,8 @@ class ProjectLayout extends React.Component {
       }
       return accum;
     }, [])
-    const projects = showProjects.filter(project=> project.archived === true ).map(function (project){
-      const description = project.description.split(' ').filter(element => element.length < 70).join(" ").replace(/\s(?=[^\s]*$)/g, '\u00A0');
-      console.log(project.description)
+    const projects = showProjects.filter(project=> project.archived === true ).map((project) => {
+      const description = project.description.split(' ').filter(element => element.length < 70).join(' ').replace(/\s(?=[^\s]*$)/g, '\u00A0');
       const classes = `project-text ${project.name} ${project.language}`;
       const projectTag = `${project.language}`.toLowerCase();
       return (
