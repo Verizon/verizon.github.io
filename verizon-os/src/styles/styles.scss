@@ -1,13 +1,14 @@
 .callToAction{
     background-color: #D8DADA;
     position: relative;
-    margin: auto; 
     width: 100%; 
     text-align: center;
     padding-top: 50px;
     padding-bottom: 50px;
     margin-bottom: 90px;
-    
+    .manageOsText{
+        padding-left: 35px; 
+    }
     .innerCallToAction{
         display: flex; 
         width: 70%;
@@ -76,6 +77,9 @@
     margin: auto; 
     width: 100%; 
     text-align: center;
+    .ftProjectsTitle {
+        padding-left: 8px; 
+    }
     .innerFeaturedProjects{
         display: flex; 
         width: 70%;
@@ -156,7 +160,7 @@ header{
                 width: 202px; 
             };
             .opensource-text{
-                margin-left: 515px;
+                margin-left: 520px;
                 margin-top: 10px;
             }
         }

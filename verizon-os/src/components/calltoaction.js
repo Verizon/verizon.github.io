@@ -8,7 +8,9 @@ import contribute from '../images/grid-view-blk.png';
 const CallToAction = () => {
   return (
     <div className="callToAction">
-      <Title size="large">How We Manage Open Source</Title>
+      <div className="manageOsText">
+        <Title size="large">How we manage open source</Title>
+      </div>
       <div className="innerCallToAction">
         <div className="action1">
           <img src={use} alt='use'/>

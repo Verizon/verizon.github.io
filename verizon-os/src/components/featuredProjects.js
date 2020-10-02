@@ -7,7 +7,9 @@ import fp3 from '../images/digital-content-blk.png';
 
 const FeaturedProjects = () => (
 <div className="featuredProjects">
-  <Link to="/projects"><Title size="large">Featured Projects</Title></Link>
+  <div className="ftProjectsTitle">
+    <Link to="/projects"><Title size="large">Featured projects</Title></Link>
+  </div>
   <div className="innerFeaturedProjects">
       <div className="project">
           <img src={fp1} alt='fp1'/> 
