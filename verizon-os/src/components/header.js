@@ -10,7 +10,7 @@ const Header = () => (
         <div className="logo">
           <img src={logo} alt="VzLogo"></img> 
         </div>
-        <div className="opensource-text">
+        <div className="OsText">
           <Title size="large">Open Source</Title>
         </div>
         <div className="navigation">
