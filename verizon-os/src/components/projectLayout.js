@@ -172,35 +172,32 @@ class ProjectLayout extends React.Component {
       }
       return accum;
     }, [])
-    const projects = showProjects.filter(project=> project.archived === true ).map((project) => {
-      const description = project.description.split(' ').filter(element => element.length < 70).join(' ').replace(/\s(?=[^\s]*$)/g, '\u00A0');
-      const classes = `project-text ${project.name} ${project.language}`;
+    const projects = showProjects.filter(project=> project.archived === true ).map(function (project){
+      const description = project.description.split(' ').slice(0,10).filter(element => element.length < 70).join(" ").replace(/\s(?=[^\s]*$)/g, '\u00A0');
       const projectTag = `${project.language}`.toLowerCase();
       return (
       <article key={project.id}>
-        <div className={classes}>
-          <div className="title">
+        <div className="project-card-text">
+          <div className="project-card-title">
             <Title size="small">{project.name}</Title>
           </div>
-          <div className="body">
+          <div className="project-card-body">
             <Body>{description}</Body>
           </div>
-          <div className="button" >
-            <a href={project.html_url} target="_blank" rel="noreferrer">
-              <Button size="small">Visit</Button>
-            </a>
-          </div>
-          <div className="projectTag">
-            <a target="_self" value={projectTag} href={projectTag} rel="noreferrer" onClick={(event)=> console.log("value", event.target.value)}>
-              <Micro viewport="desktop" primitive="h2">{projectTag}</Micro>
-            </a>
-          </div>  
         </div>
+        <div className="project-card-button" >
+          <a href={project.html_url} target="_blank" rel="noreferrer">
+            <Button size="small">Visit</Button>
+          </a>
+        </div>
+        <div className="project-card-tag">
+          <a target="_self" value={projectTag} href={projectTag} rel="noreferrer" onClick={(event)=> console.log("value", event.target.value)}>
+            <Micro viewport="desktop" primitive="h2">{projectTag}</Micro>
+          </a>
+        </div>  
       </article>
       )
     });
-
-    
       return (
         <div className="projectLayout">
           <div className="projectLayoutHeading">
