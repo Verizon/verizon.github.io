@@ -91,7 +91,6 @@ export default class Carousel extends Component {
 
   render() {
     const { selectedSlide, showHide1, showHide2, showHide3, showHide4 } = this.state; 
-    console.log("State IDX:   ", this.state.index); 
     return (
      
       <Container style={{display: 'block', paddingBottom: '10px', border: "1px", paddingLeft: '0px', paddingTop: '0px'}}>

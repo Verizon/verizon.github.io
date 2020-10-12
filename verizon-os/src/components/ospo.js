@@ -3,10 +3,10 @@ import { Title } from '@vds/typography';
 
 const Ospo = () => (
     <div className="OspoFrontPage">
-        <Title size="large">Learn about open source project offices</Title>
+        <Title size="large">Learn about open source</Title>
         <div className="innerOspo">
             <div className="Video1">
-                <iframe src='https://www.youtube.com/embed/YqvKHBTJ0yQ'
+                <iframe src='https://www.youtube.com/embed/KHyVJzYnRT8'
                     frameBorder='0'
                     allow='autoplay; encrypted-media'
                     allowFullScreen
@@ -14,7 +14,7 @@ const Ospo = () => (
                 />          
             </div>
             <div className="Video1">
-                <iframe src='https://www.youtube.com/embed/x6PbVlYBiS0'
+                <iframe src='https://www.youtube.com/embed/V3c5p2JopzQ'
                     frameBorder='0'
                     allow='autoplay; encrypted-media'
                     allowFullScreen
@@ -22,7 +22,7 @@ const Ospo = () => (
                 /> 
             </div>
             <div className="Video1">
-                <iframe src='https://www.youtube.com/embed/ncuIj9_EL7o'
+                <iframe src='https://www.youtube.com/embed/Z4KzklUB6Jw'
                     frameBorder='0'
                     allow='autoplay; encrypted-media'
                     allowFullScreen
