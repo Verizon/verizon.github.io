@@ -137,10 +137,20 @@
                 padding-bottom: 25px; 
             }
             a{
-                    color: #000000; 
+                color: #000000; 
             }
         }
         
+    }
+}
+@media (max-width: 540px) {
+    .innerOspo{
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .Video1{
+        height: 100%;
+        width: 100%
     }
 }
 
@@ -273,6 +283,8 @@ footer{
     }
     .projectMenuButtons{
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
     .projectLayoutHeading{
@@ -313,6 +325,12 @@ footer{
     .project-card-tag {
         padding: 10px
     } 
+}
+
+@media (max-width: 300px) {
+    .project-grid {
+      display: block;
+    }
 }
 
 .scrollContainer{

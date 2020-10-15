@@ -1,6 +1,7 @@
 import React from "react";
 import { Body } from '@vds/typography';
 import { Link } from "gatsby";
+import { colors } from '@vds/theme';
 // import twitterLogo from "../images/social-twitter_auxiliary.png"; 
 // import fbLogo from "../images/social-facebook_auxiliary.png"; 
 
