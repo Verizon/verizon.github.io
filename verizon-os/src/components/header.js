@@ -1,6 +1,7 @@
 import { Link } from "gatsby";
 import React from "react";
 import logo from "../images/vz_300_rgb_p.jpg";
+import dropIcon from "../images/menu-blk.png"; 
 import { Title, Subtitle } from '@vds/typography';
 
 const Header = () => (
@@ -10,7 +11,7 @@ const Header = () => (
           <div className="logo">
             <img src={logo} alt="VzLogo"></img> 
           </div>
-          <div className="navigation" id="myNav">
+          <div className="navigation">
             <nav>
               <Link to="/home" activeStyle={{color: '#D52B1E'}}><Subtitle viewport="mobile" size="large" bold={true}>Home</Subtitle></Link>
 
@@ -21,10 +22,18 @@ const Header = () => (
               <Link to="/projects" activeStyle={{color: '#D52B1E'}} ><Subtitle viewport="mobile" size="large" bold={true}>Projects</Subtitle></Link>
               <Link to="/community" activeStyle={{color: '#D52B1E'}} ><Subtitle viewport="mobile" size="large" bold={true}>Community</Subtitle></Link>
               <a href="https://www.verizon.com/support/residential/internet/equipment/open-source-software" target="_blank" rel="noreferrer"><Subtitle viewport="mobile" size="large" bold={true}>Attributions</Subtitle></a>
-              {/* <a href="javascript:void(0);" className="icon" onClick={myFunction()}>
-                <Icon name="close"></Icon>
-              </a> */}
+           
             </nav>
+          </div> 
+          <div className="navMobile">
+            <img src={dropIcon} alt="hamburger"></img>
+            {/* <nav>
+              <Link to="/home" activeStyle={{color: '#D52B1E'}}><Subtitle viewport="mobile" size="large" bold={true}>Home</Subtitle></Link>
+              <Link to="/projects" activeStyle={{color: '#D52B1E'}} ><Subtitle viewport="mobile" size="large" bold={true}>Projects</Subtitle></Link>
+              <Link to="/community" activeStyle={{color: '#D52B1E'}} ><Subtitle viewport="mobile" size="large" bold={true}>Community</Subtitle></Link>
+              <a href="https://www.verizon.com/support/residential/internet/equipment/open-source-software" target="_blank" rel="noreferrer"><Subtitle viewport="mobile" size="large" bold={true}>Attributions</Subtitle></a>
+          
+            </nav> */}
           </div> 
           <div className="OsText">
             <Title primitive="h4" size="medium">Open Source</Title>

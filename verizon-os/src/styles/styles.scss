@@ -67,7 +67,20 @@
     @media (max-width: 976px) {
         width: 768px; 
         min-width: 768px; 
+        
     }
+
+    @media screen and (min-width: 600px) {
+        .navigation{
+            display: none !important; 
+          }
+    }
+
+    @media screen and (max-width: 600px) {
+        .navigation{
+          display: none !important; 
+        }
+      }
 }
 
 .featuredProjects{
@@ -158,17 +171,25 @@ header{
                 };
             }
             .navigation{
-                // border: solid 1px red;
-                width: 30%; 
+                border: solid 1px red;
+                width: 60%; 
                 nav{
                     display: flex;
                     align-items: center;
                     a{
                         margin: 0 5%;
                     }
-                    .icon{
-                        display: none; 
-                    }
+                }
+            }
+            .navMobile{
+                margin: 0 auto; 
+                display: flex; 
+                align-items: center; 
+                right: 1%; 
+                img{
+                    position: relative; 
+                    height: 25px; 
+                    width: 30px; 
                 }
             }
             .OsText{
@@ -183,7 +204,7 @@ header{
 footer{
     background-color: black;
     height: 11.5%;
-    width: 99%; 
+    width: 99.1%; 
     position: fixed;  
     bottom: 0px; 
     left: 8px; 
