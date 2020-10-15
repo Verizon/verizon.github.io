@@ -1,6 +1,7 @@
 import React from "react";
 import { Body } from '@vds/typography';
 import { Link } from "gatsby";
+import { colors } from '@vds/theme';
 // import twitterLogo from "../images/social-twitter_auxiliary.png"; 
 // import fbLogo from "../images/social-facebook_auxiliary.png"; 
 
@@ -9,14 +10,14 @@ const Footer = () => (
     <div className="inner-footer">
       <div className="navigation">
         <nav>
-          <Link to="/projects" style={{ textDecoration: 'none' }}><Body size="medium" bold={true} color="white">Projects</Body></Link>
-          <Link to="/community" style={{ textDecoration: 'none' }}><Body size="medium" bold={true} color="white">Community</Body></Link>
-          <Link to="https://github.com/Verizon" target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}><Body size="medium" bold={true} color="white">Github</Body></Link>
+          <Link to="/projects" style={{ textDecoration: 'none' }}><Body size="medium" bold={true} color={colors.white}>Projects</Body></Link>
+          <Link to="/community" style={{ textDecoration: 'none' }}><Body size="medium" bold={true} color={colors.white}>Community</Body></Link>
+          <a href="https://github.com/Verizon" target="_blank" rel="noreferrer" style={{ textDecoration: 'none' }}><Body size="medium" bold={true} color={colors.white}>Github</Body></a>
 
         </nav>
       </div>
       { <div className="logos">
-          <Body size="small" color="white">&#169;	 2020 Verizon</Body>
+          <Body size="small" color={colors.white}>&#169;	 2020 Verizon</Body>
 
           {/* Deprecating Social Media Links Until We Have Something To Link Out To  */}
           

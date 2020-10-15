@@ -256,6 +256,8 @@ footer{
     }
     .projectMenuButtons{
         display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
     }
     .projectLayoutHeading{
@@ -296,6 +298,12 @@ footer{
     .project-card-tag {
         padding: 10px
     } 
+}
+
+@media (max-width: 300px) {
+    .project-grid {
+      display: block;
+    }
 }
 
 .scrollContainer{
