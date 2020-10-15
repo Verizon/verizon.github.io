@@ -38,7 +38,7 @@ class Slide2 extends Component {
             <Title size="small" viewport="mobile" bold={true} color="#FFFFFF">A project to help equipment vendors validate against OpenConfig YANG.</Title>
         </div>
         <div className="slideButton">
-            <Link to="https://github.com/Verizon/YANG-validator" target="_blank" rel="noreferrer"><Button viewport="mobile">Project Info</Button></Link>
+            <a href="https://github.com/Verizon/YANG-validator" target="_blank" rel="noreferrer"><Button viewport="mobile">Project Info</Button></a>
         </div>
       </div>
     </div>);
@@ -56,7 +56,7 @@ class Slide3 extends Component {
               <Title size="small" viewport="mobile" bold={true} color="#FFFFFF">Thread-safe. Mutation-safe.</Title>
           </div>
           <div className="slideButton">
-              <Link to="https://github.com/Verizon/safecache" target="_blank" rel="noreferrer"><Button viewport="mobile">Project Info</Button></Link>
+              <a href ="https://github.com/Verizon/safecache" target="_blank" rel="noreferrer"><Button viewport="mobile">Project Info</Button></a>
           </div>
         </div>
       </div>);
@@ -75,7 +75,7 @@ class Slide4 extends Component {
             <Title size="small" viewport="mobile" bold={true} color="#000000">Execute commands through proxychains. Automatically log them on a Cobalt Strike team server.</Title>
           </div>
           <div className="slideButton">
-          <Link to="https://github.com/Verizon/redshell" target="_blank" rel="noreferrer"><Button viewport="mobile">Project Info</Button></Link>
+          <a href="https://github.com/Verizon/redshell" target="_blank" rel="noreferrer"><Button viewport="mobile">Project Info</Button></a>
           </div>
         </div>
       </div>);

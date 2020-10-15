@@ -24,7 +24,7 @@
     "@vds/typography": "^0.1.1",
     "axios": "^0.20.0",
     "flexboxgrid-sass": "^8.0.5",
-    "gatsby": "^2.23.3",
+    "gatsby": "^2.24.65",
     "gatsby-plugin-sass": "^2.3.5",
     "gsap": "^3.3.4",
     "node-sass": "^4.14.1",

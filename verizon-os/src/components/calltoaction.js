@@ -1,7 +1,7 @@
 import React from 'react';
-import { Title, Body } from '@vds/typography';
+import { Title, Subtitle } from '@vds/typography';
 import { Link } from "gatsby";
-import community from '../images/smart-communities-blk.png'; 
+import community from '../images/unified-comms-blk.png'; 
 import use from '../images/display-blk.png'; 
 import contribute from '../images/grid-view-blk.png'; 
 
@@ -14,24 +14,18 @@ const CallToAction = () => {
       <div className="innerCallToAction">
         <div className="action1">
           <img src={use} alt='use'/>
-          <div className="text1">
-          <Link to="https://github.com/Verizon" target="_blank" rel="noreferrer"><Title size="medium">Use</Title></Link>
-            <Body size="large" viewport="desktop" primitive="h2">our open source code</Body>
-          </div>
+          <a href="https://github.com/Verizon" target="_blank" rel="noreferrer"><Title viewport="mobile" size="large">Use</Title></a>
+            <Subtitle size="large" viewport="mobile" primitive="h2">our code</Subtitle>
         </div>
         <div className="action2">
           <img src={contribute} alt='contribute'/>
-          <div className="text2">
-          <Link to='/projects'><Title size="medium">Contribute</Title></Link>
-            <Body size="large" viewport="desktop" primitive="h2">our projects</Body>
-          </div>
+          <Link to='/projects'><Title viewport="mobile" size="large">Contribute</Title></Link>
+          <Subtitle size="large" viewport="mobile" primitive="h2">to our projects</Subtitle>
         </div>
         <div className="action3">
           <img src={ community } alt='community'/>
-          <div className="text3">
-          <Link to='/community'><Title size="medium">Join</Title></Link>
-            <Body size="large" viewport="desktop" primitive="h2">our communities</Body>
-          </div>
+          <Link to='/community'><Title viewport="mobile" size="large">Join</Title></Link>
+          <Subtitle size="large" viewport="mobile" primitive="h2"> us today</Subtitle>
         </div>
       </div>
     </div>  
