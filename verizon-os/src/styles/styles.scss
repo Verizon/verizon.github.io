@@ -71,14 +71,21 @@
     }
 
     @media screen and (min-width: 600px) {
-        .navigation{
+        .navMobile{
             display: none !important; 
           }
+          .OsText{
+            top: 35%; 
+        }
     }
 
     @media screen and (max-width: 600px) {
         .navigation{
           display: none !important; 
+        }
+
+        .OsText{
+            top: 15%; 
         }
       }
 }
@@ -152,6 +159,7 @@
         height: 100%;
         width: 100%
     }
+
 }
 
 header{
@@ -170,23 +178,27 @@ header{
         justify-content: space-between;
         align-items: center; 
             .logo{
-                // border: solid 1px red; 
                 display: flex; 
-                align-items: center;
-                width: 12.2%; 
-                height: 96%; 
+                top: 10%; 
+                margin-left: 0px; 
+                position: absolute;
                 img {
-                    height: auto;
-                    max-width: 100%; 
+
+                    height: 60px; 
+                    width: 167px; 
                 };
             }
             .navigation{
-                border: solid 1px red;
-                width: 60%; 
-                nav{
+                width: 33%; 
+                height: auto; 
+                top: 40%; 
+                position: absolute; 
+                right: 1%; 
+                nav{  
                     display: flex;
                     align-items: center;
                     a{
+                        
                         margin: 0 5%;
                     }
                 }
@@ -195,16 +207,18 @@ header{
                 margin: 0 auto; 
                 display: flex; 
                 align-items: center; 
-                right: 1%; 
-                img{
-                    position: relative; 
-                    height: 25px; 
-                    width: 30px; 
-                }
+                
+                position: absolute; 
+                right: 4%; 
+                top: 35%;
+                height: 20px; 
+                width: 100px; 
+            
             }
             .OsText{
                 position: absolute; 
-                left: 25%;
+                left: 44%;
+                width: 10%;  
             }
         
     }

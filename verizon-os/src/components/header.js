@@ -1,8 +1,8 @@
 import { Link } from "gatsby";
-import React from "react";
+import React, { Component } from "react";
 import logo from "../images/vz_300_rgb_p.jpg";
-import dropIcon from "../images/menu-blk.png"; 
 import { Title, Subtitle } from '@vds/typography';
+import { DropdownSelect } from '@vds/selects';
 
 const Header = () => (
   <header>
@@ -26,7 +26,7 @@ const Header = () => (
             </nav>
           </div> 
           <div className="navMobile">
-            <img src={dropIcon} alt="hamburger"></img>
+            <NavAccordion></NavAccordion>
             {/* <nav>
               <Link to="/home" activeStyle={{color: '#D52B1E'}}><Subtitle viewport="mobile" size="large" bold={true}>Home</Subtitle></Link>
               <Link to="/projects" activeStyle={{color: '#D52B1E'}} ><Subtitle viewport="mobile" size="large" bold={true}>Projects</Subtitle></Link>
@@ -36,7 +36,7 @@ const Header = () => (
             </nav> */}
           </div> 
           <div className="OsText">
-            <Title primitive="h4" size="medium">Open Source</Title>
+            <Title primitive="h4" viewport="mobile" size="large">Open Source</Title>
           </div> 
         </div>
      </div>
@@ -44,13 +44,17 @@ const Header = () => (
   
 );
 
-// function myFunction() {
-//   var x = document.getElementById("myNav");
-//   if (x.className === "navigation") {
-//     x.className += " responsive";
-//   } else {
-//     x.className = "naviagtion";
-//   }
-// }
-
 export default Header;
+
+export class NavAccordion extends Component {
+  render() {
+    return (
+      <DropdownSelect>
+        <option>Home</option>
+        <option>Projects</option>
+        <option>Community</option>
+        <option>Attributions</option>
+      </DropdownSelect>
+    );
+  }
+}
