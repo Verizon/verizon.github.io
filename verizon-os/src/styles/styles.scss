@@ -163,7 +163,7 @@
 }
 
 header{
-    height: 9%; 
+    height: 70px; 
     width: 99%; 
     position: fixed; 
     top: 0px; 
@@ -179,13 +179,12 @@ header{
         align-items: center; 
             .logo{
                 display: flex; 
-                top: 10%; 
+                top: 15%; 
                 margin-left: 0px; 
                 position: absolute;
                 img {
-
-                    height: 60px; 
-                    width: 167px; 
+                    height: 50px; 
+                    width: 134px; 
                 };
             }
             .navigation{
@@ -209,16 +208,19 @@ header{
                 align-items: center; 
                 
                 position: absolute; 
-                right: 4%; 
-                top: 35%;
+                left: 70%; 
+                top: 40%;
                 height: 20px; 
                 width: 100px; 
             
             }
             .OsText{
                 position: absolute; 
-                left: 44%;
-                width: 10%;  
+                left: 39.5%;
+                width: 20.5%; 
+                text-align: center; 
+                align-items: center;
+                justify-content: center;
             }
         
     }
@@ -227,7 +229,7 @@ header{
 
 footer{
     background-color: black;
-    height: 11.5%;
+    height: 10%;
     width: 99.1%; 
     position: fixed;  
     bottom: 0px; 
@@ -354,46 +356,37 @@ footer{
 }
 
 .ospage{
-    .ospoTitle{
-        .ospoTitleText{
-            img {
-                padding-right: 150px; 
-                vertical-align: middle;
-                width: 75px; 
-                height: 71px; 
-            }
+        .ospoTitle{
             display: flex; 
             text-align: center; 
             align-items: center;
-            left: 10.5%; 
-            width: 57%;
+            width: 60%;
+            top: 14%; 
             height: 30px; 
             justify-content: center;
-            position: relative; 
+            position: absolute; 
+            right: 26%; 
             img {
-                padding-left: 150px; 
+                padding-right: 5%; 
                 vertical-align: middle;
                 width: 75px; 
                 height: 71px; 
             }
         }
-        display: flex; 
-        padding-top: 125px; 
-        align-items: center;
-        
-    }
     .ospoSubtitle{
         position: absolute; 
-        top: 25%; 
-        width: 100%; 
+        top: 28%; 
+        width: 60%;
+        right: 22%;
         text-align: center; 
 
     }
     .ospoBody{
-        padding-left: 75px; 
-        padding-right: 75px; 
+        padding-left: 5%; 
+        padding-right: 5%; 
         position: absolute; 
-        top: 30%; 
+        top: 35%; 
+        padding-bottom: 15%;
     }
 }
 

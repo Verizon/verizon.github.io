@@ -2,14 +2,14 @@ import { Link } from "gatsby";
 import React, { Component } from "react";
 import logo from "../images/vz_300_rgb_p.jpg";
 import { Title, Subtitle } from '@vds/typography';
-import { DropdownSelect } from '@vds/selects';
+import { DropdownSelectMarketing, DropdownMarketingOption } from '@vds/selects';
 
 const Header = () => (
   <header>
     <div className="container">
       <div className="inner-header">
           <div className="logo">
-            <img src={logo} alt="VzLogo"></img> 
+            <Link to="/home"><img src={logo} alt="VzLogo"></img></Link>
           </div>
           <div className="navigation">
             <nav>
@@ -26,7 +26,7 @@ const Header = () => (
             </nav>
           </div> 
           <div className="navMobile">
-            <NavAccordion></NavAccordion>
+            <NavSelect></NavSelect>
             {/* <nav>
               <Link to="/home" activeStyle={{color: '#D52B1E'}}><Subtitle viewport="mobile" size="large" bold={true}>Home</Subtitle></Link>
               <Link to="/projects" activeStyle={{color: '#D52B1E'}} ><Subtitle viewport="mobile" size="large" bold={true}>Projects</Subtitle></Link>
@@ -46,15 +46,29 @@ const Header = () => (
 
 export default Header;
 
-export class NavAccordion extends Component {
+export class NavSelect extends Component {
   render() {
     return (
-      <DropdownSelect>
-        <option>Home</option>
-        <option>Projects</option>
-        <option>Community</option>
-        <option>Attributions</option>
-      </DropdownSelect>
+      <DropdownSelectMarketing
+        placeholder="Menu"
+        errorText="Please select"
+        size="small"
+        viewport="mobile"
+        width="100px"
+      >
+        <DropdownMarketingOption children = {null}>
+         <Link to="/home">Home</Link>
+        </DropdownMarketingOption>
+        <DropdownMarketingOption>
+         <Link to="/projects">Projects</Link>
+        </DropdownMarketingOption>
+        <DropdownMarketingOption>
+         <Link to="/community">Community</Link>
+        </DropdownMarketingOption>
+        <DropdownMarketingOption>
+        <a href="https://www.verizon.com/support/residential/internet/equipment/open-source-software" target="_blank" rel="noreferrer">Attributions</a>
+        </DropdownMarketingOption>
+      </DropdownSelectMarketing>
     );
   }
 }
