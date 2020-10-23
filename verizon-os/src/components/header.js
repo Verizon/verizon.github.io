@@ -1,8 +1,9 @@
 import { Link } from "gatsby";
-import React, { Component } from "react";
+import React from "react";
 import logo from "../images/vz_300_rgb_p.jpg";
 import { Title, Subtitle } from '@vds/typography';
-import { DropdownSelectMarketing, DropdownMarketingOption } from '@vds/selects';
+import NavSelect from './headerNav'; 
+
 
 const Header = () => (
   <header>
@@ -46,29 +47,3 @@ const Header = () => (
 
 export default Header;
 
-export class NavSelect extends Component {
-  render() {
-    return (
-      <DropdownSelectMarketing
-        placeholder="Menu"
-        errorText="Please select"
-        size="small"
-        viewport="mobile"
-        width="100px"
-      >
-        <DropdownMarketingOption children = {null}>
-         <Link to="/home">Home</Link>
-        </DropdownMarketingOption>
-        <DropdownMarketingOption>
-         <Link to="/projects">Projects</Link>
-        </DropdownMarketingOption>
-        <DropdownMarketingOption>
-         <Link to="/community">Community</Link>
-        </DropdownMarketingOption>
-        <DropdownMarketingOption>
-        <a href="https://www.verizon.com/support/residential/internet/equipment/open-source-software" target="_blank" rel="noreferrer">Attributions</a>
-        </DropdownMarketingOption>
-      </DropdownSelectMarketing>
-    );
-  }
-}
