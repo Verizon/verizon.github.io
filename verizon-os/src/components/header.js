@@ -2,7 +2,7 @@ import { Link } from "gatsby";
 import React from "react";
 import logo from "../images/vz_300_rgb_p.jpg";
 import { Title, Subtitle } from '@vds/typography';
-import NavSelect from './headerNav'; 
+import NavSelect from '../components/headerNav'; 
 
 
 const Header = () => (
