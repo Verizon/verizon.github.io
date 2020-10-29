@@ -1,7 +1,6 @@
 import React from 'react';
 import  "../styles/styles.scss";
-import { Router } from 'react-router'
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Router } from 'react-router-dom';
 import HomePage from '../pages/home';  
 // import BlogPage from '../pages/blog'; 
 import OsPage from '../pages/community';
