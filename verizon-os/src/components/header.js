@@ -3,6 +3,8 @@ import React from "react";
 import logo from "../images/vz_300_rgb_p.jpg";
 import { Title, Subtitle } from '@vds/typography';
 import NavSelect from '../components/headerNav'; 
+import { Router } from 'react-router-dom';
+import history from '../components/history'; 
 
 
 const Header = () => (
@@ -27,7 +29,9 @@ const Header = () => (
             </nav>
           </div> 
           <div className="navMobile">
-            <NavSelect></NavSelect>
+            <Router history={history}>
+              <NavSelect></NavSelect>
+            </Router>
             {/* <nav>
               <Link to="/home" activeStyle={{color: '#D52B1E'}}><Subtitle viewport="mobile" size="large" bold={true}>Home</Subtitle></Link>
               <Link to="/projects" activeStyle={{color: '#D52B1E'}} ><Subtitle viewport="mobile" size="large" bold={true}>Projects</Subtitle></Link>
@@ -42,7 +46,6 @@ const Header = () => (
         </div>
      </div>
   </header>
-  
 );
 
 export default Header;

@@ -1,6 +1,7 @@
 import React, { Component} from "react";
 import {DropdownSelect} from "@vds/selects"; 
-import { withRouter } from "react-router"; 
+import { withRouter } from "react-router-dom"; 
+import history from "../components/history"; 
 
 
 const ddVals = [
@@ -22,7 +23,7 @@ class NavSelect extends Component {
   handleChange(event) {
     event.preventDefault();
     if (event.target.value !== "Attributions")
-      this.props.history.push({ pathname: `/${event.target.value.charAt(0).toLowerCase() + event.target.value.slice(1)}`, state: { selectedValue: event.target.value }});
+      history.push({ pathname: `/${event.target.value.charAt(0).toLowerCase() + event.target.value.slice(1)}`, state: { selectedValue: event.target.value }});
     
     else
       window.open("https://www.verizon.com/support/residential/internet/equipment/open-source-software", "_blank");
@@ -30,10 +31,11 @@ class NavSelect extends Component {
 
   componentDidMount() {
     if(this.props.location.state){
-      this.setState({selectedValue:this.props.location.state.selectedValue}); 
+      this.setState({selectedValue:this.props.location.state.selectedValue}, ()=> console.log(this.state.selectedValue + "    updated selected state")); 
+    
     }
-
 }
+
   render() {
     return ( //use onChange for dropdownSelect
         <DropdownSelect onChange={(e)=> this.handleChange(e)} value={this.state.selectedValue}>  
