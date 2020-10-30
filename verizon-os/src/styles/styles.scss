@@ -20,8 +20,6 @@
         .action1{
             margin: 0;
             img{
-                // height: 60%; 
-                // min-width: 65.5%; 
                 padding-bottom: 25px; 
                 height: 80px; 
                 width: 80px; 
@@ -30,8 +28,6 @@
         .action2{
             margin: 0;
             img{
-                // height: 60%; 
-                // min-width: 65.5%; 
                 padding-bottom: 25px; 
                 height: 80px; 
                 width: 80px;
@@ -41,8 +37,6 @@
             margin: 0;
             width: 80px; 
             img{
-                // height: 60%; 
-                // min-width: 65.5%; 
                 height: 80px;
                 width: 80px; 
                 padding-bottom: 25px; 
@@ -71,9 +65,9 @@
     }
 
     @media screen and (min-width: 600px) {
-        .navMobile{
-            display: none !important; 
-          }
+        // .navMobile{
+        //     display: none !important; 
+        //   }
           .OsText{
             top: 35%; 
         }
@@ -107,8 +101,6 @@
         .project1{
             margin: 0; 
             img{
-                // min-width: 56%; 
-                // height: 39%; 
                 width: 87px; 
                 height: 77px; 
                 padding-bottom: 25px; 
@@ -122,8 +114,6 @@
         .project2{
             margin: 0; 
             img{
-                // min-width: 53%; 
-                // height: 39%;
                 width: 87px; 
                 height: 77px;
                 padding-bottom: 25px; 
@@ -137,8 +127,6 @@
             margin: 0; 
             width: 87px; 
             img{
-                // width: 66.5%; 
-                // height: 39%;
                 width: 87px; 
                 height: 77px;
                 padding-bottom: 25px; 
