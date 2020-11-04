@@ -4,10 +4,14 @@ import {Title, Subtitle} from '@vds/typography';
 import Header from '../components/header';
 import Footer from '../components/footer'; 
 import ospo1 from '../images/business-continuity-blk.png';
+import history from '../components/history'; 
+import { Router } from 'react-router-dom';
 
 const OsPage = () => (
     <div>
-        <Header/>
+        <Router history={history}>
+            <Header selectedValue={"Community"}/>
+        </Router>
         <div className="ospage">
             <div className="ospoTitle">
                 <img src={ospo1} alt='ospo1'/>

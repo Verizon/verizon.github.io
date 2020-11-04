@@ -6,16 +6,21 @@ import Ospo from '../components/ospo';
 import Header from '../components/header'
 import Footer from '../components/footer'
 import FeaturedProjects from "../components/featuredProjects";
+import { Router } from 'react-router-dom';
+import history from '../components/history';
 
 const HomePage = () => (
-    <div className="scrollContainer">
-        <Header/>
-        <Carousel/>
-        <Ospo/>
-        <FeaturedProjects/>
-        <CallToAction/>
-        <Footer/>
-    </div>
+    <Router history={history}>
+        <div className="scrollContainer">
+            <Header selectedValue="Home"></Header>
+            <Carousel/>
+            <Ospo/>
+            <FeaturedProjects/>
+            <CallToAction/>
+            <Footer/>
+        </div>
+    </Router>
+    
 );
 
 export default HomePage;
