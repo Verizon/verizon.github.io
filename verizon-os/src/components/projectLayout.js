@@ -6,7 +6,6 @@ import { Title, Body, Micro } from '@vds/typography';
 import { Button} from '@vds/buttons';
 import { Tabs, Tab } from '@vds/tabs';
 const projectUrl = 'https://api.github.com/orgs/Verizon/repos';
-
 const Group = styled.div`
   margin-bottom: ${spacers.medium};
 `;
@@ -28,16 +27,21 @@ class ProjectLayout extends React.Component {
   }
 
   componentDidMount() {
-    fetch(projectUrl)
-      .then(response => response.json())
-      .then(
-        (result) => {
-          this.setState({
-            showProjects: result,
-            returnedProjects: result
-          });
-        }
-      )
+    fetch(projectUrl, {
+      method: 'GET',
+      headers: {
+        'Authorization': `token ${process.env.GATSBY_OAUTH_TOKEN}`
+      }
+    })
+    .then(response => response.json())
+    .then(
+      (result) => {
+        this.setState({
+          showProjects: result,
+          returnedProjects: result
+        });
+      }
+    )
   }
 
   handleChange(event) {
