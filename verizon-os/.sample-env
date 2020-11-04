@@ -1,0 +1,4 @@
+//this is what the projects api is looking for
+//the oauth token is created via Github https://github.com/settings/tokens
+
+GATSBY_OAUTH_TOKEN=; export GATSBY_OAUTH_TOKEN
