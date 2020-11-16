@@ -34,8 +34,11 @@ class Header extends Component {
       //this.setState({selectedValue: event.target.value}, ()=>console.log("handle change (dropdown) state update:   ", this.state.selectedValue));
     }
     
-    else
-      window.open("https://www.verizon.com/support/residential/internet/equipment/open-source-software", "_blank");
+    else {
+      if (typeof window !== `undefined`) {
+        window.open("https://www.verizon.com/support/residential/internet/equipment/open-source-software", "_blank");
+      }
+    }
   }
 
   handleClick(selectedPath, event) {
