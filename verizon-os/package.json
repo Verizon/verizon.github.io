@@ -1,0 +1,50 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    
+  },
+  "dependencies": {
+    "@vds/buttons": "^0.2.0",
+    "@vds/carousels": "^0.1.1",
+    "@vds/grids": "^0.1.1",
+    "@vds/selects": "^0.2.0",
+    "@vds/tabs": "^0.1.2",
+    "@vds/theme": "^0.1.2",
+    "@vds/typography": "^0.1.1",
+    "axios": "^0.20.0",
+    "flexboxgrid-sass": "^8.0.5",
+    "gatsby": "^2.24.65",
+    "gatsby-plugin-sass": "^2.3.5",
+    "gsap": "^3.3.4",
+    "node-sass": "^4.14.1",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-iframe": "^1.8.0",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "smooth-scrollbar": "^8.5.2",
+    "styled-components": "^3.2.6"
+  },
+  "devDependencies": {
+    "prettier": "2.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  }
+}
