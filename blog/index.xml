@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on </title>
+    <link>http://127.0.0.1:4000/blog/</link>
+    <description>Recent content in Blogs on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 Apr 2016 00:00:00 +0000</lastBuildDate><atom:link href="http://127.0.0.1:4000/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Another Article</title>
+      <link>http://127.0.0.1:4000/blog/sit/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://127.0.0.1:4000/blog/sit/</guid>
+      <description>&lt;p&gt;Try the new improved Lorem Ipsum Generator&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Dolor</title>
+      <link>http://127.0.0.1:4000/blog/dolor/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://127.0.0.1:4000/blog/dolor/</guid>
+      <description>&lt;p&gt;Lorem ipsum dolor sit amet, sed nullam velit maecenas, mauris arcu odit augue venenatis quam condimentum, laoreet facilisis non magni integer in amet. Aliquam sed ante, erat lorem neque ante ac, mauris egestas blandit, mauris ante molestie tincidunt. Ultricies donec et neque eget, dolor sed id sem velit lectus cras, libero in et nonummy. Augue velit, quam integer nunc accumsan eget imperdiet dui, duis velit donec, mi aliquam tortor inceptos. Porta et, nunc pharetra facilisis tellus justo, sagittis volutpat tempus consequat, nulla sollicitudin blandit, magna imperdiet. Lacus id arcu mattis est aenean, et lacinia, placerat quis justo vestibulum tristique augue et, gravida amet ullamcorper, egestas quis augue nec at. Fusce eu mauris enim metus, vitae pede rhoncus, quam in a velit id phasellus. Pretium metus egestas velit. Duis eleifend, iaculis nunc eu venenatis dolor pharetra. Et mauris sed id ante. In aenean leo mi aliquam amet, fusce suspendisse pede bibendum.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>First</title>
+      <link>http://127.0.0.1:4000/blog/another-article/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://127.0.0.1:4000/blog/another-article/</guid>
+      <description>&lt;p&gt;Bacon ipsum dolor amet rump salami flank tongue. Boudin meatloaf alcatra, andouille kielbasa hamburger kevin pork belly venison. Tenderloin jowl picanha strip steak, hamburger t-bone drumstick. Fatback beef sausage meatball t-bone pastrami. Ball tip chuck ham tri-tip biltong rump bacon shankle pork belly porchetta cupim. Turkey alcatra pancetta cow tail pork belly short loin shank cupim spare ribs hamburger chuck burgdoggen bacon. Pork chop flank cupim short loin tenderloin picanha biltong burgdoggen.&lt;/p&gt;
+&lt;p&gt;Swine meatloaf ribeye short ribs. Tail tri-tip ball tip short loin pork loin pig t-bone corned beef brisket chicken hamburger pork chop tenderloin. Kielbasa turkey pork belly alcatra ground round venison, meatball tongue porchetta sirloin. Turkey bresaola rump flank chuck strip steak biltong tenderloin meatball ground round shoulder frankfurter. Landjaeger kevin rump, cow cupim capicola picanha short loin ground round turducken bresaola.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ipsum</title>
+      <link>http://127.0.0.1:4000/blog/ipsum/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://127.0.0.1:4000/blog/ipsum/</guid>
+      <description>&lt;p&gt;Suspendisse nibh aliquam sit ligula donec, lorem porta, tellus dolor iaculis risus est curabitur, magna consequat nunc, ipsum turpis sodales tellus vel rhoncus orci. Aliquet torquent vitae et nec, habitant mollis est elit dui semper, platea tristique urna eget. In maecenas diam ante hymenaeos proin at, tempor proin nonummy tellus et convallis, commodo leo turpis, donec donec fermentum nullam nec enim, et praesent et potenti erat. Nec commodo potenti, gravida a et. Eleifend lectus, at arcu porttitor sed ut vestibulum, porta wisi ipsum odio, dignissim leo etiam. Felis dignissim integer elit sit, libero non, molestie malesuada integer sit vel dictum nunc, leo massa nunc non praesent. Posuere interdum et ultricies dictumst mattis, in etiam. Etiam volutpat vel aliquam eget venenatis, vivamus molestie euismod ultrices, nulla at gravida nonummy lacinia suspendisse pretium, nibh accumsan. Porta erat sapien et, suspendisse incididunt, in cras tellus at, massa facilisi curabitur rhoncus cras odio sed, nec ut sodales parturient nibh fusce. A sed libero vel est maecenas wisi, fringilla ultrices et orci tellus, arcu a integer convallis suspendisse, massa praesent ultricies in, quisque odio amet.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lorem</title>
+      <link>http://127.0.0.1:4000/blog/lorem/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://127.0.0.1:4000/blog/lorem/</guid>
+      <description>&lt;p&gt;Risus convallis, sed ante hendrerit felis habitant, in vel faucibus at nibh lobortis donec. Ut neque, sit in quam, nonummy pulvinar risus hac luctus, nunc nec in odio curabitur rhoncus. Imperdiet pellentesque erat nihil. Ut vestibulum viverra vel fringilla, at at lacus sociosqu culpa, morbi mauris volutpat suspendisse, nunc lacus mauris lorem dictumst. Vitae non augue, libero accumsan nulla praesent elit placerat, accumsan eget a neque, auctor massa. Quasi tortor condimentum at quisque, sem nisl ipsum odio justo imperdiet orci. Arcu sociis nulla donec fusce, libero neque viverra platea et, iaculis leo sed lobortis, neque eleifend nullam sed. Malesuada id in wisi in ante, eros ultrices nam vel sit, vel nibh nulla sit. Nunc suspendisse dapibus mi integer diam risus, enim quisque vitae lacus vel rhoncus. Sit sodales varius velit, sollicitudin varius molestie quis magna, gravida rutrum nam rutrum diam tempus aliquam. Tortor ligula scelerisque leo mauris, duis nulla ac metus, justo egestas faucibus ut massa neque elit.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Sed</title>
+      <link>http://127.0.0.1:4000/blog/sed/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://127.0.0.1:4000/blog/sed/</guid>
+      <description>&lt;p&gt;Ut quis tincidunt orci justo est neque, vitae risus habitant, vivamus a vivamus, habitant accumsan morbi ut, turpis curabitur metus vivamus sed quam morbi. Magna mauris pellentesque. Libero vivamus nunc egestas ligula amet vivamus. Proin sodales et fusce integer commodo, pede sit felis, vel odio egestas nunc convallis pellentesque massa, libero at vel diam donec posuere. Posuere facilisis, hendrerit placeat mi sed, mi felis, tempus nulla convallis molestie tortor, eget id nisl libero. A aute consequat non ut sodales enim, auctor erat, sollicitudin eu sit vestibulum etiam elit sapien, turpis est nec proin, erat nunc quam ac. Pulvinar eget nec, varius erat excepturi in lacinia orci, leo mauris cras non. Vel sapien id, cursus dolor quisque, nec proin scelerisque, ipsum aliquet gravida viverra turpis cursus.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Some Exciting Article</title>
+      <link>http://127.0.0.1:4000/blog/some-exciting-article/</link>
+      <pubDate>Fri, 18 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://127.0.0.1:4000/blog/some-exciting-article/</guid>
+      <description>&lt;p&gt;Bacon ipsum dolor amet rump salami flank tongue. Boudin meatloaf alcatra, andouille kielbasa hamburger kevin pork belly venison. Tenderloin jowl picanha strip steak, hamburger t-bone drumstick. Fatback beef sausage meatball t-bone pastrami. Ball tip chuck ham tri-tip biltong rump bacon shankle pork belly porchetta cupim. Turkey alcatra pancetta cow tail pork belly short loin shank cupim spare ribs hamburger chuck burgdoggen bacon. Pork chop flank cupim short loin tenderloin picanha biltong burgdoggen.&lt;/p&gt;
+&lt;p&gt;Swine meatloaf ribeye short ribs. Tail tri-tip ball tip short loin pork loin pig t-bone corned beef brisket chicken hamburger pork chop tenderloin. Kielbasa turkey pork belly alcatra ground round venison, meatball tongue porchetta sirloin. Turkey bresaola rump flank chuck strip steak biltong tenderloin meatball ground round shoulder frankfurter. Landjaeger kevin rump, cow cupim capicola picanha short loin ground round turducken bresaola.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
