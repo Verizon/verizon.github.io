@@ -1,0 +1,52 @@
+<html lang="en">
+
+{{ partial "_head.html" . }}
+
+<body>
+  <div id="content">
+
+    {{ partial "_nav.html" . }}
+
+    <div id="main-content" class="container-fluid dark-background">
+      <div class="content center limit-width">
+        {{ .Content }}
+      </div>
+
+      <!-- talks -->
+      <div class="limit-width">
+        {{ range $.Site.Data.talks }}
+        <div class="talk-unit">
+          <div class="thumbnail">
+            <img src={{ .thumbnail }} alt="" width="630" />
+            <div class="caption">
+              <div class="row">
+                <div class="col-sm-12 col-md-12" style="min-height: 70px">
+                  <h5>{{ .name }}</h5>
+                  <small>{{ .authorName }}</small>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6 talk-button-container">
+                  {{ with .slides }}<a href={{ . }} target="_blank" role="button" class="btn talk-button btn-danger">slides</a>{{ end }}
+                  {{ with .video }}<a href={{ . }} target="_blank" role="button" class="btn talk-button btn-danger">video</a>{{ end }}
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  {{ with .tags }}
+                  {{ range . }}
+                  <span class="label label-default">{{ . }}</span>
+                  {{ end }}
+                  {{ end }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      <!-- e/o talks -->
+
+    </div>
+  </div>
+  {{ partial "_ga.html" . }}
+</body>
+</html>
