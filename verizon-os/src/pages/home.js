@@ -6,11 +6,8 @@ import Ospo from '../components/ospo';
 import Header from '../components/header'
 import Footer from '../components/footer'
 import FeaturedProjects from "../components/featuredProjects";
-import { Router } from 'react-router';
-import history from '../components/history';
 
 const HomePage = () => (
-    <Router history={history}>
         <div className="scrollContainer">
             <Header selectedValue="Home"></Header>
             <Carousel/>
@@ -19,7 +16,6 @@ const HomePage = () => (
             <CallToAction/>
             <Footer/>
         </div>
-    </Router>
     
 );
 
