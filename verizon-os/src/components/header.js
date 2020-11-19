@@ -1,9 +1,9 @@
 import { Link } from "gatsby";
 import React, { Component } from "react";
 import logo from "../images/vz_300_rgb_p.jpg";
+import history from "../components/history"; 
 import { Title, Subtitle } from '@vds/typography';
 import {DropdownSelect} from "@vds/selects"; 
-import history from "../components/history"; 
 
 const ddVals = [
   { val: 'home', name: 'Home' },

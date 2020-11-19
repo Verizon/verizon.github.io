@@ -1,12 +1,13 @@
 import React from 'react';
 import  "../styles/styles.scss";
-import { Switch, Route, Router } from 'react-router-dom';
+import { Switch, Route, Router } from 'react-router';
 import HomePage from '../pages/home';  
 import OsPage from '../pages/community';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import Projects from './projects'; 
 import history from "../components/history"; 
+
 
 const IndexPage = () => (
     <Router history={history}>
@@ -19,6 +20,7 @@ const IndexPage = () => (
             </Switch>
         <Footer/>
     </Router>
+
 ); 
 
 export default IndexPage;

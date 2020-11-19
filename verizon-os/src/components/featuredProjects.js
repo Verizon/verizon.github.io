@@ -1,9 +1,11 @@
 import React from "react";
-import { Title, Subtitle } from '@vds/typography';
 import { Link } from "gatsby";
 import fp1 from '../images/laptop-antivirus-blk.png'; 
 import fp2 from '../images/hackers-blk.png'; 
 import fp3 from '../images/digital-content-blk.png'; 
+
+const Title = typeof window !== 'undefined' && require('@vds/typography').Body;
+const Subtitle = typeof window !== 'undefined' && require('@vds/typography').Subtitle;
 
 const FeaturedProjects = () => (
 <div className="featuredProjects">

@@ -1,12 +1,12 @@
 import React, {Component} from "react";
 import styled from 'styled-components';
 import "../styles/styles.scss";
-//import { Title, Body, Subtitle } from '@vds/typography';
-import { CarouselBars } from '@vds/carousels';
 import { Slide1 } from '../components/carouselData';
 import { Slide2 } from '../components/carouselData'; 
 import { Slide3 } from '../components/carouselData'; 
 import { Slide4 } from '../components/carouselData'; 
+
+const CarouselBars = typeof window !== 'undefined' && require('@vds/carousels').CarouselBars;
 
 let idx = 0; 
 const Container = styled.div`
@@ -32,21 +32,11 @@ export default class Carousel extends Component {
     }
 
   startCarousel() {
-    // this.timer = setInterval(() => {
-    //   if (idx < 3) {
-    //     this.setState({ index: idx, selectedSlide: idx+1});
-    //     idx = (idx+1)%(this.state.images.length); 
-    //   } else {
-    //     this.setState({index: 3, selectedSlide: 4})
-    //     idx = 0;
-    //   } 
-    // }, 5000)
     this.setState({ index: idx, selectedSlide: idx+1});
 
   }
 
   componentWillUnmount() {
-    //clearInterval(this.timer);
     idx = 0; 
   }
 
@@ -94,7 +84,6 @@ export default class Carousel extends Component {
     return (
      
       <Container style={{display: 'block', paddingBottom: '10px', border: "1px", paddingLeft: '0px', paddingTop: '0px'}}>
-        {/* <img src= { this.state.images[0] } alt="" style={{ position: 'relative', paddingTop: '50px', height:'75vh', width: '100%', margin: '0'}} ></img> */}
        
         { showHide1 && <Slide1 /> }
         { showHide2 && <Slide2 /> }

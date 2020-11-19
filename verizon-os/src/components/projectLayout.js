@@ -1,11 +1,15 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import { DropdownSelect } from '@vds/selects';
-import { spacers } from '@vds/theme';
-import { Title, Body, Micro } from '@vds/typography';
-import { Button} from '@vds/buttons';
-import { Tabs, Tab } from '@vds/tabs';
 const projectUrl = 'https://api.github.com/orgs/Verizon/repos';
+
+const Title = typeof window !== 'undefined' && require('@vds/typography').Title;
+const Body = typeof window !== 'undefined' && require('@vds/typography').Body;
+const Micro = typeof window !== 'undefined' && require('@vds/typography').Micro;
+const Button = typeof window !== 'undefined' && require('@vds/buttons').Button;
+const spacers = typeof window !== 'undefined' && require('@vds/theme').spacers;
+const DropdownSelect = typeof window !== 'undefined' && require('@vds/selects').DropdownSelect;
+const Tabs = typeof window !== 'undefined' && require('@vds/tabs').Tabs;
+const Tab = typeof window !== 'undefined' && require('@vds/tabs').Tab;
 
 const Group = styled.div`
   margin-bottom: ${spacers.medium};

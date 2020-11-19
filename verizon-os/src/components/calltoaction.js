@@ -1,9 +1,11 @@
 import React from 'react';
-import { Title, Subtitle } from '@vds/typography';
 import { Link } from "gatsby";
 import community from '../images/unified-comms-blk.png'; 
 import use from '../images/display-blk.png'; 
 import contribute from '../images/grid-view-blk.png'; 
+
+const Title = typeof window !== 'undefined' && require('@vds/typography').Title;
+const Subtitle = typeof window !== 'undefined' && require('@vds/typography').Subtitle;
 
 const CallToAction = () => {
   return (

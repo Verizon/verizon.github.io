@@ -1,11 +1,13 @@
 import React from "react"
 import  "../styles/styles.scss";
-import {Title, Subtitle} from '@vds/typography';
 import Header from '../components/header';
 import Footer from '../components/footer'; 
 import ospo1 from '../images/business-continuity-blk.png';
 import history from '../components/history'; 
-import { Router } from 'react-router-dom';
+import { Router } from 'react-router';
+
+const Title = typeof window !== 'undefined' && require('@vds/typography').Title;
+const Subtitle = typeof window !== 'undefined' && require('@vds/typography').Subtitle;
 
 const OsPage = () => (
     <div>
@@ -50,4 +52,4 @@ const OsPage = () => (
     
 )
 
-export default OsPage
+export default OsPage;
