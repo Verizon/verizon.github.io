@@ -3,17 +3,13 @@ import  "../styles/styles.scss";
 import Header from '../components/header';
 import Footer from '../components/footer'; 
 import ospo1 from '../images/business-continuity-blk.png';
-import history from '../components/history'; 
-import { Router } from 'react-router';
 
 const Title = typeof window !== 'undefined' && require('@vds/typography').Title;
 const Subtitle = typeof window !== 'undefined' && require('@vds/typography').Subtitle;
 
 const OsPage = () => (
     <div>
-        <Router history={history}>
-            <Header selectedValue={"Community"}/>
-        </Router>
+        <Header selectedValue={"Community"}/>
         <div className="ospage">
             <div className="ospoTitle">
                 <img src={ospo1} alt='ospo1'/>
