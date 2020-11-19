@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import ProjectLayout from '../components/projectLayout';
-import { Router } from 'react-router-dom';
+import { Router } from 'react-router';
 import history from '../components/history'; 
 
 const Projects = () => (

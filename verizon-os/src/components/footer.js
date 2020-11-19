@@ -1,8 +1,7 @@
 import React from "react";
-import { Body } from '@vds/typography';
 import { Link } from "gatsby";
-// import twitterLogo from "../images/social-twitter_auxiliary.png"; 
-// import fbLogo from "../images/social-facebook_auxiliary.png"; 
+
+const Body = typeof window !== 'undefined' && require('@vds/typography').Body;
 
 const Footer = () => (
   <footer>
@@ -17,11 +16,6 @@ const Footer = () => (
       </div>
        <div className="logos">
           <Body size="small" color="#FFFFFF">&#169;	 2020 Verizon</Body>
-
-          {/* Deprecating Social Media Links Until We Have Something To Link Out To  */}
-          
-          {/* <img src={twitterLogo} alt="twitterLogo" style={{height: '60px', weight: '60px'}}></img>
-          <img src={fbLogo} alt="fbLogo" style={{height: '60px', weight: '60px'}}></img> */}
       </div> 
     </div>
   </footer>

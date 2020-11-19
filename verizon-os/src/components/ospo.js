@@ -1,5 +1,6 @@
 import React from "react";
-import { Title } from '@vds/typography';
+
+const Title = typeof window !== 'undefined' && require('@vds/typography').Title;
 
 const Ospo = () => (
     <div className="OspoFrontPage">

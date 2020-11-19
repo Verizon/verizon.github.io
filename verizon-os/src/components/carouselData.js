@@ -4,8 +4,9 @@ import os1 from "../images/open-source-1.jpg";
 import os2 from "../images/open-source-2.jpg";
 import os3 from "../images/open-source-3.jpg"; 
 import os4 from "../images/open-source-4.jpg"; 
-import {  Title } from '@vds/typography';
-import { Button } from '@vds/buttons';
+
+const Title = typeof window !== 'undefined' && require('@vds/typography').Title;
+const Button = typeof window !== 'undefined' && require('@vds/buttons').Button;
 
 class Slide1 extends Component {
     render() {
