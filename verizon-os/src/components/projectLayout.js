@@ -1,21 +1,18 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, Component } from 'react';
 import styled from 'styled-components';
+import { Title, Body, Micro} from '@vds/typography'; 
+import { Button } from '@vds/buttons'; 
+import { spacers } from '@vds/theme'; 
+import { DropdownSelect } from '@vds/selects';
+import { Tab, Tabs } from '@vds/tabs'; 
+
 const projectUrl = 'https://api.github.com/orgs/Verizon/repos';
 
-const Title = typeof window !== 'undefined' && require('@vds/typography').Title;
-const Body = typeof window !== 'undefined' && require('@vds/typography').Body;
-const Micro = typeof window !== 'undefined' && require('@vds/typography').Micro;
-const Button = typeof window !== 'undefined' && require('@vds/buttons').Button;
-const spacers = typeof window !== 'undefined' && require('@vds/theme').spacers;
-const DropdownSelect = typeof window !== 'undefined' && require('@vds/selects').DropdownSelect;
-const Tabs = typeof window !== 'undefined' && require('@vds/tabs').Tabs;
-const Tab = typeof window !== 'undefined' && require('@vds/tabs').Tab;
-
 const Group = styled.div`
-  margin-bottom: ${spacers.medium};
+  margin-bottom: ${typeof window !== 'undefined' && spacers.medium};
 `;
 
-class ProjectLayout extends React.Component {
+export default class ProjectLayout extends Component {
   constructor() {
     super();
     this.state = {
@@ -187,20 +184,20 @@ class ProjectLayout extends React.Component {
         <article key={project.id}>
           <div className="project-card-text">
             <div className="project-card-title">
-              <Title size="small">{project.name}</Title>
+              {typeof window !== 'undefined' && <Title size="small">{project.name}</Title>}
             </div>
             <div className="project-card-body">
-              <Body>{description}</Body>
+              {typeof window !== 'undefined' && <Body>{description}</Body>}
             </div>
           </div>
           <div className="project-card-button" >
             <a href={project.html_url} target="_blank" rel="noreferrer">
-              <Button size="small">Visit</Button>
+            {typeof window !== 'undefined' && <Button size="small">Visit</Button>}
             </a>
           </div>
           <div className="project-card-tag">
             <a target="_self" value={projectTag} href={projectTag} rel="noreferrer" onClick={(event)=> console.log("value", event.target.value)}>
-              <Micro viewport="desktop" primitive="h2">{projectTag}</Micro>
+              {typeof window !== 'undefined' &&<Micro viewport="desktop" primitive="h2">{projectTag}</Micro>}
             </a>
           </div>  
         </article>
@@ -209,19 +206,19 @@ class ProjectLayout extends React.Component {
     return (
       <div className="projectLayout">
         <div className="projectLayoutHeading">
-          <Title size="large">Verizon Open Source Projects</Title>
+          {typeof window !== 'undefined' &&<Title size="large">Verizon Open Source Projects</Title>}
         </div>
         <div className="projectMenuButtons">
-          <Tabs>            
+        {typeof window !== 'undefined' && <Tabs>           
             <Tab label="Show All" onClick={()=> this.showAll()} />
             <Tab label={alphabetizeMenuLabel} onClick={() => this.alphabetize()} />
             <Tab label={sortDateMenuLabel} onClick={()=> this.sortByDate()} />
-          </Tabs>
+          </Tabs>}
           <Fragment>
             <Group>
-              <DropdownSelect label="Language" width="200px" inlineLabel={true} value={this.state.value} onChange={(e)=> this.handleChange(e)}>
+            {typeof window !== 'undefined' && <DropdownSelect label="Language" width="200px" inlineLabel={true} value={this.state.value} onChange={(e)=> this.handleChange(e)}>
                 {projectCodeLanguage.map((language, index )=> <option key={index} value={language}>{language}</option>)}
-              </DropdownSelect>
+              </DropdownSelect>}
             </Group>
           </Fragment>
         </div>
@@ -230,6 +227,3 @@ class ProjectLayout extends React.Component {
     );
   }
 }
-
-export default ProjectLayout;
-
