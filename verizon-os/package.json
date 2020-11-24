@@ -34,7 +34,8 @@
     "react-iframe": "^1.8.0",
     "react-router": "^5.2.0",
     "smooth-scrollbar": "^8.5.2",
-    "styled-components": "^3.2.6"
+    "styled-components": "^3.2.6",
+    "typescript": "^4.1.2"
   },
   "devDependencies": {
     "prettier": "2.0.5"
