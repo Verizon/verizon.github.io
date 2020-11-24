@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://127.0.0.1:4000/talks/</loc>
+  </url>
+  
+  <url>
+    <loc>http://127.0.0.1:4000/</loc>
+    <lastmod>2016-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://127.0.0.1:4000/blog/sit/</loc>
+    <lastmod>2016-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://127.0.0.1:4000/blog/</loc>
+    <lastmod>2016-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://127.0.0.1:4000/blog/dolor/</loc>
+    <lastmod>2016-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://127.0.0.1:4000/blog/another-article/</loc>
+    <lastmod>2016-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://127.0.0.1:4000/blog/ipsum/</loc>
+    <lastmod>2016-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://127.0.0.1:4000/blog/lorem/</loc>
+    <lastmod>2016-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://127.0.0.1:4000/blog/sed/</loc>
+    <lastmod>2016-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://127.0.0.1:4000/blog/some-exciting-article/</loc>
+    <lastmod>2016-03-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://127.0.0.1:4000/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>http://127.0.0.1:4000/tags/</loc>
+  </url>
+  
+</urlset>
