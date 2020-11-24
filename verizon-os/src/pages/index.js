@@ -1,20 +1,25 @@
 import React, {Component} from 'react';
-import HomePage from '../pages/home';  
 import Header from '../components/header';
 import Footer from '../components/footer';
+import CallToAction from "../components/calltoaction";
+import Carousel from "../components/carousel";
+import Ospo from '../components/ospo'; 
+import FeaturedProjects from "../components/featuredProjects";
 
-class IndexPage extends Component {
+export default class IndexPage extends Component {
     render(){
         return (
-            <div>
+            <div className="scrollContainer">
                 <Header/>
-                <HomePage/>
+                <Carousel/>
+                <Ospo/>
+                <FeaturedProjects/>
+                <CallToAction/>
                 <Footer/>
             </div>
-        );
+        ); 
     }
 }
 
-export default IndexPage;
 
 
