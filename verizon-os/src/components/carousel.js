@@ -5,8 +5,7 @@ import { Slide1 } from '../components/carouselData';
 import { Slide2 } from '../components/carouselData'; 
 import { Slide3 } from '../components/carouselData'; 
 import { Slide4 } from '../components/carouselData'; 
-
-const CarouselBars = typeof window !== 'undefined' && require('@vds/carousels').CarouselBars;
+import { CarouselBars } from '@vds/carousels'; 
 
 let idx = 0; 
 const Container = styled.div`
@@ -90,12 +89,12 @@ export default class Carousel extends Component {
         { showHide3 && <Slide3 /> }
         { showHide4 && <Slide4 /> }
 
-        <CarouselBars style={{ position: 'relative', left: '45%', width: '10%'}}
+        {typeof window !== 'undefined' && <CarouselBars style={{ position: 'relative', left: '45%', width: '10%'}}
           uniqueId="carousel-bars-default-example-id"
           activeSlide={selectedSlide}
           slideCount={4}
           goToSlide={this.goToSlide}
-        />
+        />}
 
         
       </Container>
