@@ -31,9 +31,9 @@ export default class ProjectLayout extends Component {
   componentDidMount() {
     fetch(projectUrl, {
       method: 'GET',
-      headers: {
-        'Authorization': `token ${process.env.GATSBY_OAUTH_TOKEN}`
-      }
+      // headers: {
+      //   'Authorization': `token ${process.env.GATSBY_OAUTH_TOKEN}`
+      // }
     })
     .then(response => response.json())
     .then(
