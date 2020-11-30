@@ -32,7 +32,7 @@ export default class ProjectLayout extends Component {
     fetch(projectUrl, {
       method: 'GET',
       headers: {
-        'Authorization': `token ${process.env.GATSBY_OAUTH_TOKEN}`
+        'Authorization': `token ${process.env.ACCESS_TOKEN}`
       }
     })
     .then(response => response.json())
