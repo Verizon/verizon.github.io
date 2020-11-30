@@ -10,7 +10,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: enriikke/gatsby-gh-pages-action@v2
+      - uses: actions/github-script@v3
         with:
-          access-token: ${{ secrets.ACCESS_TOKEN }}
-          deploy-branch: gh-pages
+          script: |
+            npm config set registry https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/ 
+            npm config set @<SCOPE>:registry https://oneartifactory.verizon.com/artifactory/api/npm/npm-virtual/
+            npm install -g gatsby-cli
+            npm install
+            gatsby build --prefix-paths && gh-pages -d public
+          
+          github-token: ${{ secrets.ACCESS_TOKEN }}
