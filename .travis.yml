@@ -1,34 +1,13 @@
 
-branches:
-  only:
-    - hugo
-
-install:
-  - wget https://github.com/spf13/hugo/releases/download/v0.17/hugo_0.17_Linux-64bit.tar.gz -O /tmp/hugo.tgz
-  - cd /tmp; tar xvf /tmp/hugo.tgz; sudo mv /tmp/hugo_0.17_linux_amd64/hugo_0.17_linux_amd64 /usr/local/bin/hugo
-  - sudo chmod +x /usr/local/bin/hugo
-
-# doing git force push here because master branch for us is simply
-# a build output and there should never be a reason to merge
-script:
-  - cd $TRAVIS_BUILD_DIR
-  - "/usr/local/bin/hugo -b https://verizon.github.io -d $TRAVIS_BUILD_DIR/_site"
-  - cd $TRAVIS_BUILD_DIR/_site
-  - git init
-  - git config user.name "travis"
-  - git config user.email "code@verizon.com"
-  - git checkout -b master
-  - git add .
-  - git commit -m "Deploy $TRAVIS_BUILD_NUMBER to GitHub Pages"
-  - |
-    if [[ $TRAVIS_PULL_REQUEST = 'false' && $RELEASE_ON_PUSH = 'true' ]]; then
-      git remote add public https://${GITHUB_CREDENTIALS}@github.com/Verizon/verizon.github.io.git
-      git push --quiet --force public master
-    else
-      echo 'usually publish to github pages here...'
-    fi
-
-env:
-  global:
-    - secure: "emy8E6a0U8itP/jOy4jqxB1qhMbKMKGfMgy7FUuu7XUuHbADnCPekOJ1N7hrzdl/C0up4YxnkOlIwDCt1qorrQKNk5fBMD+3KKMsKpBxjfuYWJH068IWSmEaZehyYXBHIxVNXvmF9G3yoqezzoWimQNIszQceUMdJXQEY3W6pms="
-    - secure: "1eLhZ5UP4Uo5kSr12qnwSEChWr3n9Jwkpr6ZmYHJ1NJGjTB6ejfBw+Yz0YsBmQt+WFFT2AjXCUxY5eSxNllBZ/ixVlPNqC0Z/B/Pgm6FOu1wY9R+bxT4NZZf2FNfGeuChWY3t7zgDw+l3IyzwCHwzjcNlHE8t1Mjt7wB8myGi0Q="
+language: node_js
+before_script:
+  - npm install -g gatsby-cli
+node_js:
+  - "10"
+deploy:
+  provider: script
+  # Note: change "docs" to the directory where your gatsby-site lives, if necessary
+  script: yarn install && yarn run deploy
+  skip_cleanup: true
+  on:
+    branch: master
