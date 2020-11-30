@@ -11,7 +11,7 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$ACCESS_TOKEN@github.com/Verizon/verizon.github.io.git"
   },
   "dependencies": {
     "@loadable/component": "^5.14.1",
