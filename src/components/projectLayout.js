@@ -62,8 +62,9 @@ export default class ProjectLayout extends Component {
         });
       }
     ).catch(e => {
+      navigate("/home");
+      
       if (typeof window !== `undefined`) {
-        navigate("/home")
         window.open("https://github.com/Verizon", "_blank");
       }
   });
