@@ -5,6 +5,7 @@ import { Button } from '@vds/buttons';
 import { spacers } from '@vds/theme'; 
 import { DropdownSelect } from '@vds/selects';
 import { Tab, Tabs } from '@vds/tabs'; 
+import { navigate } from "gatsby";
 
 const projectUrl = 'https://api.github.com/orgs/Verizon/repos';
 
@@ -43,6 +44,7 @@ export default class ProjectLayout extends Component {
   //     showProjects: projectMembers,
   //     returnedProjects: projectMembers
   //   });
+  // }
 
   componentDidMount() {
     fetch(projectUrl, {
@@ -61,6 +63,7 @@ export default class ProjectLayout extends Component {
       }
     ).catch(e => {
       if (typeof window !== `undefined`) {
+        navigate("/home")
         window.open("https://github.com/Verizon", "_blank");
       }
   });
