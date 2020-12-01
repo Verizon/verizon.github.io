@@ -28,12 +28,28 @@ export default class ProjectLayout extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
+  // async componentDidMount() {
+  //   const fetchMembers = await fetch (projectUrl, {
+  //     method: 'GET',
+  //     // headers: {
+  //     //     'PRIVATE-TOKEN': process.env.PRIVATE_TOKEN
+  //     // }
+  //   });
+  //   const headers = await fetchMembers.headers;
+  //   const xRateLimit = Number(headers.get('x-ratelimit-remaining'));
+  //   console.log(xRateLimit);
+  //   const projectMembers = await fetchMembers.json();
+  //   this.setState({
+  //     showProjects: projectMembers,
+  //     returnedProjects: projectMembers
+  //   });
+
   componentDidMount() {
     fetch(projectUrl, {
       method: 'GET',
-      headers: {
-        'Authorization': `token ${process.env.ACCESS_TOKEN}`
-      }
+      // headers: {
+      //   'Authorization': `token ${process.env.ACCESS_TOKEN}`
+      // }
     })
     .then(response => response.json())
     .then(
@@ -43,7 +59,11 @@ export default class ProjectLayout extends Component {
           returnedProjects: result
         });
       }
-    )
+    ).catch(e => {
+      if (typeof window !== `undefined`) {
+        window.open("https://github.com/Verizon", "_blank");
+      }
+  });
   }
 
   handleChange(event) {
