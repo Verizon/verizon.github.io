@@ -38,8 +38,8 @@ export default class ProjectLayout extends Component {
     });
     const headers = await fetchMembers.headers;
     const xRateLimit = Number(headers.get('x-ratelimit-remaining'));
-    // console.log(xRateLimit);
-    if (xRateLimit < 58) {
+    console.log(xRateLimit);
+    if (xRateLimit < 59) {
       navigate("/home"); 
       if (typeof window !== `undefined`) {
                window.open("https://github.com/Verizon", "_blank");
