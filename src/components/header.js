@@ -52,8 +52,8 @@ export default class Header extends Component {
                   </div>
                   <div className="navigation">
                     <nav>
-                      {routePaths.map((item, index) => <Link to={item.val} key={index} onClick={(e) => this.handleClick(item.name,e)}>{typeof window !== 'undefined' && <Subtitle viewport="mobile" size="large" bold={true}>{item.name}</Subtitle>}</Link> )}
-                      <a href="https://www.verizon.com/support/residential/internet/equipment/open-source-software" target="_blank" rel="noreferrer">{typeof window !== 'undefined' && <Subtitle viewport="mobile" size="large" bold={true}>Attributions</Subtitle>}</a>
+                      {routePaths.map((item, index) => <Link style={{ textDecoration: 'underline', textDecorationColor: 'black'}} to={item.val} key={index} onClick={(e) => this.handleClick(item.name,e)}>{typeof window !== 'undefined' && <Subtitle viewport="mobile" size="large" bold={true}>{item.name} </Subtitle>}</Link> )}
+                      <a href="https://www.verizon.com/support/residential/internet/equipment/open-source-software" style={{ textDecoration: 'underline', textDecorationColor: 'black'}} target="_blank" rel="noreferrer">{typeof window !== 'undefined' && <Subtitle viewport="mobile" size="large" bold={true}>Attributions</Subtitle>}</a>
                     </nav>
                   </div> 
                   <div className="navMobile">
