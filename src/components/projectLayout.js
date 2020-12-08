@@ -7,7 +7,7 @@ import { DropdownSelect } from '@vds/selects';
 import { Tab, Tabs } from '@vds/tabs'; 
 import { navigate } from "gatsby";
 
-const projectUrl = 'https://api.github.com/orgs/Verizon/repos';
+const projectUrl = 'https://api.github.com/orgs/Verizon/repos?page=1&per_page=100';
 
 const Group = styled.div`
   margin-bottom: ${typeof window !== 'undefined' && spacers.medium};
@@ -211,31 +211,31 @@ export default class ProjectLayout extends Component {
       }
       return accum;
     }, []);
-    const projects = showProjects.filter( project => project.archived === true ).map(function(project) {
-      const description = project.description.split(' ').slice(0,10).filter( element => element.length < 70 ).join(" ").replace(/\s(?=[^\s]*$)/g, '\u00A0');
-      const projectTag = `${project.language}`.toLowerCase();
-      return (
-        <article key={project.id}>
-          <div className="project-card-text">
-            <div className="project-card-title">
-              {typeof window !== 'undefined' && <Title size="small">{project.name}</Title>}
-            </div>
-            <div className="project-card-body">
-              {typeof window !== 'undefined' && <Body>{description}</Body>}
-            </div>
+    const projects = showProjects.filter( project => project.archived === false ).map(function(project) {
+    const description = project.description ? project.description.split(' ').slice(0,10).filter( element => element.length < 70 ).join(" ").replace(/\s(?=[^\s]*$)/g, '\u00A0') : "";
+    const projectTag = `${project.language}`.toLowerCase();
+    return (
+      <article key={project.id}>
+        <div className="project-card-text">
+          <div className="project-card-title">
+            {typeof window !== 'undefined' && <Title size="small">{project.name}</Title>}
           </div>
-          <div className="project-card-button" >
-            <a href={project.html_url} target="_blank" rel="noreferrer">
-            {typeof window !== 'undefined' && <Button size="small">Visit</Button>}
-            </a>
+          <div className="project-card-body">
+            {typeof window !== 'undefined' && <Body>{description}</Body>}
           </div>
-          <div className="project-card-tag">
-            <a target="_self" value={projectTag} href={projectTag} rel="noreferrer" onClick={(event)=> console.log("value", event.target.value)}>
-              {typeof window !== 'undefined' &&<Micro viewport="desktop" primitive="h2">{projectTag}</Micro>}
-            </a>
-          </div>  
-        </article>
-      )
+        </div>
+        <div className="project-card-button" >
+          <a href={project.html_url} target="_blank" rel="noreferrer">
+          {typeof window !== 'undefined' && <Button size="small">Visit</Button>}
+          </a>
+        </div>
+        <div className="project-card-tag">
+          <a target="_self" value={projectTag} href={projectTag} rel="noreferrer" onClick={(event)=> console.log("value", event.target.value)}>
+            {typeof window !== 'undefined' &&<Micro viewport="desktop" primitive="h2">{projectTag}</Micro>}
+          </a>
+        </div>  
+      </article>
+    )
     });
     return (
       <div className="projectLayout">
