@@ -5,6 +5,7 @@ import { Button } from '@vds/buttons';
 import { spacers } from '@vds/theme'; 
 import { DropdownSelect } from '@vds/selects';
 import { Tab, Tabs } from '@vds/tabs'; 
+import { navigate } from "gatsby";
 
 const projectUrl = 'https://api.github.com/orgs/Verizon/repos';
 
@@ -28,23 +29,56 @@ export default class ProjectLayout extends Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  componentDidMount() {
-    fetch(projectUrl, {
+  async componentDidMount() {
+    const fetchMembers = await fetch (projectUrl, {
       method: 'GET',
-      headers: {
-        'Authorization': `token ${process.env.GATSBY_OAUTH_TOKEN}`
-      }
-    })
-    .then(response => response.json())
-    .then(
-      (result) => {
-        this.setState({
-          showProjects: result,
-          returnedProjects: result
-        });
-      }
-    )
+      // headers: {
+      //     'PRIVATE-TOKEN': process.env.PRIVATE_TOKEN
+      // }
+    });
+    const headers = await fetchMembers.headers;
+    const xRateLimit = Number(headers.get('x-ratelimit-remaining'));
+    console.log(xRateLimit);
+    if (xRateLimit < 2) {
+      navigate("/home"); 
+      if (typeof window !== `undefined`) {
+               window.open("https://github.com/Verizon", "_blank");
+      } 
+    }
+
+    const projectMembers = await fetchMembers.json();
+    this.setState({
+      showProjects: projectMembers,
+      returnedProjects: projectMembers
+    });
   }
+
+  // componentDidMount() {
+  //   fetch(projectUrl, {
+  //     method: 'GET',
+  //     // headers: {
+  //     //   'Authorization': `token ${process.env.ACCESS_TOKEN}`
+  //     // }
+  //   })
+  //   .then(response => response.json())
+  //   .then(
+  //     (result) => {
+  //       // navigate("/home", { replace: true }); 
+  //       // if (typeof window !== `undefined`) {
+  //       //   window.open("https://github.com/Verizon", "_blank");
+  //       // }
+  //       this.setState({
+  //         showProjects: result,
+  //         returnedProjects: result
+  //       });
+  //     }
+  //   ).catch(e => {
+  //     navigate("/home", { replace: true });
+  //     if (typeof window !== `undefined`) {
+  //       window.open("https://github.com/Verizon", "_blank");
+  //     }
+  //   });
+  // }
 
   handleChange(event) {
     this.setState({value: event.target.value});
