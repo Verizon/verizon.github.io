@@ -5,8 +5,7 @@ We gratefully accept contributions of bug fixes, feature requests design enhance
 ## Table of Contents
 
 - [Code Of Conduct](#code-of-conduct)
-- [Notice A Bug?](#notice-a-bug?)
-- [Local Deployment](#local-deployment)
+- [Notice A Bug?](#code-of-conduct)
 - [Coding Rules](#coding-rules)
 - [Pull Request](#pull-request)
 - [License](#license)
