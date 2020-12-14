@@ -41,7 +41,7 @@ That's it! Your site should be locally deployed to http://localhost:8000/.
 
 We gratefully accept contributions of bug fixes, feature requests design enhancements. Anything from fixing typos and broken links to CI improvements and code refactoring is much appreciated. 
 
-To learn how to contribute, check out our [contributing guidelines](https://github.com/Verizon/verizon.github.io/blob/rebuild-gatsby/CONTRIBUTING.md). 
+To learn how to contribute, check out our [contributing guidelines](CONTRIBUTING.md). 
 
 
 ## License
