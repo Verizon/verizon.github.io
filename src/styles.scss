@@ -1,0 +1,454 @@
+.callToAction{
+  background-color: #D8DADA;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 90px;
+  .innerCallToAction{ 
+      display: flex; 
+      width: 80%;
+      height: auto;
+      margin: auto; 
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 60px;
+      padding-bottom: 30px;
+
+
+      .action1{
+          margin: 0;
+          img{
+              padding-bottom: 25px; 
+              height: 80px; 
+              width: 80px; 
+          }
+      }
+      .action2{
+          margin: 0;
+          img{
+              padding-bottom: 25px; 
+              height: 80px; 
+              width: 80px;
+          }
+      }
+      .action3{
+          margin: 0;
+          width: 80px; 
+          img{
+              height: 80px;
+              width: 80px; 
+              padding-bottom: 25px; 
+          }
+      }
+  }
+}
+
+.container {
+  width: 1640px;
+  min-width: 1640px;
+  margin: 0 auto; 
+
+  @media (max-width: 1440px) {
+      width: 1280px; 
+      min-width: 1280px; 
+  }
+  @media (max-width: 1280px) {
+      width: 976px; 
+      min-width: 976px; 
+  }
+  @media (max-width: 976px) {
+      width: 768px; 
+      min-width: 768px; 
+      
+  }
+
+  @media screen and (min-width: 600px) {
+      .navMobile{
+          display: none !important; 
+        }
+        .OsText{
+          top: 35%; 
+      }
+  }
+
+  @media screen and (max-width: 600px) {
+      .navigation{
+        display: none !important; 
+      }
+
+      .OsText{
+          top: 15%; 
+      }
+    }
+}
+
+.featuredProjects{
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  width: 99%; 
+  text-align: center;
+  .innerFeaturedProjects{
+      display: flex; 
+      width: 80%;
+      height: auto; 
+      margin: auto; 
+      justify-content: space-between;
+      padding-top: 40px;
+      padding-bottom: 30px;
+      .project1{
+          margin: 0; 
+          img{
+              width: 87px; 
+              height: 77px; 
+              padding-bottom: 25px; 
+          }
+              
+              a{
+                  color: #000000; 
+              }
+          
+      }
+      .project2{
+          margin: 0; 
+          img{
+              width: 87px; 
+              height: 77px;
+              padding-bottom: 25px; 
+          }    
+          a{
+                  color: #000000; 
+          }
+          
+      }
+      .project3{
+          margin: 0; 
+          width: 87px; 
+          img{
+              width: 87px; 
+              height: 77px;
+              padding-bottom: 25px; 
+          }
+          a{
+              color: #000000; 
+          }
+      }
+      
+  }
+}
+@media (min-width: 540px) {
+    .ospage{
+        margin-top: 7%; 
+        }   
+}
+@media (max-width: 540px) {
+  .innerOspo{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Video1{
+      height: 100%;
+      width: 100%
+  }
+  .ospage{
+    margin-top: 20%; 
+    }
+
+}
+
+header{
+  height: 70px; 
+  width: 99%; 
+  position: fixed; 
+  top: 0px; 
+  z-index: 10; 
+  border-bottom: 1px solid lightgrey; 
+  border-right: 1px solid white; 
+  background-color: white;
+  display: flex; 
+  margin: auto; 
+  .inner-header{
+      display: flex;
+      justify-content: space-between;
+      align-items: center; 
+          .logo{
+              display: flex; 
+              top: 15%; 
+              margin-left: 0px; 
+              position: absolute;
+              img {
+                  height: 50px; 
+                  width: 134px; 
+              };
+          }
+          .navigation{
+              width: 33%; 
+              height: auto; 
+              top: 40%; 
+              position: absolute; 
+              right: 1%; 
+              nav{  
+                  display: flex;
+                  align-items: center;
+                  a{
+                      
+                      margin: 0 5%;
+                  }
+              }
+          }
+          .navMobile{
+              margin: 0 auto; 
+              display: flex; 
+              align-items: center; 
+              
+              position: absolute; 
+              left: 70%; 
+              top: 40%;
+              height: 20px; 
+              width: 100px; 
+          
+          }
+          .OsText{
+              position: absolute; 
+              left: 39.5%;
+              width: 20.5%; 
+              text-align: center; 
+              align-items: center;
+              justify-content: center;
+          }
+      
+  }
+
+}
+
+footer{
+  background-color: black;
+  height: 8%;
+  width: 99.1%; 
+  position: fixed;  
+  bottom: 0px; 
+  left: 8px; 
+  right: 0px; 
+  display: flex; 
+  .inner-footer{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .navigation{
+
+          nav{
+              display: flex; 
+              align-items: center;
+              a{
+                  margin: 0 6%; 
+              }
+          }
+      }
+      .logos{
+          position: absolute; 
+          right: 2%;
+      }
+  }
+}
+
+.OspoFrontPage{
+  position: relative; 
+  width: 100%; 
+  text-align: center;
+  background-color: #D8DADA;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  .innerOspo{
+      display: flex; 
+      width: 90%;
+      height: auto; 
+      margin: auto; 
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 60px;
+      padding-bottom: 30px;
+      .Video1{
+          margin: 0 2%; 
+          position: relative; 
+          iframe{
+              border: 2px solid black; 
+          }
+      }
+  }
+}
+
+.projectLayout{
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 250px;
+  .menuForm {
+      display: flex;
+      margin-left: 20px;
+      margin-bottom: 10px;
+      justify-content: left;
+      .menuFormButton {
+          display: flex;
+          justify-content: left;
+      }
+  }
+  .projectMenuButtons{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .projectLayoutHeading{
+      position: relative;
+      text-align: center;
+      margin-top: 150px;
+      padding-bottom: 40px;  
+  }
+  .project-card-button{
+      display: flex;
+      justify-content: center;
+  }
+  .project-grid { 
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: 20px;
+      align-items: stretch;
+      }
+    .project-grid > article {
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    }
+    .project-grid > article img {
+      max-width: 100%;
+    }
+    .project-card-text {
+      padding: 0 20px 10px;
+      text-align: left;
+      .project-card-title {
+          margin-top: 20px;
+      };
+      .project-card-body {
+          margin-top: 5px;
+          height: 50px;
+          text-align: left
+      }
+    }
+  .project-card-tag {
+      padding: 10px
+  } 
+}
+
+@media (max-width: 300px) {
+  .project-grid {
+    display: block;
+  }
+}
+
+.scrollContainer{
+  position: relative; 
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+
+.ospage{
+    .ospoTitle{
+        display: flex; 
+        text-align: center; 
+        align-items: center;
+        justify-content: center;
+        img {
+            vertical-align: middle;
+            width: 75px; 
+            height: 71px; 
+            padding-right: 1%; 
+        }
+    }
+    .ospoSubtitle{
+        right: 6.5%;
+        padding-top: 3%; 
+        padding-left: 4%; 
+        padding-bottom: 2%; 
+        text-align: center; 
+
+    }
+    .ospoBody{
+        width: 95%; 
+        margin: auto; 
+        padding-bottom: 10%; 
+    }
+}
+
+.slideData{
+  position: relative; 
+  height: 100%; 
+  width: 100%; 
+  img{
+      position: relative; 
+      height: 86vh; 
+      width: 100%;
+  }
+  .slide{
+      position: absolute; 
+      display: flex; 
+      flex-direction: column; 
+      align-items: center;
+      height: 45%; 
+      top: 37%; 
+      width: 40%;
+      left: 3%;
+
+      .slideTitle{
+          text-align: center; 
+          width: 100%;
+          
+      }
+      .slideButton{
+          padding-top: 25px;
+      }
+  }
+}
+
+
+// .blogpage{
+//     position: absolute;
+//     margin-top: 80px;
+//     margin-bottom: 140px; 
+//     padding-left: 23px; 
+//     .blogTitleContainer{
+//         align-items: center; 
+//         .blogTitle{ 
+//             padding-top: 10px; 
+//             display: flex; 
+//             align-items: center;
+//             img{
+//                 height: 25px;
+//                 width: 25px;
+//                 padding-left: 10px;
+//             }
+//         }
+//         .blogTitleText{
+//             vertical-align: middle;
+          
+//         }
+//     }
+//     .blog{
+//         align-items: center;
+//         justify-content: space-between;
+//         display: flex; 
+//         width: 90%; 
+//         //float: left; 
+//         img{
+//             vertical-align: middle; 
+//             height: 120px; 
+//             width: 150px; 
+//             padding-top: 20px; 
+//         }
+//         .blogText{
+//             padding-left: 20px; 
+//         }
+//     }
+// }
+

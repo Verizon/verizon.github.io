@@ -1,4 +1,4 @@
-import { Link, navigate } from "gatsby";
+import { Link, Redirect } from "react-router-dom";
 import React, { Component } from "react";
 import logo from "../images/vz_300_rgb_p.jpg";
 import { Title, Subtitle } from '@vds/typography'; 
@@ -22,6 +22,7 @@ export default class Header extends Component {
     super(props);
     this.state = {
       selectedValue: this.props.selectedValue,
+      redirect: null
     };
     this.handleClick = this.handleClick.bind(this);
     this.handleChange = this.handleChange.bind(this);
@@ -29,7 +30,8 @@ export default class Header extends Component {
 
   handleChange(event) {
     if (event.target.value !== "Attributions" && event.target.value !== null) {
-      navigate('/' + event.target.value.charAt(0).toLowerCase() + event.target.value.slice(1));
+      //navigate('/' + event.target.value.charAt(0).toLowerCase() + event.target.value.slice(1));
+      this.setState({ redirect: '/' + event.target.value.charAt(0).toLowerCase() + event.target.value.slice(1) });
     }
     else {
       if (typeof window !== `undefined`) {
@@ -43,6 +45,9 @@ export default class Header extends Component {
   }
 
   render() {
+    if (this.state.redirect) {
+      return <Redirect to={this.state.redirect} />
+    }
     return (
         <header>
             <div className="container">
@@ -52,17 +57,17 @@ export default class Header extends Component {
                   </div>
                   <div className="navigation">
                     <nav>
-                      {routePaths.map((item, index) => <Link style={{ textDecoration: 'underline', textDecorationColor: 'black'}} to={item.val} key={index} onClick={(e) => this.handleClick(item.name,e)}>{typeof window !== 'undefined' && <Subtitle viewport="mobile" size="large" bold={true}>{item.name} </Subtitle>}</Link> )}
-                      <a href="https://www.verizon.com/support/residential/internet/equipment/open-source-software" style={{ textDecoration: 'underline', textDecorationColor: 'black'}} target="_blank" rel="noreferrer">{typeof window !== 'undefined' && <Subtitle viewport="mobile" size="large" bold={true}>Attributions</Subtitle>}</a>
+                      {routePaths.map((item, index) => <Link style={{ textDecoration: 'underline', textDecorationColor: 'black'}} to={item.val} key={index} onClick={(e) => this.handleClick(item.name,e)}><Subtitle viewport="mobile" size="large" bold={true}>{item.name} </Subtitle></Link> )}
+                      <a href="https://www.verizon.com/support/residential/internet/equipment/open-source-software" style={{ textDecoration: 'underline', textDecorationColor: 'black'}} target="_blank" rel="noreferrer"><Subtitle viewport="mobile" size="large" bold={true}>Attributions</Subtitle></a>
                     </nav>
                   </div> 
                   <div className="navMobile">
-                      {typeof window !== 'undefined' && <DropdownSelect onChange={(e)=> this.handleChange(e)} value={this.state.selectedValue}>  
+                      <DropdownSelect onChange={(e)=> this.handleChange(e)} value={this.state.selectedValue}>  
                         {ddVals.map((item, index)=> <option key={index}>{item.name}</option>)}
-                      </DropdownSelect>}
+                      </DropdownSelect>
                   </div> 
                   <div className="OsText">
-                    { typeof window !== 'undefined' && <Title primitive="h4" viewport="mobile" size="large">Open Source</Title>}
+                    <Title primitive="h4" viewport="mobile" size="large">Open Source</Title>
                   </div> 
                 </div>
             </div>

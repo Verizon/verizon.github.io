@@ -1,13 +1,12 @@
 import React, {Component} from "react";
 import styled from 'styled-components';
-import "../styles/styles.scss";
+import "../styles.scss";
 import { Slide1 } from '../components/carouselData';
 import { Slide2 } from '../components/carouselData'; 
 import { Slide3 } from '../components/carouselData'; 
 import { Slide4 } from '../components/carouselData'; 
 import { CarouselBars } from '@vds/carousels'; 
 
-let idx = 0; 
 const Container = styled.div`
     display: flex; 
     padding-top: 100px;
@@ -16,7 +15,7 @@ const Container = styled.div`
 
 export default class Carousel extends Component {
   state = {
-    selectedSlide: 1,
+    selectedSlide: 0,
     showHide1: true, 
     showHide2: false, 
     showHide3: false, 
@@ -24,28 +23,17 @@ export default class Carousel extends Component {
     index: 0
   };
 
-  /* Setting a timer of 5 seconds to auto rotate through each image and updating the states accordingly */
   componentDidMount () {
-    idx = 0; 
-    this.startCarousel(); 
+    this.setState({index: 0, selectedSlide: 0}); 
     }
 
-  startCarousel() {
-    this.setState({ index: idx, selectedSlide: idx+1});
-
-  }
-
-  componentWillUnmount() {
-    idx = 0; 
-  }
 
   /*goToSlide sets the state object with the correct active slide when one of the carousel bars is clicked so that bar is highlighted and the right image is rendered */
   goToSlide = slide => {
     this.setState(() => (
-      { selectedSlide: slide, index: slide-1}
+      { selectedSlide: slide, index: slide}
     ));
-    this.hideComponent(slide);
-    idx = slide-1; 
+    this.hideComponent(slide+1);
   };
 
   hideComponent(slide) {
@@ -81,7 +69,6 @@ export default class Carousel extends Component {
   render() {
     const { selectedSlide, showHide1, showHide2, showHide3, showHide4 } = this.state; 
     return (
-     
       <Container style={{display: 'block', paddingBottom: '10px', border: "1px", paddingLeft: '0px', paddingTop: '0px'}}>
        
         { showHide1 && <Slide1 /> }
@@ -89,12 +76,12 @@ export default class Carousel extends Component {
         { showHide3 && <Slide3 /> }
         { showHide4 && <Slide4 /> }
 
-        {typeof window !== 'undefined' && <CarouselBars style={{ position: 'relative', left: '45%', width: '10%'}}
+          <CarouselBars style={{ position: 'relative', left: '45%', width: '10%'}}
           uniqueId="carousel-bars-default-example-id"
           activeSlide={selectedSlide}
           slideCount={4}
           goToSlide={this.goToSlide}
-        />}
+        />
 
         
       </Container>
