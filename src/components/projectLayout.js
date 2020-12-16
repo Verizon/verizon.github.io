@@ -5,7 +5,7 @@ import { Button } from '@vds/buttons';
 import { spacers } from '@vds/theme'; 
 import { DropdownSelect } from '@vds/selects';
 import { Tab, Tabs } from '@vds/tabs'; 
-import { navigate } from "gatsby";
+import { Redirect } from "react-router-dom";
 
 const projectUrl = 'https://api.github.com/orgs/Verizon/repos?page=1&per_page=100';
 
@@ -14,6 +14,8 @@ const Group = styled.div`
 `;
 
 export default class ProjectLayout extends Component {
+  _isMounted = false; 
+
   constructor() {
     super();
     this.state = {
@@ -23,13 +25,15 @@ export default class ProjectLayout extends Component {
       sortLabel: '(asc)',
       value: '',
       showProjects: [],
-      returnedProjects: []
+      returnedProjects: [],
+      redirect: null
     };
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   async componentDidMount() {
+    this._isMounted = true; 
     const fetchMembers = await fetch (projectUrl, {
       method: 'GET',
       // headers: {
@@ -39,18 +43,20 @@ export default class ProjectLayout extends Component {
     const headers = await fetchMembers.headers;
     const xRateLimit = Number(headers.get('x-ratelimit-remaining'));
     console.log(xRateLimit);
-    if (xRateLimit < 2) {
-      navigate("/home"); 
+    if (xRateLimit < 2 && this._isMounted) {
+      this.setState({ redirect: "/home" });
       if (typeof window !== `undefined`) {
                window.open("https://github.com/Verizon", "_blank");
       } 
     }
 
     const projectMembers = await fetchMembers.json();
-    this.setState({
-      showProjects: projectMembers,
-      returnedProjects: projectMembers
-    });
+    if (this._isMounted) {
+      this.setState({
+        showProjects: projectMembers,
+        returnedProjects: projectMembers
+      });
+    }
   }
 
   // componentDidMount() {
@@ -79,6 +85,10 @@ export default class ProjectLayout extends Component {
   //     }
   //   });
   // }
+
+  componentWillUnmount() {
+    this._isMounted = false;
+  }
 
   handleChange(event) {
     this.setState({value: event.target.value});
@@ -202,6 +212,10 @@ export default class ProjectLayout extends Component {
   }
 
   render() {
+    if (this.state.redirect) {
+      return <Redirect to={this.state.redirect} />
+    }
+
     const { showProjects, returnedProjects, alphabetizeLabel, sortLabel } = this.state; 
     const alphabetizeMenuLabel = `Alphabetize ${alphabetizeLabel}`;
     const sortDateMenuLabel = `Creation Date ${sortLabel}`; 
@@ -218,20 +232,20 @@ export default class ProjectLayout extends Component {
       <article key={project.id}>
         <div className="project-card-text">
           <div className="project-card-title">
-            {typeof window !== 'undefined' && <Title size="small">{project.name}</Title>}
+            <Title size="small">{project.name}</Title>
           </div>
           <div className="project-card-body">
-            {typeof window !== 'undefined' && <Body>{description}</Body>}
+            <Body>{description}</Body>
           </div>
         </div>
         <div className="project-card-button" >
           <a href={project.html_url} target="_blank" rel="noreferrer">
-          {typeof window !== 'undefined' && <Button size="small">Visit</Button>}
+          <Button size="small">Visit</Button>
           </a>
         </div>
         <div className="project-card-tag">
           <a target="_self" value={projectTag} href={projectTag} rel="noreferrer" onClick={(event)=> console.log("value", event.target.value)}>
-            {typeof window !== 'undefined' &&<Micro viewport="desktop" primitive="h2">{projectTag}</Micro>}
+            <Micro viewport="desktop" primitive="h2">{projectTag}</Micro>
           </a>
         </div>  
       </article>
@@ -240,19 +254,19 @@ export default class ProjectLayout extends Component {
     return (
       <div className="projectLayout">
         <div className="projectLayoutHeading">
-          {typeof window !== 'undefined' &&<Title size="large">Verizon Open Source Projects</Title>}
+          <Title size="large">Verizon Open Source Projects</Title>
         </div>
         <div className="projectMenuButtons">
-        {typeof window !== 'undefined' && <Tabs>           
+        <Tabs>           
             <Tab label="Show All" onClick={()=> this.showAll()} />
             <Tab label={alphabetizeMenuLabel} onClick={() => this.alphabetize()} />
             <Tab label={sortDateMenuLabel} onClick={()=> this.sortByDate()} />
-          </Tabs>}
+          </Tabs>
           <Fragment>
             <Group>
-            {typeof window !== 'undefined' && <DropdownSelect label="Language" width="200px" inlineLabel={true} value={this.state.value} onChange={(e)=> this.handleChange(e)}>
+            <DropdownSelect label="Language" width="200px" inlineLabel={true} value={this.state.value} onChange={(e)=> this.handleChange(e)}>
                 {projectCodeLanguage.map((language, index )=> <option key={index} value={language}>{language}</option>)}
-              </DropdownSelect>}
+              </DropdownSelect>
             </Group>
           </Fragment>
         </div>
