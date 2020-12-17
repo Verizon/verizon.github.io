@@ -20,9 +20,9 @@ function App() {
 
           <Switch>
             <Route exact path="/" component={HomePage}></Route>
-            <Route exact path="/home" component={HomePage}></Route>
-            <Route exact path="/community" component={OsPage}></Route>
-            <Route exact path ="/projects" component={ProjectsPage}></Route>
+            <Route path="/home" component={HomePage}></Route>
+            <Route path="/community" component={OsPage}></Route>
+            <Route path ="/projects" component={ProjectsPage}></Route>
             <Route component = {NotFoundPage}></Route>
           </Switch>
 
