@@ -8,6 +8,7 @@ import Header from './components/header';
 import Footer from './components/footer';
 import HomePage from './home'; 
 import ProjectsPage from './projects'; 
+import NotFoundPage from './404'; 
 import OsPage from './community'; 
 
 function App() {
@@ -18,18 +19,11 @@ function App() {
           <Header/>
 
           <Switch>
-            <Route exact path="/">
-              <HomePage />
-            </Route>
-            <Route path="/home">
-              <HomePage/>
-            </Route>
-            <Route path="/community">
-              <OsPage />
-            </Route>
-            <Route path ="/projects">
-              <ProjectsPage/>
-            </Route>
+            <Route exact path="/" component={HomePage}></Route>
+            <Route exact path="/home" component={HomePage}></Route>
+            <Route exact path="/community" component={OsPage}></Route>
+            <Route exact path ="/projects" component={ProjectsPage}></Route>
+            <Route component = {NotFoundPage}></Route>
           </Switch>
 
           <Footer/>
