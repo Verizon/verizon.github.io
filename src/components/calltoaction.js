@@ -14,17 +14,17 @@ const CallToAction = () => {
       <div className="innerCallToAction">
         <div className="action1">
           <img src={use} alt='use'/>
-          <a href="https://github.com/Verizon" target="_blank" rel="noreferrer">{typeof window !== 'undefined' && <Title viewport="mobile" size="large">Use</Title>}</a>
+          <a href="https://github.com/Verizon" target="_blank" rel="noreferrer"><Title viewport="mobile" size="large">Use</Title></a>
           <Subtitle size="large" viewport="mobile" primitive="h2">our code</Subtitle>
         </div>
         <div className="action2">
           <img src={contribute} alt='contribute'/>
-          <Link to='/projects'>{typeof window !== 'undefined' && <Title viewport="mobile" size="large">Contribute</Title>}</Link>
+          <Link to='/projects'><Title viewport="mobile" size="large">Contribute</Title></Link>
           <Subtitle size="large" viewport="mobile" primitive="h2">to our projects</Subtitle>
         </div>
         <div className="action3">
           <img src={ community } alt='community'/>
-          <Link to='/community'>{typeof window !== 'undefined' && <Title viewport="mobile" size="large">Join</Title>}</Link>
+          <Link to='/community'><Title viewport="mobile" size="large">Join</Title></Link>
           <Subtitle size="large" viewport="mobile" primitive="h2"> us today</Subtitle>
         </div>
       </div>
