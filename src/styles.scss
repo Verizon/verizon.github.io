@@ -398,7 +398,7 @@ footer{
       height: 45%; 
       top: 37%; 
       width: 40%;
-      left: 3%;
+      left: 5.5%;
 
       .slideTitle{
           text-align: center; 
@@ -411,10 +411,21 @@ footer{
   }
 }
 
+@media (min-width: 540px) {
+    .notFound{
+        padding-top: 20%; 
+        }   
+}
+@media (max-width: 540px) {
+  .notFound{
+    padding-top: 75%;
+  }
+
+}
+
 .notFound{
     text-align: center; 
     width: 50%; 
-    padding-top: 30%; 
     margin: 0 auto; 
 }
 
