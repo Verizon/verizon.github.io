@@ -1,9 +1,0 @@
-test
-examples
-.gitignore
-src
-.eslintrc
-.babelrc
-.nyc_output
-coverage
-logo.png
