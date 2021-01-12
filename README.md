@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Verizon Open Source Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains all of the code for [verizon.github.io](https://verizon.github.io/). 
 
-## Available Scripts
 
-In the project directory, you can run:
+## Table of Contents
 
-### `yarn start`
+- [Background](#background)
+- [Install](#install)
+- [Usage](#usage)
+- [Maintainers](#maintainers)
+- [Contributing](#contributing)
+- [License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Background
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[verizon.github.io](https://verizon.github.io/) is the home for information about Verizon's Open Source community and the latest active Verizon projects. Here you'll find links out to Verizon's [Github page](https://github.com/Verizon). 
 
-### `yarn test`
+The project is a [Create React App](https://github.com/facebook/create-react-app) for building and deploying. The page is generated using [Github Pages](https://pages.github.com/). 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Install
 
-### `yarn build`
+This project uses [node](http://nodejs.org), [npm](https://npmjs.com). Go check them out if you don't have them locally installed.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Usage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow these steps to deploy the site locally!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository
+2. Run `npm install`
+3. Run `npm start`
 
-### `yarn eject`
+That's it! Your site should be locally deployed to http://localhost:3000/. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Maintainers
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+[@Vamsi](https://github.com/vamsiponnapalli)
+[@Tatiana](https://github.com/tatsco)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Contributing
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+We gratefully accept contributions of bug fixes, feature requests design enhancements. Anything from fixing typos and broken links to CI improvements and code refactoring is much appreciated. 
 
-## Learn More
+To learn how to contribute, check out our [contributing guidelines](CONTRIBUTING.md). 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[MIT](LICENSE) 
