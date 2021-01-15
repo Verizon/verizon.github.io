@@ -6,7 +6,7 @@ const NotFoundPage = () => {
         <div className="notFound">
             <Title size="XLarge">404</Title>
             <br></br>
-            <Subtitle>Uh oh! I think you've reached a bad URL!</Subtitle>
+            <Subtitle>Uh oh! I think you have reached a bad URL!</Subtitle>
         </div>
     )
 }

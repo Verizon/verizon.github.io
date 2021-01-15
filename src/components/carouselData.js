@@ -25,7 +25,7 @@ class Slide1 extends Component {
           </div>
         </div>
       </div>);
-    };
+    }
 }
 
 class Slide2 extends Component {
@@ -43,7 +43,7 @@ class Slide2 extends Component {
         </div>
       </div>
     </div>);
-  };
+  }
 }
 
 class Slide3 extends Component {
@@ -61,7 +61,7 @@ class Slide3 extends Component {
           </div>
         </div>
       </div>);
-    };
+    }
   }
 
 
@@ -80,7 +80,7 @@ class Slide4 extends Component {
           </div>
         </div>
       </div>);
-    };
+    }
   }
   
   export { Slide1, Slide2, Slide3, Slide4}

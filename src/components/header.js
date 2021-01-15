@@ -20,8 +20,9 @@ const routePaths = [
 export default class Header extends Component {
   constructor(props) {
     super(props);
+    this.state
     this.state = {
-      selectedValue: this.props.selectedValue,
+      selectedValue: props.selectedValue,
       redirect: null
     };
     this.handleClick = this.handleClick.bind(this);
@@ -53,7 +54,7 @@ export default class Header extends Component {
             <div className="container">
               <div className="inner-header">
                   <div className="logo">
-                    <Link to="/home" onClick={(e) => this.handleClick("Home")}><img src={logo} alt="VzLogo"></img></Link>
+                    <Link to="/home" onClick={() => this.handleClick("Home")}><img src={logo} alt="VzLogo"></img></Link>
                   </div>
                   <div className="navigation">
                     <nav>
