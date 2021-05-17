@@ -25,8 +25,8 @@ const FeaturedProjects = () => (
       </div>
       <div className="project3">
           <img src={fp3} alt='fp3'/>
-            <Title viewport="mobile" size="large">Proxy</Title>
-            <a href="https://github.com/Verizon/redshell" target="_blank" rel="noreferrer"><Subtitle viewport="mobile" size="large">Redshell</Subtitle></a>        
+            <Title viewport="mobile" size="large">AWS</Title>
+            <a href="https://github.com/Verizon/5GEdgeTutorials" target="_blank" rel="noreferrer"><Subtitle viewport="mobile" size="large">5G Edge</Subtitle></a>        
       </div>
   </div>
 </div>

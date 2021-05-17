@@ -71,12 +71,12 @@ class Slide4 extends Component {
         <img src={ os4 } alt="os4"></img>
         <div className="slide">
           <div className="slideTitle">
-            <Title size="large" viewport="mobile" color="#000000">Redshell</Title>
+            <Title size="large" viewport="mobile" color="#000000">5G Edge Tutorials</Title>
             <br></br>
-            <Title size="small" viewport="mobile" bold={true} color="#000000">Execute commands through proxychains. Automatically log them on a Cobalt Strike team server.</Title>
+            <Title size="small" viewport="mobile" bold={true} color="#000000">Launch your first application at the network edge.</Title>
           </div>
           <div className="slideButton">
-            <a href="https://github.com/Verizon/redshell" target="_blank" rel="noreferrer"><Button viewport="mobile">Project Info</Button></a>
+            <a href="https://github.com/Verizon/5GEdgeTutorials" target="_blank" rel="noreferrer"><Button viewport="mobile">Project Info</Button></a>
           </div>
         </div>
       </div>);
