@@ -52,7 +52,6 @@ export default class Header extends Component {
     return (
         <header>
             <div className="container">
-              <div className="inner-header">
                   <div className="logo">
                     <Link to="/home" onClick={() => this.handleClick("Home")}><img src={logo} alt="VzLogo"></img></Link>
                   </div>
@@ -70,7 +69,6 @@ export default class Header extends Component {
                   <div className="OsText">
                     <Title primitive="h4" viewport="mobile" size="large">Open Source</Title>
                   </div> 
-                </div>
             </div>
           </header>
       ); 

@@ -167,12 +167,6 @@ header{
   border-bottom: 1px solid lightgrey; 
   border-right: 1px solid white; 
   background-color: white;
-  display: flex; 
-  margin: auto; 
-  .inner-header{
-      display: flex;
-      justify-content: space-between;
-      align-items: center; 
           .logo{
               display: flex; 
               top: 15%; 
@@ -184,17 +178,15 @@ header{
               };
           }
           .navigation{
-              width: 33%; 
-              height: auto; 
-              top: 40%; 
+              top: 33%; 
               position: absolute; 
-              right: 1%; 
+              right: 8%; 
               nav{  
                   display: flex;
                   align-items: center;
                   a{
                       
-                      margin: 0 5%;
+                      margin: 0 3%;
                   }
               }
           }
@@ -212,21 +204,19 @@ header{
           }
           .OsText{
               position: absolute; 
-              left: 39.5%;
-              width: 20.5%; 
-              text-align: center; 
-              align-items: center;
-              justify-content: center;
+              text-align: center;
+              left: 31%; 
+              width: 19%; 
           }
       
-  }
+  
 
 }
 
 footer{
   background-color: black;
   height: 8%;
-  width: 99.1%; 
+  width: 99%; 
   position: fixed;  
   bottom: 0px; 
   left: 8px; 
