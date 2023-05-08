@@ -1,17 +1,9 @@
 import React, {Component} from "react";
-import styled from 'styled-components';
-import "../styles.scss";
-import { Slide1 } from '../components/carouselData';
-import { Slide2 } from '../components/carouselData'; 
-import { Slide3 } from '../components/carouselData'; 
-import { Slide4 } from '../components/carouselData'; 
-import { CarouselBars } from '@vds/carousels'; 
-
-const Container = styled.div`
-    display: flex; 
-    padding-top: 100px;
-    padding-left: 235px; 
- `;
+import { Slide1 } from './carouselData';
+import { Slide2 } from './carouselData'; 
+import { Slide3 } from './carouselData'; 
+import { Slide4 } from './carouselData'; // TODO absolute woof of JSON
+//import { CarouselBars } from '@vds/carousels'; // TODO implement https://react-bootstrap.netlify.app/docs/components/carousel/
 
 export default class Carousel extends Component {
   state = {
@@ -67,24 +59,24 @@ export default class Carousel extends Component {
   }
 
   render() {
-    const { selectedSlide, showHide1, showHide2, showHide3, showHide4 } = this.state; 
+    const { showHide1, showHide2, showHide3, showHide4 } = this.state; 
     return (
-      <Container style={{display: 'block', paddingBottom: '10px', border: "1px", paddingLeft: '0px', paddingTop: '0px'}}>
+      <div style={{display: 'block', paddingBottom: '10px', border: "1px", paddingLeft: '0px', paddingTop: '0px'}}>
        
         { showHide1 && <Slide1 /> }
         { showHide2 && <Slide2 /> }
         { showHide3 && <Slide3 /> }
         { showHide4 && <Slide4 /> }
 
-          <CarouselBars style={{ position: 'relative', left: '45%', width: '10%'}}
+          {/* <CarouselBars style={{ position: 'relative', left: '45%', width: '10%'}}
           uniqueId="carousel-bars-default-example-id"
           activeSlide={selectedSlide}
           slideCount={4}
           goToSlide={this.goToSlide}
-        />
+        /> */}
 
         
-      </Container>
+      </div>
     );
   }
 }

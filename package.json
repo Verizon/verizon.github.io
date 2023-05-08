@@ -1,42 +1,60 @@
 {
-  "name": "verizon-os-react",
+  "name": "verizon.github.io",
   "version": "0.1.0",
   "private": true,
+  "description": "A website developed for Verizon by the Open Source Program Office within",
   "homepage": "https://verizon.github.io",
+  "author": "Gary White Jr. <gary.white@verizon.com>",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@vds/buttons": "^1.3.0",
-    "@vds/carousels": "^1.1.2",
-    "@vds/grids": "^1.0.3",
-    "@vds/selects": "^1.2.2",
-    "@vds/tabs": "^1.0.5",
-    "@vds/theme": "^1.0.2",
-    "@vds/typography": "^1.0.3",
-    "ini": "^1.3.6",
-    "node-sass": "^4.14.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "styled-components": "^3.2.6",
-    "typescript": "^4.1.2",
-    "web-vitals": "^0.2.4"
+    "@babel/core": "7.19.3",
+    "bootstrap": "5.2.3",
+    "gatsby": "^5.0.0",
+    "gatsby-plugin-gatsby-cloud": "^5.0.0",
+    "gatsby-plugin-image": "3.9.0",
+    "gatsby-plugin-manifest": "^5.0.0",
+    "gatsby-plugin-offline": "^6.0.0",
+    "gatsby-plugin-react-helmet": "^6.0.0",
+    "gatsby-plugin-robots-txt": "1.8.0",
+    "gatsby-plugin-sass": "^6.0.0",
+    "gatsby-plugin-sharp": "^5.0.0",
+    "gatsby-plugin-sitemap": "^6.0.0",
+    "gatsby-remark-autolink-headers": "^6.0.0",
+    "gatsby-remark-copy-linked-files": "^6.0.0",
+    "gatsby-remark-embed-gist": "1.2.1",
+    "gatsby-remark-images": "7.0.0",
+    "gatsby-remark-prismjs": "7.9.0",
+    "gatsby-remark-responsive-iframe": "^6.0.0",
+    "gatsby-remark-smartypants": "^6.0.0",
+    "gatsby-source-filesystem": "^5.0.0",
+    "gatsby-transformer-remark": "^6.0.0",
+    "gatsby-transformer-sharp": "^5.0.0",
+    "prismjs": "1.29.0",
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-bootstrap": "2.5.0",
+    "react-cookie": "4.1.1",
+    "react-dom": "18.2.0",
+    "react-helmet": "6.1.0",
+    "react-icons": "4.4.0",
+    "sass": "1.55.0",
+    "uuid": "9.0.0",
+    "webpack": "5.82.0"
+  },
+  "devDependencies": {
+    "gatsby-cli": "^5.0.0",
+    "gh-pages": "4.0.0",
+    "prettier": "2.7.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "build": "gatsby build",
+    "build-prefix": "gatsby build --prefix-paths",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "browserslist": {
     "production": [
@@ -49,11 +67,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^4.13.0",
-    "@typescript-eslint/parser": "^4.13.0",
-    "eslint": "^7.17.0",
-    "gh-pages": "^3.1.0"
   }
 }

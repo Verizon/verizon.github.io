@@ -1,0 +1,29 @@
+/* Titles / Headlines */
+@font-face {
+    font-family: "VerizonNHGeDS";
+    font-weight: 400;
+    font-style: normal;
+    src: url("VerizonNHGeDS-Regular.woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "VerizonNHGeDS";
+    font-weight: 700;
+    src: url("VerizonNHGeDS-Bold.woff2");
+    font-display: swap;
+}
+
+/* Text / body */
+@font-face {
+    font-family: "VerizonNHGeTX";
+    font-weight: 400;
+    font-style: normal;
+    src: url("VerizonNHGeTX-Regular.woff2");
+    font-display: swap;
+}
+@font-face {
+    font-family: "VerizonNHGeTX";
+    font-weight: 700;
+    src: url("VerizonNHGeTX-Bold.woff2");
+    font-display: swap;
+}

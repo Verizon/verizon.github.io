@@ -1,21 +1,53 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { Body, Micro } from '@vds/typography';
+import { Link } from "gatsby";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => (
   <footer>
-    <div className="inner-footer">
-      <div className="navigation">
-        <nav>
-          <Link to="/projects" style={{ textDecoration: 'underline', textDecorationColor: 'white' }}><Body size="large" bold={true} color="#FFFFFF">Projects</Body></Link>
-          <Link to="/community" style={{ textDecoration: 'underline', textDecorationColor: 'white' }}><Body size="large" bold={true} color="#FFFFFF">Community</Body></Link>
-          <a href="https://github.com/Verizon" target="_blank" rel="noreferrer" style={{ textDecoration: 'underline', textDecorationColor: 'white' }}><Body size="large" bold={true} color="#FFFFFF">Github</Body></a>
-        </nav>
-      </div>
-       <div className="logos">
-        <Micro viewport="mobile" color="#FFFFFF">&#169;	 2020 Verizon</Micro>
-      </div> 
-    </div>
+    <Container 
+      fluid
+      style={{
+        paddingTop: "1.5rem",
+        paddingLeft: "1.5rem",
+        paddingRight: "1.5rem"
+      }}>
+      <Row>
+        <Col className="justify-content-start d-flex">
+          <Row className="d-flex">
+            <Col>
+              <Link to="/projects">
+                <h5>
+                  <strong>Projects</strong>
+                </h5>
+              </Link>
+            </Col>
+            <Col xs="">
+              <Link to="/community" >
+                <h5>
+                  <strong>Community</strong>
+                </h5>
+              </Link>
+            </Col>
+            <Col>
+              <a
+                href="https://github.com/Verizon"
+                target="_blank"
+                rel="noreferrer">
+                <h5>
+                  <strong>Github</strong>
+                </h5>
+              </a>
+            </Col>
+          </Row>
+        </Col>
+        <Col className="justify-content-end d-flex" style={{
+          fontSize: ".8rem",
+          fontWeight: "bold"
+        }}>
+          <p>&#169;	 2020 Verizon</p>
+        </Col>
+      </Row>
+    </Container>
   </footer>
 )
 

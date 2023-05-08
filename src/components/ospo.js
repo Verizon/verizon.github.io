@@ -1,9 +1,8 @@
 import React from "react";
-import { Title } from "@vds/typography"
 
 const Ospo = () => (
     <div className="OspoFrontPage">
-        <Title size="large">Learn about open source</Title>
+        <h1 size="large">Learn about open source</h1>
         <div className="innerOspo">
             <div className="Video1">
                 <iframe src='https://www.youtube.com/embed/KHyVJzYnRT8'

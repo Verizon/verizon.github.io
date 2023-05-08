@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from './components/header';
-import Footer from './components/footer';
-import ProjectLayout from './components/projectLayout';
+import Header from '../components/header';
+import Footer from '../components/footer';
+import ProjectLayout from '../components/projectLayout';
 
 const ProjectsPage = () => (
     <div>
