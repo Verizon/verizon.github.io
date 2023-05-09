@@ -33,7 +33,11 @@ const Header = () => (
           </div>
         </Col>
         <Col xs="6" lg="4">
-          <h4><strong>Open Source</strong></h4>
+          <h4
+          style={{
+            textAlign: "center"
+          }}
+          ><strong>Open Source</strong></h4>
         </Col>
         <Col className="d-none d-lg-flex justify-content-end">
           <Row>

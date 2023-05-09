@@ -13,7 +13,7 @@ body {
   color: #332c36;
   font-family: "VerizonNHGeTX";
   font-weight: normal;
-  font-size:14pt;
+  font-size:16pt;
   word-wrap: break-word;
   font-kerning: normal;
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
@@ -35,21 +35,85 @@ a:hover {
   color:#a2a2a2;
   
 }
-.slideData {
-  color:#FFF;
+.carousel-cap {
+  top:23rem;
+  text-align: left;
 }
-
-
-/* all below has been translated from .scss */
+.carousel-image {
+  height: 55rem; 
+  max-width: 100%;
+  width:100%;
+}
+.carousel-image img {
+  filter: brightness(.45);
+  object-fit: cover;
+}
+.carousel-btn {
+  padding: 0px;
+  border-radius: 6.25rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  font-family: "VerizonNHGeDS";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  letter-spacing: 0.03125rem;
+  height: 2.75rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  overflow: visible;
+  width: auto;
+  white-space: nowrap;
+  background-color: rgb(0, 0, 0);
+  border: 0.0625rem solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255)
+}
+.carousel-btn:hover {
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0.0625rem;
+  transition: all 0.1s ease-out 0s;
+  background-color: rgb(0, 0, 0);
+  border:none;
+}
+.carousel-btn-text {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+.featuredProjects {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.featuredProjects h2 {
+  font-weight: bold;
+  margin-bottom:0;
+  margin-top: .5rem;
+}
 .callToAction {
   background-color: #D8DADA;
   position: relative;
-  width: 100%;
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin-bottom: 90px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width:100%;
 }
+.callToAction h3 {
+  font-weight: bold;
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+
+/* all below has been translated from .scss */
+
 .callToAction .innerCallToAction {
   display: flex;
   width: 80%;
@@ -123,13 +187,6 @@ a:hover {
   .container .OsText {
     top: 15%;
   }
-}
-.featuredProjects {
-  position: relative;
-  padding-top: 40px;
-  padding-bottom: 50px;
-  width: 99%;
-  text-align: center;
 }
 .featuredProjects .innerFeaturedProjects {
   display: flex;
@@ -232,12 +289,10 @@ footer {
   color: #fff;
   background-color: black;
   height: 5rem;
-  width: 99%;
-  position: fixed;
+  width: 100%;
+  position: relative;
   bottom: 0px;
-  left: 8px;
-  right: 0px;
-  display: flex;
+  display: block;
 }
 footer a {
   color:#fff
@@ -326,80 +381,4 @@ footer a {
 }
 .projectLayout .project-card-tag {
   padding: 10px;
-}
-@media (max-width: 300px) {
-  .project-grid {
-    display: block;
-  }
-}
-.scrollContainer {
-  position: relative;
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-.ospage .ospoTitle {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-}
-.ospage .ospoTitle img {
-  vertical-align: middle;
-  width: 75px;
-  height: 71px;
-  padding-right: 1%;
-}
-.ospage .ospoSubtitle {
-  right: 6.5%;
-  padding-top: 3%;
-  padding-left: 4%;
-  padding-bottom: 2%;
-  text-align: center;
-}
-.ospage .ospoBody {
-  width: 95%;
-  margin: auto;
-  padding-bottom: 10%;
-}
-.slideData {
-  position: relative;
-  height: 100%;
-  width: 100%;
-}
-.slideData img {
-  position: relative;
-  height: 86vh;
-  width: 100%;
-}
-.slideData .slide {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 45%;
-  top: 37%;
-  width: 40%;
-  left: 5.5%;
-}
-.slideData .slide .slideTitle {
-  text-align: center;
-  width: 100%;
-}
-.slideData .slide .slideButton {
-  padding-top: 25px;
-}
-@media (min-width: 540px) {
-  .notFound {
-    padding-top: 20%;
-  }
-}
-@media (max-width: 540px) {
-  .notFound {
-    padding-top: 75%;
-  }
-}
-.notFound {
-  text-align: center;
-  width: 50%;
-  margin: 0 auto;
 }
