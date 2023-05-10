@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => (
   <footer>
-    <Container 
+    <Container
       fluid
       style={{
         paddingTop: "1.5rem",
@@ -15,13 +15,6 @@ const Footer = () => (
         <Col className="justify-content-start d-flex">
           <Row className="d-flex">
             <Col>
-              <Link to="/projects">
-                <h5>
-                  <strong>Projects</strong>
-                </h5>
-              </Link>
-            </Col>
-            <Col xs="">
               <Link to="/community" >
                 <h5>
                   <strong>Community</strong>
@@ -44,7 +37,7 @@ const Footer = () => (
           fontSize: ".8rem",
           fontWeight: "bold"
         }}>
-          <p>&#169;	 2020 Verizon</p>
+          <p>&#169;	 {(new Date()).getFullYear()} Verizon</p>
         </Col>
       </Row>
     </Container>

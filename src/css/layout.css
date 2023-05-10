@@ -111,8 +111,24 @@ a:hover {
   margin-top: .5rem;
   margin-bottom: 0;
 }
+header {
+  height: 69px;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  border-bottom: 1px solid lightgrey;
+  background-color: white;
+}
+header .logo img {
+  height: 50px;
+  width: 134px;
+}
 
-/* all below has been translated from .scss */
+/*
+  //////////////////////////////////////
+  all below has been translated from .scss 
+  //////////////////////////////////////
+*/
 
 .callToAction .innerCallToAction {
   display: flex;
@@ -243,48 +259,7 @@ a:hover {
     margin-top: 20%;
   }
 }
-header {
-  height: 70px;
-  width: 100%;
-  position: fixed;
-  top: 0px;
-  z-index: 10;
-  border-bottom: 1px solid lightgrey;
-  border-right: 1px solid white;
-  background-color: white;
-}
-header .logo img {
-  height: 50px;
-  width: 134px;
-}
-header .navigation {
-  top: 33%;
-  position: absolute;
-  right: 8%;
-}
-header .navigation nav {
-  display: flex;
-  align-items: center;
-}
-header .navigation nav a {
-  margin: 0 3%;
-}
-header .navMobile {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 70%;
-  top: 40%;
-  height: 20px;
-  width: 100px;
-}
-header .OsText {
-  position: absolute;
-  text-align: center;
-  left: 31%;
-  width: 19%;
-}
+
 footer {
   color: #fff;
   background-color: black;
