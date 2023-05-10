@@ -39,5 +39,4 @@ const NotFoundPage = () => {
 		</Layout>
 	)
 }
-// TODO: more appropriate / themed 404.
 export default NotFoundPage;
