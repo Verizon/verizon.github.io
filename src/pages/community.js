@@ -3,12 +3,9 @@ import Layout from '../components/layout';
 import { Container, Row, Col } from "react-bootstrap";
 import { StaticImage } from "gatsby-plugin-image";
 
-
 const community = () => (
   <Layout>
-    <Container style={{
-      marginBottom: "11rem"
-    }}>
+    <Container>
       <Row>
         <Col style={{
           textAlign: "center",
@@ -50,6 +47,36 @@ const community = () => (
         </Col>
       </Row>
     </Container>
+    <div className="memberships">
+      <Container>
+        <Row>
+          <Col style={{
+            paddingTop: "1rem",
+          }}>
+            <h1>Memberships</h1>
+            <p>Foundations, projects, associations</p>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <a href="https://www.python.org/psf-landing/">
+              <StaticImage
+                alt="Python Software Foundation"
+                src="../images/psf-logo.png"
+              />
+            </a>
+          </Col>
+          <Col>
+            <a href="https://www.linuxfoundation.org">
+              <StaticImage
+                alt="Linux Foundation"
+                src="../images/lf-logo.png"
+              />
+            </a>
+          </Col>
+        </Row>
+      </Container>
+    </div>
   </Layout>
 )
 

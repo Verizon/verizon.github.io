@@ -39,11 +39,17 @@ const Header = () => (
             {routePaths.map(
               (item, index) => (
                 <Col key={index}>
-                  <Link
+                  {item.val.includes("https") ? 
+                  (<a
+                    style={{ textDecoration: 'underline', textDecorationColor: 'black' }}
+                    href={item.val}>
+                    <h5>{item.name}</h5>
+                  </a>) :
+                  (<Link
                     style={{ textDecoration: 'underline', textDecorationColor: 'black' }}
                     to={item.val}>
                     <h5>{item.name}</h5>
-                  </Link>
+                  </Link>)}
                 </Col>
               )
 

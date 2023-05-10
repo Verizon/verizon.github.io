@@ -123,6 +123,12 @@ header .logo img {
   height: 50px;
   width: 134px;
 }
+.memberships {
+  text-align: center;
+  padding-bottom: 11rem;
+  background-color: #D8DADA;
+  align-items: center;
+}
 
 /*
   //////////////////////////////////////
