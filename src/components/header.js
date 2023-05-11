@@ -1,4 +1,4 @@
-import { Link, navigate } from "gatsby"; // TODO: Gatsby links
+import { Link, navigate } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 import { Container, Row, Col, NavDropdown } from "react-bootstrap"
