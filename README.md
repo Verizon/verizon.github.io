@@ -6,7 +6,7 @@ This repository contains all of the code for [verizon.github.io](https://verizon
 
 ## 🚀 Quick Start
 
-To get started editing this site, you'll need Node v12+. We recommend using [nvm](https://github.com/nvm-sh/nvm).
+To get started editing this site, you'll need Node v18+. We recommend using [nvm](https://github.com/nvm-sh/nvm).
 
 Once that's installed, you'll need [`yarn`](https://yarnpkg.com/) as well.
 
