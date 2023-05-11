@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Verizon Open Source`,
-    description: `Home of the Open Source Program Office and Verizon specific documenting for working with OSS`,
+    description: `Home of the Open Source Program Office and Verizon specific documentation for working with OSS`,
     author: `opensource@verizon.com`,
     siteUrl: `https://verizon.github.io`,
     keywords: [`opensource`, `verizon`, `Verizon`, `OSS`, `OSPO`],
