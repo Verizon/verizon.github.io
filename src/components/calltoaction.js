@@ -20,7 +20,7 @@ const CallToAction = () => (
       <Row>
         <Col>
           <StaticImage src='../images/display-blk.png' alt='monitor' />
-          <a href="https://github.com/Verizon" target="_blank" rel="noreferrer">
+          <a rel="noreferrer" href="https://github.com/Verizon" target="_blank" rel="noreferrer">
             <h3>
               Use
             </h3>
@@ -29,11 +29,11 @@ const CallToAction = () => (
         </Col>
         <Col>
           <StaticImage src='../images/grid-view-blk.png' alt='grid' />
-          <Link to='/projects'>
+          <a target="_blank" href='https://github.com/verizon'>
             <h3>
               Contribute
             </h3>
-          </Link>
+          </a>
           <p>to our projects</p>
         </Col>
         <Col>

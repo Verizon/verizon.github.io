@@ -1,16 +1,13 @@
 import React from "react";
-import { Link } from "gatsby";
 import { Container, Row, Col } from 'react-bootstrap';
 import { StaticImage } from "gatsby-plugin-image";
 
 const FeaturedProjects = () => (
   <Container className="featuredProjects">
     <Row>
-      <Link to="/projects">
-        <h1>
-          Featured Projects
-        </h1>
-      </Link>
+      <h1>
+        Featured Projects
+      </h1>
     </Row>
     <br />
     <Row>
