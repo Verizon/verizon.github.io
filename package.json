@@ -50,7 +50,7 @@
     "build-prefix": "gatsby build --prefix-paths",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
+    "start": "gatsby develop",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
