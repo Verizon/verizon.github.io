@@ -29,7 +29,7 @@ const CallToAction = () => (
         </Col>
         <Col>
           <StaticImage src='../images/grid-view-blk.png' alt='grid' />
-          <a target="_blank" href='https://github.com/verizon' rel="noreferrer">
+          <a href="https://github.com/verizon" target="_blank" rel="noreferrer">
             <h3>
               Contribute
             </h3>
