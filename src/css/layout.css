@@ -1,0 +1,365 @@
+@import "../fonts/verizonfont.css";
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font: 112.5%/1.45em "VerizonNHGeTX";
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #332c36;
+  font-family: "VerizonNHGeTX";
+  font-weight: normal;
+  font-size:16pt;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  height: 100%;
+  overflow-x:hidden;
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "VerizonNHGeDS";
+}
+a {
+  color:#000000;
+}
+a:hover {
+  color:#a2a2a2;
+  
+}
+.carousel-cap {
+  top:23rem;
+  text-align: left;
+}
+.carousel-image {
+  height: 55rem; 
+  max-width: 100%;
+  width:100%;
+}
+.carousel-image img {
+  filter: brightness(.45);
+  object-fit: cover;
+}
+.carousel-btn {
+  padding: 0px;
+  border-radius: 6.25rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  -moz-box-align: center;
+  align-items: center;
+  -moz-box-pack: center;
+  justify-content: center;
+  font-family: "VerizonNHGeDS";
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  letter-spacing: 0.03125rem;
+  height: 2.75rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  overflow: visible;
+  width: auto;
+  white-space: nowrap;
+  background-color: rgb(0, 0, 0);
+  border: 0.0625rem solid rgb(0, 0, 0);
+  color: rgb(255, 255, 255)
+}
+.carousel-btn:hover {
+  box-shadow: rgb(0, 0, 0) 0px 0px 0px 0.0625rem;
+  transition: all 0.1s ease-out 0s;
+  background-color: rgb(0, 0, 0);
+  border:none;
+}
+.carousel-btn-text {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+.featuredProjects {
+  position: relative;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.featuredProjects h2 {
+  font-weight: bold;
+  margin-bottom:0;
+  margin-top: .5rem;
+}
+.callToAction {
+  background-color: #D8DADA;
+  position: relative;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width:100%;
+}
+.callToAction h3 {
+  font-weight: bold;
+  margin-top: .5rem;
+  margin-bottom: 0;
+}
+header {
+  height: 69px;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  border-bottom: 1px solid lightgrey;
+  background-color: white;
+}
+header .logo img {
+  height: 50px;
+  width: 134px;
+}
+.memberships {
+  text-align: center;
+  padding-bottom: 11rem;
+  background-color: #D8DADA;
+  align-items: center;
+}
+
+/*
+  //////////////////////////////////////
+  all below has been translated from .scss 
+  //////////////////////////////////////
+*/
+
+.callToAction .innerCallToAction {
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.callToAction .innerCallToAction .action1 {
+  margin: 0;
+}
+.callToAction .innerCallToAction .action1 img {
+  padding-bottom: 25px;
+  height: 80px;
+  width: 80px;
+}
+.callToAction .innerCallToAction .action2 {
+  margin: 0;
+}
+.callToAction .innerCallToAction .action2 img {
+  padding-bottom: 25px;
+  height: 80px;
+  width: 80px;
+}
+.callToAction .innerCallToAction .action3 {
+  margin: 0;
+  width: 80px;
+}
+.callToAction .innerCallToAction .action3 img {
+  height: 80px;
+  width: 80px;
+  padding-bottom: 25px;
+}
+.container {
+  width: 1640px;
+  min-width: 1640px;
+  margin: 0 auto;
+}
+@media (max-width: 1440px) {
+  .container {
+    width: 1280px;
+    min-width: 1280px;
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    width: 976px;
+    min-width: 976px;
+  }
+}
+@media (max-width: 976px) {
+  .container {
+    width: 768px;
+    min-width: 768px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .container .navMobile {
+    display: none !important;
+  }
+  .container .OsText {
+    top: 35%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .container .navigation {
+    display: none !important;
+  }
+  .container .OsText {
+    top: 15%;
+  }
+}
+.featuredProjects .innerFeaturedProjects {
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin: auto;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.featuredProjects .innerFeaturedProjects .project1 {
+  margin: 0;
+}
+.featuredProjects .innerFeaturedProjects .project1 img {
+  width: 87px;
+  height: 77px;
+  padding-bottom: 25px;
+}
+
+.featuredProjects .innerFeaturedProjects .project2 {
+  margin: 0;
+}
+.featuredProjects .innerFeaturedProjects .project2 img {
+  width: 87px;
+  height: 77px;
+  padding-bottom: 25px;
+}
+
+.featuredProjects .innerFeaturedProjects .project3 {
+  margin: 0;
+  width: 87px;
+}
+.featuredProjects .innerFeaturedProjects .project3 img {
+  width: 87px;
+  height: 77px;
+  padding-bottom: 25px;
+}
+
+@media (min-width: 540px) {
+  .ospage {
+    margin-top: 7%;
+  }
+}
+@media (max-width: 540px) {
+  .innerOspo {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .Video1 {
+    height: 100%;
+    width: 100%;
+  }
+  .ospage {
+    margin-top: 20%;
+  }
+}
+
+footer {
+  color: #fff;
+  background-color: black;
+  height: 5rem;
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  display: block;
+}
+footer a {
+  color:#fff
+}
+.OspoFrontPage {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  background-color: #D8DADA;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.OspoFrontPage .innerOspo {
+  display: flex;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+.OspoFrontPage .innerOspo .Video1 {
+  margin: 0 2%;
+  position: relative;
+}
+.OspoFrontPage .innerOspo .Video1 iframe {
+  border: 2px solid black;
+}
+.projectLayout {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
+  padding-bottom: 250px;
+}
+.projectLayout .menuForm {
+  display: flex;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  justify-content: left;
+}
+.projectLayout .menuForm .menuFormButton {
+  display: flex;
+  justify-content: left;
+}
+.projectLayout .projectMenuButtons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.projectLayout .projectLayoutHeading {
+  position: relative;
+  text-align: center;
+  margin-top: 150px;
+  padding-bottom: 40px;
+}
+.projectLayout .project-card-button {
+  display: flex;
+  justify-content: center;
+}
+.projectLayout .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+.projectLayout .project-grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+.projectLayout .project-grid > article img {
+  max-width: 100%;
+}
+.projectLayout .project-card-text {
+  padding: 0 20px 10px;
+  text-align: left;
+}
+.projectLayout .project-card-text .project-card-title {
+  margin-top: 20px;
+}
+.projectLayout .project-card-text .project-card-body {
+  margin-top: 5px;
+  height: 50px;
+  text-align: left;
+}
+.projectLayout .project-card-tag {
+  padding: 10px;
+}

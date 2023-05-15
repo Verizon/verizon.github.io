@@ -1,35 +1,53 @@
 import React from 'react';
-import { Link } from "react-router-dom";
-import community from '../images/unified-comms-blk.png'; 
-import use from '../images/display-blk.png'; 
-import contribute from '../images/grid-view-blk.png'; 
-import { Title, Subtitle } from '@vds/typography'; 
+import { Link } from "gatsby";
+import { Container, Row, Col } from 'react-bootstrap';
+import { StaticImage } from 'gatsby-plugin-image';
 
-const CallToAction = () => {
-  return (
-    <div className="callToAction">
-      <div className="manageOsText">
-      <Title size="large">How we manage open source</Title>
-      </div>
-      <div className="innerCallToAction">
-        <div className="action1">
-          <img src={use} alt='use'/>
-          <a href="https://github.com/Verizon" target="_blank" rel="noreferrer"><Title viewport="mobile" size="large">Use</Title></a>
-          <Subtitle size="large" viewport="mobile" primitive="h2">our code</Subtitle>
-        </div>
-        <div className="action2">
-          <img src={contribute} alt='contribute'/>
-          <Link to='/projects'><Title viewport="mobile" size="large">Contribute</Title></Link>
-          <Subtitle size="large" viewport="mobile" primitive="h2">to our projects</Subtitle>
-        </div>
-        <div className="action3">
-          <img src={ community } alt='community'/>
-          <Link to='/community'><Title viewport="mobile" size="large">Join</Title></Link>
-          <Subtitle size="large" viewport="mobile" primitive="h2"> us today</Subtitle>
-        </div>
-      </div>
-    </div>  
-  )
-};
+/*
+  likely will reimplement this whole thing
+  This is a bit of a mess layout wise and style wise.
+*/
+
+const CallToAction = () => (
+  <div className="callToAction">
+    <Container>
+      <Row>
+        <Col>
+          <h1>Get Involved</h1>
+        </Col>
+      </Row>
+      <br />
+      <Row>
+        <Col>
+          <StaticImage src='../images/display-blk.png' alt='monitor' />
+          <a href="https://github.com/Verizon" target="_blank" rel="noreferrer" >
+            <h3>
+              Use
+            </h3>
+          </a>
+          <p>our code</p>
+        </Col>
+        <Col>
+          <StaticImage src='../images/grid-view-blk.png' alt='grid' />
+          <a href="https://github.com/verizon" target="_blank" rel="noreferrer">
+            <h3>
+              Contribute
+            </h3>
+          </a>
+          <p>to our projects</p>
+        </Col>
+        <Col>
+          <StaticImage src='../images/unified-comms-blk.png' alt='community' />
+          <Link to='/community'>
+            <h3>
+              Join
+            </h3>
+          </Link>
+          <p>us today</p>
+        </Col>
+      </Row>
+    </Container>
+  </div>
+)
 
 export default CallToAction;

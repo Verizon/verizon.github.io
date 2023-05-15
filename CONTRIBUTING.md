@@ -12,7 +12,7 @@ We gratefully accept contributions of bug fixes, feature requests design enhance
 
 ## Code Of Conduct
 
-Integrity is at the core of who we are. Please be respectful of others at all times to help us maintain a productive and healthy dynamic. 
+Integrity is at the core of who we are. Please be respectful of others at all times to help us maintain a productive and healthy dynamic. Please reference the [code of conduct](CODE_OF_CONDUCT.md) for details. 
 
 ## Notice A Bug? 
 

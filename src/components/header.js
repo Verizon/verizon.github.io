@@ -1,78 +1,70 @@
-import { Link, Redirect } from "react-router-dom";
-import React, { Component } from "react";
-import logo from "../images/vz_300_rgb_p.jpg";
-import { Title, Subtitle } from '@vds/typography'; 
-import { DropdownSelect } from '@vds/selects'; 
+import { Link, navigate } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+import React from "react";
+import { Container, Row, Col, NavDropdown } from "react-bootstrap"
 
-const ddVals = [
-  { val: 'home', name: 'Home' },
-  { val: 'community', name: 'Community' },
-  { val: 'projects', name: 'Projects'  },
-  { val: 'attributions', name: 'Attributions' }
-]
 
 const routePaths = [
-  { val: '/home', name: 'Home' },
+  { val: '/', name: 'Home' },
   { val: '/community', name: 'Community' },
-  { val: '/projects', name: 'Projects'  }
+  { val: 'https://github.com/Verizon', name: 'Projects' },
+  { val: "https://www.verizon.com/support/residential/internet/equipment/open-source-software", name: 'Attributions'}
 ]
 
-export default class Header extends Component {
-  constructor(props) {
-    super(props);
-    this.state
-    this.state = {
-      selectedValue: props.selectedValue,
-      redirect: null
-    };
-    this.handleClick = this.handleClick.bind(this);
-    this.handleChange = this.handleChange.bind(this);
-  }
+const Header = () => (
+  <header>
+    <Container
+      fluid
+      style={{
+        paddingTop: `.4rem`,
+      }}
+    >
+      <Row
+        className="justify-content-md-center justify-content-sm-start align-items-end"
+      >
+        <Col xs="3">
+          <div className="logo">
+            <Link to="/"><StaticImage src="../images/vz_300_rgb_p.jpg" alt="VzLogo" /></Link>
+          </div>
+        </Col>
+        <Col xs="6">
+          <h4
+          style={{
+            textAlign: "center"
+          }}
+          ><strong>Open Source</strong></h4>
+        </Col>
+        <Col className="d-none d-xxl-flex justify-content-end">
+          <Row>
+            {routePaths.map(
+              (item, index) => (
+                <Col key={index}>
+                  {item.val.includes("https") ? 
+                  (<a
+                    style={{ textDecoration: 'underline', textDecorationColor: 'black' }}
+                    href={item.val}>
+                    <h5>{item.name}</h5>
+                  </a>) :
+                  (<Link
+                    style={{ textDecoration: 'underline', textDecorationColor: 'black' }}
+                    to={item.val}>
+                    <h5>{item.name}</h5>
+                  </Link>)}
+                </Col>
+              )
 
-  handleChange(event) {
-    if (event.target.value !== "Attributions" && event.target.value !== null) {
-      //navigate('/' + event.target.value.charAt(0).toLowerCase() + event.target.value.slice(1));
-      this.setState({ redirect: '/' + event.target.value.charAt(0).toLowerCase() + event.target.value.slice(1) });
-    }
-    else {
-      if (typeof window !== `undefined`) {
-        window.open("https://www.verizon.com/support/residential/internet/equipment/open-source-software", "_blank");
-      }
-    }
-  }
+            )}
+          </Row>
 
-  handleClick(selectedPath) {
-    this.setState({selectedValue: selectedPath});
-  }
+        </Col>
+        <Col className="d-xl-flex align-self-center d-xxl-none justify-content-end">
+          <NavDropdown title="More" >
+            {routePaths.map((item, index) => <NavDropdown.Item onClick={() => navigate(item.val)} key={index}>{item.name}</NavDropdown.Item>)}
+          </NavDropdown>
+        </Col>
+      </Row>
+    </Container>
+  </header>
+);
 
-  render() {
-    if (this.state.redirect) {
-      return <Redirect to={this.state.redirect} />
-    }
-    return (
-        <header>
-            <div className="container">
-                  <div className="logo">
-                    <Link to="/home" onClick={() => this.handleClick("Home")}><img src={logo} alt="VzLogo"></img></Link>
-                  </div>
-                  <div className="navigation">
-                    <nav>
-                      {routePaths.map((item, index) => <Link style={{ textDecoration: 'underline', textDecorationColor: 'black'}} to={item.val} key={index} onClick={(e) => this.handleClick(item.name,e)}><Subtitle viewport="mobile" size="large" bold={true}>{item.name} </Subtitle></Link> )}
-                      <a href="https://www.verizon.com/support/residential/internet/equipment/open-source-software" style={{ textDecoration: 'underline', textDecorationColor: 'black'}} target="_blank" rel="noreferrer"><Subtitle viewport="mobile" size="large" bold={true}>Attributions</Subtitle></a>
-                    </nav>
-                  </div> 
-                  <div className="navMobile">
-                      <DropdownSelect onChange={(e)=> this.handleChange(e)} value={this.state.selectedValue}>  
-                        {ddVals.map((item, index)=> <option key={index}>{item.name}</option>)}
-                      </DropdownSelect>
-                  </div> 
-                  <div className="OsText">
-                    <Title primitive="h4" viewport="mobile" size="large">Open Source</Title>
-                  </div> 
-            </div>
-          </header>
-      ); 
-    }
-  }
-
-
+export default Header;
