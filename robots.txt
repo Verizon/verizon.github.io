@@ -1,3 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+Sitemap: https://verizon.github.io/sitemap/sitemap-index.xml
+Host: https://verizon.github.io
