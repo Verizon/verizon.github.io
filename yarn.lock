@@ -52,7 +52,7 @@
   resolved "https://registry.npmjs.org/@babel/compat-data/-/compat-data-7.21.7.tgz"
   integrity sha512-KYMqFYTaenzMK4yUtf4EW9wc4N9ef80FsbMtkwool5zpwl4YrT1SdWYSTRcT94KO4hannogdS+LxY7L+arP3gA==
 
-"@babel/core@7.19.3", "@babel/core@^7.14.0":
+"@babel/core@7.19.3":
   version "7.19.3"
   resolved "https://registry.npmjs.org/@babel/core/-/core-7.19.3.tgz"
   integrity sha512-WneDJxdsjEvyKtXKsaBGbDeiyOjR5vYq4HcShxnIbG0qixpoHjI3MqeZM9NDvsojNCEBItQE4juOo/bU6e72gQ==
@@ -73,7 +73,7 @@
     json5 "^2.2.1"
     semver "^6.3.0"
 
-"@babel/core@^7.20.12":
+"@babel/core@^7.14.0", "@babel/core@^7.20.12":
   version "7.21.8"
   resolved "https://registry.npmjs.org/@babel/core/-/core-7.21.8.tgz"
   integrity sha512-YeM22Sondbo523Sz0+CirSPnbj9bG3P0CdHcBZdqUuaeOaYEFbOLoGU7lebvGP6P5J/WE9wOn7u7C4J9HvS1xQ==
@@ -5424,9 +5424,9 @@ gatsby-page-utils@^3.9.0:
     lodash "^4.17.21"
     micromatch "^4.0.5"
 
-gatsby-parcel-config@^1.9.0:
+gatsby-parcel-config@1.9.0:
   version "1.9.0"
-  resolved "https://registry.npmjs.org/gatsby-parcel-config/-/gatsby-parcel-config-1.9.0.tgz"
+  resolved "https://registry.yarnpkg.com/gatsby-parcel-config/-/gatsby-parcel-config-1.9.0.tgz#66a939d37b1e4731df90849c07d1c64b83641a08"
   integrity sha512-5wclOXzeI6HmH5iEYvqzLnt/kc0cnqlIObRmQE2zpV0xs9YTPXAH7GdnaheYKN8kibF1EWuBKJF79dv99/nGHg==
   dependencies:
     "@gatsbyjs/parcel-namer-relative-to-cwd" "^2.9.0"
@@ -5786,10 +5786,10 @@ gatsby-worker@^2.9.0:
     fs-extra "^11.1.1"
     signal-exit "^3.0.7"
 
-gatsby@^5.0.0:
-  version "5.9.0"
-  resolved "https://registry.npmjs.org/gatsby/-/gatsby-5.9.0.tgz"
-  integrity sha512-XjKwjlscSgOZqqXCY1+Y3VX9+AyMBZMGer2xt6BxpXAz+uEHomdiVpToncka5BlrxgDYkDmx83yIBZKN9uAwiw==
+gatsby@^5.9.1:
+  version "5.9.1"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-5.9.1.tgz#e79471272b2e68e517a9a35b38dfa2b1aaee8f73"
+  integrity sha512-TNMmFqRnEZBZsoecp11ZhSeYmgKV6QfPsl1f46I+DK7n3yNWMkMN4ZpKuCdH2gw98d2LgtU7nHWHCohr54eb6A==
   dependencies:
     "@babel/code-frame" "^7.18.6"
     "@babel/core" "^7.20.12"
@@ -5877,7 +5877,7 @@ gatsby@^5.0.0:
     gatsby-legacy-polyfills "^3.9.0"
     gatsby-link "^5.9.0"
     gatsby-page-utils "^3.9.0"
-    gatsby-parcel-config "^1.9.0"
+    gatsby-parcel-config "1.9.0"
     gatsby-plugin-page-creator "^5.9.0"
     gatsby-plugin-typescript "^5.9.0"
     gatsby-plugin-utils "^4.9.0"
